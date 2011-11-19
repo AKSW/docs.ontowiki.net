@@ -1,4 +1,4 @@
-# TOC
+# Use OntoWiki with the Virtuoso Backend
 This page explains the necessary steps to use OntoWiki with [OpenLink Virtuoso](http://virtuoso.openlinksw.com/wiki/main/Main/).
 Especially, it covers the following topics:
 
