@@ -1,5 +1,8 @@
-The OntoWiki wiki is over at google code (for now)!
+This wiki documents installation and development details of OntoWiki.
 
-[get me there](http://code.google.com/p/ontowiki/wiki/Welcome?tm=6)
+Some additional wiki pages still exists at our [old google code wiki](http://code.google.com/p/ontowiki/wiki/Welcome).
 
-[API-Documentation](http://docs.ontowiki.net/fw/)
+There is also an [API-Documentation](http://docs.ontowiki.net/fw/) available.
+
+
+Now go to the [list of wiki pages](https://github.com/AKSW/OntoWiki/wiki/_pages).
