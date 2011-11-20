@@ -14,9 +14,11 @@ You can skip this if your OntoWiki already comes with a web.config file or if yo
 
 Apache uses the .htaccess file to configure web applications it is running. Simmilarly on IIS there is an XML file named web.config. Below is a minimal configuration file required for OntoWiki to work. It mimics OntoWiki's configuration, namely:
 
-* instructs IIS to deny access to *.ini files
-* creates rewrite rules for Zend Framework
-* when rewriting, creates a server variable called ONTOWIKI_APACHE_MOD_REWRITE_ENABLED, which enables OntoWiki to construct valid URLs
+instructs IIS to deny access to *.ini files
+
+creates rewrite rules for Zend Framework
+
+when rewriting, creates a server variable called ONTOWIKI_APACHE_MOD_REWRITE_ENABLED, which enables OntoWiki to construct valid URLs
 
     <?xml version="1.0" encoding="UTF-8"?>
     <configuration>
