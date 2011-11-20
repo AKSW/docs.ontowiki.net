@@ -75,4 +75,4 @@ Now OntoWiki should work on your IIS
 
 Version prior to IIS7 aren't currently supported, though it should be possible to set up rewrite rules simmilar to the above using one of the free or commercially available ISAPI rewrite filters.
 
-Also the handler would have to be moved to secton system.web/httpHandlers as system.webServer section has been introduced in IIS7
+Also the handler would have to be moved to secton `system.web/httpHandlers` as `system.webServer` section has been introduced in IIS7
