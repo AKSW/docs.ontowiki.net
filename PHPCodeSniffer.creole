@@ -1,4 +1,4 @@
-= Introduction =
+= PHPCodeSniffer =
 
 This document describes the use of the PHPCodeSniffer to check if your coding style complies to the Ontowiki/Erfurt Coding standard.
 
@@ -12,7 +12,7 @@ sudo apt-get install php-pear
 }}}
 
 For other systems or more information go to
-[[http://pear.php.net/manual/en/installation.php PEAR Framework Installation]]
+[[PEAR Framework Installation|http://pear.php.net/manual/en/installation.php]]
 
 = Installation =
 
