@@ -1,6 +1,7 @@
+
 After install from archive or repository you will have to follow these steps to get OntoWiki up and running.
 
-=Requirements=
+= Requirements =
 In order to install OntoWiki you need:
   * PHP 5.2
   * [[mod_rewrite|http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html]] allowed in target directory (optional, used for nice URIs and LinkedData features)
