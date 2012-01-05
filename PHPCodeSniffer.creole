@@ -6,13 +6,13 @@ This document describes the use of the PHPCodeSniffer to check if your coding st
 
 To use the PHPCodeSniffer you must install the PHP PEAR Framework
 
-For *Ubuntu* execute:
+For **Ubuntu** execute:
 {{{
 sudo apt-get install php-pear
 }}}
 
 For other systems or more information go to
-[http://pear.php.net/manual/en/installation.php PEAR Framework Installation]
+[[http://pear.php.net/manual/en/installation.php PEAR Framework Installation]]
 
 = Installation =
 
@@ -35,7 +35,7 @@ To turn off this functionality run:
 {{{
 make cs-disable
 }}}
-*Important*:
+**Important**:
 The CodeSniffer only check the added or changed commit files, not the deleted files and not the whole Ontowiki-Source.
 == Summary View ==
 If you make a commit and your code not match the coding standard you will get something like that:
@@ -85,10 +85,10 @@ FOUND 6 ERROR(S) AFFECTING 5 LINE(S)
 Now you can see the description of the errors and the line where they occur.
 So you have the possibility to correct your code and check it again.
 
-*Note:* If there are less than six files to check, you get the detail view automatically and not the summary view.
+**Note:** If there are less than six files to check, you get the detail view automatically and not the summary view.
 
 == Tips ==
-For *Mercurial*
+For **Mercurial**
 
 If your commit was interrupted and you have corrected your code successfully you can run the commit again with the original commit massage, run:
 {{{
