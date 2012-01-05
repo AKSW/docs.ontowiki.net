@@ -1,0 +1,21 @@
+= Introduction =
+This page is a recommendation, which OS, Backend, ... you should currently choose to avoid problems.
+
+= Details =
+== Operating System ==
+Ubuntu (newest release, a install docu for an older version is available [[here|Install_OntoWiki_on_fresh_Ubuntu_1004_using_Virtuoso]]
+
+== PHP ==
+5.3 (5.2 is also good), more details for PHP configuration [[php.ini-recommendations|here]]
+
+== Backend ==
+Virtuoso Opensource Version 6.1.2, more details for installation [[here|UsingOntoWikiWithVirtuoso]]
+
+== Browser ==
+Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [[here|BrowserCompatibility]]
+
+== OntoWiki Version ==
+We recommend the installation of a current snapshot release or directly from the repository.
+
+== Professional Support ==
+AKSW gives professional support for deployment and customization. Please ask [[Sebastian Tramp|http://aksw.org/SebastianTramp]] regarding this.
