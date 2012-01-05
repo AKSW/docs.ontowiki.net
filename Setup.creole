@@ -1,4 +1,4 @@
-After install from [[archive|https://github.com/AKSW/OntoWiki/downloads]] or [[repository|git@github.com:AKSW/OntoWiki.git]] you will have to follow these steps to get OntoWiki up and running.
+After install from [[archive|https://github.com/AKSW/OntoWiki/downloads]] or [[repository|git://github.com/AKSW/OntoWiki.git]] you will have to follow these steps to get OntoWiki up and running.
 
 = Requirements =
 In order to install OntoWiki you need:
