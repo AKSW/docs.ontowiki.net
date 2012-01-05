@@ -1,3 +1,5 @@
+After install from archive or repository you will have to follow these steps to get OntoWiki up and running.
+
 =Requirements=
 In order to install OntoWiki you need:
   * PHP 5.2
