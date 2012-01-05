@@ -1,6 +1,6 @@
 There are some HTTP parameters that are reserved by the base OntoWiki system. Hence these parameters should not be used for new functionality. The following table contains a enumeration of these parameters together with a short description.
 
-| *HTTP Parameter* | *Description* |
+| **HTTP Parameter** | **Description** |
 | m | This parameter is used to set the model (graph) used for the request. |
 | r | This parameter is used to identify the resource used for the request. |
 | p | This parameter is used for paging purposes (pagenumber). |
