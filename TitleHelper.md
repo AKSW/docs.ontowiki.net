@@ -1,0 +1,36 @@
+Class TitleHelper fetches title properties for a set of resources. You can collect all resources from which you want to get the title later. If you get the title from one of them the TitleHelper gets the title properties for all resources at once.
+
+= A short demonstration =
+
+For example there is one triple in your knowledge base
+
+{{{
+<http://foo.bar.de/> rdfs:label "Foo loves Bar !"
+}}}
+
+or maybe its skos:label or skos:prefLabel... and you want to display that resource in the GUI. In OntoWiki we have the principle to hide URIs from the user where possible (they might think its a technical detail and would be scared :). So we made a little helper for getting labels. It hides a SPARQL-Query, knows the most used label-properties, is configurable and you can just push URIs in and get labels out. If you first add all URIs you want, and then request their labels, the Query gets them all at once which is most efficient.
+
+*0. Create an instance of TitleHelper.* This code its from a Controller, so please change it if you need access to the model from another place:
+{{{
+$titleHelper = new OntoWiki_Model_TitleHelper($this->_owApp->selectedModel);
+}}}
+
+*1. Add your resources to the titleHelper-list.*
+
+  * If you have only one URI so use 
+{{{
+$titleHelper->addResource( "http://foo.bar.de/" );
+}}}
+
+  * If you have more, so use
+{{{
+$titleHelper->addResources ( array ( "http://foo.bar.de/", "http://we.love.base/" ) );
+}}}
+ 
+
+*2. Getting your title you need the getTitle function:*
+{{{ 
+$foobar = $titleHelper->getTitle( "http://foo.bar.de" );
+}}}
+
+Now in $foobar is the wanted title. :)
