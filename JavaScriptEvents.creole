@@ -1,7 +1,3 @@
-
-=Overview=
-
-=Usage=
   * `data` contains objects associated with the event
   * Register for an element-specific event: `$(<selector>).bind(<event_name>, function(e, data) {/* handler */});`.
   * Register for a global event: `$('body').bind(<event_name>, function(e, data) {/* handler */});`
