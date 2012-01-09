@@ -1,6 +1,6 @@
 ## Installation for Users 
 
-As a non developer there a three ways to get the OntoWiki source files.
+As a non-developer there a three ways to get the OntoWiki source files. Developers look [here](SetupDevelopers).
 
 ### via archive
 if you want a stable OntoWiki get our latest official release
