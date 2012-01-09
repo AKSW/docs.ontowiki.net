@@ -4,11 +4,11 @@ After install (see [[Guide|GetOntowikiUsers]]), you will have to follow these st
 In order to install OntoWiki you need:
 * PHP 5.2
 * [[mod_rewrite|http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html]] allowed in target directory (optional, used for nice URIs and LinkedData features)
-  * {{{a2enmod rewrite}}}
+** {{{a2enmod rewrite}}}
 * [[.htaccess|http://httpd.apache.org/docs/2.0/configuring.html#htaccess]] allowed in target directory
 * One of these:
-  * An installed [[MySQL Server|http://mysql.com]] or Virtuoso Server, a created database on that server and an account which is able to read and write that database or
-  * An Install [[Virtuoso Server|http://www.openlinksw.com/virtuoso/]] (see UsingOntoWikiWithVirtuoso for more information about OntoWiki and Virtuoso) 
+** An installed [[MySQL Server|http://mysql.com]] or Virtuoso Server, a created database on that server and an account which is able to read and write that database or
+** An Install [[Virtuoso Server|http://www.openlinksw.com/virtuoso/]] (see UsingOntoWikiWithVirtuoso for more information about OntoWiki and Virtuoso) 
 * And of course the OntoWiki files. See [[GetOntowikiUsers]]
 
 =Installation=
