@@ -1,0 +1,26 @@
+Linked Data is a a method of exposing, sharing, and connecting data via dereferenceable URIs on the Web.
+
+OntoWiki is a Linked Data server as well as a linked data client.
+
+= What do I need to publish Linked Data with OntoWiki? =
+
+In order to publish you data as Linked Data, you have to follow these steps:
+
+== Activate the linked data plugin ==
+it is default activated ...
+
+== Make sure your URIs are part of the OntoWiki installation namespace==
+If your OntoWiki is under http://example.org/OntoWiki/ you shoud create a Knowledge Base http://example.org/OntoWiki/YourData/ or similar and create your resources in it like http://example.org/OntoWiki/YourData/Person/Norm .
+
+== Make sure your Knowledge Base is readable by the Anonymous User ==
+Login as an Admin, search for Users in the System Config and and add your Knowledge Base to the property `readable model` for the Anonymous User.
+
+It is also possible to restrict the access to your Linked data but this means that linked data clients need to authenticate with HTTP auth.
+
+= How can I test my Linked Data URIs? =
+
+On linux you can simply use this shell command with your URL: `wget -q -O - --header="Accept: application/rdf+xml" YOURURL` and look for the incomming RDF/XML.
+
+If you want to try it with FOAF+SSL look there: http://www.assembla.com/wiki/show/foaf/HOWTO_Use_FOAF_SSL_from_a_command_line
+
+Another option is to use the public Linked Data validator service [[http://validator.linkeddata.org Vapour]]
