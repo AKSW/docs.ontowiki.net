@@ -8,7 +8,7 @@ First, all statements and commands are tested on a Ubuntu, so please use the equ
 
 There are 2 ways for install it. First, you can use the following command:
 
-{{{ 
+{{{
 sudo apt-get install swap-cwm 
 }}}
 
@@ -16,13 +16,13 @@ Otherwise, go to http://www.w3.org/2000/10/swap/doc/cwm.html#dev and download it
 
 _After minutes of waiting ..._
 
-{{{ 
+{{{
 cd /home/Foo/opt/2000/10/swap 
 }}}
 
 In the swap folder you find many files, one of them named "README".
 
-{{{ 
+{{{
 {$INSERT YOUR FAVOURIT EDITOR$} README 
 }}}
 
@@ -44,7 +44,7 @@ Now you should be able to use the "cwm" and "owcli" in the console. *Did you kno
 
 You write n3-code and you will import it into Ontowiki. For example your n3-File named *FOOBAR.n3*. Switch into his folder.
 
-{{{ 
+{{{
 cd /path/to/FOOBAR.n3 
 }}}
 
@@ -66,7 +66,7 @@ For using it, create a new file named *Makefile* and save the code above.
 
 Execute in the console:
 
-{{{ 
+{{{
 make install 
 }}}
 
@@ -78,7 +78,7 @@ Now go into your OntoWiki. Left you should see the new model *FooBar*. As you ca
 
   * If you getting errors like the following check your root-access. With phpMyAdmin open "Privileges" and set for *root@localhost* the same password as you set in ~/.owcli and ontowiki config.ini!
 
-{{{ 
+{{{
 JSONRPC Error -32000: Model <http://ns.foo.bar/> is not available and therefore not removable.
 JSONRPC Error -32000: Failed creating the model. Action not allowed!
 }}} 
