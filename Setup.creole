@@ -1,4 +1,4 @@
-After install from [[archive|https://github.com/AKSW/OntoWiki/downloads]] or [[repository|http://github.com/AKSW/OntoWiki.git]] you will have to follow these steps to get OntoWiki up and running.
+After install (see [[Guide|GetOntowikiUsers]] you will have to follow these steps to get OntoWiki up and running.
 
 = Requirements =
 In order to install OntoWiki you need:
@@ -14,7 +14,7 @@ In order to install OntoWiki you need:
 This installation guide is for MySQL Backend users. If you want to use OntoWiki with Apache and Virtuoso or within Virtuoso as a VAD Package please have a look at our Virtuoso Setup Guide:
 [[UsingOntoWikiWithVirtuoso]]
 
-If you want to use OntoWiki with MySQL, here we go ... we assume, you have copied the content of the release archive to your webdirectory.
+If you want to use OntoWiki with MySQL, here we go ... we assume, you have a copy of OntoWiki at your webdirectory.
 
  # create a mysql user for ontowiki (e.g. ontowiki)
  # create a mysql database which is writable for the ontowiki user
@@ -39,6 +39,6 @@ NOTE: If your XAMPP comes with its own Zend copy, you need to remove the directo
 
 =After Installation / First Steps=
 
-Now you have a fresh new OntoWiki installation. If you are new to OntoWiki, maybe it is interesting for you to visit out first steps documentation: [[http://ontowiki.net/Projects/OntoWiki/FirstSteps]].
+Now you have a fresh new OntoWiki installation. If you are new to OntoWiki, maybe it is interesting for you to visit out first steps documentation: [[http://ontowiki.net/Projects/OntoWiki/FirstSteps]] [[Getting-Started---Users]].
 
 In case you need further help or want to communicate with other users and the developers, feel free use the OntoWiki User Mailinglist at Google Groups: [[http://groups.google.com/group/ontowiki-user]].
