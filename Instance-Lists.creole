@@ -9,7 +9,8 @@ The core component is the class [[OntoWiki_Model_Instances|https://github.com/AK
 * configure filters (which entities should be shown)
 * configure paging (limit and offset) 
 
-Displaying such a instance list in a [[Zend-View|http://framework.zend.com/manual/en/zend.view.introduction.html]] is done via a [[ActionHelper|http://framework.zend.com/manual/en/zend.controller.actionhelpers.html]] called [[OntoWiki_Controller_ActionHelper_List|https://github.com/AKSW/OntoWiki/blob/develop/application/classes/OntoWiki/Controller/ActionHelper/List.php]]. When you write a controller that wants to display a list, you instantiate a instances-object, get the action helper from the framework, and pass it the object. The ActionHelper then handles:
+Displaying such a instance list in a [[Zend-View|http://framework.zend.com/manual/en/zend.view.introduction.html]] is done via a [[ActionHelper|http://framework.zend.com/manual/en/zend.controller.actionhelpers.html]] called [[OntoWiki_Controller_ActionHelper_List|https://github.com/AKSW/OntoWiki/blob/develop/application/classes/OntoWiki/Controller/ActionHelper/List.php]]. 
+When you write a controller that wants to display a list, you instantiate a instances-object, get the action helper from the framework, and pass it the object. The ActionHelper then handles:
  * appending a customizable template that renders the instance list to a zend view
  * management of multiple lists in a user session
 
@@ -53,12 +54,12 @@ if you want to use a custom template, you can pass a additional parameter to the
  * listName (the name of the list)
  * start (the offset)
 
-within that custom template you may want to iterate over the instanceInfo array and get the property values from instanceData. the display of a instance could be outsourced to a additional template. the default templates have this separation and are called [[list_std_main|https://github.com/AKSW/OntoWiki/blob/develop/application/views/templates/partials/list_std_main.phtml?r=Feature-ExtensionUnification]] and [[list_std_element|https://github.com/AKSW/OntoWiki/blob/develop/application/views/templates/partials/list_std_element.phtml?r=Feature-ExtensionUnification]. you can have a look there to get more insight.
+within that custom template you may want to iterate over the instanceInfo array and get the property values from instanceData. the display of a instance could be outsourced to a additional template. the default templates have this separation and are called [[list_std_main|https://github.com/AKSW/OntoWiki/blob/develop/application/views/templates/partials/list_std_main.phtml?r=Feature-ExtensionUnification]] and [[list_std_element|https://github.com/AKSW/OntoWiki/blob/develop/application/views/templates/partials/list_std_element.phtml?r=Feature-ExtensionUnification]]. you can have a look there to get more insight.
 
 to add the default modules ("show properties" and "filter") you can add the list-context: 
 {{{
 $this->addModuleContext('main.window.list');
-}}} 
+}}}
 
 the instancs class is a pretty complex thing and slightly overloaded with methods. the most important are these that modify the list (retrieval is mostly done for your):
  * string addTypeFilter(string $classUri, string $id = null, array $options = array())
@@ -92,3 +93,94 @@ the list is currently used in
  * the ExconfController (exploreRepoAction - show extensions in the repository - nice example of a remote query)
 
 you can have a look there to sneak good code
+
+=HTTP API=
+So how is Instance List GUI working; how is a click on a button like "next page" or "filter by" handeled technically. Of course by HTTP GET and POST, but not by a simple controller.
+There is a Zend-Controller-Plugin named **ListSetupHelper** - that is registered as a plugin to _every_ other controller and listens to specific GET parameters. Thus the manipulation of the selected instances is possible in every controller e.g. the map controller filters the instances by location...
+the **ListSetupHelper** reacts to these GET paramters by managing a **OntoWiki_Model_Instances** object, that is stored in the **Session**. It calls the corresponding methods (like addShownProperty(...)).
+the *instancesAction* has only reading access and displays the result of the query that is handled inside the *OntoWiki_Model_Instances* object. Other Controllers e.g. the MapController or the SourceController can now get the currently selected resources (with all applied filters etc.) and do stuff with them (e.g. display them in other perspectives).
+
+Before this reengineering, the query only was capable of selecting the instances of _one rdfs:class. Now the class-filter is just a specific filter. If there is no filter applied the query selects **all** resources in the model.
+
+==instance list config parameters==
+| **type** | **key** | **datatype** | **description** |
+| GET  | class | URI (String) | loads instances from specific owl:class with subclass and transitive closure  (often used in ow system see classbrowser module) - _deprecated_ (should be done in the *instancesconfig*-param)|
+| GET | search | String | searches subjects with the search string inside one of its literals (on various properties) _deprecated_ (should be done in the *instancesconfig*-param)|
+| POST (GET?) | instancesconfig | json array with filter and show properties directives (see below)||
+| GET/POST | savelist | String | maybe a parameter to overrride standard way of handling to configure individual persitency of list in ow system (eg. new, session, forget (which means do not store in session ) ) |
+| GET/POST | limit | positive int | set limit for paging (0 means none) |
+| GET/POST | offset | positive int | set offset for paging |
+| GET/POST | init | * | initializes a new list - if there are other config options passed these are applied on the new list. if this parameter is omitted, the passed options are applied to the existing list as additional filters etc.|
+
+the *instancesconfig* parameter is explained in in my thesis (Jonas Brekle: "Spezifikation und Implementierung einer SPARQL Query API für PHP sowie Integration in OntoWiki", 2010) and i will refer to an extract ([[here|http://filebin.ca/ygocsp/doc.pdf]])
+
+The instancesconfig-Parameter contains a JSON-encoded datastructure, that can contain multiple commands, regarding filters and shown Properties.
+
+It is an associative array with the keys „shownProperties“ and „filter“. Each of them is a array of config-objects.
+
+==shownProperties==
+The „shownProperties“-config-objects consist of a „uri“-field, an optional „label“-field (containing both strings), a „action“-field (containing either the keyword „add“ or „remove“) and a boolean „inverse“-field (indicating wether we want to add a inverse property or not).
+
+Example:
+{{{
+{
+    "shownProperties": [
+        {
+            "uri": "http://xmlns.com/foaf/0.1/name",
+            "label": "name",
+            "action": "add",
+            "inverse": false 
+        } 
+    ]
+}
+}}}
+
+
+Short Table:
+(top) object
+  * shownProperties (array of objects)
+    * every object has these keys:
+      * uri (property uri)
+      * label
+      * action ("add", "remove")
+      * inverse (true; false)
+
+==filter==
+
+The „filter“-field is more variable. There are various formats for different types of filter, that are declared with
+the mode-Parameter.
+
+===mode = box===
+Parameter:
+  * id
+  * property
+  * isInverse
+  * propertyLabel
+  * filter
+  * value1
+  * value2
+  * valuetype
+  * literaltype
+  * hidden
+  * negate
+
+Depending of the filter parameter, the following query-parts are added:
+  * filter = ’contains’: `?resourceUri <property> ?value. FILTER(REGEX("value1",?value)).`
+  * filter = ’equals’: `?resourceUri <property> <value1>`
+  * filter = ’bound’: `?resourceUri <property> ?value. FILTER(BOUND(?value))`
+  * filter = ’larger’: ` ?resourceUri <property> ?value. FILTER(?value > value1)`
+
+===mode = search===
+Parameter:
+  * searchText
+
+===mode = rdfsclass===
+Parameter:
+  * rdfsclass
+
+===mode = query====
+Parameter:
+  * query
+
+The changes to the query from the „box“-mode are not a simple template, but depend of the combination of the isInverse-Parameter, the filter-Parameter, the Type of the Value and the negate-Parameter. The „filter“-Parameter indicates the type of the filter (as shown in the last column) and can for example filter by equality of a property-value to a given value (there is also „between“). The negate-Parameter negates the condition:
+a „larger“ becomes „smaller“; a `REGEX(x,y)` becomes `!REGEX(x,y)` etc. The value type contains string-keywords „uri“, „literal“, „typed-literal“ (then literaltype is evaluated as a URI) or „language-tagged-literal“ (not implemented yet, but literaltyp will be evaluated as a language tag).
