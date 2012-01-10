@@ -36,3 +36,6 @@ li.minibutton a
 
 }
 }}}
+
+= CSS Classes=
+see http://ontowiki.net/Projects/OntoWiki/DefaultStylesheet
