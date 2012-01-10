@@ -28,4 +28,4 @@ We recommend to re-configure some php runtime variables for OntoWiki. Please hav
 
 As further readings, please visit the following wiki pages:
   * [[Extensions]]
-  * [[CodingStandard]]
+  * [[Coding-Standard]]
