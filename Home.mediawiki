@@ -3,12 +3,11 @@ Welcome to the OntoWiki users and developers wiki
 = Users =
 If this is your first time with OntoWiki you might want to read the following pages:
 # [[Deployment-Recommendations|Our recommendations for an OntoWiki deployment]]
-# [[InstallFromArchive Installation from an Archive]]
 # [[Getting-Started---Users|Getting Started]]
 
 = Developers =
 If have some experience with OntoWiki and PHP, JavaScript or RDF you might want to help us improving this software. Interesting pages for you are:
-* [[InstallFromGit|Installation from Git]]
+* [[SetupDevelopers]]
 * [[Extensions|Starting the Development of a new Extension]]
 * [[PHPUnit|Setup a Test Environment]]
 
