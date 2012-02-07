@@ -10,10 +10,8 @@ if you want a stable OntoWiki get our latest official release
 If you are a advanced user of OntoWiki and/or need the latest version, you can checkout our repo:
 
 * clone the repository into your web folder (e.g. `/var/www/ontowiki`)
-  * when you want to push (upload) changes you made back to us, you need to clone with ssh:
-  * `git clone git@github.com:AKSW/OntoWiki.git`
-  * if you want a read only copy you can do a
-  * `git clone git://github.com/AKSW/OntoWiki.git`
+  * `git clone https://github.com/AKSW/OntoWiki.git`
+* go to the newly created directory and run `make deploy`
 
 ### via Debian package
 
