@@ -4,7 +4,8 @@ As a non-developer there a three ways to get the OntoWiki source files. Develope
 
 ### via archive
 if you want a stable OntoWiki get our latest official release
-[[archive|https://github.com/AKSW/OntoWiki/downloads]]
+[[archive|https://github.com/AKSW/OntoWiki/downloads]] and unpack it in your web directory.
+Then copy `config.ini-dist` to `config.ini` and setup OntoWiki.
 
 ### via github repository
 If you are a advanced user of OntoWiki and/or need the latest version, you can checkout our repo:
@@ -12,12 +13,14 @@ If you are a advanced user of OntoWiki and/or need the latest version, you can c
 * clone the repository into your web folder (e.g. `/var/www/ontowiki`)
   * `git clone https://github.com/AKSW/OntoWiki.git`
 * go to the newly created directory and run `make deploy`
+  * This will create some directories for log/cache/ ..., fetch Zend as well clone Erfurt and RDFauthor into `./libraries`
+* copy `config.ini-dist` to `config.ini` and setup OntoWiki.
 
 ### via Debian package
 
 * install the LOD2 repository by downloading and adding the [lod2repository
   package](http://stack.lod2.eu/lod2repository_current_all.deb)
-* update you package database (`sudo apt-get update`)
+* update your package database (`sudo apt-get update`)
 * install `ontowiki-mysql` or `ontowiki-virtuoso` (`sudo apt-get ontowiki-virtuoso`)
 * open your browser, go to [your ontowiki URL](http://localhost/ontowiki/), login as `Admin` without pass and change the password
 
