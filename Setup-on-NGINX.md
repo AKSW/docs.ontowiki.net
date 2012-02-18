@@ -54,3 +54,6 @@ The following configuration usually (on my Linux Mint 12) should be placed in a 
     }
 
 OntoWiki will be available through your browser at `http://localhost:8080`.
+
+## Known Problems
+When I open an instance with the small [+] button I get the welcome page of OntoWiki as inline view.
