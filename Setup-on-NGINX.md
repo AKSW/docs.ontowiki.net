@@ -69,5 +69,5 @@ OntoWiki will be available through your browser at `http://localhost:8080`.
 _none_
 
 ## Further Information
-http://wiki.nginx.org/Zend_Framework
-http://www.linux-web-development.de/2010/11/03/zend-framework-mit-nginx (German)
+* http://wiki.nginx.org/Zend_Framework
+* http://www.linux-web-development.de/2010/11/03/zend-framework-mit-nginx (German)
