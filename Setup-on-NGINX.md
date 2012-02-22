@@ -19,7 +19,7 @@ The following configuration usually (on my Linux Mint 12) should be placed in a 
     #
     # Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
     ##
-
+    
     server {
         listen   8080; ## listen for ipv4; this line is default and implied
         #listen   [::]:80 default ipv6only=on; ## listen for ipv6
@@ -29,34 +29,45 @@ The following configuration usually (on my Linux Mint 12) should be placed in a 
         
         # Make site accessible from http://localhost/
         server_name localhost;
+    
+        # Zugriff auf sensible Dateien verwehren
+        location ~ (\.inc\.php|\.tpl|\.sql|\.tpl\.php|\.db)$ {
+            deny all;
+        }
+    
+        # deny access to .htaccess files, if Apache's document root
+        # concurs with nginx's one
+        #
+        location ~ /\.ht {
+            deny all;
+        }
         
         location / {
             # First attempt to serve request as file, then
             # as directory, then fall back to index.html
             try_files $uri $uri/ /index.php;
         }
-        
+    
+    
+        # Die eigentliche RewriteRule für das Zend Framework
+        if (!-e $request_filename) {
+            rewrite ^.*$ /index.php last;
+        }    
+    
         # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
         #
         location ~ \.php(.*)$ {
             fastcgi_pass 127.0.0.1:9000;
             fastcgi_index index.php;
-            fastcgi_param   SCRIPT_FILENAME /home/natanael/public_html/ontowiki$fastcgi_script_name;
             include fastcgi_params;
         }
-        
-        # deny access to .htaccess files, if Apache's document root
-        # concurs with nginx's one
-        #
-        #location ~ /\.ht {
-        #	deny all;
-        #}
     }
 
 OntoWiki will be available through your browser at `http://localhost:8080`.
 
 ## Known Problems
-When I open an instance with the small [+] button I get the welcome page of OntoWiki as inline view.
+_none_
 
 ## Further Information
 http://wiki.nginx.org/Zend_Framework
+http://www.linux-web-development.de/2010/11/03/zend-framework-mit-nginx (German)
