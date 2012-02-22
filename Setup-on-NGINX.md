@@ -57,3 +57,6 @@ OntoWiki will be available through your browser at `http://localhost:8080`.
 
 ## Known Problems
 When I open an instance with the small [+] button I get the welcome page of OntoWiki as inline view.
+
+## Further Information
+http://wiki.nginx.org/Zend_Framework
