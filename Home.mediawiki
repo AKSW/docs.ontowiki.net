@@ -13,6 +13,6 @@ If have some experience with OntoWiki and PHP, JavaScript or RDF you might want 
 
 This wiki documents installation and development details of OntoWiki.
 
-There is also an [[http://docs.ontowiki.net/fw/|API-Documentation]] available.
+There is also an API-Documentation available [http://docs.ontowiki.net/fw/].
 
-Or go to the [[_pages|list of wiki pages]].
+Or go to the list of wiki pages (see the "Pages" tab above).
