@@ -21,6 +21,8 @@ make cs-install
 
 This will install the CodeSniffer and enables automatically the pre-commit code checking.
 
+Note: If you've installed PHP_CodeSniffer separately make sure to have a current version (>=1.3.x , x might be 2).
+
 = Code Checking =
 == pre-commit ==
 For automatically checking your coding style before every commit you can run the following commands in your Ontowiki/Erfurt directory.
