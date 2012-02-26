@@ -8,8 +8,9 @@ If this is your first time with OntoWiki you might want to read the following pa
 = Developers =
 If have some experience with OntoWiki and PHP, JavaScript or RDF you might want to help us improving this software. Interesting pages for you are:
 * [[SetupDevelopers]]
-* [[Extensions|Starting the Development of a new Extension]]
 * [[PHPUnit|Setup a Test Environment]]
+* [[Extensions|Starting the Development of a new Extension]]
+* [[CollectionHelpfulSparqlQueries|Collection of helpful SPARQL queries]]
 
 This wiki documents installation and development details of OntoWiki.
 
