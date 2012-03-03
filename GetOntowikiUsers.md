@@ -28,4 +28,4 @@ If you are a advanced user of OntoWiki and/or need the latest version, you can c
   package](http://stack.lod2.eu/lod2repository_current_all.deb)
 * update your package database (`sudo apt-get update`)
 * install `ontowiki-mysql` or `ontowiki-virtuoso` (`sudo apt-get ontowiki-virtuoso`)
-* open your browser, go to [your ontowiki URL](http://localhost/ontowiki/), login as `Admin` without pass and change the password
+* open your browser, go to [http://localhost/ontowiki/](http://localhost/ontowiki/), login as `Admin` without pass and change the password
