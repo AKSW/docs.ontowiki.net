@@ -1,11 +1,13 @@
 ## Installation for Users 
 
-As a non-developer there a three ways to get the OntoWiki source files. Developers look [here](SetupDevelopers).
+As a non-developer there a three ways to install OntoWiki (Developers look [here](SetupDevelopers)).
+For Windows user we suggest to install via archive
 
 ### via archive
-if you want a stable OntoWiki get our latest official release
-[[archive|https://github.com/AKSW/OntoWiki/downloads]] and unpack it in your web directory.
-Then copy `config.ini-dist` to `config.ini` and setup OntoWiki.
+if you want the latest official release of OntoWiki, download the
+[7zip](http://www.7-zip.org/download.html)-packed
+[[archive from github|https://github.com/AKSW/OntoWiki/downloads]] and unpack it in your web directory.
+Then copy `config.ini-dist` to `config.ini` and [[setup OntoWiki|Setup]].
 
 ### via github repository
 If you are a advanced user of OntoWiki and/or need the latest version, you can checkout our repo:
