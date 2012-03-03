@@ -1,7 +1,8 @@
 ## Installation for Users 
 
 As a non-developer there a three ways to install OntoWiki (Developers look [here](SetupDevelopers)).
-For Windows user we suggest to install via archive
+
+_For Windows user we suggest to install via an archive._
 
 ### via archive
 if you want the latest official release of OntoWiki, download the
