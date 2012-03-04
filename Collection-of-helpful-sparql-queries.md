@@ -5,12 +5,13 @@ You can use these queries in combination with our sparqlQuery method to question
 ## Get all classes 
 
 ```
-SELECT ?uri ?label
+SELECT DISTINCT ?class
 WHERE {
-    ?uri ?p1 <http://www.w3.org/2002/07/owl#Class>.
-    ?uri <http://www.w3.org/2000/01/rdf-schema#label> ?label .
-    FILTER (langmatches(lang(?label), "en"))
+    { ?class <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>. }
+    UNION
+    { ?class <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class>. }
 }
+
 ```
 
-Gives you a list of all classes in your ontology.
+Gives you a list of all classes (RDFS and OWL) in your ontology. Each entry contains the URI of the class. 
