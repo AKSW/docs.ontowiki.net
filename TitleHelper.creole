@@ -40,7 +40,6 @@ When you have multiple Resources, should not to something like:
 {{{
 foreach($uris as $uri){
   $titleHelper->addResource($uri);
-foreach($uris as $uri){
   echo $titleHelper->getTitle($uri);
 }
 }}}
