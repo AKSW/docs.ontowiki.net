@@ -15,7 +15,7 @@ Develop the source files [Extensions HowTo], test your extensions locally, packa
 optional: 
 * versions (older versions with each a zip), 
 * extensions-internal config (look at the example - we came up with a rather complex way to encode multidimensional config arrays)
-if you already have a default.ini file you can convert it with the file scripts/extensions-ini2n3.php (which takes a extension folder as an argument)
+optional: if you already have a default.ini file you can convert it with the file application/scripts/extensions-ini2n3.php (which takes a extension folder as an argument) (the script is currently only in the feature/semantic-extensions branch). using this script is especially usefull when you have many config options.
 
 === Publish that description document as Linked Data on the web ===
 protip: if you use GitHub, and you use the URL of the DOAP file as the URI of your extension (use that URI within the DOAP file), you will get pseudo-linked-data for free. for example the URI of the "site" extensions is https://github.com/AKSW/site.ontowiki/raw/master/doap.n3#site (notice the "raw", which delivers the file and not a html view on it)
