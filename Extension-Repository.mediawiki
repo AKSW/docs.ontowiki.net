@@ -25,5 +25,5 @@ Either you enter this URI in the form on http://extensions.ontowiki.net and hit 
 
 or (much more awesome) you "ping" http://extensions.ontowiki.net with a [http://aksw.org/Projects/SemanticPingBack semantic ping] by stating a triple 
  <yourExtensionURI> <http://ns.ontowiki.net/SysOnt/ExtensionConfig/registeredAt> <http://extensions.ontowiki.net>
-in your semantic pingbackenabled application (e.g. OntoWiki)
+in your semantic pingback-enabled application (e.g. OntoWiki)
 The Repository will then retrieve your DOAP file and update its index. Your extensions becomes visible to millions of OntoWiki instances within seconds.
