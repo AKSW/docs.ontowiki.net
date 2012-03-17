@@ -19,5 +19,11 @@ optional: if you already have a default.ini file you can convert it with the fil
 
 === Publish that description document as Linked Data on the web ===
 protip: if you use GitHub, and you use the URL of the DOAP file as the URI of your extension (use that URI within the DOAP file), you will get pseudo-linked-data for free. for example the URI of the "site" extensions is https://github.com/AKSW/site.ontowiki/raw/master/doap.n3#site (notice the "raw", which delivers the file and not a html view on it)
+
 === Ping this registry to integrate your extension meta data here ===
-Either you enter this URI in the form and hit submit or (much more awesome) you "ping" http://extensions.ontowiki.net with a [http://aksw.org/Projects/SemanticPingBack semantic ping]. The Repository will then retrieve your DOAP file and update its index. Your extensions becomes visible to millions of OntoWiki instances within seconds.
+Either you enter this URI in the form on http://extensions.ontowiki.net and hit submit 
+
+or (much more awesome) you "ping" http://extensions.ontowiki.net with a [http://aksw.org/Projects/SemanticPingBack semantic ping] by stating a triple 
+ <yourExtensionURI> <http://ns.ontowiki.net/SysOnt/ExtensionConfig/registeredAt> <http://extensions.ontowiki.net>
+in your semantic pingbackenabled application (e.g. OntoWiki)
+The Repository will then retrieve your DOAP file and update its index. Your extensions becomes visible to millions of OntoWiki instances within seconds.
