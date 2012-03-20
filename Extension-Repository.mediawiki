@@ -1,6 +1,6 @@
 We got a centralized Repository for extensions. Every OntoWiki can browse the available extensions and provides a install mechanism. http://[your-ow.com]/exconf/explorerepo
 
-The repository is available to register new extensions [http://extensions.ontowiki.net here]
+You can register new extensions [http://extensions.ontowiki.net here]
 As the [http://extensions.ontowiki.net/Help.html short documentation] says there are four steps, which we will explain a bit deeper here.
 
 === Develop your OntoWiki extension and release it somewhere ===
