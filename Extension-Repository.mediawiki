@@ -1,6 +1,8 @@
-We got a centralized Repository for extensions. Every OntoWiki can browse the available extensions and provides a install mechanism. http://[your-ow.com]/exconf/explorerepo
+We got a centralized Repository for extensions. Every OntoWiki can browse the available extensions and provides a install mechanism: in the [Extension-Configurator] or directly at http://<your-ontowiki>/exconf/explorerepo
 
-You can register new extensions [http://extensions.ontowiki.net here]
+The Repository is quite unique. It is basically a SPARQL-endpoint, which contains a repo model which imports multiple extension-models. A extension model contains DOAP data. The client within the Extension Configurator queries this model for all doap:Projects (which are extensions in our case).
+
+You can register new extensions [http://extensions.ontowiki.net here]. Registering a new or updated extension with our repo is basically just a import of its DOAP description into the repo model.
 As the [http://extensions.ontowiki.net/Help.html short documentation] says there are four steps, which we will explain a bit deeper here.
 
 === Develop your OntoWiki extension and release it somewhere ===
