@@ -2,7 +2,8 @@ In OntoWiki 0.9.6 we introduced a graphical backend to configure extensions. The
 
 When you are logged in as Admin or SuperAdmin, you will notice the "Configure Extensions" menu item in the Extras menu:
 ![the configurator](https://github.com/AKSW/OntoWiki/wiki/images/exconf-open.png)
-Alternatively you can open http://<your-ontowiki>/exconf
+
+Alternatively you can open http://your-ontowiki/exconf
 you will see a overview of which extension are installed and which are activated:
 ![the configurator](https://github.com/AKSW/OntoWiki/wiki/images/exconf-list.png)
 by clicking on the name or the edit button, you will see the detailed config of that extension:
