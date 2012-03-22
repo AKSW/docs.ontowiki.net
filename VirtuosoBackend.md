@@ -39,7 +39,8 @@ Compiling Virtuoso requires the following build tools be installed:
 [make 3.79.1](http://www.gnu.org/software/make/) and
 [OpenSSL 0.9.7](http://www.openssl.org/)
 
-**Debian/Ubuntu**: apt-get install autoconf automake libtool flex bison gperf gawk m4 make openssl libssl-dev 
+**Debian/Ubuntu**: 
+`sudo apt-get install autoconf automake libtool flex bison gperf gawk m4 make openssl libssl-dev`
 
 Having these tools, compiling and installing Virtuoso is just a matter of configure/make/make install.
 
