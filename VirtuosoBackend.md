@@ -25,7 +25,7 @@ Debian/Ubuntu Tipp:  configuring with the libreadline library allows for better 
 
     sudo ./configure --prefix=/opt/virtuoso-opensource-version --with-readline=/usr/lib/libreadline.so
 
-**Note for Debian/Ubuntu:** You can download a deb-package here: http://docs.ontowiki.net/virtuoso/ (nethertheless, you have to configure the DirsAllowed variable and configure ODBC). Or get the official debian package from Debian:squeeze repository. See: http://packages.debian.org/squeeze/virtuoso-opensource
+Nethertheless, you have to configure the DirsAllowed variable and configure ODBC. Or get the official debian package from Debian:squeeze repository. See: http://packages.debian.org/squeeze/virtuoso-opensource
 
 Compiling Virtuoso requires the following build tools be installed:
 [autoconf 2.57](http://www.gnu.org/software/autoconf/),
@@ -42,6 +42,12 @@ Compiling Virtuoso requires the following build tools be installed:
 **Debian/Ubuntu**: apt-get install autoconf automake libtool flex bison gperf gawk m4 make openssl libssl-dev 
 
 Having these tools, compiling and installing Virtuoso is just a matter of configure/make/make install.
+
+You can skip section "Install Virtuoso" and go directly to **"Configuring Virtuoso"**!
+
+## Install Virtuoso
+
+**Only read further if you dont read section "Compiling Virtuoso"!** There is a good installation manual on Virtuoso's page: http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUbuntuNotes
 
 ## Configuring Virtuoso
 
