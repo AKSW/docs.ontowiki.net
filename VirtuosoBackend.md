@@ -51,6 +51,11 @@ You can skip section "Install Virtuoso" and go directly to **"Configuring Virtuo
 
 ## Configuring Virtuoso
 
+In some cases you have to manually start the Virtuoso server.
+
+In **Ubuntu** execute (Maybe you have to replace the 6.1 with the current version)
+`sudo service virtuoso-opensource-6.1 start`
+
 Virtuoso  keeps all the files for a database in a folder along with a configuration file. An example configuration file which we will use as a base for our configuration is provided with the default database. To create a Virtuoso database for OntoWiki perform the following steps:
 
 * Create a folder named "ontowiki" under `<prefix>/var/lib/virtuoso/`.
