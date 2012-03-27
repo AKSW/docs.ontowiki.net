@@ -7,3 +7,6 @@
 * copy `config.ini-dist` to `config.ini` and modify it according to your store
 * open your browser, go to your ontowiki URL, login as `Admin` without pass and change the password
 * make sure you create your own feature branch
+* maybe turn off the query and object cache in you `config.ini`:
+  * `cache.query.enable = false`
+  * `cache.enable = false`
