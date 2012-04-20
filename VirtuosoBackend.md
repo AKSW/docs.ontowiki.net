@@ -69,11 +69,13 @@ Database connection to Virtuoso happens through ODBC. ODBC is configured by two 
 On Linux systems they can be found under `/etc`, on Mac OS X systems under `/Library/ODBC`.
 In case they don't exist, create them.
 
-* Add the following lines to the odbcinst.ini file:
+Add the following lines to the odbcinst.ini file:
+
     [virtuoso-odbc]
     Driver = <prefix>/lib/virtodbc.so
 
-* Add the following lines to the odbc.ini file:
+Add the following lines to the odbc.ini file:
+
     [ODBC Data Sources]
     VOS = Virtuoso
     
