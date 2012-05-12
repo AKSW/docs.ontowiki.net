@@ -27,6 +27,6 @@ If you want to use OntoWiki with MySQL, here we go ... we assume, you have a cop
 
 =After Installation / First Steps=
 
-Now you have a fresh new OntoWiki installation. If you are new to OntoWiki, maybe it is interesting for you to visit out first steps documentation: [[http://ontowiki.net/Projects/OntoWiki/FirstSteps]] [[Getting-Started-Users]].
+Now you have a fresh new OntoWiki installation. If you are new to OntoWiki, maybe it is interesting for you to visit out first steps documentation: [[Getting-Started-Users]].
 
 In case you need further help or want to communicate with other users and the developers, feel free use the OntoWiki User Mailinglist at Google Groups: [[http://groups.google.com/group/ontowiki-user]].
