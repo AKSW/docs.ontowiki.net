@@ -14,7 +14,7 @@ Most developers are using Apache but there is also a [[setup guide for NGINX|Set
 Virtuoso Opensource Version 6.1.2 or higher, more details for installation [[here|VirtuosoBackend]]. MySQL backend is also posible but slower.
 
 == Browser ==
-Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [[here|BrowserCompatibility]]
+Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [[here|Browser-Compatibility]]
 
 == OntoWiki Version ==
 We recommend the installation of a current snapshot release or directly from the repository.
