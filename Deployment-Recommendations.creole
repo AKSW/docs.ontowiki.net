@@ -2,16 +2,16 @@ This page is a recommendation, which OS, Backend, ... you should currently choos
 
 = Details =
 == Operating System ==
-Ubuntu (latest release), a install docu for an older version is available [[here|Install_OntoWiki_on_fresh_Ubuntu_1004_using_Virtuoso]]
+Ubuntu (latest release), any other linux distro should be fine too.
 
 == Webserver ==
-Most of us are using Apache but there is also a [[setup guide for NGINX|Setup-on-NGINX]].
+Most developers are using Apache but there is also a [[setup guide for NGINX|Setup-on-NGINX]]. lighttpd should be possible too, but uses a different rewrite rule language and we dont have ported ours yet.
 
 == PHP ==
-5.3 (5.2 is also good), more details for PHP configuration [[here|php.ini-recommendations]]
+5.2 or higher, more details for PHP configuration [[here|php.ini-recommendations]]
 
 == Backend ==
-Virtuoso Opensource Version 6.1.2, more details for installation [[here|UsingOntoWikiWithVirtuoso]]
+Virtuoso Opensource Version 6.1.2 or higher, more details for installation [[here|UsingOntoWikiWithVirtuoso]]
 
 == Browser ==
 Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [[here|BrowserCompatibility]]
