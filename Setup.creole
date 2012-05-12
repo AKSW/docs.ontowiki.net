@@ -11,7 +11,7 @@ In order to install OntoWiki you need:
 ** An Install [[Virtuoso Server|http://www.openlinksw.com/virtuoso/]] (see UsingOntoWikiWithVirtuoso for more information about OntoWiki and Virtuoso) 
 * And of course the OntoWiki files. See [[GetOntowikiUsers]]
 
-to setup this LAMP environment you can for example use this [[http://www.howtoforge.com/installing-apache2-with-php5-and-mysql-support-on-ubuntu-12.04-lts-lamp|guide]]
+to setup this LAMP environment you can for example use this [[guide|http://www.howtoforge.com/installing-apache2-with-php5-and-mysql-support-on-ubuntu-12.04-lts-lamp]]
 
 =Installation=
 This installation guide is for MySQL Backend users. If you want to use OntoWiki with Apache and Virtuoso or within Virtuoso as a VAD Package please have a look at our Virtuoso Setup Guide:
