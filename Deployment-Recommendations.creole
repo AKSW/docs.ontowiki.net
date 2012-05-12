@@ -8,7 +8,7 @@ Ubuntu (latest release), a install docu for an older version is available [[here
 Most of us are using Apache but there is also a [[setup guide for NGINX|Setup-on-NGINX]].
 
 == PHP ==
-5.3 (5.2 is also good), more details for PHP configuration [[php.ini-recommendations|here]]
+5.3 (5.2 is also good), more details for PHP configuration [[here|php.ini-recommendations]]
 
 == Backend ==
 Virtuoso Opensource Version 6.1.2, more details for installation [[here|UsingOntoWikiWithVirtuoso]]
