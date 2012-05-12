@@ -2,7 +2,7 @@ After install (see [[Guide|GetOntowikiUsers]]), you will have to follow these st
 
 = Requirements =
 In order to install OntoWiki you need:
-* PHP 5.2
+* PHP 5.2 or higher
 * [[mod_rewrite|http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html]] allowed in target directory (optional, used for nice URIs and LinkedData features)
 ** {{{a2enmod rewrite}}}
 * [[.htaccess|http://httpd.apache.org/docs/2.0/configuring.html#htaccess]] allowed in target directory
@@ -11,32 +11,19 @@ In order to install OntoWiki you need:
 ** An Install [[Virtuoso Server|http://www.openlinksw.com/virtuoso/]] (see UsingOntoWikiWithVirtuoso for more information about OntoWiki and Virtuoso) 
 * And of course the OntoWiki files. See [[GetOntowikiUsers]]
 
+to setup this LAMP environment you can for example use this [[http://www.howtoforge.com/installing-apache2-with-php5-and-mysql-support-on-ubuntu-12.04-lts-lamp|guide]]
+
 =Installation=
 This installation guide is for MySQL Backend users. If you want to use OntoWiki with Apache and Virtuoso or within Virtuoso as a VAD Package please have a look at our Virtuoso Setup Guide:
-[[UsingOntoWikiWithVirtuoso]]
+[[VirtuosoBackend]]
 
 If you want to use OntoWiki with MySQL, here we go ... we assume, you have a copy of OntoWiki at your webdirectory.
 
- # create a mysql user for ontowiki (e.g. ontowiki)
+ # create a mysql user for ontowiki (e.g. called "ontowiki")
  # create a mysql database which is writable for the ontowiki user
  # copy the config.ini-dist to config.ini and change the database config: in most cases, you have to change only these values store.zenddb.dbname, store.zenddb.username, store.zenddb.password
- # Start your OntoWiki Installation in your browser. All tables are created automatically and hopefully, you will see a starting screen containing a news area and a login window.
-
-=Installation on XAMP Systems=
-
-This installation guide is for MySQL backend users on XAMPP.
-
-We assume, you have already configured XAMPP by calling http://localhost from you browser and that you have copied the contents of the release archive to your web directory (e.g. to C:\xampp\htdocs\ontowiki\).
-
-NOTE: If your XAMPP comes with its own Zend copy, you need to remove the directory libraries\Zend from your OntoWiki sources (you can download a OntoWiki version without Zend too)
-
- # From the XAMPP Control Panel start Admin for MySql (this is phpMyAdmin)
- # Login as root
- # Create a MySQL user for ontowiki (e. g. ontowiki).
- # Create a MySQL database which is writable for the OntoWiki user (e. g. ontowiki).
- # Leave phpMyAdmin.
- # Copy the config.ini-dist to config.ini and change the database config. In most cases, only need to change the following values: store.zenddb.dbname, store.zenddb.username, store.zenddb.password.
- # Start your OntoWiki installation in your browser (e.g. `http://localhost/<ontowiki>/`, where `<ontowiki>` is the name of the directory in htdocs). All tables will be created automatically. Hopefully, you will see a starting screen containing a news area and a login window.
+ # go to the ontowiki root dir, run 'make deploy' - sets up Zend etc.
+ # open your OntoWiki Installation in your browser. On first run, all tables are created automatically and hopefully, you will see a starting screen containing a news area and a login window.
 
 =After Installation / First Steps=
 
