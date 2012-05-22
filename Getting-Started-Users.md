@@ -38,7 +38,7 @@ A new OntoWiki has two installed Knowledge Bases:
 
 ## common work flows (todo)
 
-_Here should be an overview which work flows are exists. For everyone a picture and a leightweight description. Maybe let base workflows on concepts from Introduction_
+_Here should be an overview which work flows are exists. For everyone a picture and a lightweight description. Maybe let base workflows on concepts from Introduction_
 
 * create an empty model + a class + instances
 * view instance lists and single instances: _explain what you will see_ 
