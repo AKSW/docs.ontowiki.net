@@ -19,9 +19,7 @@ Go to your Ontowiki/Erfurt directory and run:
     make cs-install
 
 
-This will install the CodeSniffer (version 1.3.2) and enables automatically the pre-commit code checking.
-
-Note: If you've installed PHP_CodeSniffer separately make sure to have the version 1.3.1 or 1.3.2 (1.3.3 are not recommended, because this version have problems with the correct file selection).
+This will install the latest version of the CodeSniffer and enables automatically the pre-commit code checking.
 
 ## Code Checking ##
 ### pre-commit ###
