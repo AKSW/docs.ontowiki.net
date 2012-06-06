@@ -1,5 +1,16 @@
 This document describes the use of the PHPCodeSniffer to check if your coding style complies to the Ontowiki/Erfurt Coding standard.
 
+## Overview ##
+
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Code Checking](#codechecking)
+ * [pre-commit](#precommit)
+ * [Summary View](#summaryview)
+ * [CDetail Viewg](#detailview)
+* [Tips](#tips)
+
+<a id="requirements"></a>
 ## Requirements ##
 
 To use the PHPCodeSniffer you must install the PHP PEAR Framework
@@ -12,6 +23,7 @@ For **Ubuntu** execute:
 For other systems or more information go to
 [[PEAR Framework Installation|http://pear.php.net/manual/en/installation.php]]
 
+<a id="installation"></a>
 ## Installation ##
 
 Go to your Ontowiki/Erfurt directory and run:
@@ -21,7 +33,9 @@ Go to your Ontowiki/Erfurt directory and run:
 
 This will install the latest version of the CodeSniffer and enables automatically the pre-commit code checking.
 
+<a id="codechecking"></a>
 ## Code Checking ##
+<a id="precommit"></a>
 ### pre-commit ###
 For automatically checking your coding style before every commit you can run the following commands in your Ontowiki/Erfurt directory.
 
@@ -35,7 +49,9 @@ To turn off this functionality run:
 
 **Important**:
 The CodeSniffer only check the added or changed commit files, not the deleted files and not the whole Ontowiki-Source.
-## Summary View ##
+
+<a id="summaryview"></a>
+### Summary View ###
 If you make a commit and your code not match the coding standard you will get something like that:
 
     ./application/tests/CodeSniffer/pre-commit
@@ -60,7 +76,8 @@ If you make a commit and your code not match the coding standard you will get so
 
 This is a summary of all files, that have been checked. You can see how many files were checked and how many errors or warnings every file have caused.
 
-## Detail View ##
+<a id="detailview"></a>
+### Detail View ###
 To correct your code you need a more detailed view, so you can run:
 
     make cs-check-commit
@@ -85,6 +102,7 @@ So you have the possibility to correct your code and check it again.
 
 **Note:** If there are less than six files to check, you get the detail view automatically and not the summary view.
 
+<a id="tips"></a>
 ## Tips ##
 For **git**:
 
