@@ -7,7 +7,7 @@ This document describes the use of the PHPCodeSniffer to check if your coding st
 * [Code Checking](#codechecking)
  * [pre-commit](#precommit)
  * [Summary View](#summaryview)
- * [CDetail Viewg](#detailview)
+ * [Detail View](#detailview)
 * [Tips](#tips)
 
 <a id="requirements"></a>
