@@ -8,6 +8,7 @@ This document describes the use of the PHPCodeSniffer to check if your coding st
  * [pre-commit](#precommit)
  * [Summary View](#summaryview)
  * [Detail View](#detailview)
+ * [IDE Integration](#ideintegration)
 * [Tips](#tips)
 
 <a id="requirements"></a>
@@ -101,6 +102,34 @@ Now you can see the description of the errors and the line where they occur.
 So you have the possibility to correct your code and check it again.
 
 **Note:** If there are less than six files to check, you get the detail view automatically and not the summary view.
+
+<a id="ideintegration"></a>
+## IDE Integration ##
+If you want a easier way to correct your coding standard violations, you can integrat the Code Sniffer Check in your IDE.  
+
+* For VIM  
+You find a solution on this 
+[Site](http://joncairns.com/2012/03/vim-with-php-code-sniffer-mess-detector-and-code-coverage/)
+or on this
+[Site](http://www.koch.ro/blog/index.php?/archives/62-Integrate-PHP-CodeSniffer-in-VIM.html).
+But instead of the plain PHP CodeSniffer command, you can use the Makefile command from the ontowiki main directory,
+so the code standard and other thinks are automatically itegrated in this command.  
+`make cs-check-commit-emacs`  
+If you have a better solution, feel free to write it here or if you need a other Makefile command open a new issue
+and assign it to me (larseidam)
+
+* For Komodo Edit  
+Make a new command in your Toolbox and give it a name. After that, add  
+`make cs-check-commit-emacs`  
+to the command field and to the 'Start in' field
+write the full path to or ontowiki project. Now make a hook at the 'Parse with output'
+Field an write this  
+`^(?P<file>.*):(?P<line>\d+):(?P<column>\d+):(?P<content>.*)`  
+in the textfield. In the final step make a hook at the 'Show output as a list' field.
+Push 'OK' and check the new created command.
+
+**Note:** You must have some Code in the stagearea of git, otherwise the CodeSniffer have no files to check and you don't
+want to see, if it runs or not.
 
 <a id="tips"></a>
 ## Tips ##
