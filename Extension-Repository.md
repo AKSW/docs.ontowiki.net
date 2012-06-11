@@ -31,7 +31,13 @@ protip: if you use GitHub, and you use the URL of the DOAP file as the URI of yo
 ### Ping this registry to integrate your extension meta data here 
 Either you enter this URI in the form on http://extensions.ontowiki.net and hit submit 
 
-or (much more awesome) you "ping" http://extensions.ontowiki.net with a [semantic ping](http://aksw.org/Projects/SemanticPingBack) by stating a triple 
- <yourExtensionURI> <http://ns.ontowiki.net/SysOnt/ExtensionConfig/registeredAt> <http://extensions.ontowiki.net/>
-in your semantic pingback-enabled application (e.g. OntoWiki)
+or (much more awesome) you "ping" the repository with a [semantic pingback](http://aksw.org/Projects/SemanticPingBack). The pingback should go to the pingback service at http://extensions.ontowiki.net/pingback/ping/ and should contain following data:
+
+* source: _yourExtensionURI_ (e.g. https://github.com/AKSW/site.ontowiki/raw/master/doap.n3#site)
+* target: https://github.com/AKSW/site.ontowiki/raw/master/doap.n3#site
+* comment: _is ignored_
+
+Your DOAP file should contain a triple which connects your extension with our repository e.g.:
+`<yourExtensionURI> <http://ns.ontowiki.net/SysOnt/ExtensionConfig/registeredAt> <http://extensions.ontowiki.net/repository>`
+
 The Repository listens to this event and will then retrieve your DOAP file and update its index. Your extensions becomes visible to millions of OntoWiki instances within seconds.
