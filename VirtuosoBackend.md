@@ -90,6 +90,7 @@ To test the connection, create a file called `odbctest.php` in you webroot with 
 
     <?php
     $conn   = odbc_connect('VOS', 'dba', 'dba');
+    echo odbc_errormsg();
     $query  = 'SELECT DISTINCT ?g WHERE {GRAPH ?g {?s ?p ?o.}}';
     $result = odbc_exec($conn, 'CALL DB.DBA.SPARQL_EVAL(\'' . $query . '\', NULL, 0)');
     ?>
