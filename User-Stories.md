@@ -1,4 +1,4 @@
-# OntoWiki 5 min to success user stories
+OntoWiki 5 min to success user stories :-)
 
 ## Installation Tutorial
 
