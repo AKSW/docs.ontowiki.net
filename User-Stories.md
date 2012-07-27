@@ -1,6 +1,6 @@
 OntoWiki 5 min to success user stories :-)
 
-## Installation Tutorial
+## [Installation Tutorial](Installation Tutorial)
 
 ## Taxonomy Management:
 
