@@ -73,4 +73,4 @@ unknown? (please edit how much cpu, ram and free harddrive space needed at minim
         $ sudo tar -xzf download/AKSW-OntoWiki-v0.9.6-21-367-g062a14e.tar.gz --directory /srv/http/
 
 6. Open http://localhost
-The OntoWiki should be shown after selection of the folder `AKSW-OntoWiki-#somenumber`
+The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#somenumber`
