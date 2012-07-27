@@ -18,14 +18,31 @@ _If you are unsure about the archive format, click "Download as zip" if you use 
 
 ### Arch Linux
 
-1. Apache and PHP
+1. Apache, PHP and ODBC
     - Install Apache and PHP with the package manager
 
-            $ sudo pacman -S apache php apache-php
+            $ sudo pacman -S apache php apache-php php-odbc
     - Configure PHP by following the PHP section of the [LAMP entry in the Archlinux Wiki](https://wiki.archlinux.org/index.php/LAMP#PHP) (also consult that page if you have any problems installing Apache and PHP)
     - Compile the libraries
 
             AKSW-OntoWiki-062a14e$ sudo make deploy
+    - Install ODBC
+
+$ sudo pacman -S php-odbc
+Add the following lines to the odbcinst.ini file: (see [VirtuosoBackend](VirtuosoBackend))
+
+    [virtuoso-odbc]
+    Driver = <prefix>/lib/virtodbc.so
+
+Add the following lines to the odbc.ini file:
+
+    [ODBC Data Sources]
+    VOS = Virtuoso
+    
+    [VOS]
+    Driver = virtuoso-odbc
+    Description = Virtuoso Open-Source Edition
+    Address = localhost:1111
     - (Re-)start Apache
 
             $ sudo /etc/rc.d/httpd restart
@@ -33,7 +50,7 @@ _If you are unsure about the archive format, click "Download as zip" if you use 
     - Install Virtuoso with the package manager
 
             $ sudo pacman -S virtuoso
-    - Create the virtuoso ontowiki directory and add the virtuoso.ini to it (see [https://github.com/AKSW/OntoWiki/wiki/VirtuosoBackend](Virtuoso Backend))
+    - Create the Virtuoso OntoWiki directory and add the virtuoso.ini to it (see [https://github.com/AKSW/OntoWiki/wiki/VirtuosoBackend](Virtuoso Backend))
 
             $ sudo mkdir /var/lib/virtuoso/ontowiki
             $ sudo cp /var/lib/virtuoso/db/virtuoso.ini /var/lib/virtuoso/ontowiki
