@@ -12,8 +12,7 @@ unknown? (please edit how much cpu, ram and free harddrive space needed at minim
 ## Installation
 
 1. Download [the newest version of OntoWiki from github](https://github.com/AKSW/OntoWiki/downloads)
-
-_If you are unsure about the archive format, click "Download as zip" if you use Windows or Mac OS and "Download as tar.gz" if you use Linux._
+    _If you are unsure about the archive format, click "Download as zip" if you use Windows or Mac OS and "Download as tar.gz" if you use Linux._
 2. Unpack the OntoWiki 
 
 ### Arch Linux
@@ -73,6 +72,5 @@ _If you are unsure about the archive format, click "Download as zip" if you use 
 
         $ sudo tar -xzf download/AKSW-OntoWiki-v0.9.6-21-367-g062a14e.tar.gz --directory /srv/http/
 
-6. Open localhost
-
-`download$ tar -xzf dpkg.tar.gz
+6. Open http://localhost
+The OntoWiki should be shown after selection of the folder `AKSW-OntoWiki-#somenumber`
