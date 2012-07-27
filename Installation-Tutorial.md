@@ -26,7 +26,7 @@ _If you are unsure about the archive format, click "Download as zip" if you use 
     - Compile the libraries
 
             AKSW-OntoWiki-062a14e$ sudo make deploy
-    - Activate the ICONV and ODBC extensions in `/etc/php/php.ini`
+    - Activate the iconv and ODBC extensions in `/etc/php/php.ini`
 
         Uncomment the following lines:
 
