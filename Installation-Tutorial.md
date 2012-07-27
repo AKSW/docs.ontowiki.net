@@ -28,21 +28,22 @@ _If you are unsure about the archive format, click "Download as zip" if you use 
             AKSW-OntoWiki-062a14e$ sudo make deploy
     - Install ODBC
 
-$ sudo pacman -S php-odbc
-Add the following lines to the odbcinst.ini file: (see [VirtuosoBackend](VirtuosoBackend))
+            $ sudo pacman -S php-odbc
 
-    [virtuoso-odbc]
-    Driver = <prefix>/lib/virtodbc.so
+        Add the following lines to the odbcinst.ini file: (see [VirtuosoBackend](VirtuosoBackend))
 
-Add the following lines to the odbc.ini file:
+            [virtuoso-odbc]
+            Driver = /lib/virtodbc.so
 
-    [ODBC Data Sources]
-    VOS = Virtuoso
+        Add the following lines to the odbc.ini file:
+
+            [ODBC Data Sources]
+            VOS = Virtuoso
     
-    [VOS]
-    Driver = virtuoso-odbc
-    Description = Virtuoso Open-Source Edition
-    Address = localhost:1111
+            [VOS]
+            Driver = virtuoso-odbc
+            Description = Virtuoso Open-Source Edition
+            Address = localhost:1111
     - (Re-)start Apache
 
             $ sudo /etc/rc.d/httpd restart
