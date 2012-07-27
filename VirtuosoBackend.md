@@ -112,7 +112,7 @@ If you see this list and no error messages along the way, go ahead configuring O
 ## Configuring OntoWiki
 Perform the following steps to set up OntoWiki:
 
-* Copy `config.ini-dist` to `config.ini` and open it in a text editor
+* Copy `config.ini.dist` to `config.ini` and open it in a text editor
 * Under `[private]`, set the following options: 
 
     store.backend = virtuoso
