@@ -26,6 +26,12 @@ _If you are unsure about the archive format, click "Download as zip" if you use 
     - Compile the libraries
 
             AKSW-OntoWiki-062a14e$ sudo make deploy
+    - Activate the ICONV and ODBC extensions in `/etc/php/php.ini`
+
+        Uncomment the following lines:
+
+            extension=iconv.so
+            extension=odbc.so
     - Install ODBC
 
             $ sudo pacman -S php-odbc
@@ -33,7 +39,7 @@ _If you are unsure about the archive format, click "Download as zip" if you use 
         Add the following lines to the odbcinst.ini file: (see [VirtuosoBackend](VirtuosoBackend))
 
             [virtuoso-odbc]
-            Driver = /lib/virtodbc.so
+            Driver = /usr/lib/virtodbc.so
 
         Add the following lines to the odbc.ini file:
 
@@ -60,7 +66,7 @@ _If you are unsure about the archive format, click "Download as zip" if you use 
             DirsAllowed  = ., /usr/share/virtuoso/vad,/tmp,/srv/http/AKSW-OntoWiki-062a14e
     - Start Virtuoso (add the option _+foreground_ if you want to check if it starts correctly)
 
-            $ sudo virtuoso-t -f -c /var/lib/virtuoso/db/virtuoso.ini
+            $ sudo virtuoso-t -f -c /var/lib/virtuoso/ontowiki/virtuoso.ini
 
 3. [Download OntoWiki](https://github.com/AKSW/OntoWiki/downloads) (choose "Download as tar.gz")
 4. Unpack OntoWiki into your document root (the end of the file name may differ)
