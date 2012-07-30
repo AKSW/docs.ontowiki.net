@@ -3,7 +3,7 @@ After install (see [[Guide|GetOntowikiUsers]]), you will have to follow these st
 = Requirements =
 In order to install OntoWiki you need:
 * PHP 5.2 or higher
- * See our page for [[recommended PHP settings|php.ini-recommendations]].
+** See our page for [[recommended PHP settings|php.ini-recommendations]].
 * [[mod_rewrite|http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html]] allowed in target directory (optional, used for nice URIs and LinkedData features)
 ** {{{a2enmod rewrite}}}
 * [[.htaccess|http://httpd.apache.org/docs/2.0/configuring.html#htaccess]] allowed in target directory
