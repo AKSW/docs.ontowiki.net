@@ -1,8 +1,10 @@
-If you want to install everything from the Debian repositories, and still use your own locally compiled version of Virtuoso, this script can be of great help.
+Debian squeeze comes with Virtuoso version 6.1.2, which does not meet the OntoWiki requirements fully. Debian testing/wheezy comes with version 6.1.4, which is sufficient. 
 
-Install 'virtuoso-openspurce' as per normal. Then compile, install and configure virtuoso as [[described here|VirtuosoBackend]].
+If you want to install everything from the Debian repositories, and still use your own locally compiled version of Virtuoso, this tip can be of great help.
 
-Stop the virtuoso server 'invoke-rc.d virtuoso-opensource stop', backup the file '/etc/init.d/virtuoso-opensource' and replace it with this one, and make necessary adjustments to allow for your specific setup.
+Install 'virtuoso-openspurce' as per normal. Then compile, install and configure virtuoso as [[described here|VirtuosoBackend]], making sure to use '/usr/local' for configuration prefix.
+
+Stop the virtuoso server 'invoke-rc.d virtuoso-opensource-6.1 stop', backup the file '/etc/init.d/virtuoso-opensource', replace it with the one displayed below, and make necessary adjustments to allow for your specific setup. After this, you system should use the locally compiled version of Virtuoso.
 
 ```bash
 #!/bin/sh
