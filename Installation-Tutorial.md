@@ -5,6 +5,8 @@ unknown? (please edit how much cpu, ram and free harddrive space needed at minim
 
 #### Software
 
+- Also, have a look at [[the 'Getting Started'|Getting-Started-Users]] document.
+
 - Windows, Mac OS or Linux 
 - [Apache HTTP Server](http://www.apache.org/)
 - either [Virtuoso](http://download.openlinksw.com/virtwiz/virtuoso.php) or [MySQL](http://www.mysql.com/downloads/)
