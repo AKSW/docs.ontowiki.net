@@ -18,7 +18,9 @@ If you use a Debian or Ubuntu linux distribution, you can use the debian package
 * install the LOD2 repository by downloading and adding the [lod2repository
   package](http://stack.lod2.eu/lod2repository_current_all.deb)
 * update your package database (`sudo apt-get update`)
-* install `ontowiki-mysql` or `ontowiki-virtuoso` (`sudo apt-get ontowiki-virtuoso`)
+* install `ontowiki-mysql` or `ontowiki-virtuoso` (`sudo apt-get ontowiki-virtuoso virtuoso-vad-conductor`)
+
+Please note that OntoWiki works best with a recent version of Virtuoso. At the time of writing, OntoWiki requires version 6.1.4 or greater. Debian stable/squeeze comes with version 6.1.2, Debian testing/wheezy comes with 6.1.4, and Ubuntu 12.04 LTS comes with 6.1.4. Building virtuoso from source on a Debian based system, however, is [[quite easy|VirtuosoBackend]]. Using a [[custom startup script|CustomDebianStartupScript]] on Debian, you can even install the package for virtuoso and use your own locally compiled version.
 
 ## via github repository
 If you are a advanced user of OntoWiki and/or need the latest (sometimes unstable) version, you can checkout our repo:
