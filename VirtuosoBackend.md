@@ -182,7 +182,7 @@ To auto-start Virtuoso on Mac OS X 10.5 use a config file for the `launchd` serv
     </plist>
 
 #### Windows
-Follow [these instructions](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) in order to set up Virtuoso as an ODBC data source on Windows.
+Follow [these instructions](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) in order to set up Virtuoso as an ODBC data source on Windows. Although a [binary distribution](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built binaries for Windows) of Virtuoso might seem the right choice, these are lagging a bit behind of the current source distribution. At the time of writing this line, Virtuoso is available in version 6.1.5, but the binary download for Windows is in version 6.1.3. OntoWiki works best with version 6.1.4 or greater.
 
 ### Known Problems
 #### Debian/Ubuntu
