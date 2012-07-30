@@ -19,9 +19,9 @@ This is the basic procedure. For details see below.
 ## Compiling Virtuoso
 For some OS, e.g. Windows, binaries exist. If you have to compile it, it is recommended to give a `<prefix>`, which will be the path where Virtuoso will be installed.
 
-**Debian/Ubuntu** recommendation: use `./configure --prefix=/opt/virtuoso`. Virtuoso also comes along with a good README with further instructions.
+**Debian/Ubuntu** recommendation: use `./configure --prefix=/opt/virtuoso`. Virtuoso also comes along with a good README with further instructions. Please also see the notes for compiling [on Debian](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSDebianNotes#Building from Upstream Source) and [Ubuntu](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUbuntuNotes#Building from Upstream Source).
 
-Debian/Ubuntu Tipp:  configuring with the libreadline library allows for better characters passing to isql command line client '--with-readline=path/to/libreadline' (use ` apt-get install libreadline5-dev` and '--with-readline=/usr/lib/libreadline.so').
+Debian/Ubuntu Tip:  configuring with the libreadline library allows for better characters passing to isql command line client '--with-readline=path/to/libreadline' (use ` apt-get install libreadline5-dev` and '--with-readline=/usr/lib/libreadline.so').
 
     sudo ./configure --prefix=/opt/virtuoso-opensource-version --with-readline=/usr/lib/libreadline.so
 
