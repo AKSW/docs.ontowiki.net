@@ -17,13 +17,25 @@ This is the basic procedure. For details see below.
 * Set up OntoWiki to be used with Vrituoso.
 
 ## Compiling Virtuoso
-For some OS, e.g. Windows, binaries exist. If you have to compile it, it is recommended to give a `<prefix>`, which will be the path where Virtuoso will be installed.
+For some OS, e.g. Windows, binaries exist, but might be a bit dated. If you have to compile it, it is recommended to give a `<prefix>`, which will be the path where Virtuoso will be installed. 
 
-**Debian/Ubuntu** recommendation: use `./configure --prefix=/opt/virtuoso`. Virtuoso also comes along with a good README with further instructions. Please also see the notes for compiling [on Debian](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSDebianNotes#Building from Upstream Source) and [Ubuntu](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUbuntuNotes#Building from Upstream Source).
+**Debian/Ubuntu** recommendation: 
 
-Debian/Ubuntu Tip:  configuring with the libreadline library allows for better characters passing to isql command line client '--with-readline=path/to/libreadline' (use ` apt-get install libreadline5-dev` and '--with-readline=/usr/lib/libreadline.so').
+* For a standard install, a prefix of `/usr/local' will do just fine. This installs Virtuoso in the standard program path, and reduces confusion as to which binary to run. Also, the stock Debian or Ubuntu startup scripts can be used with [[minor modifications|Custom-startup-script-for-Debian]].
+* For a development environment it might be better to set things up with a named prefix folder in the '/opt' tree, i.e. `./configure --prefix=/opt/virtuoso`. This provides great flexibility for a development environment. To name but a few pro's:
+** You may uninstall the compiled software by simply removing the whole directory
+** You may test and use two different versions of Virtuoso at the same time and try out new features
+** You may choose to `chown` the whole virtuoso directory so you can run virtuoso in user-space instead of  as root
+* Virtuoso also comes along with a good README with further instructions. 
+* Please also see the notes for compiling [on Debian](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSDebianNotes#Building from Upstream Source) and [Ubuntu](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUbuntuNotes#Building from Upstream Source).
 
-    sudo ./configure --prefix=/opt/virtuoso-opensource-version --with-readline=/usr/lib/libreadline.so
+**Debian/Ubuntu Tip**:  configuring with the libreadline library allows for better characters passing to isql command line client '--with-readline=path/to/libreadline' (use ` apt-get install libreadline5-dev` and '--with-readline=/usr/lib/libreadline.so').
+
+```shell
+./configure --prefix=/opt/virtuoso-opensource-version --with-readline=/usr/lib/libreadline.so
+make
+sudo make install
+```
 
 Nethertheless, you have to configure the DirsAllowed variable and configure ODBC. Or get the official debian package from Debian:squeeze repository. See: http://packages.debian.org/squeeze/virtuoso-opensource
 
