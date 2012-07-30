@@ -27,6 +27,8 @@ If you are a advanced user of OntoWiki and/or need the latest (sometimes unstabl
 
 * clone the repository into your web folder (e.g. `/var/www/ontowiki`)
   * `git clone https://github.com/AKSW/OntoWiki.git`
+* run `make deploy` to download Erfurt, RDFAuthor and Zend
+  * If Zend Libraries are already present on your system and you get errors about not being able to instantiate Zend classess, move the 'libraries/Zend' folder out of the way.
 
 # setup
 [[setup OntoWiki|Setup]]
