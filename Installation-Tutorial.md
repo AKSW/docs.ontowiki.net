@@ -53,6 +53,7 @@ unknown? (please edit how much cpu, ram and free harddrive space needed at minim
 
             $ sudo /etc/rc.d/httpd restart
 2. Virtuoso
+    - Please note that Virtuoso-opensource should be at least in [version 6.4](https://github.com/AKSW/OntoWiki/wiki/Deployment-Recommendations)
     - Install Virtuoso with the package manager
 
             $ sudo pacman -S virtuoso
