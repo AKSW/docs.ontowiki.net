@@ -4,7 +4,7 @@ If you want to install everything from the Debian repositories, and still use yo
 
 Install 'virtuoso-openspurce' as per normal. Then compile, install and configure virtuoso as [[described here|VirtuosoBackend]], making sure to use '/usr/local' for configuration prefix.
 
-Stop the virtuoso server `invoke-rc.d virtuoso-opensource-6.1 stop`, backup the file '/etc/init.d/virtuoso-opensource', replace it with the one displayed below, and make necessary adjustments to allow for your specific setup. 
+Stop the virtuoso server by issuing `invoke-rc.d virtuoso-opensource-6.1 stop` as root, backup the file '/etc/init.d/virtuoso-opensource', replace it with the one displayed below, and make necessary adjustments to allow for your specific setup. 
 
 After this tweak, you system should use your locally compiled version of Virtuoso.
 
