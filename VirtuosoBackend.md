@@ -11,7 +11,7 @@ Especially, it covers the following topics:
 This is the basic procedure. For details see below.
 
 * Check out the OntoWiki source code
-* Download [Virtuoso Open-Source Edition](http://sourceforge.net/projects/virtuoso/) and compile it according to the instructions for your operating system.
+* Download [Virtuoso Open-Source Edition](http://sourceforge.net/projects/virtuoso/) and compile it according to the instructions for your operating system. Make sure to get the latest stable branch available.
 * Install and configure Virtuoso.
 * [Set up ODBC](http://www.iodbc.org/dataspace/iodbc/wiki/iODBC/IODBCPHPHOWTO) and make sure, PHP can connect to Virtuoso via ODBC.
 * Set up OntoWiki to be used with Vrituoso.
@@ -150,6 +150,8 @@ If you install Virtuoso from the .deb-Package you have to change in '/etc/init.d
 to
     DBBASE=/var/lib/virtuoso/ontowiki
 while virtuoso is not running.
+
+Also, make sure your Virtuoso is at least [[version 6.1.4|Deployment-Recommendations]].
 
 #### Mac OS X
 To auto-start Virtuoso on Mac OS X 10.5 use a config file for the `launchd` service. It should be placed under `/Library/LaunchDaemons`. The following is an example file, replace the paths with your settings where necessary.
