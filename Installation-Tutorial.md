@@ -90,7 +90,16 @@ The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#s
         When you arrive at the "Server Information" dialog box, enter "localhost" (without the quotes) for the Network Domain as well as for the Server Name and whatever email address you wish for the "Administrator's Email Address" field. The installer uses the information you enter to create a default Apache configuration file for you. You can always go back and manually change these values in your configuration file if you change your mind later. Leave the default setting of "for All Users, on Port 80, as a Service" as it is. Click "Next" when you're done (see [How to Install and Configure Apache 2 on Windows](http://www.thesitewizard.com/apache/install-apache-2-windows.shtml)).
 Go to `http://localhost/` and confirm that it shows "It works!".
 2. PHP
-    - go to `http://www.php.net/` and choose from the list on the right under "stable releases" the latest version. Windows 5.4.5 binaries and source
+    - Stop the Apache service
+        - Type `services.msc` into the search field in your start menu and click on "services"
+        - Rightclick on "Apache2._X_" and click on "Stop"          
+    - Go to <http://sourceforge.net/projects/phpinstallermsi/files/latest/download> and execute the MSI file that will automatically be downloaded.
+    - Choose the default options presented by the wizard.
+    - When prompted "Select a Web Server Setup" choose "Other CGI"
+    - Start the Apache service again
+        - Type `services.msc` into the search field in your start menu and click on "services".
+        - Rightclick on "Apache2._X_" and click on "Start".
+
 copied from linux:
 
 1. Apache, PHP and ODBC
