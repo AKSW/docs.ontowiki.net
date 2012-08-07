@@ -96,71 +96,26 @@ Go to `http://localhost/` and confirm that it shows "It works!".
     - Go to <http://sourceforge.net/projects/phpinstallermsi/files/latest/download> and execute the MSI file that will automatically be downloaded.
     - Choose the default options presented by the wizard.
     - When prompted "Select a Web Server Setup" choose "Other CGI"
+    - Add the following lines to the file `C:\Program Files\PHP\conf\httpd.conf`: (you may need to change the owner of that file to the current user in order to modify it) (see <http://windows.fyicenter.com/73_Apache_PHP_Getting_HTTP_403_Forbidden_Error_on_PHP_Scripts.html>)
+
+            ScriptAlias /php/  "C:/Program Files/PHP/"
+            AddHandler x-httpd-php .php
+            Action x-httpd-php "/php/php-cgi.exe"
+    
+            <Directory "C:/Program Files/PHP/">
+                AllowOverride None
+                Options None
+                Order allow,deny
+                Allow from all
+            </Directory>
+    - Set the recommended https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations
     - Start the Apache service again
         - Type `services.msc` into the search field in your start menu and click on "services".
         - Rightclick on "Apache2._X_" and click on "Start".
-
-copied from linux:
-
-1. Apache, PHP and ODBC
-    - Install Apache and PHP with the package manager
-
-            $ sudo pacman -S apache php apache-php php-odbc
-    - Configure PHP by following the PHP section of the [LAMP entry in the Archlinux Wiki](https://wiki.archlinux.org/index.php/LAMP#PHP) (also consult that page if you have any problems installing Apache and PHP)
-    - Compile the libraries
-
-            AKSW-OntoWiki-062a14e$ sudo make deploy
-    - Activate the iconv and ODBC extensions in `/etc/php/php.ini`
-
-        Uncomment the following lines:
-
-            extension=iconv.so
-            extension=odbc.so
-    - Install ODBC
-
-            $ sudo pacman -S php-odbc
-
-        Add the following lines to the file `/etc/odbcinst.ini`: (create it if it doesn't exist, see [VirtuosoBackend](VirtuosoBackend))
-
-            [virtuoso-odbc]
-            Driver = /usr/lib/virtodbc.so
-
-        Add the following lines to the file `/etc/odbc.ini`: (create it if it doesn't exist)
-
-            [ODBC Data Sources]
-            VOS = Virtuoso
-    
-            [VOS]
-            Driver = virtuoso-odbc
-            Description = Virtuoso Open-Source Edition
-            Address = localhost:1111
-    - (Re-)start Apache
-
-            $ sudo /etc/rc.d/httpd restart
-2. Virtuoso
-    - Please note that Virtuoso-opensource should be at least in [version 6.4](https://github.com/AKSW/OntoWiki/wiki/Deployment-Recommendations)
-    - Install Virtuoso with the package manager
-
-            $ sudo pacman -S virtuoso
-    - Create the Virtuoso OntoWiki directory and add the virtuoso.ini to it (see [https://github.com/AKSW/OntoWiki/wiki/VirtuosoBackend](Virtuoso Backend))
-
-            $ sudo mkdir /var/lib/virtuoso/ontowiki
-            $ sudo cp /var/lib/virtuoso/db/virtuoso.ini /var/lib/virtuoso/ontowiki
-    - Add the temporary and OntoWiki directories to the _DirsAllowed_ entry in `/var/lib/virtuoso/ontowiki/virtuoso.ini`
-
-            DirsAllowed  = ., /usr/share/virtuoso/vad,/tmp,/srv/http/AKSW-OntoWiki-062a14e
-    - Start Virtuoso (add the option _+foreground_ if you want to check if it starts correctly)
-
-            $ sudo virtuoso-t -f -c /var/lib/virtuoso/ontowiki/virtuoso.ini
-
-3. [Download OntoWiki](https://github.com/AKSW/OntoWiki/downloads) (choose "Download as tar.gz")
-4. Unpack OntoWiki into your document root (the end of the file name may differ)
-
-        $ sudo tar -xzf download/AKSW-OntoWiki-v0.9.6-21-367-g062a14e.tar.gz --directory /srv/http/
-
-6. Open http://localhost
-The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#somenumber`
+    - Confirm that PHP works and is successfully integrated in Apache.
+        - create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\test.php` and set its content to `<?php phpinfo(); ?>`
+        - Go to `http://localhost/test.php` and confirm that it shows a big table of PHP settings.
 
 ### As a Virtual Machine
 
-Install
+...
