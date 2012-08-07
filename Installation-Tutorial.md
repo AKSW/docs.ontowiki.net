@@ -108,7 +108,7 @@ Go to `http://localhost/` and confirm that it shows "It works!".
                 Order allow,deny
                 Allow from all
             </Directory>
-    - Set the recommended https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations
+    - Set the recommended [php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations)
     - Start the Apache service again
         - Type `services.msc` into the search field in your start menu and click on "services".
         - Rightclick on "Apache2._X_" and click on "Start".
