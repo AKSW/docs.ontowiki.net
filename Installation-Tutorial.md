@@ -87,7 +87,7 @@ The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#s
         Go to `http://httpd.apache.org/download.cgi` and choose the latest stable release version that provides Windows binaries. Download the MSI Installer for this version. The line should look like _"Win32 Binary including OpenSSL 0.9.8t (MSI Installer): httpd-2.2.22-win32-x86-openssl-0.9.8t.msi"_.
     2. Run the Apache Installer
 
-        When you arrive at the "Server Information" dialog box, enter "localhost" (without the quotes) for the Network Domain as well as for the Server Name and whatever email address you wish for the "Administrator's Email Address" field. The installer uses the information you enter to create a default Apache configuration file for you. You can always go back and manually change these values in your configuration file if you change your mind later. Leave the default setting of "for All Users, on Port 80, as a Service" as it is. Click "Next" when you're done (see [How to Install and Configure Apache 2 on Windows](http://www.thesitewizard.com/apache/install-apache-2-windows.shtml)).
+        When you arrive at the "Server Information" dialog box, enter "localhost" (without the quotes) for the Network Domain as well as for the Server Name and whatever email address you wish for the "Administrator's Email Address" field. The installer uses the information you enter to create a default Apache configuration file for you. You can always go back and manually change these values in your configuration file if you change your mind later. Leave the default setting of "for All Users, on Port 80, as a Service" as it is. Click "Next" when you're done (see [How to Install and Configure Apache 2 on Windows](http://www.thesitewizard.com/apache/install-apache-2-windows.shtml)).   
 Go to `http://localhost/` and confirm that it shows "It works!".
 2. PHP
     - Stop the Apache service
@@ -96,7 +96,7 @@ Go to `http://localhost/` and confirm that it shows "It works!".
     - Go to <http://sourceforge.net/projects/phpinstallermsi/files/latest/download> and execute the MSI file that will automatically be downloaded.
     - Choose the default options presented by the wizard.
     - When prompted "Select a Web Server Setup" choose "Other CGI"
-    - Add the following lines to the file `C:\Program Files\PHP\conf\httpd.conf`: (you may need to change the owner of that file to the current user in order to modify it) (see <http://windows.fyicenter.com/73_Apache_PHP_Getting_HTTP_403_Forbidden_Error_on_PHP_Scripts.html>)
+    - Add the following lines to the file `C:\Program Files\Apache Software Foundation\Apache2.2\httpd.conf`: (you may need to change the owner of that file to the current user in order to modify it) (see <http://windows.fyicenter.com/73_Apache_PHP_Getting_HTTP_403_Forbidden_Error_on_PHP_Scripts.html>)
 
             ScriptAlias /php/  "C:/Program Files/PHP/"
             AddHandler x-httpd-php .php
@@ -108,6 +108,14 @@ Go to `http://localhost/` and confirm that it shows "It works!".
                 Order allow,deny
                 Allow from all
             </Directory>
+        - now search for `<Directory />` and change the contents of the tag to:
+
+                <Directory />
+                    Options All
+                    AllowOverride All
+                </Directory>
+
+        - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
     - Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations)
     - Start the Apache service again
         - Type `services.msc` into the search field in your start menu and click on "services".
