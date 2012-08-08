@@ -11,12 +11,6 @@ unknown? (please edit how much cpu, ram and free harddrive space needed at minim
 - [Apache HTTP Server](http://www.apache.org/)
 - either [Virtuoso](http://download.openlinksw.com/virtwiz/virtuoso.php) or [MySQL](http://www.mysql.com/downloads/)
 
-## Installation
-
-1. Download [the newest version of OntoWiki from github](https://github.com/AKSW/OntoWiki/downloads).
-    _If you are unsure about the archive format, click "Download as zip" if you use Windows or Mac OS and "Download as tar.gz" if you use Linux._
-2. Unpack the OntoWiki 
-
 ### Arch Linux
 
 1. Apache, PHP and ODBC
@@ -116,14 +110,41 @@ Go to `http://localhost/` and confirm that it shows "It works!".
                 </Directory>
 
         - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
-    - Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations)
+    - Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
     - Start the Apache service again
         - Type `services.msc` into the search field in your start menu and click on "services".
         - Rightclick on "Apache2._X_" and click on "Start".
     - Confirm that PHP works and is successfully integrated in Apache.
         - create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\test.php` and set its content to `<?php phpinfo(); ?>`
         - Go to `http://localhost/test.php` and confirm that it shows a big table of PHP settings.
+3. Virtuoso
+    - Go to <http://www.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built%20binaries%20for%20Windows> and choose "64-bit" if you use a 64-bit Windows or "32-bit" if you use a 32-bit Windows (you can determine it in "System Control Panel"->"System"->"System"->"System Type")
+    - Unpack the directory `virtuoso-opensource` into the folder `C:\Program Files\`
+    - Follow [Using Virtuoso Open-Source Edition on Windows](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) (follow "Creating a Windows Service for the Default Database" and "ODBC Driver Registration")
+    - Follow [Virtuoso Driver for ODBC - Windows ODBC Driver Configuration](http://docs.openlinksw.com/virtuoso/odbcimplementation.html#virtdsnsetup), create a System DSN and name it "VOS".
+    - Create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\odbctest.php` with the following PHP code in it:
 
-### As a Virtual Machine
+            <?php
+            $conn   = odbc_connect('VOS', 'dba', 'dba');
+            $query  = 'SELECT DISTINCT ?g WHERE {GRAPH ?g {?s ?p ?o.}}';
+            $result = odbc_exec($conn, 'CALL DB.DBA.SPARQL_EVAL(\'' . $query . '\', NULL, 0)');
+            ?>
+            <ul>
+            <?php while (odbc_fetch_row($result)): ?>
+                <li><?php echo odbc_result($result, 1) ?></li>
+            <?php endwhile; ?>
+            </ul>
+    - Go to <http://localhost/odbctest.php>. You should see this list of graphs stored in your Virtuoso RDF store:
 
-...
+            http://www.openlinksw.com/schemas/virtrdf#
+            http://localhost:8890/sparql
+            http://localhost:8890/DAV/
+            http://www.w3.org/2002/07/owl#
+If you see this list and no error messages along the way, go ahead configuring OntoWiki.
+4. Virtuoso
+    - Download [the newest version of OntoWiki from github](https://github.com/AKSW/OntoWiki/downloads)
+( choose "Download as zip").
+    - Unpack the archive into your `Program Files` folder. You should now have the folder `C:\Program Files\AKSW-OntoWiki-9c50d0e` (the last 7 characters may vary), from now on called %ONTOWIKI_HOME%.
+    - Copy `%ONTOWIKI_HOME%\config.ini.dist` to `%ONTOWIKI_HOME%\config.ini`
+    - Edit `%ONTOWIKI_HOME%\config.ini` and change the value of `store.backend` to "virtuoso"
+5. OntoWiki
