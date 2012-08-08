@@ -1,8 +1,16 @@
 ## Virtuoso backup
 
-Possibly, the easiest and most complete way to do backups is with the automated backup functionality built into Virtuoso conductor. This is documented at the [[Virtouso site|http://docs.openlinksw.com/virtuoso/backup.html]], and presumes that you are using the Virtuoso back-end. Conductor can schedule incremental backups, and manages everything on it's own.
+Possibly, the easiest and most complete way to do backups is with the automated backup functionality built into Virtuoso conductor. 
 
-Please note that this strategy backs up the whole Virtuoso database, and so this strategy is not well suited for rolling back the database to a previous state if you use it for other things than OntoWiki, or if you have multiple instances of OntoWiki. For backup purposes it should work great, though.
+ - Documented at the [[Virtuoso site|http://docs.openlinksw.com/virtuoso/backup.html]]
+
+ - Presumes that you are using the Virtuoso back-end
+
+ - Conductor can schedule incremental backups, and manages everything on it's own
+
+ - The history and query cache will also be backed up
+
+Please note that this strategy backs up the whole Virtuoso database. As such, it is not well suited for rolling back the database to a previous state if you use it for other things than OntoWiki, or if you have multiple instances of OntoWiki. For backup purposes it should work great, though.
 
 Other alternatives are detailed below.
 
