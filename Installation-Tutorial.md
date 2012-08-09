@@ -141,10 +141,10 @@ Go to `http://localhost/` and confirm that it shows "It works!".
             http://localhost:8890/DAV/
             http://www.w3.org/2002/07/owl#
 If you see this list and no error messages along the way, go ahead configuring OntoWiki.
-4. Virtuoso
+4. OntoWiki
     - Download [the newest version of OntoWiki from github](https://github.com/AKSW/OntoWiki/downloads)
 ( choose "Download as zip").
-    - Unpack the archive into your `Program Files` folder. You should now have the folder `C:\Program Files\AKSW-OntoWiki-9c50d0e` (the last 7 characters may vary), from now on called %ONTOWIKI_HOME%.
+    - Unpack the archive into the folder `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\`. You should now have the folder `...\htdocs\AKSW-OntoWiki-9c50d0e` (the last 7 characters may vary), from now on called %ONTOWIKI_HOME%.
     - Copy `%ONTOWIKI_HOME%\config.ini.dist` to `%ONTOWIKI_HOME%\config.ini`
     - Edit `%ONTOWIKI_HOME%\config.ini` and change the value of `store.backend` to "virtuoso"
-5. OntoWiki
+    - Go to <http://localhost/AKSW-OntoWiki-9c50d0e/index.php> (adjust the URL if necessary)
