@@ -102,13 +102,21 @@ Go to `http://localhost/` and confirm that it shows "It works!".
                 Order allow,deny
                 Allow from all
             </Directory>
-        - now search for `<Directory />` and change the contents of the tag to:
+        - search for `<Directory />` and change the contents of the tag to:
 
                 <Directory />
                     Options All
                     AllowOverride All
                 </Directory>
 
+        - search for `/htdocs">` and change the the Directory tag to:
+        <Directory "C:/Program Files/Apache Software Foundation/Apache2.2/htdocs">
+         Options Indexes FollowSymLinks
+         AllowOverride All
+         Order allow,deny
+         Allow from all
+         AllowOverride All
+        </Directory>
         - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
     - Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
     - Start the Apache service again
@@ -148,3 +156,4 @@ If you see this list and no error messages along the way, go ahead configuring O
     - Copy `%ONTOWIKI_HOME%\config.ini.dist` to `%ONTOWIKI_HOME%\config.ini`
     - Edit `%ONTOWIKI_HOME%\config.ini` and change the value of `store.backend` to "virtuoso"
     - Go to <http://localhost/AKSW-OntoWiki-9c50d0e/index.php> (adjust the URL if necessary)
+
