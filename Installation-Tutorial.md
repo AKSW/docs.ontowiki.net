@@ -118,7 +118,7 @@ Go to `http://localhost/` and confirm that it shows "It works!".
                  AllowOverride All
                 </Directory>
         - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
-    - go to <http://www.zend.com/community/downloads>, download **Zend Framework 1.x minimal** and extract the folder `library`
+    - go to <http://www.zend.com/community/downloads>, download **Zend Framework 1.x minimal** and extract the folder `library\Zend` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e\libraries`
     - go to <https://github.com/AKSW/Erfurt>, click on "ZIP" and extract the folder `library/Erfurt` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e\libraries`
     - Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
     - Start the Apache service again
