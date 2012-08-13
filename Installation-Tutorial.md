@@ -64,12 +64,15 @@ unknown? (please edit how much cpu, ram and free harddrive space needed at minim
 
             $ sudo virtuoso-t -f -c /var/lib/virtuoso/ontowiki/virtuoso.ini
 
-3. [Download OntoWiki](https://github.com/AKSW/OntoWiki/downloads) (choose "Download as tar.gz")
-4. Unpack OntoWiki into your document root (the end of the file name may differ)
+3. OntoWiki
+    - [Download OntoWiki](https://github.com/AKSW/OntoWiki/downloads) (choose "Download as tar.gz")
+    - Unpack OntoWiki into your document root (the end of the file name may differ)
+ 
+        `$ sudo tar -xzf download/AKSW-OntoWiki-v0.9.6-21-367-g062a14e.tar.gz --directory /srv/http`
+    - Allow user read and write access to OntoWiki
 
-        $ sudo tar -xzf download/AKSW-OntoWiki-v0.9.6-21-367-g062a14e.tar.gz --directory /srv/http/
-
-6. Open http://localhost
+     `sudo chmod a+wr -R /srv/http/AKSW-OntoWiki-062a14e`
+    - Open http://localhost
 The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#somenumber`
 
 ## Windows
