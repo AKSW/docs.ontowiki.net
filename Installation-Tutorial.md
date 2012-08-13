@@ -11,7 +11,7 @@ unknown? (please edit how much cpu, ram and free harddrive space needed at minim
 - [Apache HTTP Server](http://www.apache.org/)
 - either [Virtuoso](http://download.openlinksw.com/virtwiz/virtuoso.php) or [MySQL](http://www.mysql.com/downloads/)
 
-### Arch Linux
+## Arch Linux
 
 1. Apache, PHP and ODBC
     - Install Apache and PHP with the package manager
@@ -72,7 +72,7 @@ unknown? (please edit how much cpu, ram and free harddrive space needed at minim
 6. Open http://localhost
 The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#somenumber`
 
-### Windows
+## Windows
 
 1. Apache
 
@@ -118,8 +118,6 @@ Go to `http://localhost/` and confirm that it shows "It works!".
                  AllowOverride All
                 </Directory>
         - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
-    - go to <http://www.zend.com/community/downloads>, download **Zend Framework 1.x minimal** and extract the folder `library\Zend` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e\libraries`
-    - go to <https://github.com/AKSW/Erfurt>, click on "ZIP" and extract the folder `library/Erfurt` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e\libraries`
     - Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
     - Start the Apache service again
         - Type `services.msc` into the search field in your start menu and click on "services".
@@ -130,6 +128,7 @@ Go to `http://localhost/` and confirm that it shows "It works!".
 3. Virtuoso
     - Go to <http://www.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built%20binaries%20for%20Windows> and choose "64-bit" if you use a 64-bit Windows or "32-bit" if you use a 32-bit Windows (you can determine it in "System Control Panel"->"System"->"System"->"System Type")
     - Unpack the directory `virtuoso-opensource` into the folder `C:\Program Files\`
+  - Go to `C:\Program Files\virtuoso-opensource\database\virtuoso.ini` and set `DirsAllowed = ., ../vad,C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e`
     - Follow [Using Virtuoso Open-Source Edition on Windows](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) (follow "Creating a Windows Service for the Default Database" and "ODBC Driver Registration")
     - Follow [Virtuoso Driver for ODBC - Windows ODBC Driver Configuration](http://docs.openlinksw.com/virtuoso/odbcimplementation.html#virtdsnsetup), create a System DSN and name it "VOS".
     - Create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\odbctest.php` with the following PHP code in it:
@@ -157,5 +156,15 @@ If you see this list and no error messages along the way, go ahead configuring O
     - Unpack the archive into the folder `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\`. You should now have the folder `...\htdocs\AKSW-OntoWiki-9c50d0e` (the last 7 characters may vary), from now on called %ONTOWIKI_HOME%.
     - Copy `%ONTOWIKI_HOME%\config.ini.dist` to `%ONTOWIKI_HOME%\config.ini`
     - Edit `%ONTOWIKI_HOME%\config.ini` and change the value of `store.backend` to "virtuoso"
-    - Go to <http://localhost/AKSW-OntoWiki-9c50d0e/index.php> (adjust the URL if necessary)
+  - go to <http://www.zend.com/community/downloads>, download **Zend Framework 1.x minimal** and extract the folder `library\Zend` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e\libraries`
+    - go to <https://github.com/AKSW/Erfurt>, click on "ZIP" and extract the folder `library\Erfurt` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e\libraries`
+    - create the folder `...\AKSW-OntoWiki-9c50d0e\cache` and ensure that the user which runs Apache (System, if Apache is started as a service) has write access to that folder
+    - Go to <http://localhost/AKSW-OntoWiki-9c50d0e/index.php> (adjust the URL if necessary). OntoWiki should now start.
 
+
+
+## Troubleshooting
+In case OntoWiki isn't loaded correctly after you followed this tutorial, go to `...\htdocs\AKSW-OntoWiki-9c50d0e\config.ini` and set `debug = true`. After a restart you should now see an error message in your browser which should hopefully point you to the source of the problem (if not, [create an issue](https://github.com/AKSW/OntoWiki/issues/new)).
+
+**Error on bootstrapping application: Unable to connect to Virtuoso Universal Server via ODBC.**
+Make sure that the Virtuoso service is started. If it does not start, look for files named `virtuoso.lck` in your Virtuoso folder under `database` or `virtuoso` and delete them if existing.
