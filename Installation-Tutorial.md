@@ -110,13 +110,13 @@ Go to `http://localhost/` and confirm that it shows "It works!".
                 </Directory>
 
         - search for `/htdocs">` and change the the Directory tag to:
-        <Directory "C:/Program Files/Apache Software Foundation/Apache2.2/htdocs">
-         Options Indexes FollowSymLinks
-         AllowOverride All
-         Order allow,deny
-         Allow from all
-         AllowOverride All
-        </Directory>
+
+                <Directory "C:/Program Files/Apache Software Foundation/Apache2.2/htdocs">
+                 Options Indexes FollowSymLinks               
+                 Order allow,deny
+                 Allow from all
+                 AllowOverride All
+                </Directory>
         - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
     - Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
     - Start the Apache service again
