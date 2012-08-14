@@ -14,8 +14,7 @@
       skos:broader ex:Animal.
 
     ex:Pluto rdf:type ex:Dog;
-     skos:prefLabel "Pluto".
-~                                                              
+     skos:prefLabel "Pluto".                                                              
 
 ## Create the knowledge base
 - Open OntoWiki and log in as "Admin" or some other user that can create knowledge bases.
