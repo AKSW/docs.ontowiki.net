@@ -6,9 +6,9 @@ OntoWiki 5 min to success user stories :-)
 
 ### [How to create and publish a SKOS Taxonomy in 5 minutes?](How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes%3F)
 
-### How to view and edit the concepts of my taxonomy?
+### [How to view and edit the concepts of my taxonomy?](https://github.com/AKSW/OntoWiki/wiki/How-to-view-and-edit-the-concepts-of-my-taxonomy)
 
-### How to use and consume other Linked Data resources?
+### [How to use and consume other Linked Data resources?](How-to-use-and-consume-other-Linked-Data-resources)
 
 ## Linked Data Infrastructure:
 
