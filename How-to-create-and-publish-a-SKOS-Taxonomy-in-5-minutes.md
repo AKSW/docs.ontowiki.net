@@ -23,7 +23,7 @@
 
 Now you have several options:
 
-1.  <a id="dialog">Add classes and properties using dialogs</a>
+1.  <a id="dialog"></a>Add classes and properties using dialogs
     - Select **Create Empty Knowledge Base** and click on **Create Knowledge Base**.
     - Go to **Navigation: Classes**->**Edit**->**Add resource here**.
     - Set the **Type** to `skos:Concept`.
