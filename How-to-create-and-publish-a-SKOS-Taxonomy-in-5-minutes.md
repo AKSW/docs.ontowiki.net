@@ -32,7 +32,8 @@ Now you have several options:
     - On the right you should see the window "Properties of Animal". Click on **Clone** in the **Properties** tab. Replace the values of the preferedLabel and hiddenLabel with `Dog` and `Dogg`, respectively.
     - Click on **Add Property** and type `skos:broader`. Select **Resource** and type `http://www.example.com/Class/Animal` in the text field.
     - Go to **Navigation: Classes**->**Edit**->**Add resource here**. Click on **Add Property**->**Preferred Label** and put `Pluto` into the text field. Click on the small triangle and select "en" as the language. Click on **Create Resource**. Under the tab **Properties**, go to the row **rdf:type** and click on the pencil symbol on the right (**Edit Values**). Change the type to `http://www.example.com/skos_Concept/Dog` and click on **Save Changes**.
-
+<a name="test"></a>
+<a name="test2">test2</a>
 2. Upload a file
     - Copy the example taxonomy and save it as a file named `example.n3`.
     - Select **Upload a File**, File Type **Autodetect** and browse for the file `example.n3`.
