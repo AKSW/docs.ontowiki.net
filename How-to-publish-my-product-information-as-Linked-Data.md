@@ -1,4 +1,4 @@
-# Under construction
+## Under construction
 
 ## Assumptions
 We assume that your company has a set of products for which information is available in some structured form, but not as Linked Data (if it is, follow [How to use and consume other Linked Data resources](How-to-use-and-consume-other-Linked-Data-resources) instead).
