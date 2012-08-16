@@ -12,8 +12,8 @@ First, you need to create a new knowledge base. Go to **Knowledge Bases**->**Edi
 
 For simplicity we show the modelling for just two exemplary products:
 
-![Example Product Neclace](images/necklace_without_navigation.png)
 ![Example Product Ring](images/brilliant_ruby_ring_without_navigation.png)
+![Example Product Neclace](images/necklace_without_navigation.png)
 
 These products share a common set of attributes:
 - Name
@@ -23,7 +23,13 @@ These products share a common set of attributes:
 
 We now need to find the classes and properties in the Good Relations vocabulary, that are equivalent to these attributes. Consulting the [Product or Service section](http://wiki.goodrelations-vocabulary.org/Documentation/Product_or_Service) in the [Good Relations documentation](<http://wiki.goodrelations-vocabulary.org/Documentation>) yields the class [`gr:ProductOrServiceModel`](http://www.heppnetz.de/ontologies/goodrelations/v1.html#ProductOrServiceModel), which is "*A product model, i.e. a datasheet, like "Nikon T90", "iPod Nano 16 GB", or similar. This is basically the abstract definition of product features for mass-produced commodities.*".
 
-We thus create a new Resource 
+Each of our product models now needs two classes, gr:ProductOrServiceModel being one and and one for the *category* or *type of product* being the other.
+
+[The documentation of `gr:ProductOrServiceModel`](http://www.heppnetz.de/ontologies/goodrelationsv1.html#ProductOrServiceModel) contains the following matching Properties (rdfs:domain):
+- `gr:name`
+- `gr:description`
+
+The remaining attribute, *price* is .
 
 
 
