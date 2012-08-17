@@ -56,10 +56,12 @@ The business entity and the offering we model as:
     ex:GoldenNecklaceOffering
      a gr:Offering;
      gr:hasBusinessFunction gr:Sell;
+     gr:includes ex:GoldenNecklaceProductModel;
+     gr:hasPriceSpecification ex:GoldenNecklacePriceSpecification.
 
+Now we just need to define the price specification:
 
-ex:GoldenNecklaceProducts
- a gr:ProductOrServiesSomeInstancesPlaceholder
-
-
-
+    ex:GoldenNecklacePriceSpecification
+     a gr:UnitPriceSpecification;
+     hasCurrency "EUR";
+     hasCurrencyValue "35".
