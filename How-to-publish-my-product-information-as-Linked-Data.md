@@ -66,4 +66,4 @@ Now we just need to define the price specification:
      hasCurrency "EUR";
      hasCurrencyValue "35".
 
-You have successfully modelled a product model and it's offering. Repeat this process for all your products.
+You now have successfully modelled a product model and it's offering. Repeat this process for all your products.
