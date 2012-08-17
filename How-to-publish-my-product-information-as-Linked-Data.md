@@ -20,7 +20,7 @@ This product has the following attributes we want to model:
 
 We now need to find the classes and properties in the Good Relations vocabulary, that are equivalent to these attributes. Consulting the [Product or Service section](http://wiki.goodrelations-vocabulary.org/Documentation/Product_or_Service) in the [Good Relations documentation](<http://wiki.goodrelations-vocabulary.org/Documentation>) yields the class [`gr:ProductOrServiceModel`](http://www.heppnetz.de/ontologies/goodrelations/v1.html#ProductOrServiceModel), which is "*A product model, i.e. a datasheet, like "Nikon T90", "iPod Nano 16 GB", or similar. This is basically the abstract definition of product features for mass-produced commodities.*".
 
-Our product model now needs two classes, gr:ProductOrServiceModel being one, and one for the *category* or *type of product*, which is a *Neclace* being the other. First we look for a fitting class in Good Relations but fail to find any. The next place to go should be the [eClassOWL - The Web Ontology for Products and Services](http://www.heppnetz.de/projects/eclassowl/) but even there we don't find a fitting class. Fortunately, Wikipedia and thus it's Semantic Web counterpart DBpedia, has up-to-date entries for nearly everything and we can use `http://dbpedia.org/resource/Necklace`.
+Our product model now needs two classes, gr:ProductOrServiceModel being one, and one for the *category* or *type of product*, which is a *Neclace* being the other. First we look for a fitting class in Good Relations but fail to find any. The next place to go should be the [eClassOWL - The Web Ontology for Products and Services](http://www.heppnetz.de/projects/eclassowl/) but even there we don't find a fitting class. Fortunately, Wikipedia and thus its Semantic Web counterpart DBpedia, has up-to-date entries for nearly everything and we can use `http://dbpedia.org/resource/Necklace`.
 
 [The documentation of `gr:ProductOrServiceModel`](http://www.heppnetz.de/ontologies/goodrelationsv1.html#ProductOrServiceModel) contains the following matching Properties (rdfs:domain):
 - `gr:name`
@@ -39,27 +39,24 @@ We can thus model (in Turtle Syntax):
 
 For directions on how get this data into the knowledge base, see [How to create and publish a SKOS Taxonomy in 5 minutes - Add classes and properties using dialogs](How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes#dialog).
 
+The remaining attribute, *price*, cannot be directly modelled as an attribute of the product model. The problems are:
 
-The remaining attribute, *price* is .
+- we don't want to sell our *product model* (which would be equivalent to selling the trademark) but a *product* instead
+- there can be different prices at different shops and different times
 
-## From a Database
+Therefore we need the class [`gr:Offering`](http://www.heppnetz.de/ontologies/goodrelations/v1#Offering), which represents a the announcement of `gr:BusinessEntity` to provide (or seek) a `gr:BusinessFunction` for a certain `gr:ProductOrService`.
 
-publish as rdfa
+The business entity and the offering we model as:
 
-see the [The GoodRelations vocabulary in detail (video tutorial)](http://vimeo.com/8118439)
+     ex:myCompany
+      a gr:BusinessEntity;
+      gr:hasLegalName "My Company"^^xsd:string;
+      gr:offers ex:GoldenNecklaceOffering.
 
-ex:myCompany
- a gr:BusinessEntity;
- gr:hasLegalName "My Company"^^xsd:string;
- gr:offers ex:GoldenNecklaceOffering.
+    ex:GoldenNecklaceOffering
+     a gr:Offering;
+     gr:hasBusinessFunction gr:Sell;
 
-ex:BrilliantRubyRingOffering
-a gr:Offering;
-gr:hasBusinessFunction gr:Sell;
-
-ex:GoldenNecklaceOffering
-a gr:Offering;
-gr:hasBusinessFunction gr:Sell;
 
 ex:GoldenNecklaceProducts
  a gr:ProductOrServiesSomeInstancesPlaceholder
