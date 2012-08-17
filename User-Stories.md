@@ -14,6 +14,6 @@ OntoWiki 5 min to success user stories :-)
 
 ### [How to publish my product information as Linked Data?](How-to-publish-my-product-information-as-Linked-Data)
 
-### How to consume and link product information from the Linked Data web?
+### [How to consume and link product information from the Linked Data web?](How-to-consume-and-link-product-information-from-the-Linked-Data-web)
 
-### How to setup a Linked Data notification and synchronisation hub?
+### [How to setup a Linked Data notification and synchronisation hub?](How-to-setup-a-Linked-Data-notification-and-synchronisation-hub)
