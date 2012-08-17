@@ -42,7 +42,7 @@ The remaining attribute, *price*, cannot be directly modelled as an attribute of
 - we don't want to sell our *product model* (which would be equivalent to selling the trademark) but a *product* instead
 - there can be different prices at different shops and different times
 
-Therefore we need the class [`gr:Offering`](http://www.heppnetz.de/ontologies/goodrelations/v1#Offering), which represents an announcement of `gr:BusinessEntity` to provide (or seek) a `gr:BusinessFunction` for a certain `gr:ProductOrService`.
+Therefore we need the class [`gr:Offering`](http://www.heppnetz.de/ontologies/goodrelations/v1#Offering), which represents an announcement of an `gr:BusinessEntity` to provide (or seek) a `gr:BusinessFunction` for a certain `gr:ProductOrService`.
 
 The business entity and the offering we model as:
 
