@@ -4,17 +4,14 @@
     @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
     @prefix ex: <http://www.example.com/>.
 
-    ex:Animal rdf:type skos:Concept;
-      skos:prefLabel "Animal"@en;
-      skos:hiddenLabel "Annimal"@en.
+    ex:Product rdf:type skos:Concept;
+      skos:prefLabel "Product"@en;
 
-    ex:Dog rdf:type skos:Concept;
-      skos:prefLabel "Dog"@en;
-      skos:hiddenLabel "Dogg"@en;
-      skos:broader ex:Animal.
-
-    ex:Pluto rdf:type ex:Dog;
-     skos:prefLabel "Pluto".                                                              
+    ex:Jewellery rdf:type skos:Concept;
+      skos:prefLabel "Jewellery"@en-GB;
+      skos:prefLabel "Jewelry"@en-US;
+      skos:altLabel "Jewelery"@en-GB;
+      skos:broader ex:Product.                                                  
 
 ## Create the knowledge base
 - Open OntoWiki and log in as "Admin" or some other user that can create knowledge bases.
@@ -26,11 +23,11 @@ Now you have several options:
 - Select **Create Empty Knowledge Base** and click on **Create Knowledge Base**.
 - Go to **Navigation: Classes**->**Edit**->**Add resource here**.
 - Set the **Type** to `skos:Concept`.
-- Click on **Add Property** and choose **preferred label**. Type `Animal` in the text box and choose `en` as a language.
-- Click on **Add Property** again, type `skos:hiddenLabel` in the text field and hit enter. Type `Annimal` in the text box and choose `en` as a language. Click on **Create Resource**.
-- On the right you should see the window "Properties of Animal". Click on **Clone** in the **Properties** tab. Replace the values of the preferedLabel and hiddenLabel with `Dog` and `Dogg`, respectively.
-- Click on **Add Property** and type `skos:broader`. Select **Resource** and type `http://www.example.com/Class/Animal` in the text field.
-- Go to **Navigation: Classes**->**Edit**->**Add resource here**. Click on **Add Property**->**Preferred Label** and put `Pluto` into the text field. Click on the small triangle and select "en" as the language. Click on **Create Resource**. Under the tab **Properties**, go to the row **rdf:type** and click on the pencil symbol on the right (**Edit Values**). Change the type to `http://www.example.com/skos_Concept/Dog` and click on **Save Changes**.
+- Click on **Add Property** and choose **preferred label**. Type `Product` in the text box and choose `en` as a language. Click on **CreateResource**.
+- On the right you should see the window "Properties of Product". Click on **Clone** in the **Properties** tab. Replace the values of the preferedLabel with `Jewellery` and the language tag with `en-GB`.
+- Click on **Add Property**, type `skos:prefLabel` in the text field and hit enter. Type `Jewelry` in the text box and choose `en-US` as a language.
+- Click on **Add Property** again, type `skos:altLabel` in the text field and hit enter. Type `Jewelery` in the text box and choose `en-GB` as a language.
+- Click on **Add Property** and type `skos:broader`. Select **Resource** and type `http://www.example.com/Class/Product` in the text field. Click on **Create Resource**.
 
 ### <a id="upload-file"></a>Upload a file
 - Copy the example taxonomy and save it as a file named `example.n3`.
