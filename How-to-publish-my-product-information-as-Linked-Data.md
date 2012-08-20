@@ -4,7 +4,11 @@ The next section describes this process for an exemplary product, but if you hav
 
 ## Modelling your Product Data with an Example
 
+### Import the Good Relations Vocabulary
+
 First, you need to create a new knowledge base. Go to **Knowledge Bases**->**Edit**->**Create Knowledge Base**. Name it `http://exampleproducts.com`, select **Import From the Web** and enter `http://www.heppnetz.de/ontologies/goodrelations/v1.owl` into the location field. Click on **Save Model Configuration**. The knowledge base now contains the complete Good Relations vocabulary. 
+
+### Identify Attributes
 
 For simplicity we show the modelling for just one exemplary product:
 
@@ -16,6 +20,8 @@ This product has the following attributes we want to model:
 - Description
 - Price
 
+### Find matching Classes and Properties
+
 We now need to find the classes and properties in the Good Relations vocabulary that are equivalent to these attributes. Consulting the [Product or Service section](http://wiki.goodrelations-vocabulary.org/Documentation/Product_or_Service) in the [Good Relations documentation](<http://wiki.goodrelations-vocabulary.org/Documentation>) yields the class [`gr:ProductOrServiceModel`](http://www.heppnetz.de/ontologies/goodrelations/v1.html#ProductOrServiceModel), which is "*A product model, i.e. a datasheet, like "Nikon T90", "iPod Nano 16 GB", or similar. This is basically the abstract definition of product features for mass-produced commodities.*".
 
 Our product model now needs two classes, gr:ProductOrServiceModel being one, and one for *Neclace* being the other. First we look for a fitting class in Good Relations but fail to find any. The next place to go should be [eClassOWL - The Web Ontology for Products and Services](http://www.heppnetz.de/projects/eclassowl/) but even there we don't find a fitting class. Fortunately, Wikipedia, and thus its Semantic Web counterpart DBpedia, has up-to-date entries for nearly everything and we can use `http://dbpedia.org/resource/Necklace`.
@@ -24,7 +30,7 @@ Our product model now needs two classes, gr:ProductOrServiceModel being one, and
 - `gr:name`
 - `gr:description`
 
-We can thus model (in Turtle Syntax):
+### Modelling the Data
 
     @prefix ex: <http://exampleproducts.com/>.
     @prefix dbpedia: <http://dbpedia.org/resource/>.
