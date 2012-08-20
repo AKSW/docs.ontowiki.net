@@ -45,3 +45,6 @@ Now you have several options:
 - Select **Paste Source**.
 - Select Format **n3**, copy the example taxonomy and paste it into the text box..
 - Click on **Create Knowledge Base** and then **Save Model Configuration**.
+
+Go to the **Knowledge Bases** widget and select **products.com**. Under **Model info** click on **Actions**->**view all resources**. You should now see a list of the created instances.
+![OntoWiki Screenshot with the Jewellery taxonomy resource list](images/ontowiki-screenshot-taxonomy-jewellery-resource-list.png)
