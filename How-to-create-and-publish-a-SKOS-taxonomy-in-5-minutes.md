@@ -1,4 +1,4 @@
-In a real world case you would have deployed OntoWiki on a server reachable by some specific URL. Lets assume that URL is `http://www.products.com`. After the following steps the resources created in this examples would then be resolvable by accessing them with a browser, for example by visiting `http://www.products.com/owl_Class/Jewellery`.
+In a real world case you would have deployed OntoWiki on a server reachable by some specific URL. Lets assume that URL is `http://www.products.com`. After the following steps the resources created in this examples would then be resolvable by accessing them with a browser, for example by visiting `http://www.products.com/owl_Class/Jewellery`. This means that all resources created in OntoWiki are automatically published.
 
 ## <a id="taxonomy"></a>The example taxonomy
 
