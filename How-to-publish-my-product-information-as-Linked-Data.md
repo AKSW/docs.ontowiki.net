@@ -30,7 +30,7 @@ Our product model now needs two classes, gr:ProductOrServiceModel being one, and
 - `gr:name`
 - `gr:description`
 
-### Modelling the Data
+### Model the Data
 
     @prefix ex: <http://exampleproducts.com/>.
     @prefix dbpedia: <http://dbpedia.org/resource/>.
