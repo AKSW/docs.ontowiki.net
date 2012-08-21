@@ -18,6 +18,8 @@ In a real world case you would have deployed OntoWiki on a server reachable by s
       skos:altLabel "Jewelery"@en;
       skos:broader ex:Product.                                                  
 
+*Note: In a real world case it would be better to reuse an existing product class. for example `http://schema.org/Product`*.
+
 ## Create the knowledge base
 - Open OntoWiki and log in as "Admin" or some other user that can create knowledge bases.
 - Go to **Knowledge Bases**->**Edit**->**Create Knowledge Base**.
