@@ -97,7 +97,16 @@ Add the following lines to the odbc.ini file:
 
 Now make sure, PHP can connect to Virtuoso via ODBC.
 On some Linux systems you may have to install the ODBC package for PHP (`php5-odbc`).
-To test the connection, create a file called `odbctest.php` in you webroot with the following PHP code in it:
+
+Newer versions of OntoWiki come with a script to test the connectivity to Virtuoso. Just type the following on the command-line while in the OntoWiki root directory:
+
+    make odbctest
+
+If this gives you an error like
+
+    make: *** No rule to make target `odbctest'.  Stop.
+
+try the following to test the connection: Create a file called `odbctest.php` in you webroot with the following PHP code in it:
 
     <?php
     $conn   = odbc_connect('VOS', 'dba', 'dba');
