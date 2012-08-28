@@ -21,12 +21,13 @@ An extension is a meta container that can contain any/multiple of the below expl
 ow-root/
 * index.php
 * extensions/
+ * files.ini
  * files/
   * FilesController.php
   * FilesModule.php
   * RelatedFilesModule.php
   * RemoteFilesPlugin.php
-  * default.ini
+  * doap.n3
   * templates/
    * navigation/
     * listfiles.phtml
@@ -37,7 +38,7 @@ ow-root/
 This example seems rather complex but this way you will get all possibilities of a extension.
 You can see that one extension folder (files) contains a controller and multiple modules and a plugin.
 The files ending in 'Controller.php', 'Module.php' etc will be included by the extension Manager and the contained Controller and Modules etc. will be instantiated and handled accordingly.
-The configuration that is stored in 'default.ini' is available in all of the extensions.
+The configuration that is stored in 'doap.n3' is available in all of the extensions.
 The 'files.ini' in the parent folder can contain customized configurations that overrides the default settings; that way you have these local changes independent from our source code versioning.
 The filename of that local ini must be the name of the extension.
 Then you will notice the files ending in ".phtml": these are Zend templates.
@@ -49,7 +50,7 @@ An example for Module templates could be the relatedfiles template.
 Components are pluggable MVC controllers to which requests are dispatched.
 Usually, but not necessarily, components provide the main window's content and, in that case, can register with the navigation to be accessible by the user.
 In other cases components can function as controllers that serve asynchronous requests.
-Components are statically configured by a 'component.ini' file within the component's folder.
+Components are statically configured by the doap.n3 file.
 
 Components can be associated with a helper object that is instantiated on each request (instead of just requests the component serves).
 Thus you can use a helper to do certain tasks like registering a menu or navigation component.
@@ -72,9 +73,10 @@ Components, where you can sneak good code:
 
 Modules display little windows that provide additional user interface elements with which the user can affect the main window's content.
 Since some modules are highly dynamic extensions, they can be configured both statically and dynamically.
-Static configuration works in the same way as with other extensions; a module.ini file is placed in the module's root directory.
-In addition, a module class needs to extend 'OntoWiki_Module' and can redefine several of its methods in order to allow for dynamic customization.
-If present, return values will overwrite static configuration settings in the 'module.ini' file.
+Static configuration works in the same way as with other extensions; the configuration from the doap.n3 is available to the module.
+In addition, a module class needs to extend 'OntoWiki_Module' and can redefine several of its methods in order to allow for dynamic customization. 
+If present, return values will overwrite static configuration settings in the 'doap.n3' file (
+e.g. the method getTitle overwrites the title property).
 
 Module classes must be named with an extension _Module_ appended to the module name with the first letter capitalized.
 
@@ -91,9 +93,9 @@ Modules, where you can sneak good code:
 
 Plug-ins are the most basic, yet most flexible types of extensions.
 They consist of arbitrary code that is executed on certain events.
-Plug-ins need to be registered for events in the 'plugin.ini' config file that has to be placed in the same folder as the plug-in class.
+Plug-ins need to be registered for events in the 'doap.n3' config file.
 There is no specific base-class required for a plug-in.
-The only requirement is that the class name must end with the suffix _Plugin_, which is appended to the plug-in's name (e.g. the folder) with the first letter in upper case.
+The only conventions are the class name and method names to catch events. The class name must end with the suffix _Plugin_, which is appended to the extensions's name (e.g. the folder) with the first letter in upper case (e.g. FilesPlugin). The method names are inspected by reflection, when a mehtod name matches a event name, that method is notified when this event is thrown.
 
 Typical things you can do with a plugin:
 
