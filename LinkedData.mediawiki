@@ -9,11 +9,19 @@ In order to publish you data as Linked Data, you have to follow these steps:
 == Activate the linked data plugin ==
 it is default activated ...
 
+== Make sure URL rewrite works for your installation ==
+
+* '''a2enmod rewrite''' turns on Apache 2 module for URL rewrites on a Linux system
+** Other systems and webservers have their own procedures
+* Check your rewrite rules in your webserver config
+
+If your rewrites works, the URLs for browsing OntoWiki should not have any reference to '''index.php'''.
+
 == Make sure your URIs are part of the OntoWiki installation namespace==
-If your OntoWiki is under http://example.org/OntoWiki/ you shoud create a Knowledge Base http://example.org/OntoWiki/YourData/ or similar and create your resources in it like http://example.org/OntoWiki/YourData/Person/Norm .
+If your OntoWiki is under http://example.org/OntoWiki/ you should create a Knowledge Base http://example.org/OntoWiki/YourData/ or similar and create your resources in it like http://example.org/OntoWiki/YourData/Person/Norm .
 
 == Make sure your Knowledge Base is readable by the Anonymous User ==
-Login as an Admin, search for Users in the System Config and and add your Knowledge Base to the property `readable model` for the Anonymous User.
+Login as an Admin, search for Users in the System Config Knowledge Base and and add the Base URI of your own Knowledge Base to the property `readable model` for the Anonymous User.
 
 It is also possible to restrict the access to your Linked data but this means that linked data clients need to authenticate with HTTP auth.
 
