@@ -43,6 +43,10 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
             try_files $uri $uri/ /index.php;
         }
     
+        
+        # Rewrite for favicon
+        rewrite ^/favicon\.(.*)$ /application/favicon.$1 break;
+
         # rewrite all URLs to index.php
         if (!-e $request_filename) {
             rewrite ^.*$ /index.php last;
@@ -68,6 +72,33 @@ OntoWiki will be available through your browser at `http://localhost:8080`.
 ## Known Problems
 _none_
 (please add problems you may have with this configuration here and to the issue tracker)
+
+**Rewrite for favicon**
+
+To enable display of the favicon, a separate rewrite should be added. I already made the change in the above Wiki text.
+
+```shell
+# Rewrite for favicon
+rewrite ^/favicon\.(.*)$ /application/favicon.$1 break;
+```
+
+**Security**
+
+Also, I wonder if all security concerns inherent in the Apache rewrite rule
+
+```shell
+RewriteRule !((extensions|libraries).*|\.(js|ico|gif|jpg|png|css|php|swf|json))$ index.php
+```
+are being met.
+
+I personally added ```|\.ini``` to the ```location ~``` clause from the previous Wiki text, such, but I feel i left out something.
+
+```shell
+# Zugriff auf sensible Dateien verwehren
+location ~ (\.inc\.php|\.tpl|\.sql|\.tpl\.php|\.db|\.ini)$ {
+    deny all;
+}
+```
 
 ## Further Information
 * http://wiki.nginx.org/Zend_Framework
