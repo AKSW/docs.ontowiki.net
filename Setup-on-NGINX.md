@@ -9,7 +9,7 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
     ##
     # This is a configurationfile to run an instance of OntoWiki on a nginx server
     # Read more about OntoWiki at http://ontowiki.net
-    server {
+        server {
         listen   8080; ## listen for ipv4; this line is default and implied
         #listen   [::]:80 default ipv6only=on; ## listen for ipv6
     
@@ -17,37 +17,25 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
         server_name localhost;
     
         # path to ontowiki
-        # !!! please adopt to fit your needs !!!
+        # !!! please adapt to fit your needs !!!
         root /home/ontowiki/ontowiki/;
     
         # where the logs should go
-        # !!! you can also adopt this as you want !!!
+        # !!! you can also adapt this as you want !!!
         error_log /home/ontowiki/nginx/logs/ontowiki-error.log;
     
         index index.php;
     
-        # prevent access to sensible files
-        location ~ (\.inc\.php|\.tpl|\.sql|\.tpl\.php|\.db|\.ini)$ {
-            deny all;
-        }
-    
-        # deny access to .htaccess files, if Apache's document root
-        # concurs with nginx's one
-        location ~ /\.ht {
-            deny all;
-        }
-    
         # rewrite for favicon
         rewrite ^/favicon\.(.*)$ /application/favicon.$1 break;
     
-        set $is_image "f";
-    
-        if ($request_filename ~ ((extensions|libraries).*|\.(js|ico|gif|jpg|png|css|php|swf|json))$) {
-            set $is_image "t";
+        # check if the request is an exception and should not be handled by the index.php
+        if ($request_filename !~ ((extensions|libraries).*|\.(js|ico|gif|jpg|png|css|swf|json))$) {
+            set $is_exception "f";
         }
     
         # rewrite all other URLs to index.php
-        if ($is_image = "f") {
+        if ($is_exception = "f") {
             rewrite ^.*$ /index.php last;
         }
     
@@ -55,9 +43,6 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
         # see also [1] for a UNIX socket configuration and some other details.
         # [1]: http://library.linode.com/web-servers/nginx/php-fastcgi/ubuntu-10.04-lucid
         location ~ \.php(.*)$ {
-    
-            rewrite ^.*$ /index.php break;
-    
             include fastcgi_params;
             fastcgi_pass 127.0.0.1:9000;
             fastcgi_index index.php;
@@ -74,33 +59,6 @@ OntoWiki will be available through your browser at `http://localhost:8080`.
 ## Known Problems
 _none_
 (please add problems you may have with this configuration here and to the issue tracker)
-
-**Rewrite for favicon**
-
-To enable display of the favicon, a separate rewrite should be added. I already made the change in the above Wiki text.
-
-```shell
-# Rewrite for favicon
-rewrite ^/favicon\.(.*)$ /application/favicon.$1 break;
-```
-
-**Security**
-
-Also, I wonder if all security concerns inherent in the Apache rewrite rule
-
-```shell
-RewriteRule !((extensions|libraries).*|\.(js|ico|gif|jpg|png|css|php|swf|json))$ index.php
-```
-are being met.
-
-I personally added ```|\.ini``` to the ```location ~``` clause from the previous Wiki text, such, but I feel i left out something.
-
-```shell
-# Zugriff auf sensible Dateien verwehren
-location ~ (\.inc\.php|\.tpl|\.sql|\.tpl\.php|\.db|\.ini)$ {
-    deny all;
-}
-```
 
 ## Further Information
 * http://wiki.nginx.org/Zend_Framework
