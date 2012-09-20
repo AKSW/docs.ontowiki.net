@@ -22,12 +22,12 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
     
         # where the logs should go
         # !!! you can also adopt this as you want !!!
-        error_log /tmp/logs/error.log;
+        error_log /home/ontowiki/nginx/logs/ontowiki-error.log;
     
         index index.php;
     
         # prevent access to sensible files
-        location ~ (\.ini)$ {
+        location ~ (\.inc\.php|\.tpl|\.sql|\.tpl\.php|\.db|\.ini)$ {
             deny all;
         }
     
@@ -37,18 +37,17 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
             deny all;
         }
     
-        location / {
-            # First attempt to serve request as file, then
-            # as directory, then fall back to index.php
-            try_files $uri $uri/ /index.php;
+        # rewrite for favicon
+        rewrite ^/favicon\.(.*)$ /application/favicon.$1 break;
+    
+        set $is_image "f";
+    
+        if ($request_filename ~ ((extensions|libraries).*|\.(js|ico|gif|jpg|png|css|php|swf|json))$) {
+            set $is_image "t";
         }
     
-        
-        # Rewrite for favicon
-        rewrite ^/favicon\.(.*)$ /application/favicon.$1 break;
-
-        # rewrite all URLs to index.php
-        if (!-e $request_filename) {
+        # rewrite all other URLs to index.php
+        if ($is_image = "f") {
             rewrite ^.*$ /index.php last;
         }
     
@@ -56,6 +55,9 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
         # see also [1] for a UNIX socket configuration and some other details.
         # [1]: http://library.linode.com/web-servers/nginx/php-fastcgi/ubuntu-10.04-lucid
         location ~ \.php(.*)$ {
+    
+            rewrite ^.*$ /index.php break;
+    
             include fastcgi_params;
             fastcgi_pass 127.0.0.1:9000;
             fastcgi_index index.php;
