@@ -9,7 +9,9 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
     ##
     # This is a configurationfile to run an instance of OntoWiki on a nginx server
     # Read more about OntoWiki at http://ontowiki.net
-        server {
+    ##
+    
+    server {
         listen   8080; ## listen for ipv4; this line is default and implied
         #listen   [::]:80 default ipv6only=on; ## listen for ipv6
     
