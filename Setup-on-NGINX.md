@@ -62,7 +62,7 @@ OntoWiki will be available through your browser at `http://localhost:8080`.
 ### File uploads exceeding "client_max_body_size"
 Nginx has a separate system for limiting interaction with the server. One of these, "client_max_body_size", limits the payload of a client request, thus limiting the allowed size of POST requests.  
 
-To allow for larger file uploads in OntoWiki, one would need to adjust both the value of "[client_max_body_size](http://wiki.nginx.org/HttpCoreModule#client_max_body_size)" in Nginx setup and "[upload_max_filesize](www.php.net/manual/ini.core.php#ini.upload-max-filesize)" in the relevant php.ini file, /etc/php5/cli/php.ini in my case.  
+To allow for larger file uploads in OntoWiki, one would need to adjust both the value of "[client_max_body_size](http://wiki.nginx.org/HttpCoreModule#client_max_body_size)" in Nginx setup and "[upload_max_filesize](http://www.php.net/manual/ini.core.php#ini.upload-max-filesize)" in the relevant php.ini file, /etc/php5/cli/php.ini in my case.  
 
 ## Known Problems
 
