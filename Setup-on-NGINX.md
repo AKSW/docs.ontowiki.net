@@ -59,7 +59,12 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
 OntoWiki will be available through your browser at `http://localhost:8080`.
 
 ## Known Problems
-_none_
+Nginx has a separate system for limiting interaction with the server. One of these, "client_max_body_size", limits the payload of a client request, thus limiting the allowed size of POST requests.  
+
+To allow for larger file uploads in OntoWiki, one would need to adjust both the value of "client_max_body_size" in Nginx setup and "upload_max_filesize" in the relevant php.ini file, /etc/php5/cli/php.ini in my case.  
+
+Please refer to: https://github.com/AKSW/OntoWiki/issues/146  
+
 (please add problems you may have with this configuration here and to the issue tracker)
 
 ## Further Information
