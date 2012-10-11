@@ -114,23 +114,24 @@ config.classes.hideDefaultHierarchy = false
 ;;; More info instance config: http://code.google.com/p/ontowiki/wiki/InstanceListSpecification
 config.classes.list.config = "{|filter|:[{|rdfsclass|:|%resource%|,|mode|:|rdfsclass|}]}"
 
-;;;;;;;;;;;;;;;;; RDFS/OWL Property Hierarchy
-config.properties.name              = "Properties"
-config.properties.titleMode            = titleHelper
-config.properties.hierarchyTypes[]     = "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-config.properties.hierarchyTypes[]     = "http://www.w3.org/2002/07/owl#DatatypeProperty"
-config.properties.hierarchyTypes[]     = "http://www.w3.org/2002/07/owl#ObjectProperty"
-config.properties.hierarchyTypes[]     = "http://www.w3.org/2002/07/owl#AnnotationProperty"
-config.properties.hierarchyRelations.in[] = "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
-config.properties.instanceRelation.out[]  = "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
-config.properties.showImplicitElements = false
-config.properties.showEmptyElements    = true
-config.properties.showCounts           = false
-config.properties.hideDefaultHierarchy = false
-config.properties.checkSub = true
-config.properties.list.config = "{|shownProperties|:[{|uri|:|%resource%|,|label|:|Label 1|,|action|:|add|,|inverse|:false}],|filter|:[{|property|:|%resource%|,|filter|:|bound|}]}"
+### RDFS/OWL Property Hierarchy
 
-;;;;;;;;;;;;;;;;; Spatial Hierarchy
+    config.properties.name              = "Properties"
+    config.properties.titleMode            = titleHelper
+    config.properties.hierarchyTypes[]     = "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    config.properties.hierarchyTypes[]     = "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    config.properties.hierarchyTypes[]     = "http://www.w3.org/2002/07/owl#ObjectProperty"
+    config.properties.hierarchyTypes[]     = "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    config.properties.hierarchyRelations.in[] = "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+    config.properties.instanceRelation.out[]  = "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+    config.properties.showImplicitElements = false
+    config.properties.showEmptyElements    = true
+    config.properties.showCounts           = false
+    config.properties.hideDefaultHierarchy = false
+    config.properties.checkSub = true
+    config.properties.list.config = "{|shownProperties|:[{|uri|:|%resource%|,|label|:|Label 1|,|action|:|add|,|inverse|:false}],|filter|:[{|property|:|%resource%|,|filter|:|bound|}]}"
+
+### Spatial Hierarchy
 config.spatial.name = "Spatial"
 config.spatial.hierarchyTypes[] = "http://ns.aksw.org/spatialHierarchy/SpatialArea"
 config.spatial.hierarchyTypes[] = "http://ns.aksw.org/spatialHierarchy/Planet"
@@ -150,7 +151,7 @@ config.spatial.titleMode = titleHelper
 ;config.spatial.showEmptyElements = true
 ;config.spatial.showCounts = false
 
-;;;;;;;;;;;;;;;;; Faunistics Hierarchy
+### Faunistics Hierarchy
 config.faun.name = "Faunistics"
 config.faun.hierarchyTypes[] = "http://purl.org/net/faunistics#Family"
 config.faun.hierarchyTypes[] = "http://purl.org/net/faunistics#Genus"
@@ -166,7 +167,7 @@ config.faun.checkSub = true
 ;config.faun.showCounts = false
 
 
-;;;;;;;;;;;;;;;;; SKOS Hierarchy
+### SKOS Hierarchy
 config.skos.name = "SKOS"
 config.skos.hierarchyTypes[] = "http://www.w3.org/2004/02/skos/core#Concept"
 ;config.skos.hierarchyTypes[] = "http://www.w3.org/2004/02/skos/core#ConceptScheme"
@@ -177,7 +178,7 @@ config.skos.instanceRelation.out[]  = "http://www.w3.org/2004/02/skos/core#broad
 config.skos.titleMode = titleHelper
 config.skos.showCounts = false
 
-;;;;;;;;;;;;;;;;; Organizational Hierarchy
+### Organizational Hierarchy
 config.org.name = "Groups"
 config.org.hierarchyTypes[] = "http://xmlns.com/foaf/0.1/Group"
 config.org.hierarchyTypes[] = "http://xmlns.com/foaf/0.1/Organization"
@@ -189,7 +190,7 @@ config.org.titleMode = titleHelper
 ;config.org.showEmptyElements = true
 config.org.showCounts = true
 
-;;;;;;;;;;;;;;;;; GO Hierarchy
+### GO Hierarchy
 config.go.name                    = "Gene Ontology"
 config.go.hierarchyTypes[]        = "http://www.geneontology.org/dtds/go.dtd#term"
 config.go.hierarchyRelations.in[] = "http://www.geneontology.org/dtds/go.dtd#is_a"
@@ -201,7 +202,7 @@ config.go.hideDefaultHierarchy    = false
 ;config.go.list.query              = "SELECT DISTINCT ?resourceUri WHERE { ?resourceUri <http://www.geneontology.org/GO.format.gaf-2_0.shtml#go_id> <%resource%>. FILTER (sameTerm(?property, <http://www.geneontology.org/dtds/go.dtd#is_a>) || sameTerm(?property, <http://www.geneontology.org/GO.format.gaf-2_0.shtml#with_from>) || sameTerm(?property, <http://www.geneontology.org/GO.format.gaf-2_0.shtml#go_id>) ) }"
 config.go.list.query              = "SELECT DISTINCT ?resourceUri WHERE { ?resourceUri <http://www.geneontology.org/GO.format.gaf-2_0.shtml#go_id> <%resource%> }"
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Checklist config
+### Checklist config
 config.checklist.name  = "Checklist"
 config.checklist.titleMode = titleHelper
 config.checklist.hierarchyTypes[] = "http://www.mindswap.org/2003/owl/geo/geoFeatures.owl#Country"
