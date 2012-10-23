@@ -110,34 +110,47 @@ _Note:_ Setting this option to true CAN BE TIME CONSUMING because all instances 
 
     config.<id>.showCounts = {true|false}
 
-;;; If set to true, navigation arrow will be visible only if there's subclasses
-;;; THIS CAN BE TIME CONSUMING
-config.classes.checkSub = true
+**Check Subclasses** If set to true, navigation arrow will be visible only if there's subclasses
 
-;;; If set to true, no default hierarchy is shown and the user MUST search
-;;; for an entry in order to browse from one of the search results
-;;; This is needed for very big databases like DBpedia
-config.classes.hideDefaultHierarchy = false
+_Note:_ Setting this option to true CAN BE TIME CONSUMING because all subclasses have to be counted.
 
-;;; If set, the hierarchy starts from this element and is restricted to this
-;config.classes.rootElement = ""
+    config.<id>.checkSub = {true|false}
 
-;;; If set, root node name will be changed to this
-;config.classes.rootName = ""
+**Hide default Hierarchy** If set to true, no default hierarchy is shown and the user MUST search
+for an entry in order to browse from one of the search results. This is needed for very big
+databases like DBpedia
 
+    config.<id>.hideDefaultHierarchy = {true|false}
+
+**Root Element** option can hold an explicitly defined root element. The hierarchy will start
+from this element and is restricted to this.
+
+    config.<id>.rootElement = ""
+
+**Root Name** will be the name/title of the root Element.
+
+    config.<id>.rootName = ""
+
+**TODO**
 ;;; If set, root node will be linked to this URI
 ;config.assets.rootURI = ""
+**TODO**
 
-;;; If set, the top level menu will be generated with this query
-;config.classes.query.top = "SELECT DISTINCT ?resourceUri WHERE { ?resourceUri <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.ontowiki.net/classtest/RdfsClassA> }"
+**Top-Query** If set, the top level menu will be generated with this query
 
-;;; If set navigate deeper queries will be generated based on this template. %resource% will be changed for parent resource
-;config.classes.query.deeper = "SELECT DISTINCT ?resourceUri WHERE { ?resourceUri <http://www.w3.org/2000/01/rdf-schema#subClassOf> <%resource%> OPTIONAL { ?resourceUri <http://ns.ontowiki.net/SysOnt/hidden> ?reg } FILTER (isURI(?resourceUri)) }"
+    config.<id>.query.top = "SELECT DISTINCT ?resourceUri WHERE { ?resourceUri <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ns.ontowiki.net/classtest/RdfsClassA> }"
 
-;;; If set, list will be generated using this query
-;config.classes.list.query = "SELECT DISTINCT ?resourceUri WHERE { ?resourceUri ?p ?o . ?resourceUri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?rdfsclassa FILTER (!isBLANK(?resourceUri)) FILTER (sameTerm(?rdfsclassa, <%resource%>)) }"
+**Deeper-Query** If set navigate deeper queries will be generated based on this template.
+`%resource%` will be replaced by the current parent resource
 
-;;; If set list will be generated using this JSON instanceConfig
-;;; All " must be replaced with |
-;;; More info instance config: http://code.google.com/p/ontowiki/wiki/InstanceListSpecification
-config.classes.list.config = "{|filter|:[{|rdfsclass|:|%resource%|,|mode|:|rdfsclass|}]}"
+    config.<id>.query.deeper = "SELECT DISTINCT ?resourceUri WHERE { ?resourceUri <http://www.w3.org/2000/01/rdf-schema#subClassOf> <%resource%> OPTIONAL { ?resourceUri <http://ns.ontowiki.net/SysOnt/hidden> ?reg } FILTER (isURI(?resourceUri)) }"
+
+**Query-List** If set, the instances list will be generated using this query
+
+    config.<id>.list.query = "SELECT DISTINCT ?resourceUri WHERE { ?resourceUri ?p ?o . ?resourceUri <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?rdfsclassa FILTER (!isBLANK(?resourceUri)) FILTER (sameTerm(?rdfsclassa, <%resource%>)) }"
+
+**List-Config** If set list will be generated using this JSON instanceConfig
+_Note:_ All `"` must be replaced by `|`
+_More info_ about [instance config](Instance-Lists).
+
+    config.<id>.list.config = "{|filter|:[{|rdfsclass|:|%resource%|,|mode|:|rdfsclass|}]}"
