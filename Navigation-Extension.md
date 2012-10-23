@@ -3,6 +3,8 @@ The Navigation Extension is one of the OntoWiki core extensions which are includ
 ## Configuration
 You can configure the Navigation Extension through the [Extension Configurator](Extension Configurator) or by manually editing its DOAP-File.
 
+_Note:_ currently this wiki page describes the configuration option using the INI-Syntax. This syntax is 1:1 mapped to the DOAP-Syntax so you might be ablte to figure out, how you have to write it in the DOAP-File.
+
 Here are some configuration keys and the description of there functionality:
 
 ### Sorting
@@ -11,25 +13,36 @@ To add a new sorting create two new entries:
     sorting.<key>.name = "Title (e.g. By ...)"
     sorting.<key>.type = "The URI http://"
 
-### RDFS/OWL Class Hierarchy
-The name is used for the gui (not as an id, id is the array name)
+### Hierarchy configuration
+With the navigation extension you are able to create a navigation for any kind of hierarchical
+system for your OntoWiki. For each different navigation hierarchy you have to add a set of options
+which are described in the following.
 
-    config.classes.name = "Classes"
+All configuration options start with a prefix `config.` which is followed by an id common to all
+configuration keys of one navigation configuration.
+
+    config.<id>.
+
+The name which is used for the GUI (not as an id)
+
+    config.<id>.name = "Navigation Name"
+    
 This option is used to disable caching for selected config
 
-    config.classes.cache = false
+    config.<id>.cache = {true|false}
 
 This option is used to configure, how much effort is used to prepare the
 titles of the hierarchy entries. The following config values are recognized:
+
   * titleHelper (default) (this is the fancy but slow titleHelper)
   * baseName              (just use the name after the last slash or hash)
-  
-    config.classes.titleMode = titleHelper
+
+    config.<id>.titleMode = titleHelper
 
 If false there will be no check for visibility and this type config
 will be always shown in menu
 
-    config.classes.checkVisibility = false
+    config.<id>.checkVisibility = {true|false}
 
 If present, this Relation ist used for ordering the hierarchy elements.
 In addition to that, ordering can be done in DESC or ASC direction
@@ -37,29 +50,36 @@ THIS CAN BE TIME CONSUMING because this is done on the RDF store
 If you dont use ordering, the first X entries are returned and sorted by PHP
 according to the name
 
-    config.classes.ordering.relation = "http://ns.ontowiki.net/SysOnt/order"
-    config.classes.ordering.modifier = DESC
+    config.<id>.ordering.relation = "http://ns.ontowiki.net/SysOnt/order"
+    config.<id>.ordering.modifier = {DESC|ASC}
 
-these are the resources which are presented in the navigation lists
-Note: The first of these resource is creatable via "Add Resource"
+**Hierarchy-Types** are the classes which are presented in the navigation lists. You have to specify a URI.
+Note: The first of these resource is used as class for resources created via "Add Resource".
 
-    config.classes.hierarchyTypes[] = "http://www.w3.org/2002/07/owl#Class"
-    config.classes.hierarchyTypes[] = "http://www.w3.org/2000/01/rdf-schema#Class"
+    config.<id>.hierarchyTypes[] = "http://www.w3.org/2002/07/owl#Class"
 
-hierarchy relations are used to ask for resources which have a certain parent
+**Hierarchy-Relations** are used to ask for resources which have a certain parent
 in addition to that, the absent of any parent is used to identify toplevel resources
-there are two types of hierarchy relations: incoming and outgoing
-outgoing means, the parent navigation resource is subject (like skos:narrower)
-incoming means, the child navigation resources are subjects (like rdfs:subClassOf)
+there are two types of hierarchy relations: incoming and outgoing.
+  * outgoing means, the parent navigation resource is subject (like skos:narrower)
+  * incoming means, the child navigation resources are subjects (like rdfs:subClassOf).
 
-    config.classes.hierarchyRelations.in[] = "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+_Note:_ Resources which occur at the object position of an incoming Hierarchy-Relation are implicitly
+treated as classes even if they don't explicitly have on of the Hierarchy-Types defined.
 
-instance relations are used create the list of resources based on the navigation entry
-again, there are two types of instance relations: incoming and outgoing
-outgoing means, the navigation resource is subject (like rdf:type)
-incoming means, the instance resources are subjects (like sioc:member_of)
+    config.<id>.hierarchyRelations.out[] = "http://www.w3.org/2004/02/skos/core#narrower"
+    config.<id>.hierarchyRelations.in[] = "http://www.w3.org/2000/01/rdf-schema#subClassOf"
 
-    config.classes.instanceRelation.out[]  = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+**Instance-Relations** are used to create the list of resources based on the navigation entry again,
+there are two types of instance relations: incoming and outgoing.
+  * outgoing means, the navigation resource is subject (like rdf:type)
+  * incoming means, the instance resources are subjects (like sioc:member_of)
+  
+_Note:_ Resources which occur at the object position of an incoming Instance-Relation are implicitly
+treated as classes even if they don't explicitly have on of the Hierarchy-Types defined.
+
+    config.<id>.instanceRelation.out[]  = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    config.<id>.instanceRelation.in[]  = "http://rdfs.org/sioc/ns#member_of"
 
 ;;; resources in this namespace are not visible by default but can be activated
 config.classes.hiddenNS[]   = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
