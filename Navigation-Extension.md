@@ -34,10 +34,12 @@ This option is used to disable caching for selected config
 This option is used to configure, how much effort is used to prepare the
 titles of the hierarchy entries. The following config values are recognized:
 
-  * titleHelper (default) (this is the fancy but slow titleHelper)
-  * baseName              (just use the name after the last slash or hash)
+* titleHelper (default) (this is the fancy but slow titleHelper)
+* baseName              (just use the name after the last slash or hash)
 
-    config.<id>.titleMode = titleHelper
+```
+config.<id>.titleMode = titleHelper
+```
 
 If false there will be no check for visibility and this type config
 will be always shown in menu
@@ -61,8 +63,8 @@ Note: The first of these resource is used as class for resources created via "Ad
 **Hierarchy-Relations** are used to ask for resources which have a certain parent
 in addition to that, the absent of any parent is used to identify toplevel resources
 there are two types of hierarchy relations: incoming and outgoing.
-  * outgoing means, the parent navigation resource is subject (like skos:narrower)
-  * incoming means, the child navigation resources are subjects (like rdfs:subClassOf).
+* outgoing means, the parent navigation resource is subject (like skos:narrower)
+* incoming means, the child navigation resources are subjects (like rdfs:subClassOf).
 
 _Note:_ Resources which occur at the object position of an incoming Hierarchy-Relation are implicitly
 treated as classes even if they don't explicitly have on of the Hierarchy-Types defined.
@@ -72,8 +74,8 @@ treated as classes even if they don't explicitly have on of the Hierarchy-Types 
 
 **Instance-Relations** are used to create the list of resources based on the navigation entry again,
 there are two types of instance relations: incoming and outgoing.
-  * outgoing means, the navigation resource is subject (like rdf:type)
-  * incoming means, the instance resources are subjects (like sioc:member_of)
+* outgoing means, the navigation resource is subject (like rdf:type)
+* incoming means, the instance resources are subjects (like sioc:member_of)
   
 _Note:_ Resources which occur at the object position of an incoming Instance-Relation are implicitly
 treated as classes even if they don't explicitly have on of the Hierarchy-Types defined.
@@ -81,26 +83,32 @@ treated as classes even if they don't explicitly have on of the Hierarchy-Types 
     config.<id>.instanceRelation.out[]  = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
     config.<id>.instanceRelation.in[]  = "http://rdfs.org/sioc/ns#member_of"
 
-;;; resources in this namespace are not visible by default but can be activated
-config.classes.hiddenNS[]   = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-config.classes.hiddenNS[]   = "http://www.w3.org/2000/01/rdf-schema#"
-config.classes.hiddenNS[]   = "http://www.w3.org/2002/07/owl#"
+**Hidden-Namespaces** can be defined to hide resources in these namespaces. They are not visible by
+default but can be activated with the option "View > Toggle Elements > Show Hidden Elements".
 
-;;; same as ignored namespaces but by relation
-config.classes.hiddenRelation[]   = "http://ns.ontowiki.net/SysOnt/hidden"
+    config.<id>.hiddenNS[]   = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 
-;;; If showImplicitElements is true, also resources without a type are shown in the list,
-;;; when they are correctly connected with an instanceRelation
-config.classes.showImplicitElements = true
+**Hidden-Relations** are used to hide resources which carry the defined relation.
 
-;;; If set to false, empty navigation entries are not shown by default
-;;; Empty means, they do not have instances
-;;; THIS CAN BE TIME CONSUMING
-config.classes.showEmptyElements = true
+    config.<id>.hiddenRelation[]   = "http://ns.ontowiki.net/SysOnt/hidden"
 
-;;; If set to true, instances are counted and display right next to the name
-;;; THIS CAN BE TIME CONSUMING
-config.classes.showCounts = false
+**Show implicit Elements** is a switch to show resources which don't explicitly have on of the
+Hierarchy-Types defined but are implicitly treated e.g. as classes by being part e.g of an
+Hierarchy-Relation or Instance-Relation.
+
+    config.classes.showImplicitElements = {true|false}
+
+**Show empty Elements** is a switch to show navigation-elements without instances
+
+_Note:_ Setting this option to false CAN BE TIME CONSUMING because all instances have to be counted.
+
+    config.<id>.showEmptyElements = {true|false}
+
+**Show Counts** switches if instances are counted and display right next to the name.
+
+_Note:_ Setting this option to true CAN BE TIME CONSUMING because all instances have to be counted.
+
+    config.<id>.showCounts = {true|false}
 
 ;;; If set to true, navigation arrow will be visible only if there's subclasses
 ;;; THIS CAN BE TIME CONSUMING
