@@ -7,3 +7,18 @@ a list of rendered target handbooks for OntoWiki
   * Architecture (Seebi, Phil)
   * Developer (Phil, Christian, Seebi)
   * User (Konrad, Haschek)
+
+In addition to that, we need
+
+  * Dev and Delivery Process Description
+    * Process Description
+    * stable versions
+    * QS Descriptions
+    * Roadmap
+  * Legal
+    * provide evidence IP
+    * support / maintenance contracts
+  * Support
+    * Bugtracking
+    * FAQ
+
