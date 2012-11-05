@@ -1,4 +1,4 @@
-This document describes the use of the PHPCodeSniffer to check if your coding style complies to the Ontowiki/Erfurt Coding standard.
+This section describes the use of the PHPCodeSniffer to check if your coding style complies to the Ontowiki/Erfurt Coding standard.
 
 ## Overview ##
 
