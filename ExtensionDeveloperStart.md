@@ -23,9 +23,3 @@ In addition to this, we recommend the php extension [[xdebug|http://www.xdebug.o
   * support for member functions
 
 We recommend to re-configure some php runtime variables for OntoWiki. Please have a look at [[Deployment-Recommendations]]
-
-= Tutorials for OntoWiki Extension Development Beginners =
-
-As further readings, please visit the following wiki pages:
-  * [[Extensions]]
-  * [[Coding-Standards]]
