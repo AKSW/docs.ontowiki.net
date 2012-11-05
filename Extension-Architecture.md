@@ -1,5 +1,3 @@
-OntoWiki has been extensible since version 0.8. In OntoWiki 1.x this goes even further and the extension architecture has been simplified.
-
 # Extension Architecture
 
 OntoWiki extensions are stored in the extensions folder. A extension can be composed four different types of extensions:
