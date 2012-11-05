@@ -1,4 +1,4 @@
-The idea of this tutorial is to have a starting point for all developer who wants to create their own OntoWiki extensions. This includes basic PHP and Zend Skills as well as configuration and setup information for a developers PHP engine.
+The idea of this tutorial is to have a starting point for all developers who want to create their own OntoWiki extensions. This includes basic PHP and Zend Skills as well as configuration and setup information for a developers PHP engine.
 
 = Tutorials for PHP Beginners =
 If you are new to PHP, please have a look at one of these tutorials:
