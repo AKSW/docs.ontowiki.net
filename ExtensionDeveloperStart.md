@@ -1,17 +1,16 @@
 The idea of this tutorial is to have a starting point for all developers who want to create their own OntoWiki extensions. This includes basic PHP and Zend Skills as well as configuration and setup information for a developers PHP engine.
 
-## Tutorials for PHP Beginners ##
-
+## Tutorials for PHP Beginners
 If you are new to PHP, please have a look at one of these tutorials:
   * http://tut.php-q.net/ (en + de)
   * http://www.w3schools.com/PHP/ (en)
   * http://www.professionelle-softwareentwicklung-mit-php5.de/erste_auflage/index.html (de)
 
-= Tutorials for Zend Beginners =
+## Tutorials for Zend Beginners
 If you know PHP but not Zend, we recommend these tutorial cause it refers to the newest Zend version:  
   * http://framework.zend.com/docs/quickstart
 
-= PHP Configuration for Developers =
+## PHP Configuration for Developers
 All you need is to re-configure your OntoWiki Installation to use the **debug mode**. For this, add the following line to your `config.ini`.
 
 {{{
