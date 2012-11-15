@@ -1,0 +1,1 @@
+This plug-in provides the possibility to define a URI scheme which will be applied, when new resources are created.
