@@ -5,36 +5,28 @@ title: Installation Process
 
 # Installation Process
 
-### VAD
-...
-### OntoWiki Installation with the Windows Installer (müsste man noch bauen?)
-...
-### (später OntoWiki Installation with an Ubuntu Image vbox image)
-### ... with an Ubuntu Package
-### Manual Installation
+## Automatic Installation
+## (VAD ?)
+## Windows Using the Installer (müsste man noch bauen?, gibt es da Bedarf?)
+## Ubuntu Using a Virtual Box Image
+## Ubuntu Using the Package Manager
 
-#### Windows (XAMP)
-##### Virtuoso
-#### Linux
-##### Apache, PHP and ODBC
-##### Virtuoso
-##### OntoWiki
-##### [Custom Startup Script for Debian](Custom-startup-script-for-Debian)
-### [OntoWiki on Microsoft IIS 7](Install-on-IIS)
--> siehe auch <GetOntoWikiUsers>
-### <php.ini-recommendations>
+## Manual Installation
+### Windows (XAMP)
+#### Virtuoso
+### Linux
+#### Apache, PHP and ODBC
+##### Install Apache, PHP and ODBC with the package manager of your distribution
 
-## Arch Linux
+Ubuntu:		`$ sudo apt-get install apache2 php5 php5-odbc libapache2-mod-php5 libmyodbc`
+Arch Linux:	`$ sudo pacman -S apache php php-apache php-odbc`
 
-### Apache, PHP and ODBC
-- Install Apache and PHP with the package manager
-
-        $ sudo pacman -S apache php apache-php php-odbc
-
-- Configure PHP by following the PHP section of the [LAMP entry in the Archlinux Wiki](https://wiki.archlinux.org/index.php/LAMP#PHP) (also consult that page if you have any problems installing Apache and PHP)
+##### Configure Apache for using PHP
+This is described for Arch Linux in the [LAMP entry in the Archlinux Wiki](https://wiki.archlinux.org/index.php/LAMP#PHP) but should be applicable to all distributions 
+(who uses Ubuntu? please check this).
 - Compile the libraries
 
-        AKSW-OntoWiki-062a14e$ sudo make deploy
+        AKSW-OntoWiki-somenumber$ sudo make deploy
 
 - Activate the iconv and ODBC extensions in `/etc/php/php.ini`
 
@@ -43,16 +35,15 @@ title: Installation Process
         extension=iconv.so
         extension=odbc.so
 
-- Install ODBC
+##### Configure ODBC
 
-        $ sudo pacman -S php-odbc
 
-    Add the following lines to the file `/etc/odbcinst.ini`: (create it if it doesn't exist, see [VirtuosoBackend](VirtuosoBackend))
+-  Add the following lines to the file `/etc/odbcinst.ini`: (create it if it doesn't exist, see [VirtuosoBackend](VirtuosoBackend))
 
         [virtuoso-odbc]
         Driver = /usr/lib/virtodbc.so
 
-    Add the following lines to the file `/etc/odbc.ini`: (create it if it doesn't exist)
+- Add the following lines to the file `/etc/odbc.ini`: (create it if it doesn't exist)
 
         [ODBC Data Sources]
         VOS = Virtuoso
@@ -65,8 +56,7 @@ title: Installation Process
 - (Re-)start Apache
 
             $ sudo /etc/rc.d/httpd restart
-### Virtuoso
-    - Please note that Virtuoso-opensource should be at least at [version 6.4](https://github.com/AKSW/OntoWiki/wiki/Deployment-Recommendations)
+#### Virtuoso
     - Install Virtuoso with the package manager
 
             $ sudo pacman -S virtuoso
@@ -84,7 +74,7 @@ title: Installation Process
 
             $ sudo virtuoso-t -f -c /var/lib/virtuoso/ontowiki/virtuoso.ini
 
-### OntoWiki
+#### OntoWiki
     - [Download OntoWiki](https://github.com/AKSW/OntoWiki/downloads) (choose "Download as tar.gz")
     - Unpack OntoWiki into your document root (the end of the file name may differ)
  
@@ -96,7 +86,6 @@ title: Installation Process
     - Open http://localhost
 
 The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#somenumber`
-
 ## Windows
 
 ### Apache
@@ -106,50 +95,51 @@ The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#s
         Go to `http://httpd.apache.org/download.cgi` and choose the latest stable release version that provides Windows binaries. Download the MSI Installer for this version. The line should look like _"Win32 Binary including OpenSSL 0.9.8t (MSI Installer): httpd-2.2.22-win32-x86-openssl-0.9.8t.msi"_.
     2. Run the Apache Installer
 
-        When you arrive at the "Server Information" dialog box, enter `localhost` for the Network Domain as well as for the Server Name and whatever email address you wish for the "Administrator's Email Address" field. The installer uses the information you enter to create a default Apache configuration file for you. You can always go back and manually change these values in your configuration file if you change your mind later. Leave the default setting of "for All Users, on Port 80, as a Service" as it is. Click "Next" when you're done (see [How to Install and Configure Apache 2 on Windows](http://www.thesitewizard.com/apache/install-apache-2-windows.shtml)).   
+When you arrive at the "Server Information" dialog box, enter `localhost` for the Network Domain as well as for the Server Name and whatever email address you wish for the "Administrator's Email Address" field. The installer uses the information you enter to create a default Apache configuration file for you. You can always go back and manually change these values in your configuration file if you change your mind later. Leave the default setting of "for All Users, on Port 80, as a Service" as it is. Click "Next" when you're done (see [How to Install and Configure Apache 2 on Windows](http://www.thesitewizard.com/apache/install-apache-2-windows.shtml)).   
 Go to `http://localhost/` and confirm that it shows "It works!".
+
 ### PHP
-    - Stop the Apache service
-        - Type `services.msc` into the search field in your start menu and click on "services"
-        - Rightclick on "Apache2._X_" and click on "Stop"          
-    - Go to <http://sourceforge.net/projects/phpinstallermsi/files/latest/download> and execute the MSI file that will automatically be downloaded.
-    - Choose the default options presented by the wizard.
-    - When prompted "Select a Web Server Setup" choose "Other CGI"
-    - Add the following lines to the file `C:\Program Files\Apache Software Foundation\Apache2.2\httpd.conf`: (you may need to change the owner of that file to the current user in order to modify it) (see <http://windows.fyicenter.com/73_Apache_PHP_Getting_HTTP_403_Forbidden_Error_on_PHP_Scripts.html>)
+- Stop the Apache service
+    - Type `services.msc` into the search field in your start menu and click on "services"
+    - Rightclick on "Apache2._X_" and click on "Stop"          
+- Go to <http://sourceforge.net/projects/phpinstallermsi/files/latest/download> and execute the MSI file that will automatically be downloaded.
+- Choose the default options presented by the wizard.
+- When prompted "Select a Web Server Setup" choose "Other CGI"
+- Add the following lines to the file `C:\Program Files\Apache Software Foundation\Apache2.2\httpd.conf`: (you may need to change the owner of that file to the current user in order to modify it) (see <http://windows.fyicenter.com/73_Apache_PHP_Getting_HTTP_403_Forbidden_Error_on_PHP_Scripts.html>)
 
-            ScriptAlias /php/  "C:/Program Files/PHP/"
-            AddHandler x-httpd-php .php
-            Action x-httpd-php "/php/php-cgi.exe"
-    
-            <Directory "C:/Program Files/PHP/">
-                AllowOverride None
-                Options None
-                Order allow,deny
-                Allow from all
+        ScriptAlias /php/  "C:/Program Files/PHP/"
+        AddHandler x-httpd-php .php
+        Action x-httpd-php "/php/php-cgi.exe"
+
+        <Directory "C:/Program Files/PHP/">
+            AllowOverride None
+            Options None
+            Order allow,deny
+            Allow from all
+        </Directory>
+    - search for `<Directory />` and change the contents of the tag to:
+
+            <Directory />
+                Options All
+                AllowOverride All
             </Directory>
-        - search for `<Directory />` and change the contents of the tag to:
 
-                <Directory />
-                    Options All
-                    AllowOverride All
-                </Directory>
+    - search for `/htdocs">` and change the the Directory tag to:
 
-        - search for `/htdocs">` and change the the Directory tag to:
-
-                <Directory "C:/Program Files/Apache Software Foundation/Apache2.2/htdocs">
-                 Options Indexes FollowSymLinks               
-                 Order allow,deny
-                 Allow from all
-                 AllowOverride All
-                </Directory>
-        - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
-    - Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
-    - Start the Apache service again
-        - Type `services.msc` into the search field in your start menu and click on "services".
-        - Rightclick on "Apache2._X_" and click on "Start".
-    - Confirm that PHP works and is successfully integrated in Apache.
-        - create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\test.php` and set its content to `<?php phpinfo(); ?>`
-        - Go to `http://localhost/test.php` and confirm that it shows a big table of PHP settings.
+            <Directory "C:/Program Files/Apache Software Foundation/Apache2.2/htdocs">
+             Options Indexes FollowSymLinks               
+             Order allow,deny
+             Allow from all
+             AllowOverride All
+            </Directory>
+    - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
+- Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
+- Start the Apache service again
+    - Type `services.msc` into the search field in your start menu and click on "services".
+    - Rightclick on "Apache2._X_" and click on "Start".
+- Confirm that PHP works and is successfully integrated in Apache.
+    - create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\test.php` and set its content to `<?php phpinfo(); ?>`
+    - Go to `http://localhost/test.php` and confirm that it shows a big table of PHP settings.
 ### Virtuoso
     - Go to <http://www.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built%20binaries%20for%20Windows> and choose "64-bit" if you use a 64-bit Windows or "32-bit" if you use a 32-bit Windows (you can determine it in "System Control Panel"->"System"->"System"->"System Type")
     - Unpack the directory `virtuoso-opensource` into the folder `C:\Program Files\`
@@ -186,7 +176,12 @@ If you see this list and no error messages along the way, go ahead configuring O
     - create the folder `...\AKSW-OntoWiki-9c50d0e\cache` and ensure that the user which runs Apache (System, if Apache is started as a service) has write access to that folder
     - Go to <http://localhost/AKSW-OntoWiki-9c50d0e/index.php> (adjust the URL if necessary). OntoWiki should now start.
 
-### Troubleshooting
+###### [Custom Startup Script for Debian](Custom-startup-script-for-Debian)
+##### [OntoWiki on Microsoft IIS 7](Install-on-IIS)
+-> siehe auch <GetOntoWikiUsers>
+### <php.ini-recommendations>
+
+## Troubleshooting
 In case OntoWiki isn't loaded correctly after you followed this tutorial, go to `...\htdocs\AKSW-OntoWiki-9c50d0e\config.ini` and set `debug = true`. After a restart you should now see an error message in your browser which should hopefully point you to the source of the problem (if not, [create an issue](https://github.com/AKSW/OntoWiki/issues/new)).
 
 **Error on bootstrapping application: Unable to connect to Virtuoso Universal Server via ODBC.**
