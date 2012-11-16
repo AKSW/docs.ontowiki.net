@@ -42,7 +42,6 @@ This is described for Arch Linux in the [LAMP entry in the Archlinux Wiki](https
 
 ##### Configure ODBC
 
-
 -  Add the following lines to the file `/etc/odbcinst.ini`: (create it if it doesn't exist, see [VirtuosoBackend](VirtuosoBackend))
 
         [virtuoso-odbc]
@@ -62,43 +61,43 @@ This is described for Arch Linux in the [LAMP entry in the Archlinux Wiki](https
 
             $ sudo /etc/rc.d/httpd restart
 #### Virtuoso
-    - Install Virtuoso with the package manager
+- Install Virtuoso with the package manager
 
-            $ sudo pacman -S virtuoso
+    $ sudo pacman -S virtuoso
 
-    - Create the Virtuoso OntoWiki directory and add `virtuoso.ini` to it (see [https://github.com/AKSW/OntoWiki/wiki/VirtuosoBackend](Virtuoso Backend))
+- Create the Virtuoso OntoWiki directory and add `virtuoso.ini` to it (see [https://github.com/AKSW/OntoWiki/wiki/VirtuosoBackend](Virtuoso Backend))
 
-            $ sudo mkdir /var/lib/virtuoso/ontowiki
-            $ sudo cp /var/lib/virtuoso/db/virtuoso.ini /var/lib/virtuoso/ontowiki
+    $ sudo mkdir /var/lib/virtuoso/ontowiki
+    $ sudo cp /var/lib/virtuoso/db/virtuoso.ini /var/lib/virtuoso/ontowiki
 
-    - Add the temporary and OntoWiki directories to the `_DirsAllowed_` entry in `/var/lib/virtuoso/ontowiki/virtuoso.ini`
+- Add the temporary and OntoWiki directories to the `_DirsAllowed_` entry in `/var/lib/virtuoso/ontowiki/virtuoso.ini`
 
-            DirsAllowed  = ., /usr/share/virtuoso/vad,/tmp,/srv/http/AKSW-OntoWiki-062a14e
+    DirsAllowed  = ., /usr/share/virtuoso/vad,/tmp,/srv/http/AKSW-OntoWiki-062a14e
 
-    - Start Virtuoso (add the option `_+foreground_` if you want to check if it starts correctly)
+- Start Virtuoso (add the option `_+foreground_` if you want to check if it starts correctly)
 
-            $ sudo virtuoso-t -f -c /var/lib/virtuoso/ontowiki/virtuoso.ini
+    $ sudo virtuoso-t -f -c /var/lib/virtuoso/ontowiki/virtuoso.ini
 
 #### OntoWiki
-    - [Download OntoWiki](https://github.com/AKSW/OntoWiki/downloads) (choose "Download as tar.gz")
-    - Unpack OntoWiki into your document root (the end of the file name may differ)
+- [Download OntoWiki](https://github.com/AKSW/OntoWiki/downloads) (choose "Download as tar.gz")
+- Unpack OntoWiki into your document root (the end of the file name may differ)
  
-        `$ sudo tar -xzf download/AKSW-OntoWiki-v0.9.6-21-367-g062a14e.tar.gz --directory /srv/http`
+    `$ sudo tar -xzf download/AKSW-OntoWiki-v0.9.6-21-367-g062a14e.tar.gz --directory /srv/http`
 
-    - Allow user read and write access to OntoWiki
+- Allow user read and write access to OntoWiki
 
-     `sudo chmod a+wr -R /srv/http/AKSW-OntoWiki-062a14e`
-    - Open http://localhost
+ `sudo chmod a+wr -R /srv/http/AKSW-OntoWiki-062a14e`
+- Open http://localhost
 
 The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#somenumber`
 ## Windows
 
 ### Apache
 
-    1. Download Apache 2
+1. Download Apache 2
 
-        Go to `http://httpd.apache.org/download.cgi` and choose the latest stable release version that provides Windows binaries. Download the MSI Installer for this version. The line should look like _"Win32 Binary including OpenSSL 0.9.8t (MSI Installer): httpd-2.2.22-win32-x86-openssl-0.9.8t.msi"_.
-    2. Run the Apache Installer
+    Go to `http://httpd.apache.org/download.cgi` and choose the latest stable release version that provides Windows binaries. Download the MSI Installer for this version. The line should look like _"Win32 Binary including OpenSSL 0.9.8t (MSI Installer): httpd-2.2.22-win32-x86-openssl-0.9.8t.msi"_.
+2. Run the Apache Installer
 
 When you arrive at the "Server Information" dialog box, enter `localhost` for the Network Domain as well as for the Server Name and whatever email address you wish for the "Administrator's Email Address" field. The installer uses the information you enter to create a default Apache configuration file for you. You can always go back and manually change these values in your configuration file if you change your mind later. Leave the default setting of "for All Users, on Port 80, as a Service" as it is. Click "Next" when you're done (see [How to Install and Configure Apache 2 on Windows](http://www.thesitewizard.com/apache/install-apache-2-windows.shtml)).   
 Go to `http://localhost/` and confirm that it shows "It works!".
@@ -171,15 +170,15 @@ Go to `http://localhost/` and confirm that it shows "It works!".
     http://www.w3.org/2002/07/owl#
 If you see this list and no error messages along the way, go ahead configuring OntoWiki.
 ### OntoWiki
-    - Download [the newest version of OntoWiki from github](https://github.com/AKSW/OntoWiki/downloads)
+- Download [the newest version of OntoWiki from github](https://github.com/AKSW/OntoWiki/downloads)
 ( choose "Download as zip").
-    - Unpack the archive into the folder `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\`. You should now have the folder `...\htdocs\AKSW-OntoWiki-9c50d0e` (the last 7 characters may vary), from now on called %ONTOWIKI_HOME%.
-    - Copy `%ONTOWIKI_HOME%\config.ini.dist` to `%ONTOWIKI_HOME%\config.ini`
-    - Edit `%ONTOWIKI_HOME%\config.ini` and change the value of `store.backend` to "virtuoso"
+- Unpack the archive into the folder `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\`. You should now have the folder `...\htdocs\AKSW-OntoWiki-9c50d0e` (the last 7 characters may vary), from now on called %ONTOWIKI_HOME%.
+- Copy `%ONTOWIKI_HOME%\config.ini.dist` to `%ONTOWIKI_HOME%\config.ini`
+- Edit `%ONTOWIKI_HOME%\config.ini` and change the value of `store.backend` to "virtuoso"
   - go to <http://www.zend.com/community/downloads>, download **Zend Framework 1.x minimal** and extract the folder `library\Zend` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e\libraries`
-    - go to <https://github.com/AKSW/Erfurt>, click on "ZIP" and extract the folder `library\Erfurt` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e\libraries`
-    - create the folder `...\AKSW-OntoWiki-9c50d0e\cache` and ensure that the user which runs Apache (System, if Apache is started as a service) has write access to that folder
-    - Go to <http://localhost/AKSW-OntoWiki-9c50d0e/index.php> (adjust the URL if necessary). OntoWiki should now start.
+- go to <https://github.com/AKSW/Erfurt>, click on "ZIP" and extract the folder `library\Erfurt` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e\libraries`
+- create the folder `...\AKSW-OntoWiki-9c50d0e\cache` and ensure that the user which runs Apache (System, if Apache is started as a service) has write access to that folder
+- Go to <http://localhost/AKSW-OntoWiki-9c50d0e/index.php> (adjust the URL if necessary). OntoWiki should now start.
 
 ###### [Custom Startup Script for Debian](Custom-startup-script-for-Debian)
 ##### [OntoWiki on Microsoft IIS 7](Install-on-IIS)
