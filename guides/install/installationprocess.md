@@ -18,8 +18,13 @@ title: Installation Process
 #### Apache, PHP and ODBC
 ##### Install Apache, PHP and ODBC with the package manager of your distribution
 
-Ubuntu:		`$ sudo apt-get install apache2 php5 php5-odbc libapache2-mod-php5 libmyodbc`
-Arch Linux:	`$ sudo pacman -S apache php php-apache php-odbc`
+Ubuntu:
+
+    $ sudo apt-get install apache2 php5 php5-odbc libapache2-mod-php5 libmyodbc
+
+Arch Linux
+
+$ sudo pacman -S apache php php-apache php-odbc
 
 ##### Configure Apache for using PHP
 This is described for Arch Linux in the [LAMP entry in the Archlinux Wiki](https://wiki.archlinux.org/index.php/LAMP#PHP) but should be applicable to all distributions 
@@ -107,63 +112,63 @@ Go to `http://localhost/` and confirm that it shows "It works!".
 - When prompted "Select a Web Server Setup" choose "Other CGI"
 - Add the following lines to the file `C:\Program Files\Apache Software Foundation\Apache2.2\httpd.conf`: (you may need to change the owner of that file to the current user in order to modify it) (see <http://windows.fyicenter.com/73_Apache_PHP_Getting_HTTP_403_Forbidden_Error_on_PHP_Scripts.html>)
 
-        ScriptAlias /php/  "C:/Program Files/PHP/"
-        AddHandler x-httpd-php .php
-        Action x-httpd-php "/php/php-cgi.exe"
+    ScriptAlias /php/  "C:/Program Files/PHP/"
+    AddHandler x-httpd-php .php
+    Action x-httpd-php "/php/php-cgi.exe"
 
-        <Directory "C:/Program Files/PHP/">
-            AllowOverride None
-            Options None
-            Order allow,deny
-            Allow from all
+    <Directory "C:/Program Files/PHP/">
+        AllowOverride None
+        Options None
+        Order allow,deny
+        Allow from all
+    </Directory>
+- search for `<Directory />` and change the contents of the tag to:
+
+        <Directory />
+            Options All
+            AllowOverride All
         </Directory>
-    - search for `<Directory />` and change the contents of the tag to:
 
-            <Directory />
-                Options All
-                AllowOverride All
-            </Directory>
+- search for `/htdocs">` and change the the Directory tag to:
 
-    - search for `/htdocs">` and change the the Directory tag to:
-
-            <Directory "C:/Program Files/Apache Software Foundation/Apache2.2/htdocs">
-             Options Indexes FollowSymLinks               
-             Order allow,deny
-             Allow from all
-             AllowOverride All
-            </Directory>
-    - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
+        <Directory "C:/Program Files/Apache Software Foundation/Apache2.2/htdocs">
+         Options Indexes FollowSymLinks               
+         Order allow,deny
+         Allow from all
+         AllowOverride All
+        </Directory>
+- also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
 - Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
 - Start the Apache service again
-    - Type `services.msc` into the search field in your start menu and click on "services".
-    - Rightclick on "Apache2._X_" and click on "Start".
+- Type `services.msc` into the search field in your start menu and click on "services".
+- Rightclick on "Apache2._X_" and click on "Start".
 - Confirm that PHP works and is successfully integrated in Apache.
-    - create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\test.php` and set its content to `<?php phpinfo(); ?>`
-    - Go to `http://localhost/test.php` and confirm that it shows a big table of PHP settings.
+- create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\test.php` and set its content to `<?php phpinfo(); ?>`
+- Go to `http://localhost/test.php` and confirm that it shows a big table of PHP settings.
 ### Virtuoso
-    - Go to <http://www.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built%20binaries%20for%20Windows> and choose "64-bit" if you use a 64-bit Windows or "32-bit" if you use a 32-bit Windows (you can determine it in "System Control Panel"->"System"->"System"->"System Type")
-    - Unpack the directory `virtuoso-opensource` into the folder `C:\Program Files\`
+- Go to <http://www.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built%20binaries%20for%20Windows> and choose "64-bit" if you use a 64-bit Windows or "32-bit" if you use a 32-bit Windows (you can determine it in "System Control Panel"->"System"->"System"->"System Type")
+- Unpack the directory `virtuoso-opensource` into the folder `C:\Program Files\`
   - Go to `C:\Program Files\virtuoso-opensource\database\virtuoso.ini` and set `DirsAllowed = ., ../vad,C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\AKSW-OntoWiki-9c50d0e`
-    - Follow [Using Virtuoso Open-Source Edition on Windows](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) (follow "Creating a Windows Service for the Default Database" and "ODBC Driver Registration")
-    - Follow [Virtuoso Driver for ODBC - Windows ODBC Driver Configuration](http://docs.openlinksw.com/virtuoso/odbcimplementation.html#virtdsnsetup), create a System DSN and name it "VOS".
-    - Create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\odbctest.php` with the following PHP code in it:
+- Follow [Using Virtuoso Open-Source Edition on Windows](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) (follow "Creating a Windows Service for the Default Database" and "ODBC Driver Registration")
+- Follow [Virtuoso Driver for ODBC - Windows ODBC Driver Configuration](http://docs.openlinksw.com/virtuoso/odbcimplementation.html#virtdsnsetup), create a System DSN and name it "VOS".
+- Create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\odbctest.php` with the following PHP code in it:
 
-            <?php
-            $conn   = odbc_connect('VOS', 'dba', 'dba');
-            $query  = 'SELECT DISTINCT ?g WHERE {GRAPH ?g {?s ?p ?o.}}';
-            $result = odbc_exec($conn, 'CALL DB.DBA.SPARQL_EVAL(\'' . $query . '\', NULL, 0)');
-            ?>
-            <ul>
-            <?php while (odbc_fetch_row($result)): ?>
-                <li><?php echo odbc_result($result, 1) ?></li>
-            <?php endwhile; ?>
-            </ul>
-    - Go to <http://localhost/odbctest.php>. You should see this list of graphs stored in your Virtuoso RDF store:
+    <?php
+    $conn   = odbc_connect('VOS', 'dba', 'dba');
+    $query  = 'SELECT DISTINCT ?g WHERE {GRAPH ?g {?s ?p ?o.}}';
+    $result = odbc_exec($conn, 'CALL DB.DBA.SPARQL_EVAL(\'' . $query . '\', NULL, 0)');
+    ?>
+    <ul>
+    <?php while (odbc_fetch_row($result)): ?>
+        <li><?php echo odbc_result($result, 1) ?></li>
+    <?php endwhile; ?>
+    </ul>
+- Go to <http://localhost/odbctest.php>. You should see this list of graphs stored in your Virtuoso RDF store:
 
-            http://www.openlinksw.com/schemas/virtrdf#
-            http://localhost:8890/sparql
-            http://localhost:8890/DAV/
-            http://www.w3.org/2002/07/owl#
+    http://www.openlinksw.com/schemas/virtrdf#
+    http://localhost:8890/sparql
+    http://localhost:8890/DAV/
+    http://www.w3.org/2002/07/owl#
 If you see this list and no error messages along the way, go ahead configuring OntoWiki.
 ### OntoWiki
     - Download [the newest version of OntoWiki from github](https://github.com/AKSW/OntoWiki/downloads)
