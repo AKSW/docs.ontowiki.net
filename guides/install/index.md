@@ -16,21 +16,18 @@ PHP                     <http://www.php.net/>
 
 <table>
 <tr><th>External Component</th><th>Documentation Adress</th></tr>
-<tr><td>Apache</td><td><a href="http://httpd.apache.org">http://httpd.apache.org"</a></td></tr>
-<tr><td>PHP</td><td><a href="http://www.php.net/">http://www.php.net/"</a></td></tr>
+<tr><td>Apache</td><td><a href="http://httpd.apache.org">http://httpd.apache.org</a></td></tr>
+<tr><td>PHP</td><td><a href="http://www.php.net/">http://www.php.net</a></td></tr>
 </table>
 
-- table of external component and where to find the web documentation
-                                                  
 - image of installation resources, this document in the middle, others around it with lines
                                                                                        
-#### Structure of this Documentation
-                                                                                              
-### Installation Resources
+## Installation Resources
                                                                                               
 - table with two columns, "Task" and "Section"
+<!--
 ----------------------  ---------------------------------------------------------------       
                   Task                                                          Section       
 ----------------------  ---------------------------------------------------------------
 testtask                testsection                            
-
+-->
