@@ -4,6 +4,10 @@ title: Installation Process
 ---
 
 # Installation Process
+The easiest way of installing OntoWiki for Ubuntu is by using the virtual box image or the package from the package manager.
+For Windows there is a ZIP archive that you can unzip and execute.
+If you want to configure everything yourself or you have a different Linux distribution than Ubuntu,
+ there are detailed instructions under the <a href="#manualinstallation">Manual Installation section</a>.
 
 ## Automatic Installation
 ## (VAD ?)
@@ -11,7 +15,9 @@ title: Installation Process
 ## Ubuntu Using a Virtual Box Image
 ## Ubuntu Using the Package Manager
 
+<a id="manualinstallation">
 ## Manual Installation
+</a>
 ### Windows (XAMP)
 #### Virtuoso
 ### Linux
