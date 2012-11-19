@@ -16,8 +16,8 @@ PHP                     <http://www.php.net/>
 
 <table>
 <tr><th>External Component</th><th>Documentation Adress</th></tr>
-<tr><td>Apache</td><td><http://httpd.apache.org/></td></tr>
-<tr><td>PHP</td><td><http://www.php.net/></td></tr>
+<tr><td>Apache</td><td><a href="http://httpd.apache.org">http://httpd.apache.org"</a></td></tr>
+<tr><td>PHP</td><td><a href="http://www.php.net/">http://www.php.net/"</a></td></tr>
 </table>
 
 - table of external component and where to find the web documentation
