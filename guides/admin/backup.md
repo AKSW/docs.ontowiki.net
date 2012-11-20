@@ -2,6 +2,8 @@
 layout: page
 title: Backup
 ---
+# Backup
+
 ## Virtuoso backup
 
 Possibly, the easiest and most complete way to do backups is with the automated backup functionality built into Virtuoso conductor. 

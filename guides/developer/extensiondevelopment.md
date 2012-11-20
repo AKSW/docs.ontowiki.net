@@ -20,9 +20,7 @@ If you know PHP but not Zend, we recommend these tutorial cause it refers to the
 ## PHP Configuration for Developers
 All you need is to re-configure your eLDS Installation to use the **debug mode**. For this, add the following line to your `config.ini`.
 
-    {{{
      debug = on
-    }}}
 
 In addition to this, we recommend the php extension [[xdebug|http://www.xdebug.org]] for all eLDS developers. **xDebug** provides stack traces and function traces in error messages with:
 * full parameter display for user defined functions
@@ -86,10 +84,10 @@ Components are statically configured by the doap.n3 file.
 Components can be associated with a helper object that is instantiated on each request (instead of just requests the component serves).
 Thus you can use a helper to do certain tasks like registering a menu or navigation component.
 See also the component helper section of the RDFa Views page:
-http://code.google.com/p/ontowiki/wiki/RDFaViews?ts=1243244705&updated=RDFaViews#Component_Helper
+http://code.google.com/p/ontowiki/wiki/RDFaViews?ts=1243244705&updated=RDFaViews#Component\_Helper
 
-In both cases, the component controller mus extend 'OntoWiki_Controller_Component' and has therefore a number of inherited variables and methods available.
-If your component needs a helper, derive you helper class from 'OntoWiki_Component_Helper'.
+In both cases, the component controller mus extend 'OntoWiki\_Controller\_Component' and has therefore a number of inherited variables and methods available.
+If your component needs a helper, derive you helper class from 'OntoWiki\_Component\_Helper'.
 
 Typical things you can do with a Controller:
 
@@ -105,7 +103,7 @@ Components, where you can sneak good code:
 Modules display little windows that provide additional user interface elements with which the user can affect the main window's content.
 Since some modules are highly dynamic extensions, they can be configured both statically and dynamically.
 Static configuration works in the same way as with other extensions; the configuration from the doap.n3 is available to the module.
-In addition, a module class needs to extend 'OntoWiki_Module' and can redefine several of its methods in order to allow for dynamic customization. 
+In addition, a module class needs to extend 'OntoWiki\_Module' and can redefine several of its methods in order to allow for dynamic customization. 
 If present, return values will overwrite static configuration settings in the 'doap.n3' file (
 e.g. the method getTitle overwrites the title property).
 
@@ -207,7 +205,7 @@ With data:
        )
     );
 
-  This adds a tab entry which has the title Formgenerator and will called _http://OW_URL/Formgenerator/overview_. Put this into your Helper class. 
+  This adds a tab entry which has the title Formgenerator and will called <http://OW_URL/Formgenerator/overview>. Put this into your Helper class. 
 
 **Q**: How can I replace OntoWiki strings? 
 
