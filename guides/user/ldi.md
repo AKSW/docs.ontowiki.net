@@ -83,7 +83,7 @@ You now have successfully modelled a product model and it's offering. Repeat thi
 ## TODO: How to consume and link product information from the Linked Data web?
 Most semantically annotated product data on the map uses RDFa which is embedded into the HTML code.
 
-- log into OntoWiki and select a knowledge base
+- log into eLDS and select a knowledge base
 ![insert screenshot here]()
 - select any resource and paste the URL of an RDF-a annotated webpage into the *resource* field, for example `someworkingexample`
 - click on **Resource**->**Import Data with RDFa**

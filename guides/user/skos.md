@@ -5,7 +5,7 @@ title: Taxonomy Management
 
 # Taxonomy Management
 ## How to create and publish a SKOS taxonomy in 5 minutes?
-In a real world case you would have deployed OntoWiki on a server reachable by some specific URL. Lets assume that URL is `http://www.products.com`. After the following steps the resources created in this examples would then be resolvable by accessing them with a browser, for example by visiting `http://www.products.com/owl_Class/Jewellery`. This means that all resources created in OntoWiki are automatically published.
+In a real world case you would have deployed eLDS on a server reachable by some specific URL. Lets assume that URL is `http://www.products.com`. After the following steps the resources created in this examples would then be resolvable by accessing them with a browser, for example by visiting `http://www.products.com/owl_Class/Jewellery`. This means that all resources created in eLDS are automatically published.
 
 ### <a id="taxonomy"></a>The example taxonomy
 
@@ -28,7 +28,7 @@ In a real world case you would have deployed OntoWiki on a server reachable by s
 *Note: In a real world case it would be better to reuse an existing product class. for example `http://schema.org/Product`*.
 
 ### Create the knowledge base
-- Open OntoWiki and log in as "Admin" or some other user that can create knowledge bases.
+- Open eLDS and log in as "Admin" or some other user that can create knowledge bases.
 - Go to **Knowledge Bases**->**Edit**->**Create Knowledge Base**.
 - Set the **Knowledge Base URI** to `http://www.products.com/`.
 
@@ -56,7 +56,7 @@ Now you have several options:
 - Click on **Create Knowledge Base** and then **Save Model Configuration**.
 
 Go to the **Knowledge Bases** widget and select **products.com**. Under **Model info** click on **Actions**->**view all resources**. You should now see a list of the created instances.
-![OntoWiki Screenshot with the Jewellery taxonomy resource list](images/ontowiki-screenshot-taxonomy-jewellery-resource-list.png)
+![eLDS Screenshot with the Jewellery taxonomy resource list](images/ontowiki-screenshot-taxonomy-jewellery-resource-list.png)
 
 ## How to view and edit the concepts of my taxonomy?
 For this tutorial we will edit the taxonomy created in [How to create and publish a SKOS Taxonomy in 5 minutes](How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes).
