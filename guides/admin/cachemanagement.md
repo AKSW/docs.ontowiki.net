@@ -1,6 +1,6 @@
 ---
 layout: page
-title: tmp
+title: Cache Management
 ---
 
-# tmp
+# Cache Management

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: tmp
+title: Browser Compatibility
 ---
 
-# tmp
+# Browser Compatibilty
