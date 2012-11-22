@@ -39,7 +39,7 @@ For **Ubuntu** 10.04 (Lucid Lynx):
   If you would use Virtuoso or whatever ignore this part. 
 
     sudo apt-get install mysql-server
-  for more information how to set up and configure a MySQL server please take a look at [[http://wiki.ubuntuusers.de/MySQL]]
+  for more information how to set up and configure a MySQL server please take a look at <http://wiki.ubuntuusers.de/MySQL>
 
   * **PHPMyAdmin**
   Not neccessary but useful for administrate your MySQL databases. If you would use Virtuoso or whatever ignore this part.

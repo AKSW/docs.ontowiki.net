@@ -25,7 +25,7 @@ The first thing needed for a backup is the RDF data.
 
 ### Option 1: Using the [[Command Line Interface|https://github.com/AKSW/owcli/]]
 Make sure the CLI is [[setup correctly|https://github.com/AKSW/owcli/blob/master/README.md]]
-Note: We actually use this script to back up [[http://data.lod2.eu]]
+Note: We actually use this script to back up <http://data.lod2.eu>
 
 Backing up with owcli is limited to the memory resources of the php-cli process so for huge models, direct backend backup should be used.
 ```
@@ -53,11 +53,11 @@ Depending on the store there are more options:
 
 #### Virtuoso
 
-  * [[http://docs.openlinksw.com/virtuoso/backup.html]] - Using this backup strategy will also backup the history and query cache
+  * <http://docs.openlinksw.com/virtuoso/backup.html> - Using this backup strategy will also backup the history and query cache
   
-  * [[http://code.google.com/p/aksw-commons/wiki/Virtuoso_ISQL]]
+  * <http://code.google.com/p/aksw-commons/wiki/Virtuoso_ISQL>
   
-  * [[http://www.openlinksw.com/uda/wiki/main//Main/VirtDumpLoadRdfGraphs]]
+  * <http://www.openlinksw.com/uda/wiki/main//Main/VirtDumpLoadRdfGraphs>
 
 ## Backup
 

@@ -272,7 +272,7 @@ NOTE: It is sometimes useful to write a case statement which falls through to th
 
 ### Inline Documentation
 #### Documentation Format
-All documentation blocks ("docblocks") must be compatible with the phpDocumentor format. Describing the phpDocumentor format is beyond the scope of this document. For more information, visit: [[http://phpdoc.org/]]
+All documentation blocks ("docblocks") must be compatible with the phpDocumentor format. Describing the phpDocumentor format is beyond the scope of this document. For more information, visit: <http://phpdoc.org/>
 
 All class files must contain a "file-level" docblock at the top of each file and a "class-level" docblock immediately above each class. Examples of such docblocks can be found below.
 
