@@ -6,7 +6,7 @@ title: Users Guide
 # Users Guide
 
 ## Introduction
-This guide is intended to provide support for first time eLDS users.
+This guide is intended to provide support for first time OntoWiki users.
 It assumes that you have a working installation.
 For a longer and more visual introduction, [watch our webinar](http://www.youtube.com/watch?v=vP1UDKeZsQk).
 
@@ -36,7 +36,7 @@ So if you logout now, you have anonymous access to your new model.
 If you don't like that, you need to change that in your configuration model.
 
 ## Preconfigured Knowledge Bases
-A new eLDS has two installed Knowledge Bases:
+A new OntoWiki has two installed Knowledge Bases:
 
-* `http://ns.ontowiki.net/SysOnt/` is the global system ontology which describe eLDS configuration concepts.
+* `http://ns.ontowiki.net/SysOnt/` is the global system ontology which describe OntoWiki configuration concepts.
 * `http://localhost/elds/Config/` is your local configuration model. It imports the global system ontology. Registered Users and ((AccessControl access control configuration)) will be saved here.

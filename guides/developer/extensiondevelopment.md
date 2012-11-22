@@ -5,7 +5,7 @@ title: Extension Development
 
 # Extension Development
 
-This is a starting point for all developers who want to create their own eLDS extensions. This includes basic PHP and Zend Skills as well as configuration and setup information for a developers PHP engine.
+This is a starting point for all developers who want to create their own OntoWiki extensions. This includes basic PHP and Zend Skills as well as configuration and setup information for a developers PHP engine.
 
 ## Tutorials for PHP Beginners
 If you are new to PHP, please have a look at the [W3Schools PHP Tutorial](http://www.w3schools.com/PHP/) (en).
@@ -14,17 +14,17 @@ If you are new to PHP, please have a look at the [W3Schools PHP Tutorial](http:/
 If you know PHP but not Zend, we recommend [the official Zend tutorial](http://framework.zend.com/docs/quickstart) because it always refers to the newest Zend version.
 
 ## PHP Configuration for Developers
-All you need is to re-configure your eLDS Installation to use the **debug mode**. For this, add the following line to your `config.ini`.
+All you need is to re-configure your OntoWiki Installation to use the **debug mode**. For this, add the following line to your `config.ini`.
 
      debug = on
 
-In addition to this, we recommend the php extension [xdebug](http://www.xdebug.org) for all eLDS developers. **xDebug** provides stack traces and function traces in error messages with:
+In addition to this, we recommend the php extension [xdebug](http://www.xdebug.org) for all OntoWiki developers. **xDebug** provides stack traces and function traces in error messages with:
 * full parameter display for user defined functions
 * function name, file name and line indications
 * support for member functions
 <!--
 TODO: must be correct for both documentations (different links)
-We recommend to re-configure some php runtime variables for eLDS. Please have a look at [[Deployment-Recommendations]].-->
+We recommend to re-configure some php runtime variables for OntoWiki. Please have a look at [[Deployment-Recommendations]].-->
 
 ## Extension Architecture
 

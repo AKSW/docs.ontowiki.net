@@ -5,7 +5,7 @@ title: Available Extensions
 
 # Available Extensions
 
-eLDS can be extended by various different extensions. They enable you to tune it as you want to fit you needs.
+OntoWiki can be extended by various different extensions. They enable you to tune it as you want to fit you needs.
 
 # Extension Documentation
 You will find some information what a particular extension does, how it works and which possibilities you have to configure it.
@@ -22,7 +22,7 @@ Extensions which are delivered with a vanilla OntoWiki. (Some extensions are req
 [Extension Repository](Extension Repository),
 [ExtensionDeveloperStart](ExtensionDeveloperStart)
 
-In eLDS 0.9.6 we introduced a graphical backend to configure extensions. The site admin can enable and disable extensions, set configuration values and browse a central repository of additional extensions and install them into his eLDS instance.
+In OntoWiki 0.9.6 we introduced a graphical backend to configure extensions. The site admin can enable and disable extensions, set configuration values and browse a central repository of additional extensions and install them into his OntoWiki instance.
 
 When you are logged in as Admin or SuperAdmin, you will notice the "Configure Extensions" menu item in the Extras menu:
 ![the configurator](https://github.com/AKSW/OntoWiki/wiki/images/exconf-open.png)

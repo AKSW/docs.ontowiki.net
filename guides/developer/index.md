@@ -28,7 +28,7 @@ For **Ubuntu** 10.04 (Lucid Lynx):
 
   * **Apache2**
     sudo apt-get install apache2 
-  For eLDS we need **mod_rewrite**
+  For OntoWiki we need **mod_rewrite**
 
     sudo a2enmod rewrite
   Give you full write access to webfolder
@@ -62,9 +62,9 @@ Now start neccessary services
 
    sudo service mysql start
 
-Now put a copy of eLDS into */var/www/myow*! ( [[InstallFromGit]] )
+Now put a copy of OntoWiki into */var/www/myow*! ( [[InstallFromGit]] )
 
-Currently the testability of eLDS is getting refactored so change your current branch 
+Currently the testability of OntoWiki is getting refactored so change your current branch 
 
 
    cd /var/www/myow && hg update OntoWiki-RefactoringTestability
@@ -111,7 +111,7 @@ You should get something like:
     Time: 2 seconds, Memory: 16.25Mb
     OK (9 tests, 27 assertions)
     
-Driven eLDS developers write every time tests for their new fancy stuff so this output can be changed in the future! But there should be _no_ errors by PHPUnit.
+Driven OntoWiki developers write every time tests for their new fancy stuff so this output can be changed in the future! But there should be _no_ errors by PHPUnit.
 
 For an **easier way** to execute PHPUnit go back to OntoWiki root folder
 

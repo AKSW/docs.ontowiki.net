@@ -3,15 +3,15 @@ layout: page
 title: Concepts
 ---
 
-# Understanding eLDS Installation Concepts
+# Understanding OntoWiki Installation Concepts
 
 ### Terminology
 ### Overview of Basic Concepts
-### Introduction into the eLDS infrastructure
+### Introduction into the OntoWiki infrastructure
 - explaining apache, php, sparql endpoint
 - image of the stack
 
-## Planing the eLDS Software System Base (wie kann man das eleganter formulieren?)
+## Planing the OntoWiki Software System Base (wie kann man das eleganter formulieren?)
 
 - tasks of the ontowiki servers (showing wiki, doing sparql queries, storage, import, export,...)
 - what are the ontowiki hardware and software minimum requirements (cpu, ram, harddrive/ssd size and speed, network bandwith, operating system type name and versions)
@@ -30,7 +30,7 @@ The following configuration should usually be placed (at least on Ubuntu) in a f
 You can also find this file in its [github:gist](https://gist.github.com/3739707).
 
     ##
-    # This is a configurationfile to run an instance of eLDS on a NGINX server
+    # This is a configurationfile to run an instance of OntoWiki on a NGINX server
     ##
     
     server {
@@ -73,18 +73,18 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
             fastcgi_param PATH_INFO $fastcgi_script_name;
     
-            # tell eLDS that rewrite is enabled
+            # tell OntoWiki that rewrite is enabled
             fastcgi_param ONTOWIKI_APACHE_MOD_REWRITE_ENABLED 1;
         }
     }
 
-eLDS will be available through your browser at `http://localhost:8080`.
+OntoWiki will be available through your browser at `http://localhost:8080`.
 
 ##### Trouble shooting
 ###### File uploads exceeding "client_max_body_size"
 NGINX has a separate system for limiting interaction with the server. One of these, "client_max_body_size", limits the payload of a client request, thus limiting the allowed size of POST requests.  
 
-To allow for larger file uploads in eLDS, one would need to adjust both the value of "[client_max_body_size](http://wiki.nginx.org/HttpCoreModule#client_max_body_size)" in Nginx setup and "[upload_max_filesize](http://www.php.net/manual/ini.core.php#ini.upload-max-filesize)" in the relevant php.ini file, /etc/php5/cli/php.ini in my case.  
+To allow for larger file uploads in OntoWiki, one would need to adjust both the value of "[client_max_body_size](http://wiki.nginx.org/HttpCoreModule#client_max_body_size)" in Nginx setup and "[upload_max_filesize](http://www.php.net/manual/ini.core.php#ini.upload-max-filesize)" in the relevant php.ini file, /etc/php5/cli/php.ini in my case.  
 
 ##### Known Problems
 
@@ -113,7 +113,7 @@ Virtuoso Opensource Version 6.1.4 or higher, more details for installation [[her
 ### Browser
 Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [[here|Browser-Compatibility]]
 
-### eLDS Version
+### OntoWiki Version
 We recommend the installation of a current snapshot release or directly from the repository.
 
 - how does ontowiki scale with number of users and data? 

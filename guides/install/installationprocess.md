@@ -4,7 +4,7 @@ title: Installation Process
 ---
 
 # Installation Process
-The easiest way of installing eLDS for Ubuntu is by using the virtual box image or the package from the package manager.
+The easiest way of installing OntoWiki for Ubuntu is by using the virtual box image or the package from the package manager.
 For Windows there is a ZIP archive that you can unzip and execute.
 If you want to configure everything yourself or you have a different Linux distribution than Ubuntu,
  there are detailed instructions under the <a href="#manualinstallation">Manual Installation section</a>.
@@ -118,14 +118,14 @@ In some cases you have to manually start the Virtuoso server.
 In **Ubuntu** execute (Maybe you have to replace the 6.1 with the current version)
 `sudo service virtuoso-opensource-6.1 start`
 
-Virtuoso  keeps all the files for a database in a folder along with a configuration file. An example configuration file which we will use as a base for our configuration is provided with the default database. To create a Virtuoso database for eLDS perform the following steps:
+Virtuoso  keeps all the files for a database in a folder along with a configuration file. An example configuration file which we will use as a base for our configuration is provided with the default database. To create a Virtuoso database for OntoWiki perform the following steps:
 
-- Create the Virtuoso eLDS directory and add `virtuoso.ini` to it
+- Create the Virtuoso OntoWiki directory and add `virtuoso.ini` to it
 
     $ sudo mkdir /var/lib/virtuoso/ontowiki
     $ sudo cp /var/lib/virtuoso/db/virtuoso.ini /var/lib/virtuoso/ontowiki
 
-- Add the temporary and eLDS directories to the `_DirsAllowed_` entry in `/var/lib/virtuoso/elds/virtuoso.ini`
+- Add the temporary and OntoWiki directories to the `_DirsAllowed_` entry in `/var/lib/virtuoso/elds/virtuoso.ini`
 
     DirsAllowed  = ., /usr/share/virtuoso/vad,/tmp,/srv/http/elds
 
@@ -156,7 +156,7 @@ Add the following lines to the odbc.ini file:
 Now make sure, PHP can connect to Virtuoso via ODBC.
 On some Linux systems you may have to install the ODBC package for PHP (`php5-odbc`).
 
-Newer versions of eLDS come with a script to test the connectivity to Virtuoso. Just type the following on the command-line while in the eLDS root directory:
+Newer versions of OntoWiki come with a script to test the connectivity to Virtuoso. Just type the following on the command-line while in the OntoWiki root directory:
 
     make odbctest
 
@@ -185,10 +185,10 @@ On a vanilla Virtuoso installation this list should include the following two gr
 * http://www.openlinksw.com/schemas/virtrdf#
 * http://localhost:8890/DAV
 
-If you see this list and no error messages along the way, go ahead configuring eLDS.
+If you see this list and no error messages along the way, go ahead configuring OntoWiki.
 
-## Configuring eLDS
-Perform the following steps to set up eLDS:
+## Configuring OntoWiki
+Perform the following steps to set up OntoWiki:
 
 * Copy `config.ini.dist` to `config.ini` and open it in a text editor
 * Under `[private]`, set the following options: 
@@ -198,9 +198,9 @@ Perform the following steps to set up eLDS:
     store.virtuoso.username = dba
     store.virtuoso.password = dba
 
-* Optional 1: to enable eLDS's debug mode, add the line `debug = yes`
-* Optional 2: If you didn't change any other config option, create the following directories relative to your eLDS installation and make them writable to the web-server user: `/cache`, `/logs`, `/uploads`.
-* Optional 3: For the [Linked Data](http://linkeddata.org/) plug-in to work, copy the `htaccess-dist` file to `.htaccess` make sure your Apache's `mod_rewrite` module is installed and `AllowOverwrite` is set to `All` for your eLDS directory in your `httpd.conf`.
+* Optional 1: to enable OntoWiki's debug mode, add the line `debug = yes`
+* Optional 2: If you didn't change any other config option, create the following directories relative to your OntoWiki installation and make them writable to the web-server user: `/cache`, `/logs`, `/uploads`.
+* Optional 3: For the [Linked Data](http://linkeddata.org/) plug-in to work, copy the `htaccess-dist` file to `.htaccess` make sure your Apache's `mod_rewrite` module is installed and `AllowOverwrite` is set to `All` for your OntoWiki directory in your `httpd.conf`.
 
 ### FAQ
 * SQL Error:
@@ -215,7 +215,7 @@ Perform the following steps to set up eLDS:
 To start Virtuoso, switch to `<prefix>/bin` and run:
     ./virtuoso-t -f -c /opt/virtuoso/var/lib/virtuoso/ontowiki/virtuoso.ini
 
-(Virtuoso runs in foreground using the created eLDS specific configuration file.)
+(Virtuoso runs in foreground using the created OntoWiki specific configuration file.)
 
 Cave: Run Virtuoso with enough rights. When importing knowledge bases from file, they are first copied to tmp. Virtuoso needs a sufficiently high user like root or www-data to read it (besides adding the tmp dir to DirsAllowed). 
 Otherwise you will get the error:
@@ -260,25 +260,25 @@ To auto-start Virtuoso on Mac OS X 10.5 use a config file for the `launchd` serv
     </plist>
 
 #### Windows
-Follow [these instructions](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) in order to set up Virtuoso as an ODBC data source on Windows. Although a [binary distribution](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built binaries for Windows) of Virtuoso might seem the right choice, these are lagging a bit behind of the current source distribution. At the time of writing this line, Virtuoso is available in version 6.1.5, but the binary download for Windows is in version 6.1.3. eLDS works best with version 6.1.4 or greater.
+Follow [these instructions](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) in order to set up Virtuoso as an ODBC data source on Windows. Although a [binary distribution](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built binaries for Windows) of Virtuoso might seem the right choice, these are lagging a bit behind of the current source distribution. At the time of writing this line, Virtuoso is available in version 6.1.5, but the binary download for Windows is in version 6.1.3. OntoWiki works best with version 6.1.4 or greater.
 
 ### Known Problems
 #### Debian/Ubuntu
 If you want to install virtuoso from the .deb and have installed virtuoso before (for instance on an update) it hast to run and has to be configured correctly during the installation, because the pre/pos-removal script tries to start/stop virtuoso.
 
 
-#### eLDS
-- [Download eLDS](https://github.com/AKSW/eLDS/downloads) (choose "Download as tar.gz")
-- Unpack eLDS into your document root (the end of the file name may differ)
+#### OntoWiki
+- [Download OntoWiki](https://github.com/AKSW/OntoWiki/downloads) (choose "Download as tar.gz")
+- Unpack OntoWiki into your document root (the end of the file name may differ)
  
-    `$ sudo tar -xzf download/AKSW-eLDS-v0.9.6-21-367-g062a14e.tar.gz --directory /srv/http`
+    `$ sudo tar -xzf download/AKSW-OntoWiki-v0.9.6-21-367-g062a14e.tar.gz --directory /srv/http`
 
-- Allow user read and write access to eLDS
+- Allow user read and write access to OntoWiki
 
- `sudo chmod a+wr -R /srv/http/AKSW-eLDS-062a14e`
+ `sudo chmod a+wr -R /srv/http/AKSW-OntoWiki-062a14e`
 - Open http://localhost
 
-The eLDS should now be shown after selection of the folder `AKSW-eLDS-#somenumber`
+The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#somenumber`
 ## Windows
 
 ### Apache
@@ -326,7 +326,7 @@ Go to `http://localhost/` and confirm that it shows "It works!".
          AllowOverride All
         </Directory>
 - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
-- Set the [recommended php.ini settings](https://github.com/AKSW/eLDS/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
+- Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
 - Start the Apache service again
 - Type `services.msc` into the search field in your start menu and click on "services".
 - Rightclick on "Apache2._X_" and click on "Start".
@@ -357,9 +357,9 @@ Go to `http://localhost/` and confirm that it shows "It works!".
     http://localhost:8890/sparql
     http://localhost:8890/DAV/
     http://www.w3.org/2002/07/owl#
-If you see this list and no error messages along the way, go ahead configuring eLDS.
-### eLDS
-- Download [the newest version of eLDS from github](https://github.com/AKSW/OntoWiki/downloads) TODO: new url
+If you see this list and no error messages along the way, go ahead configuring OntoWiki.
+### OntoWiki
+- Download [the newest version of OntoWiki from github](https://github.com/AKSW/OntoWiki/downloads) TODO: new url
 ( choose "Download as zip").
 - Unpack the archive into the folder `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\`. You should now have the folder `...\htdocs\elds` (the last 7 characters may vary), from now on called %ONTOWIKI_HOME%.
 - Copy `%ONTOWIKI_HOME%\config.ini.dist` to `%ONTOWIKI_HOME%\config.ini`
@@ -367,10 +367,10 @@ If you see this list and no error messages along the way, go ahead configuring e
   - go to <http://www.zend.com/community/downloads>, download **Zend Framework 1.x minimal** and extract the folder `library\Zend` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\elds\libraries`
 - go to <https://github.com/AKSW/Erfurt>, click on "ZIP" and extract the folder `library\Erfurt` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\elds\libraries`
 - create the folder `...\elds\cache` and ensure that the user which runs Apache (System, if Apache is started as a service) has write access to that folder
-- Go to <http://localhost/elds/index.php> (adjust the URL if necessary). eLDS should now start.
+- Go to <http://localhost/elds/index.php> (adjust the URL if necessary). OntoWiki should now start.
 
 ### Custom Startup Script for Debian
-Debian squeeze comes with Virtuoso version 6.1.2, which does not meet the eLDS requirements fully. Debian testing/wheezy comes with version 6.1.4, which is sufficient. 
+Debian squeeze comes with Virtuoso version 6.1.2, which does not meet the OntoWiki requirements fully. Debian testing/wheezy comes with version 6.1.4, which is sufficient. 
 
 If you want to install everything from the Debian repositories, and still use your own locally compiled version of Virtuoso, this tip can be of great help.
 
@@ -775,7 +775,7 @@ To get rid of strict warnings, set the default timezone for your server, e.g.
   * `date.timezone=Europe/Berlin`
 
 ## Troubleshooting
-In case eLDS isn't loaded correctly after you followed this tutorial, go to `...\htdocs\elds\config.ini` and set `debug = true`. After a restart you should now see an error message in your browser which should hopefully point you to the source of the problem (if not, [create an issue](https://github.com/AKSW/OntoWiki/issues/new)). TODO: eLDS url
+In case OntoWiki isn't loaded correctly after you followed this tutorial, go to `...\htdocs\elds\config.ini` and set `debug = true`. After a restart you should now see an error message in your browser which should hopefully point you to the source of the problem (if not, [create an issue](https://github.com/AKSW/OntoWiki/issues/new)). TODO: OntoWiki url
 
 ### Error on bootstrapping application: Unable to connect to Virtuoso Universal Server via ODBC.
 Make sure that the Virtuoso service is started. If it does not start, look for files named `virtuoso.lck` in your Virtuoso folder under `database` or `virtuoso` and delete them if existing.

@@ -9,15 +9,15 @@ siehe <Handbooks>
 
 ## Welcome
 
-## Understanding eLDS Installation Concepts
+## Understanding OntoWiki Installation Concepts
 
 ### Terminology
 ### Overview of Basic Concepts
-### Introduction into the eLDS infrastructure
+### Introduction into the OntoWiki infrastructure
 - explaining apache, php, sparql endpoint
 - image of the stack
 
-## Planing the eLDS Software System Base (wie kann man das eleganter formulieren?)
+## Planing the OntoWiki Software System Base (wie kann man das eleganter formulieren?)
 
 - tasks of the ontowki servers (showing wiki, doing sparql queries, storage, import, export,...)
 - what are the ontowiki hardware and software minimum requirements (cpu, ram, harddrive/ssd size and speed, network bandwith, operating system type name and versions)
@@ -37,7 +37,7 @@ Virtuoso Opensource Version 6.1.4 or higher, more details for installation [[her
 ### Browser
 Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [[here|Browser-Compatibility]]
 
-### eLDS Version
+### OntoWiki Version
 We recommend the installation of a current snapshot release or directly from the repository.
 
 - how does ontowiki scale with number of users and data? 
@@ -45,15 +45,15 @@ We recommend the installation of a current snapshot release or directly from the
 4 gb ram
 - example deployments (real life examples aksw.org, Caucasus Spiders maybe with number of accesses and data size)
 
-## Carrying out the the eLDS Installation
+## Carrying out the the OntoWiki Installation
 
 - what are the operating systems used by Daimler?
 
 ## [Carrying out the Installation](Carrying-out-the-Installation)
 
 ### VAD
-### eLDS Installation with the Windows Installer (müsste man noch bauen?)
-### (später eLDS Installation with an Ubuntu Image vbox image)
+### OntoWiki Installation with the Windows Installer (müsste man noch bauen?)
+### (später OntoWiki Installation with an Ubuntu Image vbox image)
 ### ... with an Ubuntu Package
 ### Manual Installation
 #### Windows (XAMP)
@@ -61,7 +61,7 @@ We recommend the installation of a current snapshot release or directly from the
 #### Linux
 ##### Apache, PHP and ODBC
 ##### Virtuoso
-##### eLDS
+##### OntoWiki
 ##### [Custom Startup Script for Debian](Custom-startup-script-for-Debian)
 ### Installation on Microsoft IIS 7
 -> siehe auch <GetOntoWikiUsers>
