@@ -7,16 +7,16 @@ title: Available Extensions
 
 OntoWiki can be extended by various different extensions. They enable you to tune it as you want to fit you needs.
 
-# Extension Documentation
+## Extension Documentation
 You will find some information what a particular extension does, how it works and which possibilities you have to configure it.
 
-## Core Extensions
+### Core Extensions
 Extensions which are delivered with a vanilla OntoWiki. (Some extensions are required for OntoWiki to run, you can't disable them.)
 
 * [Navigation Extension](Navigation Extension) _required_
 * [Resource Creation Extension](Resource Creation Extension)
 
-# Extension API and Development
+## Extension API and Development
 [Extension Architecture](Extension Architecture),
 [Extension Configurator](Extension Configurator),
 [Extension Repository](Extension Repository),
@@ -37,8 +37,8 @@ you can changes values here. If you do so, a special file will be created in the
 If you click the "Explore Repo" tab, you will see a list of extensions present in our repository at http://extensions.ontowiki.net. Read more about [here](Extension-Repository).
 ![the configurator](https://github.com/AKSW/OntoWiki/wiki/images/exconf-explore.png)
 
-# Available Extensions
-TODO: get documentation from submodules
+## List of Extensions
+<!-- TODO: get documentation from submodules with a script -->
 ## account
 ## application
 ## auth

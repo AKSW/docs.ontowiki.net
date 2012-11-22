@@ -9,12 +9,6 @@ For Windows there is a ZIP archive that you can unzip and execute.
 If you want to configure everything yourself or you have a different Linux distribution than Ubuntu,
  there are detailed instructions under the <a href="#manualinstallation">Manual Installation section</a>.
 
-## Automatic Installation
-## (VAD ?)
-## Windows Using the Installer (müsste man noch bauen?, gibt es da Bedarf?)
-## Ubuntu Using a Virtual Box Image
-## Ubuntu Using the Package Manager
-
 <a id="manualinstallation">
 ## Manual Installation
 </a>
@@ -774,8 +768,8 @@ You should set up your PHP environment with the following settings in php.ini:
 To get rid of strict warnings, set the default timezone for your server, e.g.
   * `date.timezone=Europe/Berlin`
 
-## Troubleshooting
-In case OntoWiki isn't loaded correctly after you followed this tutorial, go to `...\htdocs\elds\config.ini` and set `debug = true`. After a restart you should now see an error message in your browser which should hopefully point you to the source of the problem (if not, [create an issue](https://github.com/AKSW/OntoWiki/issues/new)). TODO: OntoWiki url
-
-### Error on bootstrapping application: Unable to connect to Virtuoso Universal Server via ODBC.
-Make sure that the Virtuoso service is started. If it does not start, look for files named `virtuoso.lck` in your Virtuoso folder under `database` or `virtuoso` and delete them if existing.
+## Automatic Installation
+## (VAD ?)
+## Windows Using the Installer (müsste man noch bauen?, gibt es da Bedarf?)
+## Ubuntu Using a Virtual Box Image
+## Ubuntu Using the Package Manager
