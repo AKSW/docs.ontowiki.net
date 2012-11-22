@@ -7,14 +7,14 @@ title: CSS Style Guide
 
 OntoWiki has its own framework for HTML/CSS which is been used for the GUI (together with Javascript components).
 
-== CSS Development ==
+## CSS Development
 
 OntoWiki do not support Internet Explorer (IE) 6 anymore (so we can now use chained classes and better selectors for example), but we still have some relicts from that time in our CSS framework. Addionally we added elements and style options for different things during the past which could be merged to generalized concepts now. This means we can develop the framework step by step to a more elegant and usable solution.
 
-==== CSS Dev Notes ====
+#### CSS Dev Notes
 <http://groups.google.com/group/ontowiki-dev/browse_thread/thread/e0ce82b2d7525d4e/21085798dd1efc59?lnk=gst&q=Haschke#21085798dd1efc59>
 
-=== Stylesheets ===
+### Stylesheets
 
 All themes should be use following stylesheet files from the styles folder:
 
@@ -39,8 +39,8 @@ Please comment in `deprecated.dev.css` and `legacy.css` what elements should be 
     li.minibutton a
     {
         outline:solid 1px red !important;
-    
+
     }
 
-= CSS Classes=
-see http://ontowiki.net/Projects/OntoWiki/DefaultStylesheet
+## CSS Classes
+see <http://ontowiki.net/Projects/OntoWiki/DefaultStylesheet>

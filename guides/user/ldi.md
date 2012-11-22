@@ -20,7 +20,7 @@ First, you need to create a new knowledge base. Go to **Knowledge Bases**->**Edi
 
 For simplicity we show the modelling for just one exemplary product:
 
-![Example Product Neclace](images/necklace_without_navigation.png)
+![Example Product Neclace](https://github.com/AKSW/OntoWiki/wiki/images/necklace_without_navigation.png)
 
 This product has the following attributes we want to model:
 - Name

@@ -7,7 +7,7 @@ title: Codingstandards
 
 This document provides guidelines for code formatting and documentation to individuals and teams contributing to OntoWiki.
 
-This page makes heavy use of the [[Zend Framework coding standards|http://framework.zend.com/manual/en/coding-standard.html]].
+This page makes heavy use of the [Zend Framework coding standards](http://framework.zend.com/manual/en/coding-standard.html).
 
 ## Goals
 Coding standards are important in any development project, but they are particularly important when many developers are working on the same project. Coding standards help ensure that the code is high quality, has fewer bugs, and can be easily maintained.
@@ -113,7 +113,7 @@ In order to keep the code consistent, `null` values are written in lower case:
 
     if (null === $someVar) {
         doSomething();
-}
+    }
 
 ### Classes
 #### Class Declarations

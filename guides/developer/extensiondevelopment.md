@@ -8,26 +8,23 @@ title: Extension Development
 This is a starting point for all developers who want to create their own eLDS extensions. This includes basic PHP and Zend Skills as well as configuration and setup information for a developers PHP engine.
 
 ## Tutorials for PHP Beginners
-If you are new to PHP, please have a look at one of these tutorials:
-* <http://tut.php-q.net/> (en + de)
-* <http://www.w3schools.com/PHP/> (en)
-* <http://www.professionelle-softwareentwicklung-mit-php5.de/erste_auflage/index.html> (de)
+If you are new to PHP, please have a look at the [W3Schools PHP Tutorial](http://www.w3schools.com/PHP/) (en).
 
 ## Tutorials for Zend Beginners
-If you know PHP but not Zend, we recommend these tutorial cause it refers to the newest Zend version:  
-* <http://framework.zend.com/docs/quickstart>
+If you know PHP but not Zend, we recommend [the official Zend tutorial](http://framework.zend.com/docs/quickstart) because it always refers to the newest Zend version.
 
 ## PHP Configuration for Developers
 All you need is to re-configure your eLDS Installation to use the **debug mode**. For this, add the following line to your `config.ini`.
 
      debug = on
 
-In addition to this, we recommend the php extension [[xdebug|http://www.xdebug.org]] for all eLDS developers. **xDebug** provides stack traces and function traces in error messages with:
+In addition to this, we recommend the php extension [xdebug](http://www.xdebug.org) for all eLDS developers. **xDebug** provides stack traces and function traces in error messages with:
 * full parameter display for user defined functions
 * function name, file name and line indications
 * support for member functions
-
-We recommend to re-configure some php runtime variables for eLDS. Please have a look at [[Deployment-Recommendations]].
+<!--
+TODO: must be correct for both documentations (different links)
+We recommend to re-configure some php runtime variables for eLDS. Please have a look at [[Deployment-Recommendations]].-->
 
 ## Extension Architecture
 
@@ -47,22 +44,22 @@ Additionally, we have 2 kinds of non-developer (internal) extensions, namely
 
 An extension is a meta container that can contain any/multiple of the below explained extension types. An (made up) example could look like this:
 
-ow-root/
-* index.php
-* extensions/
- * files.ini
- * files/
-  * FilesController.php
-  * FilesModule.php
-  * RelatedFilesModule.php
-  * RemoteFilesPlugin.php
-  * doap.n3
-  * templates/
-   * navigation/
-    * listfiles.phtml
-    * relatedfiles.phtml
-    * deletefile.phtml
-  * ...
+    ow-root/
+    * index.php
+    * extensions/
+     * files.ini
+     * files/
+      * FilesController.php
+      * FilesModule.php
+      * RelatedFilesModule.php
+      * RemoteFilesPlugin.php
+      * doap.n3
+      * templates/
+       * navigation/
+        * listfiles.phtml
+        * relatedfiles.phtml
+        * deletefile.phtml
+      * ...
 
 This example seems rather complex but this way you will get all possibilities of a extension.
 You can see that one extension folder (files) contains a controller and multiple modules and a plugin.
@@ -86,7 +83,7 @@ Thus you can use a helper to do certain tasks like registering a menu or navigat
 See also the component helper section of the RDFa Views page:
 http://code.google.com/p/ontowiki/wiki/RDFaViews?ts=1243244705&updated=RDFaViews#Component\_Helper
 
-In both cases, the component controller mus extend 'OntoWiki\_Controller\_Component' and has therefore a number of inherited variables and methods available.
+In both cases, the component controller must extend 'OntoWiki\_Controller\_Component' and has therefore a number of inherited variables and methods available.
 If your component needs a helper, derive you helper class from 'OntoWiki\_Component\_Helper'.
 
 Typical things you can do with a Controller:
