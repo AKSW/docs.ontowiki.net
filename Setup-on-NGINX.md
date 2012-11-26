@@ -66,6 +66,8 @@ To allow for larger file uploads in OntoWiki, one would need to adjust both the 
 
 ## Known Problems
 
+What is the best value for PHP_FCGI_CHILDREN for use with OntoWiki?
+c.f http://www.fastcgi.com/drupal/node/5?q=node/10, bottom of page.
 
 (please add problems you may have with this configuration here and to the issue tracker)
 
