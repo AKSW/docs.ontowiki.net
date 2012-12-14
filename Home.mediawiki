@@ -11,6 +11,7 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 * [[PHPUnit|Setup a Test Environment]]
 * [[Extensions|Starting the Development of a new Extension]]
 * [[Collection-of-helpful-sparql-queries|Collection of helpful SPARQL queries]]
+* [[Classes|Information about classes]]
 
 This wiki documents installation and development details of OntoWiki.
 
