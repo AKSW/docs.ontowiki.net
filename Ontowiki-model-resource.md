@@ -9,7 +9,7 @@ This example shows a simple usage of the class. It assumes that you are in a Ont
 $r = new OntoWiki_Model_Resource (
    $this->_owApp->selectedModel->getStore(),
    $this->_owApp->selectedModel,
-   'http://data.lod2.eu/scoreboard/'
+   "http://data.lod2.eu/scoreboard/"
 );
 ```
 
