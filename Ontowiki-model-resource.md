@@ -50,4 +50,10 @@ array(1) {
 ...
 ```
 
-In this example **http://data.lod2.eu/scoreboard/** is the resource uri. In one subarray **http://purl.org/dc/elements/1.1/creator** is a predicate and contains a couple of information about the object.
+In this example **http://data.lod2.eu/scoreboard/** is the resource uri. The **http://purl.org/dc/elements/1.1/creator** is a predicate and key of one of the subarrays and contains a couple of information about the object.
+
+To get access of the object itself, use this:
+
+```
+$creator = $r ["http://data.lod2.eu/scoreboard/"]["http://purl.org/dc/elements/1.1/creator"][0]['content'];
+```
