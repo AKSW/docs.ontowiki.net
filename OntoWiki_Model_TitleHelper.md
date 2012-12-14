@@ -48,9 +48,8 @@ foreach($uris as $uri){
 It will not work! Instead of this, first add all resources to TitleHelper instance
 
 ```
-foreach($uris as $uri){
-  $titleHelper->addResources($uris);
-}
+// it assumes that $uris looks like array ( "http://foo.bar.de/", "http://we.love.ontowiki/" );
+$titleHelper->addResources ($uris);
 ```
 
 and than you can iterate about the URI's again to play with the titles
