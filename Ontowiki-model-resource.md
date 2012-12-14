@@ -55,5 +55,5 @@ In this example **http://data.lod2.eu/scoreboard/** is the resource uri. The **h
 To get access of the object itself, use this:
 
 ```
-$creator = $r ["http://data.lod2.eu/scoreboard/"]["http://purl.org/dc/elements/1.1/creator"][0]['content'];
+$creator = $r ['http://data.lod2.eu/scoreboard/']['http://purl.org/dc/elements/1.1/creator'][0]['content'];
 ```
