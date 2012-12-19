@@ -1,4 +1,4 @@
-## update
+# Update
 call the following uri:
 ```
 http://localhost/ontowiki/service/update/
