@@ -6,7 +6,13 @@ Via the **updateAction** you can execute queries to insert, update, delete and s
 
 ### Insert new data
 
-To insert new triples into the store, you may call service/update via the following URL:
+To insert new triples into the store, you may call service/update with this parameter:
+
+#### named-graph-uri
+#### insert
+
+
+URL:
 ```
 http://localhost/ontowiki/service/update/
 ```
@@ -21,9 +27,3 @@ or via POST:
 named-graph-uri=http://schema.org/&
 insert={"http://schema.org/NewResource/D01EB4A2E7F26DC0F6F7E068517A09E6":{"http://www.test.de" : [{"value" : "Peter", "type" : "literal", "lang" : "de"}], "http://www.w3.org/2000/01/rdf-schema#label" : [{"value" : "LabelPeter", "type" : "literal", "lang" : "de"}], "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [{"value" : "http://schema.org/Netzer", "type" : "uri"}]}}
 ```
-
-
-
-## Paramter
-### named-graph-uri
-### insert
