@@ -18,5 +18,6 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 
 ### OntoWiki application
 * [[Information about classes|Classes]]
+* [[Information about controllers|Controllers]]
 
 There is also an API-Documentation available [http://docs.ontowiki.net/fw/].
