@@ -5,7 +5,7 @@
 1. Apache, PHP and ODBC
     - Install Apache and PHP with the package manager
 
-            $ sudo pacman -S apache php apache-php php-odbc
+            $ sudo pacman -S apache php php-apache php-odbc
     - Configure PHP by following the PHP section of the [LAMP entry in the Archlinux Wiki](https://wiki.archlinux.org/index.php/LAMP#PHP) (also consult that page if you have any problems installing Apache and PHP)
     - Compile the libraries
 
