@@ -2,6 +2,7 @@ Here you will find information about popular classes which are used often. Each 
 
 ## OntoWiki
  * **[[Utils|OntoWiki_Utils]]**: Provides utilities for a couple of use cases.
+ * **[[Model|OntoWiki_Model]]**
 
 ## OntoWiki_Model
  * **[[Resource|OntoWiki_Model_Resource]]**: Provides functions to handle a resource
