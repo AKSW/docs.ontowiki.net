@@ -161,8 +161,9 @@ To start Virtuoso, switch to `<prefix>/bin` and run:
 
 Cave: Run Virtuoso with enough rights. When importing knowledge bases from file, they are first copied to tmp. Virtuoso needs a sufficiently high user like root or www-data to read it (besides adding the tmp dir to DirsAllowed). 
 Otherwise you will get the error:
-
+```
     Error importing knowledge base: Graph '<http://inserttesst.org>' could not be imported: Error importing statements: SQL Error: [unixODBC][OpenLink][Virtuoso iODBC Driver][Virtuoso Server]FA012: Can't open file '/tmp/phpWH20k0', error (13) : Permission denied (37000) CALL DB.DBA.RDF_LOAD_RDFXML(FILE_TO_STRING_OUTPUT('/tmp/phpWH20k0'), '', 'http://inserttesst.org'
+```
 
 ##### Debian/Ubuntu
 If you install Virtuoso from the .deb-Package you have to change in '/etc/init.d/virtuoso-opensource' the line
@@ -172,6 +173,8 @@ to
 while virtuoso is not running.
 
 Also, make sure your Virtuoso is at least [[version 6.1.4|Deployment-Recommendations]].
+
+**IMPORTANT HINT:** Make sure that you activated **display_errors** (=On) in your php.ini. Please have a look into phpinfo and check whats the values of display_errors. If its off, go to /etc/php5/apache2filter/php.ini respectively /etc/php5/apache2/php.ini and set the value on your own. Otherwise you will not see the error above!
 
 #### Mac OS X
 To auto-start Virtuoso on Mac OS X 10.5 use a config file for the `launchd` service. It should be placed under `/Library/LaunchDaemons`. The following is an example file, replace the paths with your settings where necessary.
