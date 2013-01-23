@@ -1,6 +1,18 @@
 ![](https://raw.github.com/wiki/AKSW/OntoWiki/images/owHeader.png)
 
-Welcome to the OntoWiki users and developers wiki. It documents installation and development details. If you can't find the answers you coming here for, please have a try to our mailing lists ([User Discussions](http://groups.google.com/group/ontowiki-user), [Developer Talk](http://lists.informatik.uni-leipzig.de/mailman/listinfo/ontowiki-dev)). 
+Welcome to the OntoWiki users and developers wiki. It documents installation and development details. If you can't find the answers you coming here for, please have a try to our mailing lists ([**User Discussions**](http://groups.google.com/group/ontowiki-user), [**Developer Talk**](http://lists.informatik.uni-leipzig.de/mailman/listinfo/ontowiki-dev)). 
+
+## What is OntoWiki? What can it do for you?
+
+OntoWiki is a semantic application as well as a framework which acts as a hardened basement for your application in the Semantic Web context. One of its main purposes is to assist you managing your knowledge. Knowledge means here machine readable data organized as [RDF/XML](http://en.wikipedia.org/wiki/RDF/XML), [Notation3](http://en.wikipedia.org/wiki/Notation3), [Turtle](http://en.wikipedia.org/wiki/Turtle_(syntax)) as well as [Talis(JSON)](http://docs.api.talis.com/platform-api/output-types/rdf-json). You organize your knowledge using an feature-rich user interface managing classes, properties and resources. *If you don't know what is this all about, please have a look [here](http://en.wikipedia.org/wiki/Semantic_Web) (and associated pages) before continue reading*. Furthermore what OntoWiki can do for you:
+* it is a [Linked Data](http://www.w3.org/standards/semanticweb/data) server for you data as well as a [Linked Data](http://www.w3.org/standards/semanticweb/data) client to fetch additional data from the web
+* it is a Semantic Pingback Client in order to receive and send back-linking request as known from the blogosphere
+* you can use the backend you know to store your data, because OntoWiki is backend independent, which means you can save your data on a MySQL database as well as on a Virtuoso Triple Store
+
+But thats not all, OntoWiki provides a rich set of extensions:
+* Wikipedia like [Wiki's](https://github.com/AKSW/article.ontowiki/wiki), 
+* (PubSubHubbub)[https://github.com/AKSW/pubsub.ontowiki#pubsubontowiki] to spread your local knowledge changes over the web and be synced with foreign sources 
+* Extension namend CubeViz for [visualization of statistical data](https://github.com/AKSW/cubeviz.ontowiki/wiki) which are organized in the [DataCube](http://www.w3.org/TR/vocab-data-cube/) format. OntoWiki + CubeViz are already in use for the [Open Data portal](http://open-data.europa.eu/open-data/de/apps) of the European Union.
 
 # Users
 
