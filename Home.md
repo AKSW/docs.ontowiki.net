@@ -1,4 +1,6 @@
-Welcome to the OntoWiki users and developers wiki. It documents installation and development details of OntoWiki.
+![](https://raw.github.com/wiki/AKSW/OntoWiki/images/owHeader.png)
+
+Welcome to the OntoWiki users and developers wiki. It documents installation and development details. If you can't find the answers you coming here for, please have a try to our mailing lists ([User Discussions](http://groups.google.com/group/ontowiki-user), [Developer Talk](http://lists.informatik.uni-leipzig.de/mailman/listinfo/ontowiki-dev)). 
 
 # Users
 
