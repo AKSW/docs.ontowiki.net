@@ -11,7 +11,7 @@ OntoWiki is a semantic application as well as a framework which acts as a harden
 * You can use the backend you know to store your data, because OntoWiki is backend independent, which means you can save your data on a MySQL database as well as on a Virtuoso Triple Store
 
 But thats not all, OntoWiki provides a rich set of extensions. In the following a collection:
-* Wikipedia like [Wiki's](https://github.com/AKSW/article.ontowiki/wiki), 
+* Wikipedia like [Wiki's](https://github.com/AKSW/article.ontowiki/wiki): create wiki pages using Markdown and have to possibility to attach wiki pages to existing resources
 * (PubSubHubbub)[https://github.com/AKSW/pubsub.ontowiki#pubsubontowiki] to spread your local knowledge changes over the web and be synced with foreign sources 
 * Extension named [CubeViz](https://github.com/AKSW/cubeviz.ontowiki/wiki) for visualization of statistical data which are organized in the [DataCube](http://www.w3.org/TR/vocab-data-cube/) format. OntoWiki + CubeViz are already in use for the [Open Data portal](http://open-data.europa.eu/open-data/de/apps) of the European Union!
 * [Integration](https://github.com/AKSW/map.ontowiki) of maps - if your data containing geographical information you are able to see it on a map
