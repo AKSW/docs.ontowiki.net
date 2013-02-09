@@ -9,7 +9,7 @@ In a real world case you would have deployed OntoWiki on a server reachable by s
 
     ex:Product rdf:type owl:Class;
       a skos:Concept;
-      skos:prefLabel "Product"@en;
+      skos:prefLabel "Product"@en.
 
     ex:Jewellery rdf:type owl:Class;
       a skos:Concept;
