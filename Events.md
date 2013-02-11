@@ -6,5 +6,6 @@ Events triggered by OntoWiki are:
   * **onShouldLinkedDataRedirect** … can be used to resolve a request URI to a resource
   * **onIsDispatchable**
   * **onBuildUrl**
+  * **onDisplayLiteralPropertyValue**
 
-If an extension wants to react to an event it has to define a Helper class with the according methods.
+If an extension wants to react to an event it has to define a Helper or a Plugin class with the according methods.
