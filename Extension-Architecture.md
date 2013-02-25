@@ -142,7 +142,9 @@ related to the view
   * onPropertiesActionData
   * onUpdateServiceAction
 
-old page: http://ontowiki.net/Projects/OntoWiki/EventPluginArchitecture
+further reading:
+  * Trigger documentation: https://github.com/AKSW/OntoWiki/wiki/Trigger-Documentation
+  * old page: http://ontowiki.net/Projects/OntoWiki/EventPluginArchitecture
 
 # FAQ
 
