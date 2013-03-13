@@ -3,17 +3,29 @@
 1. Setup environment
     1. Prerequisites
     2. General
-    3. Native packages
-    4. Vagrant
-    5. LAMP?  
+    3. Vagrant
+    4. LAMP?  
 2. Unit tests
+    2.1. Execute unit tests
+    2.2. Write unit tests
 3. Integration tests
+    3.1. Execute integration tests
+    3.2. Write integration tests
 4. Extensions tests
+    4.1. Execute extensions tests
+    4.2. Write extension tests
 5. FAQ
+6. References
 
 # 1. Setup Environment
 
 ## 1.1. Prerequisites
+
+* Install [PHPUnit](http://www.phpunit.de/manual/current/en/installation.html)
+* OPTIONAL Vagrant
+    * Download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and install the package
+    * Download [Vagrant](http://downloads.vagrantup.com/) and install the package
+
 
 ## 1.2. General
 
@@ -79,3 +91,31 @@ The output should look something like this:
     Time: 2 seconds, Memory: 39.75Mb
 
     OK (11 tests, 59 assertions)
+
+## 1.3. Vagrant
+
+0. Make sure you have Vagrant installed (see prerequisites)
+1. Go to the root folder of your OntoWiki checkout
+2. run `make vagrant`
+
+This will symlink a default vagrant file from `application/scripts/Vagrantfile-dist`. If you copy this file to `application/scripts/Vagrantfile` prior of calling `make vagrant`, this file will be used instead. This enables you to make changes to your Vagrant setup (e.g. another IP) without creating a Git status.
+
+3. Run `vagrant up`
+
+The first time you call this command it may take a while, since the Guest additions may be updated to fit your Virtual Box version. It also needs to provision the base VM.
+
+This command sometimes fails the first time you run it, e.g. with an error message like this:
+
+    The following SSH command responded with a non-zero exit status.
+    Vagrant assumes that this means the command failed!
+
+    mount -t vboxsf -o uid=`id -u vagrant`,gid=`id -g vagrant` manifests /tmp/vagrant-puppet/manifests
+
+Don't bother, just run `vagrant reload`. You may have to enter your password, since NFS is used for performance reasons.
+
+4. Run `vagrant ssh`
+5. Run `cd /vagrant`
+
+This is where the OntoWiki root folder is mounted to.
+
+6. Run `make test`
