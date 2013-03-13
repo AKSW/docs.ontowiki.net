@@ -139,11 +139,16 @@ This is where the OntoWiki root folder is mounted to.
 2. Do it manually
     * `cd application/tests`
     * `phpunit --bootstrap Bootstrap.php unit/` (without code coverage report)
-    * `phpunit` (with code coverage report)
+    * `cd application/tests/unit` and then `phpunit` (with code coverage report)
 
 This way you can also test individual test classes, e.g. by issuing
 
     phpunit --bootstrap Bootstrap.php unit/controller/IndexControllerTest.php
 
+Your code coverage report (if enabled) will be found in the `build/coverage` folder.
+
+## 2.2. Write unit tests for classes
+
+* e.g. unit/OntoWiki/NavigationTest.php
 
 
