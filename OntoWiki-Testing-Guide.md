@@ -7,15 +7,23 @@
     4. LAMP?  
 2. Unit tests
     2.1. Execute unit tests
-    2.2. Write unit tests
+    2.2. Write unit tests for classes
+    2.3. Write unit tests for controllers
 3. Integration tests
     3.1. Execute integration tests
-    3.2. Write integration tests
+    3.2. Write integration tests for classes
+    3.3. Write integration tests for controllers
 4. Extensions tests
     4.1. Execute extensions tests
-    4.2. Write extension tests
-5. FAQ
-6. References
+    4.2. Write extension tests for classes
+    4.3. Write extension tests for controllers
+5. Specialities
+   5.1. Testing code that fetches something from the web
+   5.2. Testing code that reads/writes to the triples store
+6. FAQ
+7. References
+
+* [PHPUnit manual](http://www.phpunit.de/manual/current/en/)
 
 # 1. Setup Environment
 
@@ -25,7 +33,7 @@
 * OPTIONAL Vagrant
     * Download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and install the package
     * Download [Vagrant](http://downloads.vagrantup.com/) and install the package
-
+    * Install vbguest plugin: `vagrant gem install vagrant-vbguest`
 
 ## 1.2. General
 
@@ -119,3 +127,23 @@ Don't bother, just run `vagrant reload`. You may have to enter your password, si
 This is where the OntoWiki root folder is mounted to.
 
 6. Run `make test`
+
+# 2. Unit tests
+
+## 2.1. Execute unit tests
+
+1. Use make
+    * `make test-unit`
+    * `make test-unit-cc``
+
+2. Do it manually
+    * `cd application/tests`
+    * `phpunit --bootstrap Bootstrap.php unit/` (without code coverage report)
+    * `phpunit` (with code coverage report)
+
+This way you can also test individual test classes, e.g. by issuing
+
+    phpunit --bootstrap Bootstrap.php unit/controller/IndexControllerTest.php
+
+
+
