@@ -13,7 +13,7 @@
     3.1. Execute integration tests
     3.2. Write integration tests for classes
     3.3. Write integration tests for controllers
-4. Extensions tests
+4. Extension tests
     4.1. Execute extensions tests
     4.2. Write extension tests for classes
     4.3. Write extension tests for controllers
@@ -30,6 +30,9 @@
 ## 1.1. Prerequisites
 
 * Install [PHPUnit](http://www.phpunit.de/manual/current/en/installation.html)
+    * Min version 3.5.5
+* OPTIONAL For code coverage support Xdebug needs to be installed
+    * [Xdebug](http://xdebug.org/docs/install)
 * OPTIONAL Vagrant
     * Download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and install the package
     * Download [Vagrant](http://downloads.vagrantup.com/) and install the package
@@ -39,6 +42,7 @@
 
 1. Clone OntoWiki from Github: `git clone git@github.com:AKSW/OntoWiki.git`
 2. Run `make install`
+    * If you have Zend already in your include path, make sure to remove it from the `libraries` folder after running this command.
 3. Run `make test`
 
 The output should look something like this:
@@ -150,5 +154,15 @@ Your code coverage report (if enabled) will be found in the `build/coverage` fol
 ## 2.2. Write unit tests for classes
 
 * e.g. unit/OntoWiki/NavigationTest.php
+
+## 3. Integration Tests
+
+## 3.1. Run
+
+## 3.2. Write integration tests for classes
+
+* e.g. 
+
+## 3.2. Write integration tests for controllers
 
 
