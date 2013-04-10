@@ -16,3 +16,12 @@ After installation only an example page exists so you can test the extension wit
     index.default.controller = "page"
     index.default.action = "example"
 
+## Why doesn't work OntoWiki after installing it on OS X?
+
+First of all, set debug = TRUE in the config.ini.
+Maybe you get an error similar to "Can't connect to mysql database 'yourdatabase'." if you use mySQL.
+Try adding Port 3306 to the host in the config.ini.
+
+It should look like this:
+
+    store.zenddb.host = localhost:3306
