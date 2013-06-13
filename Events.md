@@ -11,8 +11,11 @@ Events triggered by OntoWiki are:
 If an extension wants to react to an event it has to define a Helper or a Plugin class with the according methods.
 
 All Events can be listed using the following command (supported by Sebastian Hellmann)
+
 `grep -R "new Erfurt_Event" * 2> /dev/null | sed "s/.*new Erfurt_Event('//;s/');.*//"  | sort -u`
+
 (best in OW root)
+
 Currently following events are listed:
 
 * beforeExportResource
