@@ -110,7 +110,7 @@ To allow for larger file uploads in OntoWiki, one would need to adjust both the 
 
 ##### Further Information
 - <http://wiki.nginx.org/Zend_Framework>
-- <http://www.linux-web-development.de/2010/11/03/zend-framework-mit-nginx> (German)
+- <http://blog.unikorn.me/zend-framework-mit-nginx.html> (German)
 
 ### PHP
 You need PHP version 5.2 or higher.
