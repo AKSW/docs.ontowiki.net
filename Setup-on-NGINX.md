@@ -73,4 +73,4 @@ c.f http://www.fastcgi.com/drupal/node/5?q=node/10, bottom of page.
 
 ## Further Information
 * http://wiki.nginx.org/Zend_Framework
-* http://www.linux-web-development.de/2010/11/03/zend-framework-mit-nginx (German)
+* http://blog.unikorn.me/zend-framework-mit-nginx.html (German)
