@@ -23,7 +23,7 @@ For all Vim users, use this modeline if you don't want to set it for your whole 
 }}}
 
 == Maximum Line Length ==
-The target line length is 80 characters. That is to say, OntoWiki developers should strive keep each line of their code under 80 characters where possible and practical. However, longer lines are acceptable in some circumstances. The maximum length of any line of PHP code is 120 characters.
+The target line length is 100 characters. That is to say, OntoWiki developers should strive keep each line of their code under 100 characters where possible and practical. However, longer lines are acceptable in some circumstances. The maximum length of any line of PHP code is 120 characters.
 
 == Naming Conventions ==
 
@@ -97,17 +97,19 @@ $a = 'Example String';
 === String Literals Containing Apostrophes ===
 When a literal string itself contains apostrophes, it is permitted to demarcate the string with quotation marks or "double quotes". This is especially useful for Messages:
 {{{
-OntoWiki_Application::getInstance()->appendMessage(new OntoWiki_Message(
-    "The graph with the URI '$graphUri' could not be loaded.", 
-    OntoWiki_Message::WARNING
-));
+OntoWiki_Application::getInstance()->appendMessage(
+    new OntoWiki_Message(
+        "The graph with the URI '$graphUri' could not be loaded.",
+        OntoWiki_Message::WARNING
+    )
+);
 }}}
 This syntax is preferred over escaping apostrophes as it is much easier to read.
 
 === String Concatenation ===
 When concatenating strings with the "." operator, it is encouraged to break the statement into multiple lines to improve readability. In these cases, each successive line should be padded with white space such that the "."; operator is aligned under the "=" operator:
 {{{
-$this->view->moduleUrl = $this->_config->staticUrlBase 
+$this->view->moduleUrl = $this->_config->staticUrlBase
                        . $this->_config->extensions->modules
                        . $this->_name . '/';
 }}}
@@ -115,8 +117,10 @@ $this->view->moduleUrl = $this->_config->staticUrlBase
 == Associative Arrays ==
 When declaring associative arrays with the array construct, breaking the statement into multiple lines is encouraged. In this case, each successive line must be padded with white space such that both the keys and the values are aligned:
 {{{
-$sampleArray = array('firstKey'  => 'firstValue',
-                     'secondKey' => 'secondValue');
+$sampleArray = array(
+    'firstKey'  => 'firstValue',
+    'secondKey' => 'secondValue'
+);
 }}}
 
 == Null Values ==
@@ -236,16 +240,30 @@ Function arguments should be separated by a single trailing space after the comm
 threeArguments(1, 2, 3);
 }}}
 
-Call-time pass-by-reference is strictly prohibited. See the function declarations section for the proper way to pass function arguments by-reference.
+If a method call has to be split into multiple lines the first argument starts in the second line and the closing parenthesis is on its own line with the trailing semicolon:
+{{{
+longFunctionCallWithLongArguments(
+    'This argument would not fit into the same line as the function name',
+    'but this one can go on a line with a number', 3
+);
+}}}
 
 In passing arrays as arguments to a function, the function call may include the "array" hint and may be split into multiple lines to improve readability. In such cases, the normal guidelines for writing arrays still apply:
 {{{
 threeArguments(array(1, 2, 3), 2, 3);
 
-threeArguments(array(1, 2, 3, 'Zend', 'Studio',
-                     $a, $b, $c,
-                     56.44, $d, 500), 2, 3);
+threeArguments(
+    array(1, 2, 3, 'Zend', 'Studio', $a, $b, $c, 56.44, $d, 500), 2, 3,
+    array(
+        'This value would not fit into the same line as the array function',
+        'but this one can go on a line with a number', 3
+    ),
+    'hello'
+);
 }}}
+
+Call-time pass-by-reference is strictly prohibited. See the function declarations section for the proper way to pass function arguments by-reference.
+
 
 == Control Statements ==
 === If/Else/Elseif ===
@@ -302,6 +320,18 @@ The construct default should never be omitted from a switch statement.
 
 NOTE: It is sometimes useful to write a case statement which falls through to the next case by not including a break or return within that case. To distinguish these cases from bugs, any case statement where break or return are omitted should contain a comment indicating that the break was intentionally omitted.
 
+== Template Files ==
+Template files are the only place, where (X)HTML and similar markup is allowed and should be the only places where strings are {{{echo}}}ed. These files are used for the presentation of data.
+
+For pure output of strings the PHP shorthand {{{<?= 'blabla' ?>}}} is recommended instead of {{{<?php echo 'blabla' ?>}}}. In bigger blocks {{{echo}}} is still the means of choice e.g.:
+{{{
+foreach ($array as $key => $value) {
+    echo $key . ': ' . $value . PHP_EOL;
+}
+}}}
+
+Instead of using the new line control sequence {{{\n}}} or any other carriage return in strings, the PHP constant {{{PHP_EOL}}} has to be used .
+
 == Inline Documentation ==
 === Documentation Format ===
 All documentation blocks ("docblocks") must be compatible with the phpDocumentor format. Describing the phpDocumentor format is beyond the scope of this document. For more information, visit: [[http://phpdoc.org/]]
@@ -317,7 +347,7 @@ Every file that contains PHP code must have a docblock at the top of the file th
 /**
  * This file is part of the {@link http://ontowiki.net OntoWiki} project.
  *
- * @copyright Copyright (c) 2009, {@link http://aksw.org AKSW}
+ * @copyright Copyright (c) 2013, {@link http://aksw.org AKSW}
  * @license http://opensource.org/licenses/gpl-license.php GNU General Public License (GPL)
  */
 }}}
@@ -326,9 +356,9 @@ For files that belong to Erfurt this docblock will look slightly different.
 
 {{{
 /**
- * This file is part of the {@link http://aksw.org/Projects/Erfurt Erfurt} project.
+ * This file is part of the {@link http://erfurt-framework.org Erfurt} project.
  *
- * @copyright Copyright (c) 2009, {@link http://aksw.org AKSW}
+ * @copyright Copyright (c) 2013, {@link http://aksw.org AKSW}
  * @license http://opensource.org/licenses/gpl-license.php GNU General Public License (GPL)
  */
 }}}
@@ -342,14 +372,16 @@ Every class must have a docblock that contains these phpDocumentor tags at a min
  *
  * Long description for class (if any) ...
  *
- * @copyright Copyright (c) 2008, {@link http://aksw.org AKSW}
+ * @copyright Copyright (c) 2013, {@link http://aksw.org AKSW}
  * @license http://opensource.org/licenses/gpl-license.php GNU General Public License (GPL)
  * @category OntoWiki or Erfurt, respectively
- * @package example
- * @subpackage subpackage
+ * @package OntoWiki_Example or Erfurt_Example
  * @author Carl Committer <carl.committer@gmail.com>
  */
 }}}
+
+If you are developing an OntoWiki extension with the name {{{example}}} the {{{@package}}} tag is {{{OntoWiki_Extension_Example}}}.
+
 === Functions ===
 Every function, including object methods, must have a docblock that contains at a minimum:
   * A description of the function
