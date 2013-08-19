@@ -13,5 +13,9 @@ Add the following to `/var/www/myontowiki/config.ini`:
     index.default.controller = "page"
     index.default.action = "startpage"
 
+Create the file `extensions/page.ini` and write "enabled = true" in it.
+
+Clean the extension cache with `make clean`. You should now find the pages extension activated in your extension list and on the main page should be the content of your startpage.phtml.
+
 ## Configuration
 Edit `myontowiki/extensions/page/page/startpage.phtml`.
