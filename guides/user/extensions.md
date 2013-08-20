@@ -69,7 +69,7 @@ If you click the "Explore Repo" tab, you will see a list of extensions present i
 ## markdown
 ## modellist
 ## [navigation](Navigation-Extension)
-## [page][Page-Extension]
+## [page](Page-Extension)
 ## [pingback](SemanticPingback)
 ## queries
 ## resourcecreationuri
