@@ -330,7 +330,8 @@ foreach ($array as $key => $value) {
 }
 }}}
 
-Instead of using the new line control sequence {{{\n}}} or any other carriage return in strings, the PHP constant {{{PHP_EOL}}} has to be used .
+Instead of using the new line control sequence {{{\n}}} or any other carriage return in strings, the PHP constant {{{PHP_EOL}}} has to be used.
+Furthermore we invoke {{{echo}}} without braces.
 
 == Inline Documentation ==
 === Documentation Format ===
