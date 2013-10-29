@@ -128,22 +128,29 @@ Within the plugin class implement:
 		);
 	}
 
-The Erfurt worker backend will register your job class once it is started.<br/>
+The Erfurt worker backend will register your job class once it is started.
+
 Now you need to implement your job class. Here is a simple example:
 
-	class MyPlugin_Job_MyJobName implements Erfurt_Worker_Job_Interface {
-		public function run( GearmanJob $job ){
-			$workload   = $job->workload();                 //  extract job workload
-			return strrev( $workload );                     //  reverse string and return
-		}
-	}
+    class MyPlugin_Job_MyJobName extends Erfurt_Worker_Job_Abstract
+    {
+        public function run( $workload ){
+            if (empty($workload)) {
+                $this->logSuccess('MyPlugin_Job_MyJobName started (without workload)');
+            } else {
+                $this->logSuccess('MyPlugin_Job_MyJobName started');
+                return strrev($workload);  //  reverse string and return
+        }
+    }
 	
 #### Worker execution
+
 ##### On the server 
+
 Go into OntoWiki's application folder and run the worker script:
 
-	cd OntoWiki/application
-	php shell.worker.php &
+    cd OntoWiki/application
+    php shell.worker.php &
 
 Please keep in mind that this script will not quit since it will listen for new job calls.
 Therefore the script is told to run in background (by the ampersand).
@@ -154,11 +161,13 @@ To stop or restart the worker, please kill the process and start the script agai
 
 ##### On the client
 
-You can call jobs for synchronous execution like this:
+You can call jobs for execution with this one-liner:
 
-    $ontowiki = OntoWiki::getInstance();
-    $ontowiki->callJob("MyJobId", "MyPayloadData");
+    OntoWiki::getInstance()->callJob("MyJobId", "MyPayloadData");
+
+Jobs also can call other jobs. An example job is available (and registered as 'test') in [Erfurts repository][4].
 
 [1]: http://gearman.org/
 [2]: http://gearman.org/getting_started
 [3]: http://www.phpvs.net/2010/11/30/installing-gearman-and-gearmand-on-windows-with-cygwin/
+[4]: https://github.com/AKSW/Erfurt/blob/develop/library/Erfurt/Worker/TestJob.php
