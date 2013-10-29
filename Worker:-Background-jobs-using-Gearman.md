@@ -147,10 +147,10 @@ Now you need to implement your job class. Here is a simple example:
 
 ##### On the server 
 
-Go into OntoWiki's application folder and run the worker script:
+Go into OntoWiki's base folder and run the worker script:
 
-    cd OntoWiki/application
-    php shell.worker.php &
+    cd OntoWiki
+    application/shell.worker.php &
 
 Please keep in mind that this script will not quit since it will listen for new job calls.
 Therefore the script is told to run in background (by the ampersand).
