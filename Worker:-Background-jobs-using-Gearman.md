@@ -156,16 +156,8 @@ To stop or restart the worker, please kill the process and start the script agai
 
 You can call jobs for synchronous execution like this:
 
-	$client		= Erfurt_Worker_Frontend::getInstance( $bootstrap->config );
-	$result		= $client->call( "myJobName", "MyWorkloadData" );
-
-Executing job asynchronously (in the background) can be done like this:
-
-	$jobHandle	= $client->callAsync( "myJobName", "MyWorkloadData" );
-
-Afterwards you can check the job status like this: 
-
-	$state	= $client->isStillRunning( $jobHandle );
+    $ontowiki = OntoWiki::getInstance();
+    $ontowiki->callJob("MyJobId", "MyPayloadData");
 
 [1]: http://gearman.org/
 [2]: http://gearman.org/getting_started
