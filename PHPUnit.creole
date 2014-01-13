@@ -146,6 +146,6 @@ I had problems with PHP telling me:
 PHP Fatal error:  Call to undefined function php_codecoverage_autoload() in /usr/share/php/PHPUnit/Util/GlobalState.php on line 380
 }}}
 
-Which I could solve by un-installing phpunit and its related packages (using apt-get purge …) and installing phpunit with pear (http://pear.phpunit.de/).
+Which I could solve by un-installing phpunit and its related packages (using apt-get purge …) and installing phpunit with pear ([[http://pear.phpunit.de/]]).
 
 This problem occurred on debian testing in my case.
