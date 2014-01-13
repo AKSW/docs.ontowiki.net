@@ -138,3 +138,14 @@ PHPUnit 3.4.5 by Sebastian Bergmann.
 }}}
 
 in your tested code contains an **exit** call, which is reached (and the % indicates that your terminal complains about a missing newline). Use **return;** instead!
+
+=== Strange PHPUnit installation ===
+I had problems with PHP telling me:
+
+{{{
+PHP Fatal error:  Call to undefined function php_codecoverage_autoload() in /usr/share/php/PHPUnit/Util/GlobalState.php on line 380
+}}}
+
+Which I could solve by un-installing phpunit and its related packages (using apt-get purge …) and installing [[http://pear.phpunit.de/|phpunit with pear]].
+
+This problem occurred on debian testing in my case.
