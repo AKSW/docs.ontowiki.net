@@ -20,7 +20,7 @@ But thats not all, OntoWiki provides a rich set of extensions. In the following 
 
 If this is your first time with OntoWiki you might want to read the following pages:
 * [[Our recommendations for an OntoWiki deployment|Deployment-Recommendations]]
-* [[Get OntoWiki|GetOntowikiUsers]], [[Carrying out the Installation]]
+* [[Get OntoWiki|GetOntowikiUsers]], [[Carrying out the Installation]], [[Setup]]
 * [[Get Started using OntoWiki|Getting-Started-Users]]
 
 # Developers
