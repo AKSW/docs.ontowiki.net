@@ -6,6 +6,8 @@ As a non-developer there a three ways to install OntoWiki (Developers look [here
 * The smoothest way is to use the debian package.
 * The latest development version can be installed only from the repository.
 
+You will also find further details at: [[Carrying out the Installation]].
+
 ## via archive
 if you want the latest official and most stable release of OntoWiki
 
