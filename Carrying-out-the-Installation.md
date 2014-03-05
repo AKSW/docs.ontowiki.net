@@ -70,7 +70,8 @@ The OntoWiki should now be shown after selection of the folder `AKSW-OntoWiki-#s
 
     1. Download Apache 2
 
-        Go to `http://httpd.apache.org/download.cgi` and choose the latest stable release version that provides Windows binaries. Download the MSI Installer for this version. The line should look like _"Win32 Binary including OpenSSL 0.9.8t (MSI Installer): httpd-2.2.22-win32-x86-openssl-0.9.8t.msi"_.
+        Go to `http://httpd.apache.org/download.cgi` and choose the latest stable release version that provides Windows binaries. Download the MSI Installer for this version. The line should look like _"Win32 Binary including OpenSSL 0.9.8t (MSI Installer): httpd-2.2.22-win32-x86-openssl-0.9.8t.msi"_. (Make sure to use the correct architecture)
+
     2. Run the Apache Installer
 
         When you arrive at the "Server Information" dialog box, enter `localhost` for the Network Domain as well as for the Server Name and whatever email address you wish for the "Administrator's Email Address" field. The installer uses the information you enter to create a default Apache configuration file for you. You can always go back and manually change these values in your configuration file if you change your mind later. Leave the default setting of "for All Users, on Port 80, as a Service" as it is. Click "Next" when you're done (see [How to Install and Configure Apache 2 on Windows](http://www.thesitewizard.com/apache/install-apache-2-windows.shtml)).   
@@ -160,3 +161,6 @@ In case OntoWiki isn't loaded correctly after you followed this tutorial, go to 
 
 **Error on bootstrapping application: Unable to connect to Virtuoso Universal Server via ODBC.**
 Make sure that the Virtuoso service is started. If it does not start, look for files named `virtuoso.lck` in your Virtuoso folder under `database` or `virtuoso` and delete them if existing.
+
+**The specified DSN contains an architecture mismatch between the Driver and Application**
+If you are using Windows, it is important to use the same architecture (32bit or 64bit) across all packages. Especially PHP-ODBC can only connect to Virtuoso if it is using the same architecture.
