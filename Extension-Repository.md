@@ -3,10 +3,10 @@ We got a centralized Repository for extensions. Every OntoWiki can browse the av
 The Repository is quite unique. It is basically a SPARQL-endpoint, which contains a repo model which imports multiple extension-models. A extension model contains DOAP data. The client within the Extension Configurator queries this model for all doap:Projects (which are extensions in our case).
 
 This is what the list of available extenions looks like:
-![repoclient](https://github.com/AKSW/OntoWiki/wiki/images/exconf-explore.png)
+![repoclient](./images/exconf-explore.png)
 
 You can register new extensions [here](http://extensions.ontowiki.net). 
-![reposerver](https://github.com/AKSW/OntoWiki/wiki/images/reposerver.png)
+![reposerver](./images/reposerver.png)
 
 Registering a new or updated extension with our repo is basically just a import of its DOAP description into the repo model.
 As the [short documentation](http://extensions.ontowiki.net/Help.html) says there are four steps to register a new extension, which we will explain a bit deeper here.
