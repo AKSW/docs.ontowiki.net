@@ -4,6 +4,7 @@ This page explains the necessary steps to use OntoWiki with [OpenLink Virtuoso](
 Especially, it covers the following topics:
 
 * Install Virtuoso
+* Download and install OntoWiki
 * Configure OntoWiki to use Virtuoso
 
 ## Overview
