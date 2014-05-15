@@ -1,6 +1,6 @@
 # DataWiki 3 initiative (DW3I)
 
-DW3I is a joint activity of JavaScript and OntoWiki enthusiasts AKSW as well as Bachelor and Master students from ULEI with the goal of an architecture / implementation of version 3 of the DataWiki.
+DW3I is a joint activity of JavaScript and OntoWiki enthusiasts from [AKSW](http://aksw.org) as well as Bachelor and Master students from [BIS/ULEI](http://bis.uni-leipzig.de) with the goal of an architecture / implementation of version 3 of the DataWiki as well as new application framework beneath.
 
 For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.uni-leipzig.de/de/Lehre/1314/) so they are able to get signatures for it here.
 
@@ -16,15 +16,16 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 
 ## Upcoming Events
 
-### Mon, 19 May, 10:00 – 11:30
+### Mon, 19 May, 10:00 - P702
 
 Talks:
-* Andy Wermke: Operational Transformation (MA Beginning)
+* Andy Wermke: Operational Transformation (MA Beginning Talk)
 * Tim Ermilov: Powder (Tool)
 * Clemens Hoffmann: DW3 Architecture concepts
 
-### Mon, 26 May, 10:00 – 11:30
+### Mon, 26 May, 10:00 - P702
 
-* Alrik 
+* Alrik Hausdorf: SlideWiki Presenter (BA Ending Talk)
 
 ## Past Events
+
