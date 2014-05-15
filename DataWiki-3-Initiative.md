@@ -6,8 +6,8 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 
 ## Infrastructure
 
-* Wiki page: 
-* Mailinglist
+* Wiki page: https://github.com/AKSW/OntoWiki/wiki/DataWiki-3-Initiative
+* Mailinglist: do we need one?
 
 ## Open Topics
 * [jest: a testing framework on top of jasmine](http://facebook.github.io/jest/index.html)
