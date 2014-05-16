@@ -10,8 +10,8 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 * Mailinglist: do we need one?
 
 ## Open Topics
-* [jest: a testing framework on top of jasmine](http://facebook.github.io/jest/index.html)
-* Lars Eidam MA Beginning
+* [jest: a testing framework on top of jasmine](http://facebook.github.io/jest/index.html) (Tool talk)
+* Lars Eidam (MA beginning talk)
 * 
 
 ## Upcoming Events
@@ -19,9 +19,9 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 ### Mon, 19 May, 10:00 - P702
 
 Talks:
-* Andy Wermke: Operational Transformation (MA Beginning Talk)
-* Tim Ermilov: Powder (Tool)
-* Clemens Hoffmann: DW3 Architecture concepts
+* Clemens Hoffmann: DW3 Architecture concepts (MA progress talk)
+* Tim Ermilov: Powder (Tool talk)
+* Andy Wermke: Operational Transformation (MA beginning talk)
 
 ### Mon, 26 May, 10:00 - P702
 
