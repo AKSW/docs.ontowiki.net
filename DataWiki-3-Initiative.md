@@ -29,3 +29,16 @@ Talks:
 
 ## Past Events
 
+## Interest Group Members
+
+Andy Wermke (MA Student ST) <a.wermke@gmail.com>,
+Alrik Hausdorf (BA Student ST) <admin@morulia.de>,
+Lars Eidam (MA Student MM) <mam07bhr@studserv.uni-leipzig>,
+Lukas Eipert (BA Student AN) <lukas.eipert@gmail.com>,
+Clemens Hoffmann (MA Student ST) <cannelony@googlemail.com>,
+Andreas Nareike (ERM owner) <nareike@informatik.uni-leipzig.de>,
+Claus Stadler (facete owner) <cstadler@informatik.uni-leipzig.de>,
+Timofey Ermilov <ermilov@informatik.uni-leipzig.de>,
+Michael Martin <martin@informatik.uni-leipzig.de>,
+Romy Elze (BI teaching responsible) <elze@informatik.uni-leipzig.de>,
+Sebastian Tramp (OntoWiki owner) <tramp@informatik.uni-leipzig.de>,
