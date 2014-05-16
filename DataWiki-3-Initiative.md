@@ -1,6 +1,6 @@
 # DataWiki 3 initiative (DW3I)
 
-DW3I is a joint activity of JavaScript and OntoWiki enthusiasts from [AKSW](http://aksw.org) as well as Bachelor and Master students from [BIS/ULEI](http://bis.uni-leipzig.de) with the goal of an architecture / implementation of version 3 of the DataWiki as well as new application framework beneath.
+DW3I is a joint activity of JavaScript and OntoWiki enthusiasts from [AKSW](http://aksw.org) as well as Bachelor and Master students from [BIS/ULEI](http://bis.uni-leipzig.de) with the goal of an architecture / implementation of version 3 of the DataWiki as well as a new application framework beneath.
 
 For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.uni-leipzig.de/de/Lehre/1314/) so they are able to get signatures for it here.
 
