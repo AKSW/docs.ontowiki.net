@@ -12,6 +12,7 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 ## Open Topics
 * [jest: a testing framework on top of jasmine](http://facebook.github.io/jest/index.html) (Tool talk)
 * Lars Eidam (MA beginning talk)
+* [Resource SubscrIption and Notification sErvice](https://github.com/rsine/rsine)
 
 ## Upcoming Events
 
