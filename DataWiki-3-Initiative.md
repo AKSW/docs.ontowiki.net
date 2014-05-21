@@ -33,7 +33,7 @@ all times including discussion!
 
 Andy Wermke (MA Student ST) <a.wermke@gmail.com>,
 Alrik Hausdorf (BA Student ST) <admin@morulia.de>,
-Lars Eidam (MA Student MM) <mam07bhr@studserv.uni-leipzig>,
+Lars Eidam (MA Student MM) <mam07bhr@studserv.uni-leipzig.de>,
 Lukas Eipert (BA Student AN) <lukas.eipert@gmail.com>,
 Clemens Hoffmann (MA Student ST) <cannelony@googlemail.com>,
 Andreas Nareike (ERM owner) <nareike@informatik.uni-leipzig.de>,
