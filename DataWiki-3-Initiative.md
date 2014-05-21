@@ -27,7 +27,7 @@ all times including discussion!
 
 ### Mon, 19 May, 10:00 - P702
 * Andy Wermke: Operational Transformation (MA beginning talk)
-* Tim Ermilov: Powder (Tool talk)
+* Tim Ermilov: [Powder](https://github.com/yamalight/generator-powder) (Tool talk)
 
 ## Interest Group Members
 
