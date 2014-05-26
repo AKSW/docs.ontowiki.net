@@ -12,18 +12,23 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 ## Open Topics
 * Lars Eidam (MA beginning talk)
 * Andy Wermke: [Resource SubscrIption and Notification sErvice](https://github.com/rsine/rsine)
-* Tim Ermilov: [promisejs](https://www.promisejs.org/)
 
 ## Upcoming Events
 
 all times including discussion!
 
+### Mon, 2 June, 11:00 – 12:30
+
+* Lukas Eipert: Graphical SPARQL Editor (BA beginning talk, 30 min)
+* Tim Ermilov: [promisejs](https://www.promisejs.org/) (Tool talk, 30 min)
+* Tim Ermilov: Overview on CodeQuality Tools (Tool talk, 30 min)
+
+## Past Events
+
 ### Mon, 26 May, 11:00 - P702
 * Clemens Hoffmann: DW3 Architecture concepts (MA progress talk, 30min)
 * Alrik Hausdorf: SlideWiki Presenter (BA Ending Talk, 30min)
 * Clemens Hoffmann: [jest: a testing framework on top of jasmine](http://facebook.github.io/jest/index.html) (Tool talk, 30min)
-
-## Past Events
 
 ### Mon, 19 May, 10:00 - P702
 * Andy Wermke: Operational Transformation (MA beginning talk)
