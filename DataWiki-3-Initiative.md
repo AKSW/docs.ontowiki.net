@@ -17,13 +17,17 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 
 all times including discussion!
 
-### Mon, 2 June, 11:00 – 12:30
+### Mon, 16 June, 11:00
+* Lars Eidam: Generic Linked Data Form Generator and Integration in DataWIki (MA Beginning Talk, 30 min)
+* Andy Wermke: Current state of his Masterthesis (30 min)
+* Clemens Hoffmann: Current State of his Masterthesis (30 min)
 
+## Past Events
+
+### Mon, 2 June, 11:00 – 12:30
 * Lukas Eipert: Graphical SPARQL Editor (BA beginning talk, 30 min)
 * Tim Ermilov: [promisejs](https://www.promisejs.org/) (Tool talk, 30 min)
 * Tim Ermilov: Overview on CodeQuality Tools (Tool talk, 30 min)
-
-## Past Events
 
 ### Mon, 26 May, 11:00 - P702
 * Clemens Hoffmann: DW3 Architecture concepts (MA progress talk, 30min)
