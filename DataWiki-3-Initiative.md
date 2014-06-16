@@ -11,23 +11,23 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 
 ## Open Topics
 * Andy Wermke: [Resource SubscrIption and Notification sErvice](https://github.com/rsine/rsine)
-* Andreas Nareike: Application Profiles DCMI Group Report
+* Andreas Nareike: Application Profiles DCMI Group Report (July)
 * Lukas Eipert: Wercker and CI/CD Workflow
 
 ## Upcoming Events
 
 all times including discussion!
 
-### Mon, 16 June, 11:00
-* Lars Eidam: Generic Linked Data Form Generator and Integration in DataWIki (MA Beginning Talk, 30 min)
-* Andy Wermke: Current state of his Masterthesis (30 min)
-* Clemens Hoffmann: Current State of his Masterthesis (30 min)
-
 ### Mon, 30 June, 11:00
 * Kay Girmann: DA Beginning Talk (30 min)
 
 
 ## Past Events
+
+### Mon, 16 June, 11:00
+* Lars Eidam: Generic Linked Data Form Generator and Integration in DataWiki (MA Beginning Talk, 30 min)
+* Andy Wermke: Current state of his Masterthesis (30 min)
+* Clemens Hoffmann: Current State of his Masterthesis (30 min)
 
 ### Mon, 2 June, 11:00 – 12:30
 * Lukas Eipert: Graphical SPARQL Editor (BA beginning talk, 30 min)
