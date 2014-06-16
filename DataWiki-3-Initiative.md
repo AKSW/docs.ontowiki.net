@@ -11,6 +11,7 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 
 ## Open Topics
 * Andy Wermke: [Resource SubscrIption and Notification sErvice](https://github.com/rsine/rsine)
+* Andreas Nareike: Application Profiles DCMI Group Report
 
 ## Upcoming Events
 
