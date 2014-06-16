@@ -10,7 +10,6 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 * Mailinglist: do we need one?
 
 ## Open Topics
-* Lars Eidam (MA beginning talk)
 * Andy Wermke: [Resource SubscrIption and Notification sErvice](https://github.com/rsine/rsine)
 
 ## Upcoming Events
