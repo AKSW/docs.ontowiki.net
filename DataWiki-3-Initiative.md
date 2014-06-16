@@ -21,6 +21,10 @@ all times including discussion!
 * Andy Wermke: Current state of his Masterthesis (30 min)
 * Clemens Hoffmann: Current State of his Masterthesis (30 min)
 
+### Mon, 30 June, 11:00
+* Kay Girmann: DA Beginning Talk (30 min)
+
+
 ## Past Events
 
 ### Mon, 2 June, 11:00 – 12:30
