@@ -12,8 +12,8 @@ This is the basic procedure. For details see below.
 
 * download and install [homebrew](https://github.com/Homebrew/homebrew/wiki/Installation)
 * run `brew update` to update the dependencies
-* execute `brew install virtuoso` to get installed Virtuoso
 * there have to be installed PHP with ODBC support `brew install php5 --with-unixodbc`
+* execute `brew install virtuoso` to get installed Virtuoso
 * [Set up ODBC](VirtuosoBackend#setting-up-odbc)
 * Check out the OntoWiki source code 
 * Set up OntoWiki to be used with Virtuoso.
