@@ -7,6 +7,7 @@ In order to install OntoWiki you need:
 * [[mod_rewrite|http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html]] allowed in target directory ({{{AllowOverride FileInfo Limit Options}}}, optional, used for nice URIs and LinkedData features)
 ** {{{a2enmod rewrite}}}
 * [[.htaccess|http://httpd.apache.org/docs/2.2/configuring.html#htaccess]] allowed in target directory
+* git (The deploy target in the Makefile uses it)
 * One of these:
 ** An installed [[MySQL Server|http://mysql.com]] or Virtuoso Server, a created database on that server and an account which is able to read and write that database or
 ** An installed [[Virtuoso Server|http://www.openlinksw.com/virtuoso/]] (see UsingOntoWikiWithVirtuoso for more information about OntoWiki and Virtuoso) 
