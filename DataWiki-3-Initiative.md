@@ -46,7 +46,7 @@ all times including discussion!
 ## Interest Group Members
 
 Kay Girmann (DA Student CS) <mam04cgy@studserv.uni-leipzig.de>,
-Nathanael Arndt <arndt@informatik.uni-leipzig.de>,
+Natanael Arndt <arndt@informatik.uni-leipzig.de>,
 Andy Wermke (MA Student ST) <a.wermke@gmail.com>,
 Alrik Hausdorf (BA Student ST) <admin@morulia.de>,
 Lars Eidam (MA Student MM) <mam07bhr@studserv.uni-leipzig.de>,
