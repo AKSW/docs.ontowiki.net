@@ -13,6 +13,8 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 * Andy Wermke: [Resource SubscrIption and Notification sErvice](https://github.com/rsine/rsine)
 * Andreas Nareike: Application Profiles DCMI Group Report (July)
 * Lukas Eipert: Wercker and CI/CD Workflow
+* Andy Wermke: [harp.js](http://harpjs.com/)
+
 
 ## Upcoming Events
 
