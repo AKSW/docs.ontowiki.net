@@ -48,6 +48,7 @@ all times including discussion!
 
 ## Interest Group Members
 
+Henri Knochenhauer (Werksstudent Eccenca) <hknochi@gmail.com>,
 Kay Girmann (DA Student CS) <mam04cgy@studserv.uni-leipzig.de>,
 Natanael Arndt <arndt@informatik.uni-leipzig.de>,
 Andy Wermke (MA Student ST) <a.wermke@gmail.com>,
