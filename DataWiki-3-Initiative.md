@@ -18,9 +18,10 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 
 all times including discussion!
 
-### Mon, 30 June, 11:00
+### Mon, 14 July, 11:00
+* Tim Ermilov: [polymer.js](http://www.polymer-project.org/) (Tool talk, 30 min)
 * Kay Girmann: DA Beginning Talk (30 min)
-
+* Lukas Eipert: Wercker and CI/CD Workflow (Tool talk, 30 min)
 
 ## Past Events
 
