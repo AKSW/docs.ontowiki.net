@@ -12,20 +12,21 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 ## Open Topics
 * Andy Wermke: [Resource SubscrIption and Notification sErvice](https://github.com/rsine/rsine)
 * Andreas Nareike: Application Profiles DCMI Group Report (July)
-* Lukas Eipert: Wercker and CI/CD Workflow
-* Andy Wermke: [harp.js](http://harpjs.com/)
-
 
 ## Upcoming Events
 
 all times including discussion!
 
-### Mon, 14 July, 11:00
-* Tim Ermilov: [polymer.js](http://www.polymer-project.org/) (Tool talk, 30 min)
+### Mon, 21 July, 11:00
 * Kay Girmann: DA Beginning Talk (30 min)
-* Lukas Eipert: Wercker and CI/CD Workflow (Tool talk, 30 min)
+* Patrick Westphal: Jassa (Tool talk, 30 min)
+* Andy Wermke: [harp.js](http://harpjs.com/) (Short Tool talk, 15 min)
 
 ## Past Events
+
+### Mon, 14 July, 11:00
+* Tim Ermilov: [polymer.js](http://www.polymer-project.org/) (Tool talk, 30 min)
+* Lukas Eipert: Wercker and CI/CD Workflow (Tool talk, 30 min)
 
 ### Mon, 16 June, 11:00
 * Lars Eidam: Generic Linked Data Form Generator and Integration in DataWiki (MA Beginning Talk, 30 min)
