@@ -17,12 +17,16 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 
 all times including discussion!
 
-### Mon, 21 July, 11:00
-* Kay Girmann: DA Beginning Talk (30 min)
-* Patrick Westphal: Jassa (Tool talk, 30 min)
+### Mon, 28 July, 11:00
 * Andy Wermke: [harp.js](http://harpjs.com/) (Short Tool talk, 15 min)
+* Clemens Hoffmann: State of Work
+* Claus Stadler / Lukas Eipert / Henri Knochenhauer: Jassa Experience and Future
 
 ## Past Events
+
+### Mon, 21 July, 11:00
+* Patrick Westphal: [Jassa](https://github.com/Geoknow/Jassa) and [Jassa-UI-Angular](https://github.com/GeoKnow/Jassa-UI-Angular) (Tool talk, 30 min)
+* Kay Girmann: DA Beginning Talk (30 min)
 
 ### Mon, 14 July, 11:00
 * Tim Ermilov: [polymer.js](http://www.polymer-project.org/) (Tool talk, 30 min)
