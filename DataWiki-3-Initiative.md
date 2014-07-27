@@ -18,7 +18,7 @@ For BA/MA Students, DW3I is part of their [BA/MA Seminar](http://bis.informatik.
 
 all times including discussion!
 
-### Mon, 28 July, 11:00
+### Mon, 4 August, 11:00
 * Andy Wermke: [harp.js](http://harpjs.com/) (Short Tool talk, 15 min)
 * Clemens Hoffmann: State of Work
 * Claus Stadler / Lukas Eipert / Henri Knochenhauer: Jassa Experience and Future
