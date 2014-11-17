@@ -36,7 +36,7 @@ make
 sudo make install
 ```
 
-Nethertheless, you have to configure the DirsAllowed variable and configure ODBC. Or get the official debian package from Debian:squeeze repository. See: http://packages.debian.org/squeeze/virtuoso-opensource
+Nevertheless, you have to configure the DirsAllowed variable and configure ODBC. Or get the official debian package from Debian:squeeze repository. See: http://packages.debian.org/squeeze/virtuoso-opensource
 
 Compiling Virtuoso requires the following build tools be installed:
 [autoconf 2.57](http://www.gnu.org/software/autoconf/),
