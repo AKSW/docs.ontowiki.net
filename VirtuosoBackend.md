@@ -61,6 +61,12 @@ You can skip section "Install Virtuoso" and go directly to **"Configuring Virtuo
 
 **Only read further if you dont read section "Compiling Virtuoso"!** There is a good installation manual on Virtuoso's page: http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUbuntuNotes
 
+**Ubuntu**
+
+simple way (for Virtuoso 6.1 for now) through the packet manager
+
+    sudo apt-get install virtuoso-opensource
+
 ## Configuring Virtuoso
 
 In some cases you have to manually start the Virtuoso server.
