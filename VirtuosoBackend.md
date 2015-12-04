@@ -13,8 +13,8 @@ This is the basic procedure. For details see below.
 * Check out the OntoWiki source code
 * Download [Virtuoso Open-Source Edition](http://sourceforge.net/projects/virtuoso/) and compile it according to the instructions for your operating system. Make sure to get the latest stable branch available.
 * Install and configure Virtuoso.
-* [Set up ODBC](http://www.iodbc.org/dataspace/iodbc/wiki/iODBC/IODBCPHPHOWTO) and make sure, PHP can connect to Virtuoso via ODBC.
-* Set up OntoWiki to be used with Vrituoso.
+* Set up ODBC and make sure, PHP can connect to Virtuoso via ODBC.
+* Set up OntoWiki to be used with Virtuoso.
 
 ## Compiling Virtuoso
 For some OS, e.g. Windows, binaries exist, but might be a bit dated. If you have to compile it, it is recommended to give a `<prefix>`, which will be the path where Virtuoso will be installed. 
