@@ -17,8 +17,8 @@ if you want the latest official and most stable release of OntoWiki
 ## via Debian package
 If you use a Debian or Ubuntu linux distribution, you can use the debian package instead of the archive.
 
-* install the LOD2 repository by downloading and adding the [lod2repository
-  package](http://stack.lod2.eu/lod2repository_current_all.deb)
+* install the LDStack repository by downloading and adding the [ldstackrepository
+  install Guide](http://stack.linkeddata.org/getting-started/installing-components/)
 * update your package database (`sudo apt-get update`)
 * install `ontowiki-mysql` or `ontowiki-virtuoso` (`sudo apt-get ontowiki-virtuoso virtuoso-vad-conductor`)
 
