@@ -1,5 +1,7 @@
 After install (see [[Guide|GetOntowikiUsers]]), you will have to follow these steps to get OntoWiki up and running.
 
+([[Quick Install for Ubuntu|Ubuntu-Quick-Install-Guide]])
+
 = Requirements =
 In order to install OntoWiki you need:
 * PHP 5.4 or higher
