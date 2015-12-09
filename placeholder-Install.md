@@ -49,3 +49,15 @@ In order to install OntoWiki you need:
 ** An installed [[MySQL Server|http://mysql.com]] or Virtuoso Server, a created database on that server and an account which is able to read and write that database or
 ** An installed [[Virtuoso Server|http://www.openlinksw.com/virtuoso/]] (see UsingOntoWikiWithVirtuoso for more information about OntoWiki and Virtuoso) 
 * And of course the OntoWiki files.
+
+# <a name="Setup for MySQL"></a> Setup for MySQL
+
+If you want to use OntoWiki with MySQL, here we go ... we assume, you have a copy of OntoWiki at your webdirectory.
+
+ 1.    create a mysql user for ontowiki (e.g. called "ontowiki")
+ 2.    create a mysql database which is writable for the ontowiki user
+ 3.    copy the config.ini-dist to config.ini and change the database config: in most cases, you have to change only these values store.zenddb.dbname, store.zenddb.username, store.zenddb.password
+ 4.    go to the ontowiki root dir, run 'make deploy' - sets up Zend etc.
+ 5.    open your OntoWiki Installation in your browser. On first run, all tables are created automatically and hopefully, you will see a starting screen containing a news area and a login window.
+
+# <a name="Setup for Virtuoso"></a> Setup for Virtuoso
