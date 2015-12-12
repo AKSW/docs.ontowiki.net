@@ -14,6 +14,8 @@ But thats not all, OntoWiki provides a rich set of extensions. In the following 
 * Extension named [CubeViz](https://github.com/AKSW/cubeviz.ontowiki/wiki) for visualization of statistical data which are organized in the [DataCube](http://www.w3.org/TR/vocab-data-cube/) format. OntoWiki + CubeViz are already in use for the [Open Data portal](http://open-data.europa.eu/en/apps) of the European Union!
 * [Integration](https://github.com/AKSW/map.ontowiki) of maps - if your data containing geographical information you are able to see it on a map
 
+[[Browser Compatability|Browser-Compatibility]]
+
 # Users
 
 If this is your first time with OntoWiki you might want to read the following pages:
