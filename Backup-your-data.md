@@ -1,10 +1,4 @@
----
-layout: page
-title: Backup
----
-# Backup
-
-## Virtuoso backup
+# Virtuoso backup
 
 Possibly, the easiest and most complete way to do backups is with the automated backup functionality built into Virtuoso conductor. 
 
@@ -20,10 +14,10 @@ Please note that this strategy backs up the whole Virtuoso database. As such, it
 
 Other alternatives are detailed below.
 
-## Dumping RDF data
+# Dumping RDF data
 The first thing needed for a backup is the RDF data.
 
-### Option 1: Using the [[Command Line Interface|https://github.com/AKSW/owcli/]]
+## Option 1: Using the [[Command Line Interface|https://github.com/AKSW/owcli/]]
 Make sure the CLI is [[setup correctly|https://github.com/AKSW/owcli/blob/master/README.md]]
 Note: We actually use this script to back up <http://data.lod2.eu>
 
@@ -42,7 +36,7 @@ Backing up with owcli is limited to the memory resources of the php-cli process 
         owcli -w $ONTOWIKIURL -m "$model" -e model:export >$filename.rdf
     done
 
-### Option 2: Export directly from the store
+## Option 2: Export directly from the store
 If the store can do SPARQL and has a command line, this should always work:
 
 ```
@@ -51,7 +45,7 @@ Construct {?s ?p ?o} {?s ?p ?o}
 
 Depending on the store there are more options:
 
-#### Virtuoso
+### Virtuoso
 
   * <http://docs.openlinksw.com/virtuoso/backup.html> - Using this backup strategy will also backup the history and query cache
   
@@ -59,11 +53,11 @@ Depending on the store there are more options:
   
   * <http://www.openlinksw.com/uda/wiki/main//Main/VirtDumpLoadRdfGraphs>
 
-## Backup
+# Backup
 
 One way to back up the files generated above is to make a Mercurial Repository and then do hourly commits. Mercurial is file based, so you can create it locally.
 
-### Setup Mercurial
+## Setup Mercurial
 
 ```
 mkdir /var/backups/$BACKUPDIR
@@ -71,14 +65,14 @@ cd /var/backups/$BACKUPDIR
 hg init .
 ```
 
-### Commit
+## Commit
 
 ```
 hg add * 2>/dev/null
 hg commit . -m "..." -q
 ```
 
-### Add a cronjob (Mentioned for completeness)
+## Add a cronjob (Mentioned for completeness)
 
 ```
 crontab mybackupscript.sh
