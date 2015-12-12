@@ -14,7 +14,7 @@ Extensions which may need more explanation or special installations
 
 * [[Page extension|Page-extension]]
 * [[Semantic Pingback|SemanticPingback]]
-*[[Naming scheme for cloned resources|Naming-scheme-for-cloned-resources]]
+* [[Naming scheme for cloned resources|Naming-scheme-for-cloned-resources]]
 
 # Extension API and Development
 
