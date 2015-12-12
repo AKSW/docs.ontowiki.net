@@ -36,6 +36,8 @@ Backing up with owcli is limited to the memory resources of the php-cli process 
         owcli -w $ONTOWIKIURL -m "$model" -e model:export >$filename.rdf
     done
 
+```
+
 ## Option 2: Export directly from the store
 If the store can do SPARQL and has a command line, this should always work:
 
