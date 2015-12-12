@@ -32,6 +32,8 @@ If you are having some trouble, you should look at our [[FAQ Page|FAQ]] . There 
 
 If you want to publish Linked Data you should look [[here|LinkedData]]
 
+For more complex User-Stories look [[here|User-Stories]]
+
 # Developers
 
 If you have some experience with OntoWiki and PHP, JavaScript or RDF you might want to help us improving this software. Interesting pages for you are:
