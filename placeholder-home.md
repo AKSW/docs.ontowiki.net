@@ -45,7 +45,7 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 * [[Setup a Test Environment|PHPUnit]]
 * [[Starting the Development of a new Extension|placeholder-extensions]]
 * [[CSS-Development|CSS-Development]]
-* Introductions to [[coding standards|Coding-Standards]] we are working with
+* Introductions to [[coding standards|Coding-Standards]] we are working with and while you are at it, you should take a look at our [[HTTP-Parameters-Page|HTTP-Parameters]]
 
 ### OntoWiki application
 * [[Information about classes|Classes]]
