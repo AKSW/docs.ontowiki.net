@@ -45,6 +45,8 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 
 There is also an API-Documentation available [http://api.ontowiki.net/].
 
+You might want to pick up one of the problems, posted on our [[Roadmap|Roadmap]] (needs to get actualized)
+
 # DataWiki 3 Initiative
 
 DataWiki 3 Initiative is a Collection of ideas for improving OntoWiki.
