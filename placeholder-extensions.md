@@ -13,6 +13,7 @@ Extensions which are delivered with a vanilla OntoWiki. (Some extensions are req
 Extensions which may need more explanation or special installations
 
 * [[Page extension|Page-extension]]
+* [[Semantic Pingback|SemanticPingback]]
 
 # Extension API and Development
 
