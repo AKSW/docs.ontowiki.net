@@ -20,6 +20,8 @@ For informations regarding [[Browser Compatability|Browser-Compatibility]]
 
 For informations regarding [[Backup your Data|Backup-your-data]] 
 
+If you want to visualize your Graph look [[here|Graph-Visualization]]
+
 # Users
 
 If this is your first time with OntoWiki you might want to read the following pages:
