@@ -1,8 +1,3 @@
----
-layout: page
-title: Linked Data Infrastructure
----
-
 # Linked Data Infrastructure
 
 ## How to publish my product information as Linked Data?
