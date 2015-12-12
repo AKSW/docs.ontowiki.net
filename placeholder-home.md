@@ -26,7 +26,7 @@ If this is your first time with OntoWiki you might want to read the following pa
 * [[Install Ontowiki|placeholder-Install]]
 * [[Get Started using OntoWiki|Getting-Started-Users]]
 
-If you are having some trouble, you should look at your [[FAQ Page|FAQ]] . There might be just the right answer for your problems.
+If you are having some trouble, you should look at our [[FAQ Page|FAQ]] . There might be just the right answer for your problems.
 
 # Developers
 
