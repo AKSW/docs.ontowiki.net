@@ -43,14 +43,14 @@ If you are a advanced user of OntoWiki and/or need the latest (sometimes unstabl
 # <a name="Requirements"></a> Requirements
 In order to install OntoWiki you need:
 * PHP 5.4 or higher
-** See our page for [[recommended PHP settings|php.ini-recommendations]].
-* [[mod_rewrite|http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html]] allowed in target directory ({{{AllowOverride FileInfo Limit Options}}}, optional, used for nice URIs and LinkedData features)
-** {{{a2enmod rewrite}}}
+  * See our page for [[recommended PHP settings|php.ini-recommendations]] .
+* [mod_rewrite](http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html) allowed in target directory (`AllowOverride FileInfo Limit Options`, optional, used for nice URIs and LinkedData features)
+  * `a2enmod rewrite`
 * [[.htaccess|http://httpd.apache.org/docs/2.2/configuring.html#htaccess]] allowed in target directory
 * git (The deploy target in the Makefile uses it)
 * One of these:
-** An installed [[MySQL Server|http://mysql.com]] or Virtuoso Server, a created database on that server and an account which is able to read and write that database or
-** An installed [[Virtuoso Server|http://www.openlinksw.com/virtuoso/]] (see UsingOntoWikiWithVirtuoso for more information about OntoWiki and Virtuoso) 
+  * An installed [[MySQL Server|http://mysql.com]] or Virtuoso Server, a created database on that server and an account which is able to read and write that database or
+  * An installed [[Virtuoso Server|http://www.openlinksw.com/virtuoso/]] (see UsingOntoWikiWithVirtuoso for more information about OntoWiki and Virtuoso) 
 * And of course the OntoWiki files.
 
 # <a name="Setup for MySQL"></a> Setup for MySQL
