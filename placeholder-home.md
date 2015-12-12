@@ -48,3 +48,6 @@ There is also an API-Documentation available [http://api.ontowiki.net/].
 DataWiki 3 Initiative is a Collection of ideas for improving OntoWiki.
 
 For more information about them go to [[their website|https://github.com/AKSW/DataWiki3]]
+
+# Professional Support
+AKSW gives professional support for deployment and customization. Please ask [[Sebastian Tramp|http://aksw.org/SebastianTramp]] regarding this
