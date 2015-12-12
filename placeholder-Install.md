@@ -276,9 +276,16 @@ To auto-start Virtuoso on Mac OS X 10.5 use a config file for the `launchd` serv
 #### Windows
 Follow [these instructions](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) in order to set up Virtuoso as an ODBC data source on Windows. Although a [binary distribution](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built binaries for Windows) of Virtuoso might seem the right choice, these are lagging a bit behind of the current source distribution. At the time of writing this line, Virtuoso is available in version 6.1.5, but the binary download for Windows is in version 6.1.3. OntoWiki works best with version 6.1.4 or greater.
 
-### Known Problems
+### Known Problems/Troubleshooting
 #### Debian/Ubuntu
 If you want to install virtuoso from the .deb and have installed virtuoso before (for instance on an update) it hast to run and has to be configured correctly during the installation, because the pre/pos-removal script tries to start/stop virtuoso.
+
+#### In case OntoWiki isn't loaded correctly after you followed this tutorial
+Go to `...\htdocs\elds\config.ini` and set `debug = true`. After a restart you should now see an error message in your browser which should hopefully point you to the source of the problem (if not, [create an issue](https://github.com/AKSW/OntoWiki/issues/new)). TODO: change to new url
+
+#### Error on bootstrapping application: Unable to connect to Virtuoso Universal Server via ODBC
+Make sure that the Virtuoso service is started. If it does not start, look for files named `virtuoso.lck` in your Virtuoso folder under `database` or `virtuoso` and delete them if existing.
+
 
 # <a name="Install for Developers"></a> Install for Developers
 
