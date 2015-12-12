@@ -44,6 +44,7 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 * [[Install Ontowiki|placeholder-Install]]
 * [[Setup a Test Environment|PHPUnit]]
 * [[Starting the Development of a new Extension|placeholder-extensions]]
+* [[CSS-Development|CSS-Development]]
 * Introductions to [[coding standards|Coding-Standards]] we are working with
 
 ### OntoWiki application
