@@ -28,6 +28,10 @@ If you want to visualize your Graph look [[here|Graph-Visualization]]
 
 [[Performance Tuning|Performance-Tuning]]
 
+[[Security Issues|SecurityIssues]]
+
+
+
 # Users
 
 If this is your first time with OntoWiki you might want to read the following pages:
@@ -51,6 +55,7 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 * [[CSS-Development|CSS-Development]]
 * [[Writing tests|OntoWiki-Testing-Guide]]
 * [[Instance Lists|Instance-Lists]]
+* [[Helpful Tools|Tools]]
 * Introductions to [[coding standards|Coding-Standards]] we are working with and while you are at it, you should take a look at our [[HTTP-Parameters-Page|HTTP-Parameters]]
 
 ### OntoWiki application
