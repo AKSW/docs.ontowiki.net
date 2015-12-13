@@ -26,6 +26,8 @@ If you want to visualize your Graph look [[here|Graph-Visualization]]
 
 [[Using reverse Proxy with SSL for OntoWiki|OntoWiki-behind-a-reverseProxy-(with-SSL)]]
 
+[[Performance Tuning|Performance-Tuning]]
+
 # Users
 
 If this is your first time with OntoWiki you might want to read the following pages:
