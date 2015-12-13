@@ -46,6 +46,7 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 * [[Starting the Development of a new Extension|placeholder-extensions]]
 * [[CSS-Development|CSS-Development]]
 * [[Writing tests|OntoWiki-Testing-Guide]]
+* [[Instance Lists|Instance-Lists]]
 * Introductions to [[coding standards|Coding-Standards]] we are working with and while you are at it, you should take a look at our [[HTTP-Parameters-Page|HTTP-Parameters]]
 
 ### OntoWiki application
