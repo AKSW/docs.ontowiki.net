@@ -56,6 +56,9 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 * [[Writing tests|OntoWiki-Testing-Guide]]
 * [[Instance Lists|Instance-Lists]]
 * [[Helpful Tools|Tools]]
+* [[Webservices|Webservices]]
+* [[Worker Background Jobs using Gearman|Worker:-Background-jobs-using-Gearman]]
+* [[Wrapper Example|Wrapper-Example]]
 * Introductions to [[coding standards|Coding-Standards]] we are working with and while you are at it, you should take a look at our [[HTTP-Parameters-Page|HTTP-Parameters]]
 
 ### OntoWiki application
