@@ -70,11 +70,5 @@ There is also an API-Documentation available [http://api.ontowiki.net/].
 
 You might want to pick up one of the problems, posted on our [[Roadmap|Roadmap]] (needs to get actualized)
 
-# DataWiki 3 Initiative
-
-DataWiki 3 Initiative is a Collection of ideas for improving OntoWiki.
-
-For more information about them go to [[their website|https://github.com/AKSW/DataWiki3]]
-
 # Professional Support
-AKSW gives professional support for deployment and customization. Please ask [[Sebastian Tramp|http://aksw.org/SebastianTramp]] regarding this
+AKSW gives professional support for deployment and customization. Please ask [[Philipp Frischmuth|http://aksw.org/PhilippFrischmuth.html]] and [[Natanael Arndt|http://aksw.org/NatanaelArndt.html]] regarding this
