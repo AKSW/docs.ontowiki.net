@@ -212,6 +212,7 @@ Perform the following steps to set up OntoWiki:
 
 * Optional 1: to enable OntoWiki's debug mode, add the line `debug = yes`
 * Optional 2: If you didn't change any other config option, create the following directories relative to your OntoWiki installation and make them writable to the web-server user: `/cache`, `/logs`, `/uploads`.
+* Optional 3: For the [Linked Data](http://linkeddata.org/) plug-in to work, copy the `htaccess-dist` file to `.htaccess` make sure your Apache's `mod_rewrite` module is installed and `AllowOverwrite` is set to `All` for your OntoWiki directory in your `httpd.conf`.
 
 ### FAQ
 * SQL Error:
