@@ -9,7 +9,15 @@ Extensions which are delivered with a vanilla OntoWiki. (Some extensions are req
 * [Navigation Extension](Navigation Extension) _required_
 * [Resource Creation Extension](Resource Creation Extension)
 
+## Other Extensions
+Extensions which may need more explanation or special installations
+
+* [[Page extension|Page-extension]]
+* [[Semantic Pingback|SemanticPingback]]
+* [[Naming scheme for cloned resources|Naming-scheme-for-cloned-resources]]
+
 # Extension API and Development
+
 [Extension Architecture](Extension Architecture),
 [Extension Configurator](Extension Configurator),
 [Extension Repository](Extension Repository),
