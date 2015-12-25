@@ -35,7 +35,7 @@ If you want to visualize your Graph look [[here|Graph-Visualization]]
 # Users
 
 If this is your first time with OntoWiki you might want to read the following pages:
-* [[Install Ontowiki|placeholder-Install]]
+* [[Install Ontowiki|Install-Ontowiki]]
 * [[Get Started using OntoWiki|Getting-Started-Users]]
 
 If you are having some trouble, you should look at our [[FAQ Page|FAQ]] . There might be just the right answer for your problems.
@@ -49,7 +49,7 @@ For more complex User-Stories look [[here|User-Stories]]
 If you have some experience with OntoWiki and PHP, JavaScript or RDF you might want to help us improving this software. Interesting pages for you are:
 
 ### Getting started
-* [[Install Ontowiki|placeholder-Install]]
+* [[Install Ontowiki|Install-Ontowiki]]
 * [[Setup a Test Environment|PHPUnit]]
 * [[Starting the Development of a new Extension|placeholder-extensions]]
 * [[CSS-Development|CSS-Development]]
