@@ -5,7 +5,8 @@
 4.    [Setup for Virtuoso](#Setup for Virtuoso)
 5.    [Install for Developers](#Install for Developers)
 6.    [Starting OntoWiki](#Starting OntoWiki)
-7.    [Links for Special Installations](#Links for Special Installations)
+7.    [Detailed Install for Windows](#Detailed Install for Windows)
+8.    [Links for Special Installations](#Links for Special Installations)
 
 # <a name="Getting OntoWiki"></a> Getting OntoWiki 
 
@@ -312,6 +313,97 @@ Now you can easily find your OntoWiki (if you installed everything the standard 
          `127.0.0.1/OntoWiki/index.php`
 
 If you are using Vagrant you will find the URL in the Vagrantfile.
+
+#  <a name= "Detailed Install for Windows"></a> Detailed Install for Windows
+
+## Apache
+
+1. Download Apache 2
+
+    Go to `http://httpd.apache.org/download.cgi` and choose the latest stable release version that provides Windows binaries. Download the MSI Installer for this version. The line should look like _"Win32 Binary including OpenSSL 0.9.8t (MSI Installer): httpd-2.2.22-win32-x86-openssl-0.9.8t.msi"_.
+2. Run the Apache Installer
+
+When you arrive at the "Server Information" dialog box, enter `localhost` for the Network Domain as well as for the Server Name and whatever email address you wish for the "Administrator's Email Address" field. The installer uses the information you enter to create a default Apache configuration file for you. You can always go back and manually change these values in your configuration file if you change your mind later. Leave the default setting of "for All Users, on Port 80, as a Service" as it is. Click "Next" when you're done (see [How to Install and Configure Apache 2 on Windows](http://www.thesitewizard.com/apache/install-apache-2-windows.shtml)).   
+Go to `http://localhost/` and confirm that it shows "It works!".
+
+## PHP
+- Stop the Apache service
+    - Type `services.msc` into the search field in your start menu and click on "services"
+    - Rightclick on "Apache2._X_" and click on "Stop"          
+- Go to <http://sourceforge.net/projects/phpinstallermsi/files/latest/download> and execute the MSI file that will automatically be downloaded.
+- Choose the default options presented by the wizard.
+- When prompted "Select a Web Server Setup" choose "Other CGI"
+- Add the following lines to the file `C:\Program Files\Apache Software Foundation\Apache2.2\httpd.conf`: (you may need to change the owner of that file to the current user in order to modify it) (see <http://windows.fyicenter.com/73_Apache_PHP_Getting_HTTP_403_Forbidden_Error_on_PHP_Scripts.html>)
+
+    ScriptAlias /php/  "C:/Program Files/PHP/"
+    AddHandler x-httpd-php .php
+    Action x-httpd-php "/php/php-cgi.exe"
+
+    <Directory "C:/Program Files/PHP/">
+        AllowOverride None
+        Options None
+        Order allow,deny
+        Allow from all
+    </Directory>
+- search for `<Directory />` and change the contents of the tag to:
+
+        <Directory />
+            Options All
+            AllowOverride All
+        </Directory>
+
+- search for `/htdocs">` and change the the Directory tag to:
+
+        <Directory "C:/Program Files/Apache Software Foundation/Apache2.2/htdocs">
+         Options Indexes FollowSymLinks               
+         Order allow,deny
+         Allow from all
+         AllowOverride All
+        </Directory>
+- also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
+- Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
+- Start the Apache service again
+- Type `services.msc` into the search field in your start menu and click on "services".
+- Rightclick on "Apache2._X_" and click on "Start".
+- Confirm that PHP works and is successfully integrated in Apache.
+- create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\test.php` and set its content to `<?php phpinfo(); ?>`
+- Go to `http://localhost/test.php` and confirm that it shows a big table of PHP settings.
+## Virtuoso
+- Go to <http://www.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built%20binaries%20for%20Windows> and choose "64-bit" if you use a 64-bit Windows or "32-bit" if you use a 32-bit Windows (you can determine it in "System Control Panel"->"System"->"System"->"System Type")
+- Unpack the directory `virtuoso-opensource` into the folder `C:\Program Files\`
+  - Go to `C:\Program Files\virtuoso-opensource\database\virtuoso.ini` and set `DirsAllowed = ., ../vad,C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\elds`
+- Follow [Using Virtuoso Open-Source Edition on Windows](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) (follow "Creating a Windows Service for the Default Database" and "ODBC Driver Registration")
+- Follow [Virtuoso Driver for ODBC - Windows ODBC Driver Configuration](http://docs.openlinksw.com/virtuoso/odbcimplementation.html#virtdsnsetup), create a System DSN and name it "VOS".
+- Create the file `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\odbctest.php` with the following PHP code in it:
+
+    <?php
+    $conn   = odbc_connect('VOS', 'dba', 'dba');
+    $query  = 'SELECT DISTINCT ?g WHERE {GRAPH ?g {?s ?p ?o.}}';
+    $result = odbc_exec($conn, 'CALL DB.DBA.SPARQL_EVAL(\'' . $query . '\', NULL, 0)');
+    ?>
+    <ul>
+    <?php while (odbc_fetch_row($result)): ?>
+        <li><?php echo odbc_result($result, 1) ?></li>
+    <?php endwhile; ?>
+    </ul>
+- Go to <http://localhost/odbctest.php>. You should see this list of graphs stored in your Virtuoso RDF store:
+
+    http://www.openlinksw.com/schemas/virtrdf#
+    http://localhost:8890/sparql
+    http://localhost:8890/DAV/
+    http://www.w3.org/2002/07/owl#
+If you see this list and no error messages along the way, go ahead configuring OntoWiki.
+## OntoWiki
+- Download [the newest version of OntoWiki from github](https://github.com/AKSW/OntoWiki/downloads) TODO: new url
+( choose "Download as zip").
+- Unpack the archive into the folder `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\`. You should now have the folder `...\htdocs\elds` (the last 7 characters may vary), from now on called %ONTOWIKI_HOME%.
+- Copy `%ONTOWIKI_HOME%\config.ini.dist` to `%ONTOWIKI_HOME%\config.ini`
+- Edit `%ONTOWIKI_HOME%\config.ini` and change the value of `store.backend` to "virtuoso"
+  - go to <http://www.zend.com/community/downloads>, download **Zend Framework 1.x minimal** and extract the folder `library\Zend` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\elds\libraries`
+- go to <https://github.com/AKSW/Erfurt>, click on "ZIP" and extract the folder `library\Erfurt` into `C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\elds\libraries`
+- create the folder `...\elds\cache` and ensure that the user which runs Apache (System, if Apache is started as a service) has write access to that folder
+- Go to <http://localhost/elds/index.php> (adjust the URL if necessary). OntoWiki should now start.
+
 
 # <a name= "Links for Special Installations"></a> Links for Special Installations
 
