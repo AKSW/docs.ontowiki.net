@@ -51,7 +51,7 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 ### Getting started
 * [[Install Ontowiki|Install-Ontowiki]]
 * [[Setup a Test Environment|PHPUnit]]
-* [[Starting the Development of a new Extension|placeholder-extensions]]
+* [[Starting the Development of a new Extension|Extensions]]
 * [[CSS-Development|CSS-Development]]
 * [[Writing tests|OntoWiki-Testing-Guide]]
 * [[Instance Lists|Instance-Lists]]
