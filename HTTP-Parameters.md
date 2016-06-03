@@ -9,3 +9,4 @@ There are some HTTP parameters that are reserved by the base OntoWiki system. He
 | init | This parameter is used to reset the current configuration of resource lists. |
 | s | This parameter is used for search queries. |
 | class | This parameter is used to get a resource lists containing all instances of a class - should be deprecated by instancesconfig. |
+
