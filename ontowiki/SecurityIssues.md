@@ -1,3 +1,9 @@
+---
+title: SecurityIssues
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_SecurityIssues/
+---
 OntoWiki is not tested for security yet...
 
 ## SPARQL-Injection

@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Available Extensions
+title: extensions
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_extensions/
 ---
-
 # Available Extensions
 
 OntoWiki can be extended by various different extensions. They enable you to tune it as you want to fit you needs.

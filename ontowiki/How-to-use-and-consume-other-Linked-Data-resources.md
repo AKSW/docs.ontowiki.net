@@ -1,3 +1,9 @@
+---
+title: How-to-use-and-consume-other-Linked-Data-resources
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_How-to-use-and-consume-other-Linked-Data-resources/
+---
 ## Import from a file
 See [How to create and publish a SKOS Taxonomy in 5 minutes - Upload a file](How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes#upload-file)
 

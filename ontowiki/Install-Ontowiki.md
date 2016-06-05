@@ -1,3 +1,9 @@
+---
+title: Install-Ontowiki
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Install-Ontowiki/
+---
 # Table of Contents
 1.    [Getting OntoWiki](#Getting OntoWiki)
 2.    [Requirements](#Requirements)

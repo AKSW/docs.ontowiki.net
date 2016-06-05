@@ -1,3 +1,9 @@
+---
+title: SetupDevelopers
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_SetupDevelopers/
+---
 ## Installation for Developer
 
 * optional: fork the repository

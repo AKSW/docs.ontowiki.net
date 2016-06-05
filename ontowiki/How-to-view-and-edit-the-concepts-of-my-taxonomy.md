@@ -1,3 +1,9 @@
+---
+title: How-to-view-and-edit-the-concepts-of-my-taxonomy
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_How-to-view-and-edit-the-concepts-of-my-taxonomy/
+---
 For this tutorial we will edit the taxonomy created in [How to create and publish a SKOS Taxonomy in 5 minutes](How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes).
 
 Log in and select the knowledge base you want to view and edit. Click on **Actions**->**View all Resources**.

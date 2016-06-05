@@ -1,3 +1,9 @@
+---
+title: SemanticPingback
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_SemanticPingback/
+---
 The Semantic Pingback mechanism is an extension of the well-known Pingback method, a technological cornerstone of the blogosphere, thus supporting the interlinking within the Data Web.
 
 More Information on Semantic Pingback is available at [http://aksw.org/Projects/SemanticPingback](http://aksw.org/Projects/SemanticPingback)

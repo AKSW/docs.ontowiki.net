@@ -1,3 +1,9 @@
+---
+title: Custom-startup-script-for-Debian
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Custom-startup-script-for-Debian/
+---
 Debian squeeze comes with Virtuoso version 6.1.2, which does not meet the OntoWiki requirements fully. Debian testing/wheezy comes with version 6.1.4, which is sufficient. 
 
 If you want to install everything from the Debian repositories, and still use your own locally compiled version of Virtuoso, this tip can be of great help.

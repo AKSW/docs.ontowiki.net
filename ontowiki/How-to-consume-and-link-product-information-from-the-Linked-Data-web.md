@@ -1,3 +1,9 @@
+---
+title: How-to-consume-and-link-product-information-from-the-Linked-Data-web
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_How-to-consume-and-link-product-information-from-the-Linked-Data-web/
+---
 ## Under Construction
 
 Most semantically annotated product data on the map uses RDFa which is embedded into the HTML code.

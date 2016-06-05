@@ -1,3 +1,9 @@
+---
+title: Browser-Compatibility
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Browser-Compatibility/
+---
 This document describes our browser policy.
 
 ### Google Chrome

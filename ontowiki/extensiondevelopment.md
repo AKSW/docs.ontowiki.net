@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Extension Development 
+title: extensiondevelopment
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_extensiondevelopment/
 ---
-
 # Extension Development
 
 This is a starting point for all developers who want to create their own OntoWiki extensions. This includes basic PHP and Zend Skills as well as configuration and setup information for a developers PHP engine.
@@ -30,7 +31,7 @@ We recommend to re-configure some php runtime variables for OntoWiki. Please hav
 
 OntoWiki extensions are stored in the extensions folder. A extension can be composed four different types of extensions:
 
-  * Components, 
+  * Components,
   * Modules,
   * Wrapper and
   * Plug-ins.
@@ -70,7 +71,7 @@ The filename of that local ini must be the name of the extension.
 Then you will notice the files ending in ".phtml": these are Zend templates.
 They can reside in the main extension folder or - if specified in the ini - in a subfolder.
 Action templates need to be wrapped in a folder named like their controller e.g., the listfiles template corresponds to a listfiles-action in the Files-Controller (this is a Zend convention).
-An example for Module templates could be the relatedfiles template. 
+An example for Module templates could be the relatedfiles template.
 
 ### Components
 Components are pluggable MVC controllers to which requests are dispatched.
@@ -100,7 +101,7 @@ Components, where you can sneak good code:
 Modules display little windows that provide additional user interface elements with which the user can affect the main window's content.
 Since some modules are highly dynamic extensions, they can be configured both statically and dynamically.
 Static configuration works in the same way as with other extensions; the configuration from the doap.n3 is available to the module.
-In addition, a module class needs to extend 'OntoWiki\_Module' and can redefine several of its methods in order to allow for dynamic customization. 
+In addition, a module class needs to extend 'OntoWiki\_Module' and can redefine several of its methods in order to allow for dynamic customization.
 If present, return values will overwrite static configuration settings in the 'doap.n3' file (
 e.g. the method getTitle overwrites the title property).
 
@@ -163,7 +164,7 @@ related to the view
   * onCreateToolbar
   * onDisplayLiteralPropertyValue
   * onDisplayObjectPropertyValue
-  
+
   * onPrePropertiesContentAction
   * onPreTabsContentAction
   * onPropertiesAction
@@ -174,17 +175,17 @@ old page: http://ontowiki.net/Projects/OntoWiki/EventPluginArchitecture
 
 ## FAQ
 
-**Q**: How do I create a new tab? 
+**Q**: How do I create a new tab?
 
 **A**: A tab in OntoWiki needs to be registered with `OntoWiki_Navigation`. Main structure:
 
     OntoWiki_Navigation::register(
-        $tabKey, 
+        $tabKey,
         array(
-            'controller' => $controllerName, 
-            'action'     => $actionName, 
-            'name'       => $displayedName, 
-            'position'   => $position, 
+            'controller' => $controllerName,
+            'action'     => $actionName,
+            'name'       => $displayedName,
+            'position'   => $position,
             'active'     => $activeTab
         )
     );
@@ -193,22 +194,22 @@ With data:
 
     // Add entry in tab list
     OntoWiki_Navigation::register(
-       'formgenerator', 
+       'formgenerator',
        array(
-           'controller' => 'Formgenerator', 
-           'action'     => 'overview', 
+           'controller' => 'Formgenerator',
+           'action'     => 'overview',
            'name'       => 'Formgenerator',
            'priority'   => 100
        )
     );
 
-  This adds a tab entry which has the title Formgenerator and will called <http://OW_URL/Formgenerator/overview>. Put this into your Helper class. 
+  This adds a tab entry which has the title Formgenerator and will called <http://OW_URL/Formgenerator/overview>. Put this into your Helper class.
 
-**Q**: How can I replace OntoWiki strings? 
+**Q**: How can I replace OntoWiki strings?
 
 **A**: Provide your own language CSV file that replaces OntoWiki language keys.
 
-**Q**: How do I get the Theme Base Dir? 
+**Q**: How do I get the Theme Base Dir?
 
 **A**: In a phtml-file, you can use $this->themeUrlBase
 
@@ -221,31 +222,31 @@ The Repository is quite unique. It is basically a SPARQL-endpoint, which contain
 This is what the list of available extenions looks like:
 ![repoclient](https://github.com/AKSW/OntoWiki/wiki/images/exconf-explore.png)
 
-You can register new extensions [here](http://extensions.ontowiki.net). 
+You can register new extensions [here](http://extensions.ontowiki.net).
 ![reposerver](https://github.com/AKSW/OntoWiki/wiki/images/reposerver.png)
 
 Registering a new or updated extension with our repo is basically just a import of its DOAP description into the repo model.
 As the [short documentation](http://extensions.ontowiki.net/Help.html) says there are four steps to register a new extension, which we will explain a bit deeper here.
 
-### Develop your OntoWiki extension and release it somewhere 
+### Develop your OntoWiki extension and release it somewhere
 Develop the source files ([HowTo](Extensions)), test your extensions locally, package into a zip archive, put it on a accessable webserver. We recommend GitHub (you will have the autogenerated zip of the current state there).
-### Create an RDF document which describes your extension 
-"eat your semantic dogfood" - create a [DOAP](https://github.com/edumbill/doap/wiki) file (as Turtle, NTriple or RDF/XML). Have a look [here](https://github.com/AKSW/site.ontowiki/blob/master/doap.n3) for an example on what properties are required. For example: 
-* name (doap:name - the internal id of the extension. e.g. the folder name), 
-* title (rdfs:label - the human readable name, 
-* author (doap:maintainer - a URI for the author), 
-* description (doap:description - a short abstract of what the extension does), 
-* link to the zip - either from the versions (property: doap:file-release) or from the project (property:  http://ns.ontowiki.net/SysOnt/ExtensionConfig/latestZip) (protip: if you use GitHub, this link can be omitted and the autogenerated zip of the master branch will be used), 
-optional: 
-* versions (older versions with each a zip), 
+### Create an RDF document which describes your extension
+"eat your semantic dogfood" - create a [DOAP](https://github.com/edumbill/doap/wiki) file (as Turtle, NTriple or RDF/XML). Have a look [here](https://github.com/AKSW/site.ontowiki/blob/master/doap.n3) for an example on what properties are required. For example:
+* name (doap:name - the internal id of the extension. e.g. the folder name),
+* title (rdfs:label - the human readable name,
+* author (doap:maintainer - a URI for the author),
+* description (doap:description - a short abstract of what the extension does),
+* link to the zip - either from the versions (property: doap:file-release) or from the project (property:  http://ns.ontowiki.net/SysOnt/ExtensionConfig/latestZip) (protip: if you use GitHub, this link can be omitted and the autogenerated zip of the master branch will be used),
+optional:
+* versions (older versions with each a zip),
 * extensions-internal config (look at the example - we came up with a rather complex way to encode multidimensional config arrays)
 optional: if you already have a default.ini file you can convert it with the file `application/scripts/extensions-ini2n3.php` (which takes a extension folder as an argument) (the script is currently only in the feature/semantic-extensions branch). This script is especially usefull when you have many config options.
 
-### Publish that description document as Linked Data on the web 
+### Publish that description document as Linked Data on the web
 If you use GitHub, and you use the URL of the DOAP file as the URI of your extension (use that URI within the DOAP file), you will get pseudo-linked-data for free. for example the URI of the "site" extensions is https://github.com/AKSW/site.ontowiki/raw/master/doap.n3#site (notice the "raw", which delivers the file and not a html view on it)
 
-#### Ping this registry to integrate your extension meta data here 
-Either you enter this URI in the form on http://extensions.ontowiki.net and hit submit 
+#### Ping this registry to integrate your extension meta data here
+Either you enter this URI in the form on http://extensions.ontowiki.net and hit submit
 
 or (much more awesome) you "ping" the repository with a [semantic pingback](http://aksw.org/Projects/SemanticPingBack). The pingback should go to the pingback service at http://extensions.ontowiki.net/pingback/ping/ and should contain following data:
 

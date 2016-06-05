@@ -1,3 +1,9 @@
+---
+title: Setup
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Setup/
+---
 After install (see [GetOntowikiUsers](Guide)), you will have to follow these steps to get OntoWiki up and running.
 
 ( [Ubuntu-Quick-Install-Guide](Quick+Install+for+Ubuntu))

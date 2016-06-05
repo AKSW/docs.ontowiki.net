@@ -1,3 +1,9 @@
+---
+title: Ontowiki_Model_Resource
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Ontowiki_Model_Resource/
+---
 This class handles one resource. 
 
 ## Example

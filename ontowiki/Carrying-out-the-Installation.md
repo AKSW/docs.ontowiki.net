@@ -1,3 +1,9 @@
+---
+title: Carrying-out-the-Installation
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Carrying-out-the-Installation/
+---
 # Carrying out the OntoWiki Installation
 
 ## Arch Linux

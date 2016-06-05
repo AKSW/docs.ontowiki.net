@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Deployment Planning
+title: deploymentplanning
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_deploymentplanning/
 ---
-
 # Deployment Planning
 
 ## Usage of this Documentation
@@ -49,37 +50,37 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
     ##
     # This is a configurationfile to run an instance of OntoWiki on a NGINX server
     ##
-    
+
     server {
         listen   8080; ## listen for ipv4; this line is default and implied
         #listen   [::]:80 default ipv6only=on; ## listen for ipv6
-    
+
         # Make site accessible from http://localhost/
         server_name localhost;
-    
+
         # path to ontowiki
         # !!! please adapt to fit your needs !!!
         root /home/ontowiki/ontowiki/;
-    
+
         # where the logs should go
         # !!! you can also adapt this as you want !!!
         error_log /home/ontowiki/nginx/logs/ontowiki-error.log;
-    
+
         index index.php;
-    
+
         # rewrite for favicon
         rewrite ^/favicon\.(.*)$ /application/favicon.$1 break;
-    
+
         # check if the request is an exception and should not be handled by the index.php
         if ($request_filename !~ ((extensions|libraries).*|\.(js|ico|gif|jpg|png|css|swf|json))$) {
             set $is_exception "f";
         }
-    
+
         # rewrite all other URLs to index.php
         if ($is_exception = "f") {
             rewrite ^.*$ /index.php last;
         }
-    
+
         # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
         # see also [1] for a UNIX socket configuration and some other details.
         # [1]: http://library.linode.com/web-servers/nginx/php-fastcgi/ubuntu-10.04-lucid
@@ -89,7 +90,7 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
             fastcgi_index index.php;
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
             fastcgi_param PATH_INFO $fastcgi_script_name;
-    
+
             # tell OntoWiki that rewrite is enabled
             fastcgi_param ONTOWIKI_APACHE_MOD_REWRITE_ENABLED 1;
         }
@@ -133,7 +134,7 @@ Current Google Chrome, Safari and Firefox Browser tested, current MSIE not alway
 ### OntoWiki Version
 We recommend the installation of a current snapshot release or directly from the repository.
 
-- how does ontowiki scale with number of users and data? 
+- how does ontowiki scale with number of users and data?
 - reference to virtuoso documentation
 4 gb ram
 - example deployments (real life examples aksw.org, Caucasus Spiders maybe with number of accesses and data size)

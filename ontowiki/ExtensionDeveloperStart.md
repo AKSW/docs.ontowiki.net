@@ -1,3 +1,9 @@
+---
+title: ExtensionDeveloperStart
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_ExtensionDeveloperStart/
+---
 This is a starting point for all developers who want to create their own OntoWiki extensions. This includes basic PHP and Zend Skills as well as configuration and setup information for a developers PHP engine.
 
 ## Tutorials for PHP Beginners

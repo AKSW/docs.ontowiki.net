@@ -1,3 +1,9 @@
+---
+title: Using-the-repository
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Using-the-repository/
+---
  **This page is deprecated (we switched from Mercurial to Git in August 2011). But most ideas still apply. But we use git-flow to automatically manage this. Never push to the master branch. :)**
 
 The idea of this wiki page is to clarify OntoWiki development process and especially the naming rules for branching and tagging. For general information about branching and tagging in mercurial, have a look at the following pages:

@@ -1,3 +1,9 @@
+---
+title: OntoWiki-Testing-Guide
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_OntoWiki-Testing-Guide/
+---
 # Structure
 
 1. Setup environment

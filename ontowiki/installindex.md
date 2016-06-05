@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Installation Guide
+title: installindex
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_installindex/
 ---
-
 # Installation Guide
 
 This documentation describes the installation process of the OntoWiki and the requirements. OntoWiki relies on many external components like Apache and PHP for whose installation and configuration is not described in detail here. For those external components please refer to their respective manuals.
@@ -15,9 +16,9 @@ This documentation describes the installation process of the OntoWiki and the re
 </table>
 
 <!-- TODO: image of installation resources, this document in the middle, others around it with lines -->
-                                                                                       
+
 <!--## Installation Resources
-                                                                                              
+
 - table with two columns, "Task" and "Section"
 ----------------------  ---------------------------------------------------------------       
                   Task                                                          Section       

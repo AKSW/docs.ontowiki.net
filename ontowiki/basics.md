@@ -1,3 +1,9 @@
+---
+title: basics
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_basics/
+---
 # Basic Usage Scenarios
 
 ## Instance Lists

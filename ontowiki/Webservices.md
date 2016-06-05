@@ -1,3 +1,9 @@
+---
+title: Webservices
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Webservices/
+---
 If you will take a deeper view into the code please look at <tt>ONTOWIKI_DIR/application/controllers/ServiceController.php</tt>
 
 # Authentication (/service/auth)

@@ -1,3 +1,9 @@
+---
+title: Roadmap
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Roadmap/
+---
 milestones as well as current construction sites
 
 Feel free to pick up one of this list and help us with this :-)

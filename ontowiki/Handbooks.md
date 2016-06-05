@@ -1,3 +1,9 @@
+---
+title: Handbooks
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Handbooks/
+---
 # Handbooks
 
 a list of rendered target handbooks for OntoWiki

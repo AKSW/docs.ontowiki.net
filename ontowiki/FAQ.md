@@ -1,3 +1,9 @@
+---
+title: FAQ
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_FAQ/
+---
 # FAQ
 
 ## How can I change the start screen and get rid of the news feed?

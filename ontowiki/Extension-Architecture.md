@@ -1,3 +1,9 @@
+---
+title: Extension-Architecture
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Extension-Architecture/
+---
 # Extension Architecture
 
 OntoWiki extensions are stored in the extensions folder. A extension can be composed four different types of extensions:

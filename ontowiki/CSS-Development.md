@@ -1,3 +1,9 @@
+---
+title: CSS-Development
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_CSS-Development/
+---
 OntoWiki has its own framework for HTML/CSS which is been used for the GUI (together with Javascript components).
 
 ## CSS Development

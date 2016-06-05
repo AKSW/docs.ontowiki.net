@@ -1,3 +1,9 @@
+---
+title: php
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_php/
+---
 # Settings in php.ini
 
 You should set up your PHP environment with the following settings in php.ini:

@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Codingstandards
+title: codingstandards
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_codingstandards/
 ---
-
 # Codingstandards
 
 This document provides guidelines for code formatting and documentation to individuals and teams contributing to OntoWiki.
@@ -92,14 +93,14 @@ When a string is literal (contains no variable substitutions), the apostrophe or
 #### String Literals Containing Apostrophes
 When a literal string itself contains apostrophes, it is permitted to demarcate the string with quotation marks or "double quotes". This is especially useful for Messages:
     OntoWiki_Application::getInstance()->appendMessage(new OntoWiki_Message(
-        "The graph with the URI '$graphUri' could not be loaded.", 
+        "The graph with the URI '$graphUri' could not be loaded.",
         OntoWiki_Message::WARNING
     ));
 This syntax is preferred over escaping apostrophes as it is much easier to read.
 
 #### String Concatenation
 When concatenating strings with the "." operator, it is encouraged to break the statement into multiple lines to improve readability. In these cases, each successive line should be padded with white space such that the "."; operator is aligned under the "=" operator:
-    $this->view->moduleUrl = $this->_config->staticUrlBase 
+    $this->view->moduleUrl = $this->_config->staticUrlBase
                            . $this->_config->extensions->modules
                            . $this->_name . '/';
 
@@ -151,7 +152,7 @@ Functions must be named according to the OntoWiki function naming conventions.
 
 Methods inside classes must always declare their visibility by using one of the `private`, `protected`, or `public` modifiers.
 
-As with classes, the brace should always be written on the line underneath the function name. Space between the function name and the opening parenthesis for the arguments is not permitted. 
+As with classes, the brace should always be written on the line underneath the function name. Space between the function name and the opening parenthesis for the arguments is not permitted.
 
 Functions in the global scope are strongly discouraged.
 
@@ -183,7 +184,7 @@ NOTE: Pass-by-reference is the only parameter passing mechanism permitted in a m
         public function bar(&$baz)
         {}
     }
-    
+
 Call-time pass-by-reference is strictly prohibited.
 
 The return value must not be enclosed in parentheses. This can hinder readability, in additional to breaking code if a method is later changed to return by reference.
@@ -199,7 +200,7 @@ The return value must not be enclosed in parentheses. This can hinder readabilit
         {
             return($this->bar);
         }
-    
+
         /**
          * RIGHT
          */
@@ -217,11 +218,11 @@ Call-time pass-by-reference is strictly prohibited. See the function declaration
 
 In passing arrays as arguments to a function, the function call may include the "array" hint and may be split into multiple lines to improve readability. In such cases, the normal guidelines for writing arrays still apply:
     threeArguments(array(1, 2, 3), 2, 3);
-    
+
     threeArguments(array(1, 2, 3, 'Zend', 'Studio',
                          $a, $b, $c,
                          56.44, $d, 500), 2, 3);
-    
+
 ### Control Statements
 #### If/Else/Elseif
 Control statements based on the if and elseif constructs must have a single space before the opening parenthesis of the conditional and a single space after the closing parenthesis.
@@ -239,7 +240,7 @@ For "if" statements that include "elseif" or "else", the formatting conventions 
     } else {
        $a = 7;
     }
-    
+
     if ($a != 2) {
         $a = 2;
     } else if ($a == 3) {
@@ -258,10 +259,10 @@ All content within the "switch" statement must be indented using four spaces. Co
     switch ($numPeople) {
         case 1:
             break;
-    
+
         case 2:
             /* fallthrough */
-    
+
         default:
             break;
     }
@@ -296,7 +297,7 @@ For files that belong to Erfurt this docblock will look slightly different.
      * @copyright Copyright (c) 2009, {@link http://aksw.org AKSW}
      * @license http://opensource.org/licenses/gpl-license.php GNU General Public License (GPL)
      */
-    
+
 #### Classes
 Every class must have a docblock that contains these phpDocumentor tags at a minimum:
 

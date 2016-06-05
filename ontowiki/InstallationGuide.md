@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Installation
+title: InstallationGuide
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_InstallationGuide/
 ---
-
 siehe <Handbooks>
 
 # Installation Guide
@@ -40,7 +41,7 @@ Current Google Chrome, Safari and Firefox Browser tested, current MSIE not alway
 ### OntoWiki Version
 We recommend the installation of a current snapshot release or directly from the repository.
 
-- how does ontowiki scale with number of users and data? 
+- how does ontowiki scale with number of users and data?
 - reference to virtuoso documentation
 4 gb ram
 - example deployments (real life examples aksw.org, Caucasus Spiders maybe with number of accesses and data size)

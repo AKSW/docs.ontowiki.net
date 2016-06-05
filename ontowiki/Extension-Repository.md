@@ -1,3 +1,9 @@
+---
+title: Extension-Repository
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Extension-Repository/
+---
 We got a centralized Repository for extensions. Every OntoWiki can browse the available extensions and provides a install mechanism: in the [Extension-Configurator] or directly at http://your-ontowiki/exconf/explorerepo
 
 The Repository is quite unique. It is basically a SPARQL-endpoint, which contains a repo model which imports multiple extension-models. A extension model contains DOAP data. The client within the Extension Configurator queries this model for all doap:Projects (which are extensions in our case).

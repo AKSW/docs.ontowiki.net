@@ -1,3 +1,9 @@
+---
+title: Setup-on-NGINX
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Setup-on-NGINX/
+---
 # Setup OntoWiki on a NGINX Server
 Sometimes you don't want to run a heavy web server like Apache but want to use a light program like nginx. Thins page will eventually give you a step by step guide to setup OntoWiki on nginx.
 

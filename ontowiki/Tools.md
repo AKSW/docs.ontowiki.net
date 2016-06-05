@@ -1,3 +1,9 @@
+---
+title: Tools
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Tools/
+---
 We made some developer tools like cwm and owcli that help you during work with semantic data.
 
 # Install & Config

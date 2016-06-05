@@ -1,3 +1,9 @@
+---
+title: Deployment-Recommendations
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Deployment-Recommendations/
+---
 ## Operating System
 
 Ubuntu and Debian (latest release), any other Linux distributions should be fine too. (If you have tried a setup on other Linux distributions or even other Operating systems, reports about special issues would be interesting for us too. Please report them at our mailing list: ontowiki-user@googlegroups.com.)

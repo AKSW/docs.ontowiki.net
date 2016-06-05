@@ -1,3 +1,9 @@
+---
+title: Ontowiki-model
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Ontowiki-model/
+---
 ### addMultipleStatements($statements)
 ```
 $subject = "http://localhost/subjectUri";

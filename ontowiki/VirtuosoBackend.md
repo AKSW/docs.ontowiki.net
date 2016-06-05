@@ -1,3 +1,9 @@
+---
+title: VirtuosoBackend
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_VirtuosoBackend/
+---
 # Virtusoso Backend
 
 This page explains the necessary steps to use OntoWiki with [OpenLink Virtuoso](http://virtuoso.openlinksw.com/wiki/main/Main/).

@@ -1,3 +1,9 @@
+---
+title: Extension-Configurator
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Extension-Configurator/
+---
 In OntoWiki 0.9.6 we introduced a graphical backend to configure extensions. The site admin can enable and disable extensions, set configuration values and browse a central repository of additional extensions and install them into his OntoWiki instance.
 
 When you are logged in as Admin or SuperAdmin, you will notice the "Configure Extensions" menu item in the Extras menu:

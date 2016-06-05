@@ -1,3 +1,9 @@
+---
+title: User-Stories
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_User-Stories/
+---
 OntoWiki 5 min to success user stories :-)
 
 ## [Installation Tutorial](Installation Tutorial)

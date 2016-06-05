@@ -1,3 +1,9 @@
+---
+title: Events
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Events/
+---
 Events are triggered by the OntoWiki application if some thing happens, where another part of the application or an extension can react to.
 
 Events triggered by OntoWiki are:

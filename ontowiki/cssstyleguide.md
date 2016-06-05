@@ -1,8 +1,9 @@
 ---
-layout: page
-title: CSS Style Guide
+title: cssstyleguide
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_cssstyleguide/
 ---
-
 # CSS Style Guide
 
 OntoWiki has its own framework for HTML/CSS which is been used for the GUI (together with Javascript components).

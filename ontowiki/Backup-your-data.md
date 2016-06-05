@@ -1,3 +1,9 @@
+---
+title: Backup-your-data
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Backup-your-data/
+---
 # Virtuoso backup
 
 Possibly, the easiest and most complete way to do backups is with the automated backup functionality built into Virtuoso conductor. 

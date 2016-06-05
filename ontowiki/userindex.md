@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Users Guide
+title: userindex
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_userindex/
 ---
-
 # Users Guide
 
 ## Introduction

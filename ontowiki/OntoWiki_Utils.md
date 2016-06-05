@@ -1,3 +1,9 @@
+---
+title: OntoWiki_Utils
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_OntoWiki_Utils/
+---
 This class provides a couple of utilities for different use cases.
 
 ## compactUri ($uri)

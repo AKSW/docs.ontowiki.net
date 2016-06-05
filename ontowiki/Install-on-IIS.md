@@ -1,3 +1,9 @@
+---
+title: Install-on-IIS
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Install-on-IIS/
+---
 ## OntoWiki on Microsoft IIS 7
 
 OntoWiki was built for Apache thus it requires additional setup in order to work with Microsoft's webserver. 

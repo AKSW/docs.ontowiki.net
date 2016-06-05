@@ -1,3 +1,9 @@
+---
+title: Ubuntu-Quick-Install-Guide
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Ubuntu-Quick-Install-Guide/
+---
 ## Ubuntu Quick Install Guide
 
 Installing everything you need:

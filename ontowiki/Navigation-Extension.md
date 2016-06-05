@@ -1,3 +1,9 @@
+---
+title: Navigation-Extension
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Navigation-Extension/
+---
 The Navigation Extension is one of the OntoWiki core extensions which are included in a vanilla OntoWiki.
 
 ## Configuration

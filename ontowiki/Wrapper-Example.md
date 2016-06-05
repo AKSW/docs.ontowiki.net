@@ -1,3 +1,9 @@
+---
+title: Wrapper-Example
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Wrapper-Example/
+---
 The Erfurt Data Wrapper extension type was introduced in order to allow for lightweight extension on the data level. In most cases a wrapper will hanlde a certain URI and return additional data for that URI if available. A good example for this is the Linked Data Wrapper, that retrieves LinkedData URIs. Nevertheless a wrapper could also do more sophisticated things like e.g. adding and removing statements internally. This tutorial will enable you as a extension devoloper to develop such data wrapper and test them within OntoWiki.
 
 # The Erfurt Wrapper Architecture

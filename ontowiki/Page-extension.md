@@ -1,3 +1,9 @@
+---
+title: Page-extension
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Page-extension/
+---
 The Page Extension shows static HTML on OntoWiki and has to be manually installed.
 
 ## Installation

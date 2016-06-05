@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Extension Configuration
+title: extensionconfiguration
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_extensionconfiguration/
 ---
-
 # Extension Configuration
 
 ## Activate, Deactivate and Configure Extensions

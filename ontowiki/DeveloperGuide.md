@@ -1,3 +1,9 @@
+---
+title: DeveloperGuide
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_DeveloperGuide/
+---
 
 # Developers Guide
 ## Architecture?

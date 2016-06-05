@@ -1,3 +1,9 @@
+---
+title: PHPUnit
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_PHPUnit/
+---
 OntoWiki using PHPUnit.
 
 # Ready ...

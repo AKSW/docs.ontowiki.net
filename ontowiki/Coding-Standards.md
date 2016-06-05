@@ -1,3 +1,9 @@
+---
+title: Coding-Standards
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Coding-Standards/
+---
 This document provides guidelines for code formatting and documentation to individuals and teams contributing to OntoWiki.
 
 This page makes heavy use of the [http:_framework.zend.com/manual/en/coding-standard.html_](Zend+Framework+coding+standards).

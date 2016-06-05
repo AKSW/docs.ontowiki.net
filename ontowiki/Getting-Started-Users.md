@@ -1,3 +1,9 @@
+---
+title: Getting-Started-Users
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_Getting-Started-Users/
+---
 # Introduction
 This guide is intended to provide support for first time OntoWiki users.
 

@@ -1,3 +1,9 @@
+---
+title: GetOntoWikiUsers
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_GetOntoWikiUsers/
+---
 # Installation for Users 
 
 As a non-developer there a three ways to install OntoWiki (Developers look [here](SetupDevelopers)).

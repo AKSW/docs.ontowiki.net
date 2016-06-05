@@ -1,3 +1,9 @@
+---
+title: JavaScriptEvents
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_JavaScriptEvents/
+---
 overview about JavaScript events
 
 - `data` contains objects associated with the event

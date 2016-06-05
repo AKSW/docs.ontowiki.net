@@ -1,3 +1,9 @@
+---
+title: ServiceController
+tags: [ontowiki]
+sidebar: ontowiki_sidebar
+permalink: /ontowiki_ServiceController/
+---
 The ServiceController provides many helpful functions to interact with the OntoWiki backend. Following each action has its own part in the document.
 
 ## Update
