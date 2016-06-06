@@ -52,3 +52,6 @@ entries:
     - title: Troubleshooting
       url: /tag_troubleshooting/
       output: web
+    - title: ontowiki
+      url: /tag_ontowiki/
+      output: web

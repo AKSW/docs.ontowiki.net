@@ -1,0 +1,344 @@
+
+entries:
+- title: sidebar
+  product: OntoWiki
+  version: 1.0
+  folders:
+
+  - title: Almost Everything
+    output: web, pdf
+    folderitems:
+
+    - title: Home
+      url: /
+      type: homepage
+      output: web, pdf
+      
+    - title: Backup-your-data
+      url: /Backup-your-data/
+      output: web, pdf
+
+    - title: basics
+      url: /basics/
+      output: web, pdf
+
+    - title: Extensions
+      url: /Extensions/
+      output: web, pdf
+
+      subfolderitems:
+      - title: Extension-Architecture
+        url: /Extension-Architecture/
+        output: web, pdf
+
+      - title: extensionconfiguration
+        url: /extensionconfiguration/
+        output: web, pdf
+
+      - title: Extension-Configurator
+        url: /Extension-Configurator/
+        output: web, pdf
+
+      - title: ExtensionDeveloperStart
+        url: /ExtensionDeveloperStart/
+        output: web, pdf
+
+      - title: extensiondevelopment
+        url: /extensiondevelopment/
+        output: web, pdf
+
+      - title: Extension-Repository
+        url: /Extension-Repository/
+        output: web, pdf
+
+      - title: extensions
+        url: /extensions/
+        output: web, pdf
+
+      - title: Navigation-Extension
+        url: /Navigation-Extension/
+        output: web, pdf
+
+      - title: Page-extension
+        url: /Page-extension/
+        output: web, pdf
+
+      - title: Resource-Creation-Extension
+        url: /Resource-Creation-Extension/
+        output: web, pdf
+
+    - title: browsercompatibility
+      url: /browsercompatibility/
+      output: web, pdf
+
+    - title: Browser-Compatibility
+      url: /Browser-Compatibility/
+      output: web, pdf
+
+    - title: cachemanagement
+      url: /cachemanagement/
+      output: web, pdf
+
+    - title: Carrying-out-the-Installation
+      url: /Carrying-out-the-Installation/
+      output: web, pdf
+
+    - title: Classes
+      url: /Classes/
+      output: web, pdf
+
+    - title: codingstandards
+      url: /codingstandards/
+      output: web, pdf
+
+    - title: Coding-Standards
+      url: /Coding-Standards/
+      output: web, pdf
+
+    - title: concepts
+      url: /concepts/
+      output: web, pdf
+
+    - title: Controllers
+      url: /Controllers/
+      output: web, pdf
+
+    - title: CSS-Development
+      url: /CSS-Development/
+      output: web, pdf
+
+    - title: cssstyleguide
+      url: /cssstyleguide/
+      output: web, pdf
+
+    - title: Custom-startup-script-for-Debian
+      url: /Custom-startup-script-for-Debian/
+      output: web, pdf
+
+    - title: DataWiki-3-Initiative
+      url: /DataWiki-3-Initiative/
+      output: web, pdf
+
+    - title: deploymentplanning
+      url: /deploymentplanning/
+      output: web, pdf
+
+    - title: Deployment-Recommendations
+      url: /Deployment-Recommendations/
+      output: web, pdf
+
+    - title: DeveloperGuide
+      url: /DeveloperGuide/
+      output: web, pdf
+
+    - title: Events
+      url: /Events/
+      output: web, pdf
+
+    - title: FAQ
+      url: /FAQ/
+      output: web, pdf
+
+    - title: GetOntoWikiUsers
+      url: /GetOntoWikiUsers/
+      output: web, pdf
+
+    - title: Getting-Started-Users
+      url: /Getting-Started-Users/
+      output: web, pdf
+
+    - title: Graph-Visualization
+      url: /Graph-Visualization/
+      output: web, pdf
+
+    - title: Handbooks
+      url: /Handbooks/
+      output: web, pdf
+
+    - title: How-to-consume-and-link-product-information-from-the-Linked-Data-web
+      url: /How-to-consume-and-link-product-information-from-the-Linked-Data-web/
+      output: web, pdf
+
+    - title: How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes
+      url: /How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes/
+      output: web, pdf
+
+    - title: How-to-publish-my-product-information-as-Linked-Data
+      url: /How-to-publish-my-product-information-as-Linked-Data/
+      output: web, pdf
+
+    - title: How-to-setup-a-Linked-Data-notification-and-synchronisation-hub
+      url: /How-to-setup-a-Linked-Data-notification-and-synchronisation-hub/
+      output: web, pdf
+
+    - title: How-to-test
+      url: /How-to-test/
+      output: web, pdf
+
+    - title: How-to-use-and-consume-other-Linked-Data-resources
+      url: /How-to-use-and-consume-other-Linked-Data-resources/
+      output: web, pdf
+
+    - title: How-to-view-and-edit-the-concepts-of-my-taxonomy
+      url: /How-to-view-and-edit-the-concepts-of-my-taxonomy/
+      output: web, pdf
+
+    - title: HTTP-Parameters
+      url: /HTTP-Parameters/
+      output: web, pdf
+
+    - title: Installation-Guide-Mac-OSX
+      url: /Installation-Guide-Mac-OSX/
+      output: web, pdf
+
+    - title: InstallationGuide
+      url: /InstallationGuide/
+      output: web, pdf
+
+    - title: installindex
+      url: /installindex/
+      output: web, pdf
+
+    - title: Install-on-IIS
+      url: /Install-on-IIS/
+      output: web, pdf
+
+    - title: Install-Ontowiki
+      url: /Install-Ontowiki/
+      output: web, pdf
+
+    - title: Instance-Lists
+      url: /Instance-Lists/
+      output: web, pdf
+
+    - title: JavaScriptEvents
+      url: /JavaScriptEvents/
+      output: web, pdf
+
+    - title: ldi
+      url: /ldi/
+      output: web, pdf
+
+    - title: Naming-scheme-for-cloned-resources
+      url: /Naming-scheme-for-cloned-resources/
+      output: web, pdf
+
+    - title: OntoWiki-behind-a-reverseProxy-(with-SSL)
+      url: /OntoWiki-behind-a-reverseProxy-(with-SSL)/
+      output: web, pdf
+
+    - title: Ontowiki-model
+      url: /Ontowiki-model/
+      output: web, pdf
+
+    - title: Ontowiki_Model_Resource
+      url: /Ontowiki_Model_Resource/
+      output: web, pdf
+
+    - title: OntoWiki_Model_TitleHelper
+      url: /OntoWiki_Model_TitleHelper/
+      output: web, pdf
+
+    - title: OntoWiki-Testing-Guide
+      url: /OntoWiki-Testing-Guide/
+      output: web, pdf
+
+    - title: OntoWiki_Utils
+      url: /OntoWiki_Utils/
+      output: web, pdf
+
+    - title: Performance-Tuning
+      url: /Performance-Tuning/
+      output: web, pdf
+
+    - title: PHPCodeSniffer
+      url: /PHPCodeSniffer/
+      output: web, pdf
+
+    - title: php
+      url: /php/
+      output: web, pdf
+
+    - title: PHPUnit
+      url: /PHPUnit/
+      output: web, pdf
+
+    - title: Roadmap
+      url: /Roadmap/
+      output: web, pdf
+
+    - title: Security-Audit
+      url: /Security-Audit/
+      output: web, pdf
+
+    - title: SecurityIssues
+      url: /SecurityIssues/
+      output: web, pdf
+
+    - title: SemanticPingback
+      url: /SemanticPingback/
+      output: web, pdf
+
+    - title: ServiceController
+      url: /ServiceController/
+      output: web, pdf
+
+    - title: SetupDevelopers
+      url: /SetupDevelopers/
+      output: web, pdf
+
+    - title: Setup
+      url: /Setup/
+      output: web, pdf
+
+    - title: Setup-on-NGINX
+      url: /Setup-on-NGINX/
+      output: web, pdf
+
+    - title: skos
+      url: /skos/
+      output: web, pdf
+
+    - title: Tools
+      url: /Tools/
+      output: web, pdf
+
+    - title: troubleshooting
+      url: /troubleshooting/
+      output: web, pdf
+
+    - title: Ubuntu-Quick-Install-Guide
+      url: /Ubuntu-Quick-Install-Guide/
+      output: web, pdf
+
+    - title: userindex
+      url: /userindex/
+      output: web, pdf
+
+    - title: User-Stories
+      url: /User-Stories/
+      output: web, pdf
+
+    - title: Using-the-repository
+      url: /Using-the-repository/
+      output: web, pdf
+
+    - title: VirtuosoBackend
+      url: /VirtuosoBackend/
+      output: web, pdf
+
+    - title: VirtuosoConductor
+      url: /VirtuosoConductor/
+      output: web, pdf
+
+    - title: Webservices
+      url: /Webservices/
+      output: web, pdf
+
+    - title: Worker:-Background-jobs-using-Gearman
+      url: /Worker:-Background-jobs-using-Gearman/
+      output: web, pdf
+
+    - title: Wrapper-Example
+      url: /Wrapper-Example/
+      output: web, pdf
