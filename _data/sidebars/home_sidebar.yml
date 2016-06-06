@@ -5,7 +5,7 @@ entries:
   levels: one
   folders:
 
-  - title: Products
+  - title: OntoWiki
     output: web
     folderitems:
     - title: Home
@@ -15,13 +15,5 @@ entries:
     - title: News
       url: /news/
       output: web
-    - title: Theme instructions
-      url: /mydoc_introduction/
-      output: web
-    - title: Product 1
-      url: /p1_landing_page/
-      output: web
-    - title: Product 2
-      url: /p2_landing_page/
-      output: web
-
+    - title: Installation
+      url: /InstallationGuide/
