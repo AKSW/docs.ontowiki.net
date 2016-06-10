@@ -22,50 +22,54 @@ entries:
       url: /ontowiki_basics/
       output: web, pdf
 
-    - title: Extensions
-      url: /ontowiki_Extensions/
-      output: web, pdf
+      subfolders:
+      - title: Extensions
+        output: web
+        subfolderitems:
 
-      subfolderitems:
-      - title: Extension-Architecture
-        url: /ontowiki_Extension-Architecture/
-        output: web, pdf
+        - title: Extensions
+          url: /ontowiki_Extensions/
+          output: web, pdf
 
-      - title: extensionconfiguration
-        url: /ontowiki_extensionconfiguration/
-        output: web, pdf
+        - title: Extension-Architecture
+          url: /ontowiki_Extension-Architecture/
+          output: web, pdf
 
-      - title: Extension-Configurator
-        url: /ontowiki_Extension-Configurator/
-        output: web, pdf
+        - title: extensionconfiguration
+          url: /ontowiki_extensionconfiguration/
+          output: web, pdf
 
-      - title: ExtensionDeveloperStart
-        url: /ontowiki_ExtensionDeveloperStart/
-        output: web, pdf
+        - title: Extension-Configurator
+          url: /ontowiki_Extension-Configurator/
+          output: web, pdf
 
-      - title: extensiondevelopment
-        url: /ontowiki_extensiondevelopment/
-        output: web, pdf
+        - title: ExtensionDeveloperStart
+          url: /ontowiki_ExtensionDeveloperStart/
+          output: web, pdf
 
-      - title: Extension-Repository
-        url: /ontowiki_Extension-Repository/
-        output: web, pdf
+        - title: extensiondevelopment
+          url: /ontowiki_extensiondevelopment/
+          output: web, pdf
 
-      - title: extensions
-        url: /ontowiki_extensions/
-        output: web, pdf
+        - title: Extension-Repository
+          url: /ontowiki_Extension-Repository/
+          output: web, pdf
 
-      - title: Navigation-Extension
-        url: /ontowiki_Navigation-Extension/
-        output: web, pdf
+        - title: extensions
+          url: /ontowiki_extensions/
+          output: web, pdf
 
-      - title: Page-extension
-        url: /ontowiki_Page-extension/
-        output: web, pdf
+        - title: Navigation-Extension
+          url: /ontowiki_Navigation-Extension/
+          output: web, pdf
 
-      - title: Resource-Creation-Extension
-        url: /ontowiki_Resource-Creation-Extension/
-        output: web, pdf
+        - title: Page-extension
+          url: /ontowiki_Page-extension/
+          output: web, pdf
+
+        - title: Resource-Creation-Extension
+          url: /ontowiki_Resource-Creation-Extension/
+          output: web, pdf
 
     - title: browsercompatibility
       url: /ontowiki_browsercompatibility/
@@ -77,10 +81,6 @@ entries:
 
     - title: cachemanagement
       url: /ontowiki_cachemanagement/
-      output: web, pdf
-
-    - title: Carrying-out-the-Installation
-      url: /ontowiki_Carrying-out-the-Installation/
       output: web, pdf
 
     - title: Classes
@@ -117,14 +117,6 @@ entries:
 
     - title: DataWiki-3-Initiative
       url: /ontowiki_DataWiki-3-Initiative/
-      output: web, pdf
-
-    - title: deploymentplanning
-      url: /ontowiki_deploymentplanning/
-      output: web, pdf
-
-    - title: Deployment-Recommendations
-      url: /ontowiki_Deployment-Recommendations/
       output: web, pdf
 
     - title: DeveloperGuide
@@ -185,26 +177,6 @@ entries:
 
     - title: HTTP-Parameters
       url: /ontowiki_HTTP-Parameters/
-      output: web, pdf
-
-    - title: Installation-Guide-Mac-OSX
-      url: /ontowiki_Installation-Guide-Mac-OSX/
-      output: web, pdf
-
-    - title: InstallationGuide
-      url: /ontowiki_InstallationGuide/
-      output: web, pdf
-
-    - title: installindex
-      url: /ontowiki_installindex/
-      output: web, pdf
-
-    - title: Install-on-IIS
-      url: /ontowiki_Install-on-IIS/
-      output: web, pdf
-
-    - title: Install-Ontowiki
-      url: /ontowiki_Install-Ontowiki/
       output: web, pdf
 
     - title: Instance-Lists
@@ -307,10 +279,6 @@ entries:
       url: /ontowiki_troubleshooting/
       output: web, pdf
 
-    - title: Ubuntu-Quick-Install-Guide
-      url: /ontowiki_Ubuntu-Quick-Install-Guide/
-      output: web, pdf
-
     - title: userindex
       url: /ontowiki_userindex/
       output: web, pdf
@@ -341,4 +309,44 @@ entries:
 
     - title: Wrapper-Example
       url: /ontowiki_Wrapper-Example/
+      output: web, pdf
+
+  - title: Installation
+    output: web, pdf
+    folderitems:
+
+    - title: Install-Ontowiki
+      url: /ontowiki_Install-Ontowiki/
+      output: web, pdf
+      
+    - title: Installation-Guide-Mac-OSX
+      url: /ontowiki_Installation-Guide-Mac-OSX/
+      output: web, pdf
+
+    - title: InstallationGuide
+      url: /ontowiki_InstallationGuide/
+      output: web, pdf
+
+    - title: installindex
+      url: /ontowiki_installindex/
+      output: web, pdf
+
+    - title: Install-on-IIS
+      url: /ontowiki_Install-on-IIS/
+      output: web, pdf
+
+    - title: Ubuntu-Quick-Install-Guide
+      url: /ontowiki_Ubuntu-Quick-Install-Guide/
+      output: web, pdf
+
+    - title: Carrying-out-the-Installation
+      url: /ontowiki_Carrying-out-the-Installation/
+      output: web, pdf
+
+    - title: deploymentplanning
+      url: /ontowiki_deploymentplanning/
+      output: web, pdf
+
+    - title: Deployment-Recommendations
+      url: /ontowiki_Deployment-Recommendations/
       output: web, pdf
