@@ -19,9 +19,7 @@ If you know PHP but not Zend, we recommend these tutorial cause it refers to the
 ## PHP Configuration for Developers
 All you need is to re-configure your OntoWiki Installation to use the **debug mode**. For this, add the following line to your `config.ini`.
 
-    {{{
      debug = on
-    }}}
 
 In addition to this, we recommend the php extension [[xdebug|http://www.xdebug.org]] for all OntoWiki developer. **xDebug** provides stack traces and function traces in error messages with:
   * full parameter display for user defined functions

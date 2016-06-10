@@ -99,7 +99,7 @@ cd /var/www/myow/application/tests && ls
 
 You should get something like:
 
-{{{ controllers DropErrorMails.php OntoWiki Selenium test\_base.php TestSuite.php }}}
+    controllers DropErrorMails.php OntoWiki Selenium test\_base.php TestSuite.php
 
 Now take a test
 
