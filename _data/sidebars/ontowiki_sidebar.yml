@@ -139,16 +139,8 @@ entries:
           url: /ontowiki_Resource-Creation-Extension/
           output: web, pdf
 
-    - title: browsercompatibility
-      url: /ontowiki_browsercompatibility/
-      output: web, pdf
-
     - title: Browser-Compatibility
       url: /ontowiki_Browser-Compatibility/
-      output: web, pdf
-
-    - title: cachemanagement
-      url: /ontowiki_cachemanagement/
       output: web, pdf
 
     - title: Classes
@@ -167,20 +159,12 @@ entries:
       url: /ontowiki_concepts/
       output: web, pdf
 
-    - title: Controllers
-      url: /ontowiki_Controllers/
-      output: web, pdf
-
     - title: CSS-Development
       url: /ontowiki_CSS-Development/
       output: web, pdf
 
     - title: cssstyleguide
       url: /ontowiki_cssstyleguide/
-      output: web, pdf
-
-    - title: DataWiki-3-Initiative
-      url: /ontowiki_DataWiki-3-Initiative/
       output: web, pdf
 
     - title: DeveloperGuide
