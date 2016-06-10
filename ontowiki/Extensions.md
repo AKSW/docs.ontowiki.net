@@ -18,9 +18,9 @@ Extensions which are delivered with a vanilla OntoWiki. (Some extensions are req
 ## Other Extensions
 Extensions which may need more explanation or special installations
 
-* [[Page extension|Page-extension]]
-* [[Semantic Pingback|SemanticPingback]]
-* [[Naming scheme for cloned resources|Naming-scheme-for-cloned-resources]]
+* [Page extension](ontowiki_Page-extension)
+* [Semantic Pingback](ontowiki_SemanticPingback)
+* [Naming scheme for cloned resources](ontowiki_Naming-scheme-for-cloned-resources)
 
 # Extension API and Development
 

@@ -109,10 +109,10 @@ To get rid of strict warnings, set the default timezone for your server, e.g.
   * `date.timezone=Europe/Berlin`
 
 ### Backend
-Virtuoso Opensource Version 6.1.4 or higher, more details for installation [[here|VirtuosoBackend]]. MySQL backend is also posible but slower.
+Virtuoso Opensource Version 6.1.4 or higher, more details for installation [here](ontowiki_VirtuosoBackend). MySQL backend is also posible but slower.
 
 ### Browser
-Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [[here|Browser-Compatibility]]
+Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [here](ontowiki_Browser-Compatibility)
 
 ### OntoWiki Version
 We recommend the installation of a current snapshot release or directly from the repository.

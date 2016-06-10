@@ -63,25 +63,25 @@ public function isHandled($uri, $graphUri)
 {
     require_once 'Erfurt/Sparql/SimpleQuery.php';
     $query = new Erfurt_Sparql_SimpleQuery();
-            
-            
+
+
     $query->setProloguePart('PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT ?o');
     $query->addFrom($graphUri);
-            
-            
-    $wherePart = "WHERE { 
-         <$uri> foaf:accountName ?o . 
+
+
+    $wherePart = "WHERE {
+         <$uri> foaf:accountName ?o .
          <$uri> foaf:accountServiceHomepage <http://twitter.com/home>
     }";
-        
-        
+
+
     $query->setWherePart($wherePart);
-        
-        
+
+
      $store = Erfurt_App::getInstance()->getStore();
      $result = $store->sparqlQuery($query);
-            
-            
+
+
      if (count($result) > 0) {
          return true;
      }
@@ -99,17 +99,17 @@ public function isAvailable($uri, $graphUri)
 {
     $retVal = false;
     $data = array();
-        
-        
+
+
     $match = array();
     if (preg_match($this->_pattern, $uri, $match)) {
         $name = $match[2];
-        
-        
+
+
         // Currently not supported twitter uris.
         $notAllowedNames = array('home', 'users', 'statuses', 'direct_messages', 'friendships', 'friends');
-            
-            
+
+
         if (!in_array($name, $notAllowedNames)) {
             $url1 = 'http://twitter.com/statuses/user_timeline/' . $name . '.json';
 
@@ -118,13 +118,13 @@ public function isAvailable($uri, $graphUri)
                 'maxredirects' => 0,
                 'timeout' => 30
             ));
-                
-                
+
+
             if (isset($this->_config->username) && isset($this->_config->password)) {
                     $client->setAuth($this->_config->username, $this->_config->password);
             }
-                
-                
+
+
             $response = $client->request();
 
             if ($response->getStatus() === 200) {
@@ -132,7 +132,7 @@ public function isAvailable($uri, $graphUri)
                 $data['status'] = $result;
                 $retVal = true;
             }
-        } 
+        }
 
         // Cache the retrieved data if possible.        
     }
@@ -153,7 +153,7 @@ A result could for example look like this:
 array(
     'status_codes' => array(Erfurt_Wrapper::NO_MODIFICATIONS, Erfurt_Wrapper::RESULT_HAS_ADD),
     'status_desc' => "There were $count statements found for <$uri>",
-    'add' => $statementsArray 
+    'add' => $statementsArray
 );
 ```
 
@@ -173,15 +173,15 @@ if ($result !== false) {
     } else {
         $this->_cachedData[$graphUri][$uri] = $result['data'];
     }
-            
-            
+
+
     return $result['value'];
 }
 ```
 
 - Note:\* Caching only works, if the `tmp` directory under the Erfurt tree is writable.
 
-Please have a look at the [[http://framework.zend.com/manual/en/zend.cache.html](http://framework.zend.com/manual/en/zend.cache.html) Zend documentation] for further informations regarding `Zend\_Cache`.
+Please have a look at the [Zend documentation](http://framework.zend.com/manual/en/zend.cache.html) for further informations regarding `Zend\_Cache`.
 
 ## Make your wrapper configurable
 
@@ -191,7 +191,7 @@ You can access your private configuration (private section in the ini file) by d
 $test = $this->_config->key->subkey;
 ```
 
-Please have a look at the [[http://framework.zend.com/manual/en/zend.config.html](http://framework.zend.com/manual/en/zend.config.html) Zend documentation] for further informations regarding `Zend\_Config`.
+Please have a look at the [Zend documentation](http://framework.zend.com/manual/en/zend.config.html) for further informations regarding `Zend\_Config`.
 
 ## Use PHP librariers inside your Wrapper
 
@@ -273,7 +273,7 @@ class SuperwrapperWrapper extends Erfurt_Wrapper
                 $uri => array(
                                    'http://example.org/superwrapper/prop1' => array(
                                     array(
-                                    'value' => 'Wrapped with Super wrapper', 
+                                    'value' => 'Wrapped with Super wrapper',
                                     'type' => 'literal')))
             )
         );
@@ -316,4 +316,3 @@ You then have to wait some time (depending on the wrapper). If you see the a gre
 ## `DatagatheringComponent`
 
 The Datagathering component does the heavy lifting. It adds two actions, a test and a import action. Both of them are called via an AJAX request. The import action takes all the statements returned by the wrapper and adds them to the graph.
-

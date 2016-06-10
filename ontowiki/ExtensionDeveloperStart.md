@@ -21,9 +21,9 @@ All you need is to re-configure your OntoWiki Installation to use the **debug mo
 
      debug = on
 
-In addition to this, we recommend the php extension [[xdebug|http://www.xdebug.org]] for all OntoWiki developer. **xDebug** provides stack traces and function traces in error messages with:
+In addition to this, we recommend the php extension [xdebug](http://www.xdebug.org) for all OntoWiki developer. **xDebug** provides stack traces and function traces in error messages with:
   * full parameter display for user defined functions
   * function name, file name and line indications
   * support for member functions
 
-We recommend to re-configure some php runtime variables for OntoWiki. Please have a look at [[Deployment-Recommendations]]
+We recommend to re-configure some php runtime variables for OntoWiki. Please have a look at [Deployment-Recommendations](ontowiki_Deployment-Recommendations)

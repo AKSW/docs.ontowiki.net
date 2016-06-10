@@ -4,7 +4,7 @@ tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_How-to-test/
 ---
-Make sure that you have a runnable test environment. Please check [[Setup an OntoWiki Test Environment|PHPUnit]]!
+Make sure that you have a runnable test environment. Please check [Setup an OntoWiki Test Environment](ontowiki_PHPUnit)!
 
 ## Folder structure
 

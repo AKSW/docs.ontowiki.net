@@ -6,7 +6,7 @@ permalink: /ontowiki_Coding-Standards/
 ---
 This document provides guidelines for code formatting and documentation to individuals and teams contributing to OntoWiki.
 
-This page makes heavy use of the [http:_framework.zend.com/manual/en/coding-standard.html_](Zend+Framework+coding+standards).
+This page makes heavy use of the [http://framework.zend.com/manual/en/coding-standard.html](Zend+Framework+coding+standards).
 
 The coding standards are checked by the PHP CodeSniffer if you run `make cs-check` from your OntoWiki root. The currently minimal required version of PHP CodeSniffer is 1.4.4. -- [PHPCodeSniffer](PHP+CodeSniffer+Guide)
 

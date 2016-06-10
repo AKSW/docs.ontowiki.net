@@ -28,7 +28,7 @@ For **Ubuntu** execute:
 
 
 For other systems or more information go to
-[[PEAR Framework Installation|http://pear.php.net/manual/en/installation.php]]
+[PEAR Framework Installation](http://pear.php.net/manual/en/installation.php)
 
 <a id="installation"></a>
 ## Installation ##

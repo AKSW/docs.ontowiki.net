@@ -76,13 +76,13 @@ For example, EMBED_SUPPRESS_EMBED_EXCEPTION is permitted but EMBED_SUPPRESSEMBED
 Constants must be defined as class members with the "const" modifier. Defining constants in the global scope with the "define" function is permitted but strongly discouraged.
 
 #### Components
-Components provide a controller that is named like the component (first letter uppercase) immediately followed by  the word "Controller". For more information on developing components, see the [[Extensions]].
+Components provide a controller that is named like the component (first letter uppercase) immediately followed by  the word "Controller". For more information on developing components, see the [Extensions](ontowiki_Extensions).
 
 #### Modules
-Modules provide a class that is named like the module with the first letter in upper case immediately followed by the word "Module". For more information on developing components, see the [[Extensions]].
+Modules provide a class that is named like the module with the first letter in upper case immediately followed by the word "Module". For more information on developing components, see the [Extensions](ontowiki_Extensions).
 
 #### Plug-ins
-A plug-in class is called like the plug-in (again the first letter must be upper case) immediately followed by the word "Plugin". For more information on developing components, see the [[Extensions]].
+A plug-in class is called like the plug-in (again the first letter must be upper case) immediately followed by the word "Plugin". For more information on developing components, see the [Extensions](ontowiki_Extensions).
 
 ## Coding Style
 ### Strings
