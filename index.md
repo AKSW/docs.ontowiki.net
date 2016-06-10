@@ -80,4 +80,4 @@ There is also an API-Documentation available [http://api.ontowiki.net/].
 You might want to pick up one of the problems, posted on our [Roadmap](ontowiki_Roadmap) (needs to get actualized)
 
 # Professional Support
-AKSW gives professional support for deployment and customization. Please ask [Philipp Frischmuth|http://aksw.org/PhilippFrischmuth.html]] and [[Natanael Arndt](ontowiki_http://aksw.org/NatanaelArndt.html) regarding this
+AKSW gives professional support for deployment and customization. Please ask [Philipp Frischmuth](http://aksw.org/PhilippFrischmuth) and [Natanael Arndt](http://aksw.org/NatanaelArndt) regarding this.

@@ -8,7 +8,7 @@ permalink: /ontowiki_Backup-your-data/
 
 Possibly, the easiest and most complete way to do backups is with the automated backup functionality built into Virtuoso conductor. 
 
- - Documented at the [[Virtuoso site|http://docs.openlinksw.com/virtuoso/backup.html]]
+ - Documented at the [Virtuoso site](http://docs.openlinksw.com/virtuoso/backup.html)
 
  - Presumes that you are using the Virtuoso back-end
 
@@ -23,8 +23,8 @@ Other alternatives are detailed below.
 # Dumping RDF data
 The first thing needed for a backup is the RDF data.
 
-## Option 1: Using the [[Command Line Interface|https://github.com/AKSW/owcli/]]
-Make sure the CLI is [[setup correctly|https://github.com/AKSW/owcli/blob/master/README.md]]
+## Option 1: Using the [Command Line Interface](https://github.com/AKSW/owcli/)
+Make sure the CLI is [setup correctly](https://github.com/AKSW/owcli/blob/master/README.md)
 Note: We actually use this script to back up <http://data.lod2.eu>
 
 Backing up with owcli is limited to the memory resources of the php-cli process so for huge models, direct backend backup should be used.
