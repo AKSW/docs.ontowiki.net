@@ -14,6 +14,74 @@ entries:
       type: homepage
       output: web, pdf
 
+    - title: Installation
+      output: web, pdf
+      folderitems:
+
+      - title: Install-Ontowiki
+        url: /ontowiki_Install-Ontowiki/
+        output: web, pdf
+
+      - title: Installation-Guide-Mac-OSX
+        url: /ontowiki_Installation-Guide-Mac-OSX/
+        output: web, pdf
+
+      - title: InstallationGuide
+        url: /ontowiki_InstallationGuide/
+        output: web, pdf
+
+      - title: installindex
+        url: /ontowiki_installindex/
+        output: web, pdf
+
+      - title: Install-on-IIS
+        url: /ontowiki_Install-on-IIS/
+        output: web, pdf
+
+      - title: Ubuntu-Quick-Install-Guide
+        url: /ontowiki_Ubuntu-Quick-Install-Guide/
+        output: web, pdf
+
+      - title: Carrying-out-the-Installation
+        url: /ontowiki_Carrying-out-the-Installation/
+        output: web, pdf
+
+      - title: deploymentplanning
+        url: /ontowiki_deploymentplanning/
+        output: web, pdf
+
+      - title: Deployment-Recommendations
+        url: /ontowiki_Deployment-Recommendations/
+        output: web, pdf
+
+      - title: Custom-startup-script-for-Debian
+        url: /ontowiki_Custom-startup-script-for-Debian/
+        output: web, pdf
+
+      - title: GetOntoWikiUsers
+        url: /ontowiki_GetOntoWikiUsers/
+        output: web, pdf
+
+      - title: Getting-Started-Users
+        url: /ontowiki_Getting-Started-Users/
+        output: web, pdf
+
+      - title: SetupDevelopers
+        url: /ontowiki_SetupDevelopers/
+        output: web, pdf
+
+      - title: Setup
+        url: /ontowiki_Setup/
+        output: web, pdf
+
+      - title: Setup-on-NGINX
+        url: /ontowiki_Setup-on-NGINX/
+        output: web, pdf
+
+      - title: VirtuosoBackend
+        url: /ontowiki_VirtuosoBackend/
+        output: web, pdf
+
     - title: Backup-your-data
       url: /ontowiki_Backup-your-data/
       output: web, pdf
@@ -111,10 +179,6 @@ entries:
       url: /ontowiki_cssstyleguide/
       output: web, pdf
 
-    - title: Custom-startup-script-for-Debian
-      url: /ontowiki_Custom-startup-script-for-Debian/
-      output: web, pdf
-
     - title: DataWiki-3-Initiative
       url: /ontowiki_DataWiki-3-Initiative/
       output: web, pdf
@@ -129,14 +193,6 @@ entries:
 
     - title: FAQ
       url: /ontowiki_FAQ/
-      output: web, pdf
-
-    - title: GetOntoWikiUsers
-      url: /ontowiki_GetOntoWikiUsers/
-      output: web, pdf
-
-    - title: Getting-Started-Users
-      url: /ontowiki_Getting-Started-Users/
       output: web, pdf
 
     - title: Graph-Visualization
@@ -255,18 +311,6 @@ entries:
       url: /ontowiki_ServiceController/
       output: web, pdf
 
-    - title: SetupDevelopers
-      url: /ontowiki_SetupDevelopers/
-      output: web, pdf
-
-    - title: Setup
-      url: /ontowiki_Setup/
-      output: web, pdf
-
-    - title: Setup-on-NGINX
-      url: /ontowiki_Setup-on-NGINX/
-      output: web, pdf
-
     - title: skos
       url: /ontowiki_skos/
       output: web, pdf
@@ -291,10 +335,6 @@ entries:
       url: /ontowiki_Using-the-repository/
       output: web, pdf
 
-    - title: VirtuosoBackend
-      url: /ontowiki_VirtuosoBackend/
-      output: web, pdf
-
     - title: VirtuosoConductor
       url: /ontowiki_VirtuosoConductor/
       output: web, pdf
@@ -309,44 +349,4 @@ entries:
 
     - title: Wrapper-Example
       url: /ontowiki_Wrapper-Example/
-      output: web, pdf
-
-  - title: Installation
-    output: web, pdf
-    folderitems:
-
-    - title: Install-Ontowiki
-      url: /ontowiki_Install-Ontowiki/
-      output: web, pdf
-      
-    - title: Installation-Guide-Mac-OSX
-      url: /ontowiki_Installation-Guide-Mac-OSX/
-      output: web, pdf
-
-    - title: InstallationGuide
-      url: /ontowiki_InstallationGuide/
-      output: web, pdf
-
-    - title: installindex
-      url: /ontowiki_installindex/
-      output: web, pdf
-
-    - title: Install-on-IIS
-      url: /ontowiki_Install-on-IIS/
-      output: web, pdf
-
-    - title: Ubuntu-Quick-Install-Guide
-      url: /ontowiki_Ubuntu-Quick-Install-Guide/
-      output: web, pdf
-
-    - title: Carrying-out-the-Installation
-      url: /ontowiki_Carrying-out-the-Installation/
-      output: web, pdf
-
-    - title: deploymentplanning
-      url: /ontowiki_deploymentplanning/
-      output: web, pdf
-
-    - title: Deployment-Recommendations
-      url: /ontowiki_Deployment-Recommendations/
       output: web, pdf
