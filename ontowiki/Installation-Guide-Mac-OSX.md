@@ -1,6 +1,6 @@
 ---
 title: Installation-Guide-Mac-OSX
-tags: [ontowiki]
+tags: [ontowiki] [install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Installation-Guide-Mac-OSX/
 ---
@@ -20,7 +20,7 @@ This is the basic procedure. For details see below.
 * run `brew update` to update the dependencies
 * there have to be installed PHP with ODBC support `brew install php56 --with-unixodbc`
 * execute `brew install virtuoso` to get installed Virtuoso
-* [Set up ODBC](VirtuosoBackend#setting-up-odbc)
+* [Set up ODBC](http://docs.ontowiki.net/ontowiki_VirtuosoBackend/#setting-up-odbc)
 * Check out the OntoWiki source code 
 * Set up OntoWiki to be used with Virtuoso.
 

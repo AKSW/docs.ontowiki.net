@@ -1,6 +1,6 @@
 ---
 title: Custom-startup-script-for-Debian
-tags: [ontowiki]
+tags: [ontowiki] [install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Custom-startup-script-for-Debian/
 ---
@@ -317,4 +317,3 @@ esac
 
 exit 0
 ```
-

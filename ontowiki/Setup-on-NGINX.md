@@ -1,6 +1,6 @@
 ---
 title: Setup-on-NGINX
-tags: [ontowiki]
+tags: [ontowiki] [install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Setup-on-NGINX/
 ---
@@ -80,3 +80,30 @@ c.f http://www.fastcgi.com/drupal/node/5?q=node/10, bottom of page.
 ## Further Information
 * http://wiki.nginx.org/Zend_Framework
 * http://blog.unikorn.me/zend-framework-mit-nginx.html (German)
+
+### PHP
+You need PHP version 5.2 or higher.
+You should set up your PHP environment with the following settings in php.ini:
+  * `max_execution_time = 120`
+  * `memory_limit = 128M`
+  * `upload_max_filesize = 16M ; depending on the size of knowledge bases you plan to use`
+  * `post_max_size = 16M`
+  * `short_open_tag = Off`; if you have this turned on, some features will not work
+
+To get rid of strict warnings, set the default timezone for your server, e.g.
+  * `date.timezone=Europe/Berlin`
+
+### Backend
+Virtuoso Opensource Version 6.1.4 or higher, more details for installation [here](http://docs.ontowiki.net/ontowiki_VirtuosoBackend/). MySQL backend is also posible but slower.
+
+### Browser
+Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [here](http://docs.ontowiki.net/ontowiki_Browser-Compatibility/)
+
+### OntoWiki Version
+We recommend the installation of a current snapshot release or directly from the repository.
+
+- how does ontowiki scale with number of users and data?
+- reference to virtuoso documentation
+4 gb ram
+- example deployments (real life examples aksw.org, Caucasus Spiders maybe with number of accesses and data size)
+<Setup>

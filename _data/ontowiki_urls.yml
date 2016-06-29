@@ -20,11 +20,6 @@ CSS-Development:
   url: "/docs.ontowiki.net/ontowiki_CSS-Development/"
   link: "<a href='/docs.ontowiki.net/ontowiki_CSS-Development/'>CSS-Development</a>"
 
-Carrying-out-the-Installation:
-  title: "Carrying-out-the-Installation"
-  url: "/docs.ontowiki.net/ontowiki_Carrying-out-the-Installation/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Carrying-out-the-Installation/'>Carrying-out-the-Installation</a>"
-
 Classes:
   title: "Classes"
   url: "/docs.ontowiki.net/ontowiki_Classes/"
@@ -95,11 +90,6 @@ FAQ:
   url: "/docs.ontowiki.net/ontowiki_FAQ/"
   link: "<a href='/docs.ontowiki.net/ontowiki_FAQ/'>FAQ</a>"
 
-GetOntoWikiUsers:
-  title: "GetOntoWikiUsers"
-  url: "/docs.ontowiki.net/ontowiki_GetOntoWikiUsers/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_GetOntoWikiUsers/'>GetOntoWikiUsers</a>"
-
 Getting-Started-Users:
   title: "Getting-Started-Users"
   url: "/docs.ontowiki.net/ontowiki_Getting-Started-Users/"
@@ -169,11 +159,6 @@ Installation-Guide-Mac-OSX:
   title: "Installation-Guide-Mac-OSX"
   url: "/docs.ontowiki.net/ontowiki_Installation-Guide-Mac-OSX/"
   link: "<a href='/docs.ontowiki.net/ontowiki_Installation-Guide-Mac-OSX/'>Installation-Guide-Mac-OSX</a>"
-
-InstallationGuide:
-  title: "InstallationGuide"
-  url: "/docs.ontowiki.net/ontowiki_InstallationGuide/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_InstallationGuide/'>InstallationGuide</a>"
 
 Instance-Lists:
   title: "Instance-Lists"
@@ -280,16 +265,6 @@ Setup-on-NGINX:
   url: "/docs.ontowiki.net/ontowiki_Setup-on-NGINX/"
   link: "<a href='/docs.ontowiki.net/ontowiki_Setup-on-NGINX/'>Setup-on-NGINX</a>"
 
-Setup:
-  title: "Setup"
-  url: "/docs.ontowiki.net/ontowiki_Setup/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Setup/'>Setup</a>"
-
-SetupDevelopers:
-  title: "SetupDevelopers"
-  url: "/docs.ontowiki.net/ontowiki_SetupDevelopers/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_SetupDevelopers/'>SetupDevelopers</a>"
-
 Tools:
   title: "Tools"
   url: "/docs.ontowiki.net/ontowiki_Tools/"
@@ -365,11 +340,6 @@ cssstyleguide:
   url: "/docs.ontowiki.net/ontowiki_cssstyleguide/"
   link: "<a href='/docs.ontowiki.net/ontowiki_cssstyleguide/'>cssstyleguide</a>"
 
-deploymentplanning:
-  title: "deploymentplanning"
-  url: "/docs.ontowiki.net/ontowiki_deploymentplanning/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_deploymentplanning/'>deploymentplanning</a>"
-
 extensionconfiguration:
   title: "extensionconfiguration"
   url: "/docs.ontowiki.net/ontowiki_extensionconfiguration/"
@@ -384,11 +354,6 @@ extensions:
   title: "extensions"
   url: "/docs.ontowiki.net/ontowiki_extensions/"
   link: "<a href='/docs.ontowiki.net/ontowiki_extensions/'>extensions</a>"
-
-installindex:
-  title: "installindex"
-  url: "/docs.ontowiki.net/ontowiki_installindex/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_installindex/'>installindex</a>"
 
 ldi:
   title: "ldi"
