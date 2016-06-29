@@ -1,6 +1,6 @@
 ---
 title: Setup-on-NGINX
-tags: [ontowiki] [install]
+tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Setup-on-NGINX/
 ---

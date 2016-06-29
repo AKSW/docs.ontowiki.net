@@ -1,6 +1,6 @@
 ---
 title: php
-tags: [ontowiki]
+tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_php/
 ---

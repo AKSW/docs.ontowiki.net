@@ -1,6 +1,6 @@
 ---
 title: OntoWiki-behind-a-reverseProxy-(with-SSL)
-tags: [ontowiki] [install]
+tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_OntoWiki-behind-a-reverseProxy-(with-SSL)/
 ---

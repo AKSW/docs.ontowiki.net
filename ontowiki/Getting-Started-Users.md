@@ -1,6 +1,6 @@
 ---
 title: Getting-Started-Users
-tags: [ontowiki] [install]
+tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Getting-Started-Users/
 ---

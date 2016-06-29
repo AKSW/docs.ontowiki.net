@@ -55,3 +55,6 @@ entries:
     - title: ontowiki
       url: /tag_ontowiki/
       output: web
+    - title: install
+      url: /tag_install
+      output: web
