@@ -4,13 +4,14 @@ tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_How-to-test/
 ---
-Make sure that you have a runnable test environment. Please check [Setup an OntoWiki Test Environment](ontowiki_PHPUnit)!
+Make sure that you have a runnable test environment. Please check [Setup an OntoWiki Test Environment](http://docs.ontowiki.net/ontowiki_PHPUnit/)!
+Furthermore you should test your new files, extension, correction with [PHP codesniffer](http://docs.ontowiki.net/ontowiki_PHPCodeSniffer/) prior to making a pull request etc.
 
 ## Folder structure
 
 ## Extension test cases
 
-Each extension can be tested automatically when you execute `make test-extensions`.
+All extensions can be tested automatically when you execute `make test-extensions`.
 
 ### Bootstrap
 
@@ -25,4 +26,3 @@ Naming should be oriented on OntoWiki's class names. For example
 results in
 
 `Folder_To_FancyClass`
-

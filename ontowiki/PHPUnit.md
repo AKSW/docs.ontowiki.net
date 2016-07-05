@@ -60,32 +60,15 @@ sudo service apache2 start
 sudo service mysql start
 ```
 
-Now put a copy of OntoWiki into \*/var/www/myow\*! ( [InstallFromGit](InstallFromGit) )
+Now put a copy of OntoWiki into ``*/var/www/myow*``! 
 
-Currently the testability of OntoWiki is getting refactored so change your current branch
-
-```
-cd /var/www/myow && hg update OntoWiki-RefactoringTestability
-```
-
-If you type
+afterwards navigate into the directory
 
 ```
-hg branch
+cd /var/www/myow
 ```
 
-you should be get
-
-```
-hg branch 
-OntoWiki-RefactoringTestability
-```
-
-Be sure that your **Zend** version is >= **1.9.5**. If you dont know the version execute
-
-```
-cd /var/www/myow && make zend
-```
+You will autmatically install PHPUnit per `make install`
 
 # ... \*\*Go!\*\*
 
@@ -94,18 +77,12 @@ cd /var/www/myow && make zend
 Please use your terminal for navigating and doing things because of PHPUnit has no GUI and is usable only via terminal. Get folder content
 
 ```
-cd /var/www/myow/application/tests && ls
+cd /var/www/myow
 ```
 
-You should get something like:
+Now you can either use
 
-    controllers DropErrorMails.php OntoWiki Selenium test\_base.php TestSuite.php
-
-Now take a test
-
-```
-phpunit TestSuite
-```
+`` make test`` or ``make test-[unit | extension | integration-virtuoso | integration-mysql]``
 
 You should get something like:
 
@@ -118,21 +95,11 @@ Time: 2 seconds, Memory: 16.25Mb
 OK (9 tests, 27 assertions)
 ```
 
-Driven OntoWiki developers write every time tests for their new fancy stuff so this output can be changed in the future! But there should be \_no\_ erros by PHPUnit.
+if you want to only execute certain tests you can find the binary in `*/OntoWiki/vendor/bin/phpunit` , if you don't have the vendor folder you need to run 
+`make install` or `php composer.phar install`. How to run only certain tests (and write them) can be read in the phpunit [Documentation](https://phpunit.de/documentation.html)
 
-For a **easierer way** to execute PHPUnit go back to OntoWiki root folder
+Driven OntoWiki developers write every time tests for their new fancy stuff so this output can be changed in the future! But there should be \_no\_ errors by PHPUnit.
 
-```
-cd /var/www/myow
-```
-
-and execute
-
-```
-make test
-```
-
-It executes \_phpunit TestSuite\_ too.
 
 # Curiosities
 
@@ -146,16 +113,3 @@ PHPUnit 3.4.5 by Sebastian Bergmann.
 ```
 
 in your tested code contains an **exit** call, which is reached (and the % indicates that your terminal complains about a missing newline). Use **return;** instead!
-
-### Strange PHPUnit installation
-
-I had problems with PHP telling me:
-
-```
-PHP Fatal error: Call to undefined function php_codecoverage_autoload() in /usr/share/php/PHPUnit/Util/GlobalState.php on line 380
-```
-
-Which I could solve by un-installing phpunit and its related packages (using apt-get purge …) and installing phpunit with pear ( [http://pear.phpunit.de/](http://pear.phpunit.de/)).
-
-This problem occurred on debian testing in my case.
-

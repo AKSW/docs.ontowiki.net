@@ -6,62 +6,20 @@ permalink: /ontowiki_PHPCodeSniffer/
 ---
 This section describes the use of the PHPCodeSniffer to check if your coding style complies to the Ontowiki/Erfurt Coding standard.
 
-## Overview ##
+## Installation
 
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [Code Checking](#codechecking)
- * [pre-commit](#precommit)
- * [Summary View](#summaryview)
- * [Detail View](#detailview)
- * [IDE Integration](#ideintegration)
-* [Tips](#tips)
+Go to your Ontowiki/Erfurt directory and run (composer installs it automatically):
 
-<a id="requirements"></a>
-## Requirements ##
-
-To use the PHPCodeSniffer you must install the PHP PEAR Framework
-
-For **Ubuntu** execute:
-
-    sudo apt-get install php-pear
+`make install`
 
 
-For other systems or more information go to
-[PEAR Framework Installation](http://pear.php.net/manual/en/installation.php)
+This will install the latest version of the CodeSniffer.
 
-<a id="installation"></a>
-## Installation ##
+### Summary View
+(Depending on the codesniffer configfile `phpcs.xml` either summary or Detail view is the standard view for `make codesniffer`, if you want to change the standard you need to configure the configfile and add or delete the line
+`<arg name="report" value="summary"/>`)
+If you run `make codesniffer` or `vendor/bin/phpcs -s --report=summary [special flags] [path to files]` and your code not match the coding standard you will get something like that:
 
-Go to your Ontowiki/Erfurt directory and run:
-
-    make cs-install
-
-
-This will install the latest version of the CodeSniffer and enables automatically the pre-commit code checking.
-
-<a id="codechecking"></a>
-## Code Checking ##
-<a id="precommit"></a>
-### pre-commit ###
-For automatically checking your coding style before every commit you can run the following commands in your Ontowiki/Erfurt directory.
-
-    make cs-enable
-
-After that the CodeSniffer will check your code before each commit.
-
-To turn off this functionality run:
-
-    make cs-disable
-
-**Important**:
-The CodeSniffer only check the added or changed commit files, not the deleted files and not the whole Ontowiki-Source.
-
-<a id="summaryview"></a>
-### Summary View ###
-If you make a commit and your code not match the coding standard you will get something like that:
-
-    ./application/tests/CodeSniffer/pre-commit
     E.E.EE
 
 
@@ -79,15 +37,17 @@ If you make a commit and your code not match the coding standard you will get so
 
     Time: 0 seconds, Memory: 2.50Mb
 
-    make: *** [cs-check-commit] Fehler 1
+    make: *** [cs-check-commit] errors 1
 
 This is a summary of all files, that have been checked. You can see how many files were checked and how many errors or warnings every file have caused.
 
 <a id="detailview"></a>
-### Detail View ###
-To correct your code you need a more detailed view, so you can run:
-
-    make cs-check-commit
+### Detail View
+(Depending on the codesniffer configfile `phpcs.xml` either summary or Detail view is the standard view for `make codesniffer`, if you want to change the standard you need to configure the configfile and add or delete the line
+`<arg name="report" value="summary"/>`)
+To correct your code you need a more detailed view, so you can rn either
+`make codesniffer` or `vendor/bin/phpcs [special flags] [path to files]`
+If you have problems understanding the errors for a single file you might only test the single file and add as flag [-v,-vv,-vvv] to get extra output.
 
 and get something like that for every file that have been checked:
 
@@ -110,23 +70,20 @@ So you have the possibility to correct your code and check it again.
 **Note:** If there are less than six files to check, you get the detail view automatically and not the summary view.
 
 <a id="ideintegration"></a>
-## IDE Integration ##
-If you want a easier way to correct your coding standard violations, you can integrat the Code Sniffer Check in your IDE.  
+## IDE Integration
+If you want a easier way to correct your coding standard violations, you can integrate the Code Sniffer Check in your IDE. 
 
 * For VIM  
 You find a solution on this 
 [Site](http://joncairns.com/2012/03/vim-with-php-code-sniffer-mess-detector-and-code-coverage/)
 or on this
 [Site](http://www.koch.ro/blog/index.php?/archives/62-Integrate-PHP-CodeSniffer-in-VIM.html).
-But instead of the plain PHP CodeSniffer command, you can use the Makefile command from the ontowiki main directory,
-so the code standard and other thinks are automatically itegrated in this command.  
-`make cs-check-commit-emacs`  
-If you have a better solution, feel free to write it here or if you need a other Makefile command open a new issue
+ 
+If you have a better solution, feel free to write it here or if you need another Makefile command open a new issue
 and assign it to me (larseidam)
 
 * For Komodo Edit  
-Make a new command in your Toolbox and give it a name. After that, add  
-`make cs-check-commit-emacs`  
+Make a new command in your Toolbox and give it a name. After that, add the makefile command 
 to the command field and to the 'Start in' field
 write the full path to or ontowiki project. Now make a hook at the 'Parse with output'
 Field an write this  
@@ -134,11 +91,10 @@ Field an write this
 in the textfield. In the final step make a hook at the 'Show output as a list' field.
 Push 'OK' and check the new created command.
 
-**Note:** You must have some Code in the stagearea of git, otherwise the CodeSniffer have no files to check and you don't
-want to see, if it runs or not.
+**Note:** You must have some Code in the root of the git-repository, otherwise the CodeSniffer have no files to check and you can't to see, if it runs or not.
 
 <a id="tips"></a>
-## Tips ##
+## Tips
 For **git**:
 
-The CodeSniffer checks all files or fileparts that has been added to the index (with **git add**). If you fix some issues that were reported, you have to re-add these changes, otherwise CS will complain again and again.
+The CodeSniffer checks all files or fileparts that have been added to the index (with **git add**). If you fix some issues that were reported, you have to re-add these changes, otherwise CS will complain again and again.

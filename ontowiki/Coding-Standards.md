@@ -8,7 +8,7 @@ This document provides guidelines for code formatting and documentation to indiv
 
 This page makes heavy use of the [http://framework.zend.com/manual/en/coding-standard.html](Zend+Framework+coding+standards).
 
-The coding standards are checked by the PHP CodeSniffer if you run `make cs-check` from your OntoWiki root. The currently minimal required version of PHP CodeSniffer is 1.4.4. -- [PHPCodeSniffer](PHP+CodeSniffer+Guide)
+The coding standards are checked by the PHP CodeSniffer if you run `make codesniffer` from your OntoWiki root. The currently minimal required version of PHP CodeSniffer is specified in the composer.json/composer.lock . -- [PHPCodeSniffer](PHP+CodeSniffer+Guide)
 
 # Goals
 
@@ -151,7 +151,7 @@ When declaring associative arrays with the array construct, breaking the stateme
 
 ```
 $sampleArray = array(
-    'firstKey' => 'firstValue',
+    'firstKey'  => 'firstValue',
     'secondKey' => 'secondValue'
 );
 ```
