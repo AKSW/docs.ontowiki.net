@@ -45,11 +45,6 @@ Deployment-Recommendations:
   url: "/docs.ontowiki.net/ontowiki_Deployment-Recommendations/"
   link: "<a href='/docs.ontowiki.net/ontowiki_Deployment-Recommendations/'>Deployment-Recommendations</a>"
 
-DeveloperGuide:
-  title: "DeveloperGuide"
-  url: "/docs.ontowiki.net/ontowiki_DeveloperGuide/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_DeveloperGuide/'>DeveloperGuide</a>"
-
 Events:
   title: "Events"
   url: "/docs.ontowiki.net/ontowiki_Events/"
@@ -320,20 +315,10 @@ cachemanagement:
   url: "/docs.ontowiki.net/ontowiki_cachemanagement/"
   link: "<a href='/docs.ontowiki.net/ontowiki_cachemanagement/'>cachemanagement</a>"
 
-codingstandards:
-  title: "codingstandards"
-  url: "/docs.ontowiki.net/ontowiki_codingstandards/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_codingstandards/'>codingstandards</a>"
-
 concepts:
   title: "concepts"
   url: "/docs.ontowiki.net/ontowiki_concepts/"
   link: "<a href='/docs.ontowiki.net/ontowiki_concepts/'>concepts</a>"
-
-cssstyleguide:
-  title: "cssstyleguide"
-  url: "/docs.ontowiki.net/ontowiki_cssstyleguide/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_cssstyleguide/'>cssstyleguide</a>"
 
 extensionconfiguration:
   title: "extensionconfiguration"

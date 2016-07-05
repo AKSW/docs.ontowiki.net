@@ -65,9 +65,6 @@ entries:
       - title: Developers
         output: web, pdf
         subfolderitems:
-        - title: codingstandards
-          url: /ontowiki_codingstandards/
-          output: web, pdf
 
         - title: Coding-Standards
           url: /ontowiki_Coding-Standards/
@@ -75,14 +72,6 @@ entries:
 
         - title: CSS-Development
           url: /ontowiki_CSS-Development/
-          output: web, pdf
-
-        - title: cssstyleguide
-          url: /ontowiki_cssstyleguide/
-          output: web, pdf
-
-        - title: DeveloperGuide
-          url: /ontowiki_DeveloperGuide/
           output: web, pdf
 
         - title: Events
