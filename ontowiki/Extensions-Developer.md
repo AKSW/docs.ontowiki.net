@@ -1,8 +1,8 @@
 ---
-title: extensiondevelopment
+title: Extensions-Developer
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_extensiondevelopment/
+permalink: /ontowiki_Extensions-Developer/
 ---
 # Extension Development
 
@@ -12,7 +12,7 @@ This is a starting point for all developers who want to create their own OntoWik
 If you are new to PHP, please have a look at the [W3Schools PHP Tutorial](http://www.w3schools.com/PHP/) (en).
 
 ## Tutorials for Zend Beginners
-If you know PHP but not Zend, we recommend [the official Zend tutorial](http://framework.zend.com/docs/quickstart) because it always refers to the newest Zend version.
+If you know PHP but not Zend, we recommend [the official Zend tutorial](https://docs.zendframework.com/tutorials/) because it always refers to the newest Zend version.
 
 ## PHP Configuration for Developers
 All you need is to re-configure your OntoWiki Installation to use the **debug mode**. For this, add the following line to your `config.ini`.

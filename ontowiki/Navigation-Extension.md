@@ -157,6 +157,6 @@ from this element and is restricted to this.
 
 **List-Config** If set list will be generated using this JSON instanceConfig
 _Note:_ All `"` must be replaced by `|`
-_More info_ about [instance config](Instance-Lists).
+_More info_ about [instance config](http://docs.ontowiki.net/ontowiki_Instance-Lists/).
 
     config.<id>.list.config = "{|filter|:[{|rdfsclass|:|%resource%|,|mode|:|rdfsclass|}]}"

@@ -110,28 +110,16 @@ entries:
           url: /ontowiki_Extension-Architecture/
           output: web, pdf
 
-        - title: extensionconfiguration
-          url: /ontowiki_extensionconfiguration/
-          output: web, pdf
-
         - title: Extension-Configurator
           url: /ontowiki_Extension-Configurator/
           output: web, pdf
 
-        - title: ExtensionDeveloperStart
-          url: /ontowiki_ExtensionDeveloperStart/
-          output: web, pdf
-
-        - title: extensiondevelopment
-          url: /ontowiki_extensiondevelopment/
+        - title: Extensions-Developer
+          url: /ontowiki_Extensions-Developer/
           output: web, pdf
 
         - title: Extension-Repository
           url: /ontowiki_Extension-Repository/
-          output: web, pdf
-
-        - title: extensions
-          url: /ontowiki_extensions/
           output: web, pdf
 
         - title: Navigation-Extension
@@ -144,6 +132,10 @@ entries:
 
         - title: Resource-Creation-Extension
           url: /ontowiki_Resource-Creation-Extension/
+          output: web, pdf
+          
+        - title: SemanticPingback
+          url: /ontowiki_SemanticPingback/
           output: web, pdf
 
     - title: Backup-your-data
@@ -252,10 +244,6 @@ entries:
 
     - title: SecurityIssues
       url: /ontowiki_SecurityIssues/
-      output: web, pdf
-
-    - title: SemanticPingback
-      url: /ontowiki_SemanticPingback/
       output: web, pdf
 
     - title: ServiceController

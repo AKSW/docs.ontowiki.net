@@ -70,11 +70,6 @@ Extension-Repository:
   url: "/docs.ontowiki.net/ontowiki_Extension-Repository/"
   link: "<a href='/docs.ontowiki.net/ontowiki_Extension-Repository/'>Extension-Repository</a>"
 
-ExtensionDeveloperStart:
-  title: "ExtensionDeveloperStart"
-  url: "/docs.ontowiki.net/ontowiki_ExtensionDeveloperStart/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_ExtensionDeveloperStart/'>ExtensionDeveloperStart</a>"
-
 Extensions:
   title: "Extensions"
   url: "/docs.ontowiki.net/ontowiki_Extensions/"
@@ -325,20 +320,10 @@ concepts:
   url: "/docs.ontowiki.net/ontowiki_concepts/"
   link: "<a href='/docs.ontowiki.net/ontowiki_concepts/'>concepts</a>"
 
-extensionconfiguration:
-  title: "extensionconfiguration"
-  url: "/docs.ontowiki.net/ontowiki_extensionconfiguration/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_extensionconfiguration/'>extensionconfiguration</a>"
-
-extensiondevelopment:
-  title: "extensiondevelopment"
-  url: "/docs.ontowiki.net/ontowiki_extensiondevelopment/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_extensiondevelopment/'>extensiondevelopment</a>"
-
-extensions:
-  title: "extensions"
-  url: "/docs.ontowiki.net/ontowiki_extensions/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_extensions/'>extensions</a>"
+Extensions-Developer:
+  title: "Extensions-Developer"
+  url: "/docs.ontowiki.net/ontowiki_Extensions-Developer/"
+  link: "<a href='/docs.ontowiki.net/ontowiki_Extensions-Developert/'>Extensions-Developer</a>"
 
 ldi:
   title: "ldi"
