@@ -40,6 +40,7 @@ If you click the "Explore Repo" tab, you will see a list of extensions present i
 
 ## List of Extensions
 <!-- TODO: get documentation from submodules with a script -->
+
 ## account
 
 ## application
