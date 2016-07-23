@@ -40,7 +40,7 @@ Now you have several options:
 - Click on **Add Property** and choose **rdf:Type**. Type `skos:Concept` in the text box.
 - Click on **Add Property** and choose **preferred label**. Type `Product` in the text box and choose `en` as a language. Click on **CreateResource**.
 
-![Create new Resource - Jewellery](https://github.com/AKSW/OntoWiki/wiki/images/ontowiki-screenshot-create-new-resource-jewellery.png)
+![Create new Resource - Jewellery]({{ "/images/ontowiki-screenshot-create-new-resource-jewellery.png" | prepend: site.baseurl }}) 
 - On the right you should see the window "Properties of Product". Click on **Clone** in the **Properties** tab. Replace the values of the preferedLabel with `Jewellery`.
 - Click on **Add Property**, type `skos:altLabel` in the text field and hit enter. Type `Jewelery` in the text box and choose `en` as a language.
 - Click on the plus symbol **+** of the alternative label, type `Jewelry` in the text box and choose `en` as a language.
@@ -57,20 +57,20 @@ Now you have several options:
 - Click on **Create Knowledge Base** and then **Save Model Configuration**.
 
 Go to the **Knowledge Bases** widget and select **products.com**. Under **Model info** click on **Actions**->**view all resources**. You should now see a list of the created instances.
-![OntoWiki Screenshot with the Jewellery taxonomy resource list](https://github.com/AKSW/OntoWiki/wiki/images/ontowiki-screenshot-taxonomy-jewellery-resource-list.png)
+![OntoWiki Screenshot with the Jewellery taxonomy resource list]({{ "/images/ontowiki-screenshot-taxonomy-jewellery-resource-list.png" | prepend: site.baseurl }})
 
 ## How to view and edit the concepts of my taxonomy?
-For this tutorial we will edit the taxonomy created in [How to create and publish a SKOS Taxonomy in 5 minutes](How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes).
+For this tutorial we will edit the taxonomy created in [How to create and publish a SKOS Taxonomy in 5 minutes](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes).
 
 Log in and select the knowledge base you want to view and edit. Click on **Actions**->**View all Resources**.
 
 ### Add Classes and Properties
-See [How to create and publish a SKOS Taxonomy in 5 minutes - Add classes and properties using dialogs](How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes##dialog)
+See [How to create and publish a SKOS Taxonomy in 5 minutes - Add classes and properties using dialogs](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes)
 
 ### Edit Properties
-![Screenshot Edit Properties](https://github.com/AKSW/OntoWiki/wiki/images/ontowiki-screenshot-edit-properties.png)
+![Screenshot Edit Properties]({{ "/images/ontowiki-screenshot-edit-properties.png" | prepend: site.baseurl }})
 
-Click on **Actions**->**View all Resources** and select the resource you want to edit. Alternatively you can click on **Actions**->**Jump to Resource** and type the name of the resource in the text field (prefix not required, e.g. "Jewellery" would be sufficient in our [example taxonomy](How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes##taxonomy)). Click on **Edit Properties** and edit the values. Click on **Save Changes**.
+Click on **Actions**->**View all Resources** and select the resource you want to edit. Alternatively you can click on **Actions**->**Jump to Resource** and type the name of the resource in the text field (prefix not required, e.g. "Jewellery" would be sufficient in our [example taxonomy](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes##taxonomy)). Click on **Edit Properties** and edit the values. Click on **Save Changes**.
 
 ### Rename the URI of a Resource
 *There is no official rename functionality so this is just a workaround.*
@@ -83,7 +83,7 @@ Go to the **Source** tab. In the text box search for the line containing the nam
 See [How to create and publish a SKOS Taxonomy in 5 minutes - Upload a file](#upload-file)
 
 ### Import from the Web
-![Screenshot Import from the Web](https://github.com/AKSW/OntoWiki/wiki/images/ontowiki-screenshot-import-from-the-web.png)
+![Screenshot Import from the Web]({{ "/images/ontowiki-screenshot-import-from-the-web.png" | prepend: site.baseurl }})
 
 Go to **Knowledge Bases**->**Edit**->**Create Knowledge Base**.
 Set the **Knowledge Base URI** and select **Import From the Web**.

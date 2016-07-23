@@ -12,14 +12,22 @@ Now here is how it works and how you can use it:
 To make use of Gearman as worker background, you need to install the Gearman service on the server.
 
 #### Installation
+
 This process depends on the operating system.
+
 ##### RHEL/Fedora
+
 	yum install gearmand-server
 ##### Debian/Ubuntu
+
 	apt-get install gearman-job-server
+
 ##### Windows
+
 Please use [CYGWIN][3]!
+
 ##### Compilation from archive
+
 At first, download the Gearman [daemon archive][???] and install:
 
 	tar xzf gearmand-X.Y.tar.gz
@@ -61,7 +69,9 @@ Open _another_ terminal and call the worker:
 ... and you should see the number of entries on your passwords file.
 
 #### PHP example
+
 ##### Server script
+
 	<?php
 	class MyWorker{
 		public function reverse( GearmanJob $job ){
@@ -74,6 +84,7 @@ Open _another_ terminal and call the worker:
 	while( $worker->work() );
 
 ##### Client script
+
 	<?php
 	$client     = new GearmanClient();
 	$client->addServer();
@@ -84,12 +95,14 @@ Open _another_ terminal and call the worker:
 #### Classes in Erfurt
 
 ##### Worker_Registry
+
 This class will be started by the server side shell script to start the job server.
 
 It triggers the event `onAnnounceWorker` and will allow OntoWiki / Erfurt components to state their worker jobs.
 These will be stored within the registry as a later input for the worker backend.
 
 ##### Worker_Backend
+
 This class is wrapper for the Gearman worker, which runs server side.
 It knows the worker registry and add the registered jobs to the Gearman server.
 Afterwards the server side worker script will set the backend and Gearman server to listen mode.
@@ -97,15 +110,18 @@ Afterwards the server side worker script will set the backend and Gearman server
 While this is the empty engine for handling job calls, you will now also need jobs classes to register.
 
 ##### Worker_Job_Interface
+
 Every job class will implement the interface.
 At the moment you will need to implement the `run` method by your needs.
 So every job class only has one public method, which will be called automatically.
 
 ##### Worker_Job_Container
+
 This class is used to store registerable worker jobs within the worker registry.
 You do not need to use this class at all.
 
 #### Configuration
+
 Configure in either `OntoWiki/application/config/default.ini` or `OntoWiki/libraries/Erfurt/library/Erfurt/config/default.ini`:
 
 	worker.enable  = true
@@ -118,6 +134,7 @@ Fakts:
 - You must set the port. Default port is 4730.
 
 #### Integration in OntoWiki
+
 First register the event `onAnnounceWorker` in the `doap.n3` file of a plugin, module or extension.
 This is an example for a plugin:
 
@@ -149,6 +166,7 @@ Now you need to implement your job class. Here is a simple example:
         }
     }
 	
+
 #### Worker execution
 
 ##### On the server 

@@ -25,7 +25,7 @@ The first thing needed for a backup is the RDF data.
 
 ## Option 1: Using the [Command Line Interface](https://github.com/AKSW/owcli/)
 Make sure the CLI is [setup correctly](https://github.com/AKSW/owcli/blob/master/README.md)
-Note: We actually use this script to back up <http://data.lod2.eu>
+Note: We actually use this script to back up <http://data.lod2.eu> **dead link**
 
 Backing up with owcli is limited to the memory resources of the php-cli process so for huge models, direct backend backup should be used.
 ```
@@ -60,28 +60,3 @@ Depending on the store there are more options:
   * <http://code.google.com/p/aksw-commons/wiki/Virtuoso_ISQL>
   
   * <http://www.openlinksw.com/uda/wiki/main//Main/VirtDumpLoadRdfGraphs>
-
-# Backup
-
-One way to back up the files generated above is to make a Mercurial Repository and then do hourly commits. Mercurial is file based, so you can create it locally.
-
-## Setup Mercurial
-
-```
-mkdir /var/backups/$BACKUPDIR
-cd /var/backups/$BACKUPDIR
-hg init .
-```
-
-## Commit
-
-```
-hg add * 2>/dev/null
-hg commit . -m "..." -q
-```
-
-## Add a cronjob (Mentioned for completeness)
-
-```
-crontab mybackupscript.sh
-```

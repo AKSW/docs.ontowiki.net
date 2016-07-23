@@ -4,6 +4,8 @@ tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Roadmap/
 ---
+**not up to date for better info regarding this ask [N.Arndt](http://aksw.org/NatanaelArndt) or [P.Frischmuth](http://aksw.org/PhilippFrischmuth)**
+
 milestones as well as current construction sites
 
 Feel free to pick up one of this list and help us with this :-)
@@ -25,4 +27,4 @@ Feel free to pick up one of this list and help us with this :-)
 - Extension Management (finished in branch Feature-ExtensionUnification)
 - List Template Rewrite
 - Object Cache
-- Evolution Patterns (merged into default since [http:_code.google.com/p/ontowiki/source/detail?r=edcda1071a1539bf09a95f01cade4c8bad354e70_](edcda1071a))
+- Evolution Patterns (merged into default since [edcda1071a](http://code.google.com/p/ontowiki/source/detail?r=edcda1071a1539bf09a95f01cade4c8bad354e70))

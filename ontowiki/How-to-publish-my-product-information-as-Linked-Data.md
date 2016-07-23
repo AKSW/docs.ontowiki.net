@@ -18,7 +18,7 @@ First, you need to create a new knowledge base. Go to **Knowledge Bases**->**Edi
 
 For simplicity we show the modelling for just one exemplary product:
 
-![Example Product Neclace](images/necklace_without_navigation.png)
+![Example Product Neclace]({{ "/images/necklace_without_navigation.png" | prepend: site.baseurl }})
 
 This product has the following attributes we want to model:
 - Name
@@ -47,7 +47,7 @@ Our product model now needs two classes, gr:ProductOrServiceModel being one, and
      gr:name "Golden Necklace";
      gr:description "a golden necklace".
 
-For directions on how get this data into the knowledge base, see [How to create and publish a SKOS Taxonomy in 5 minutes - Add classes and properties using dialogs](How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes#dialog).
+For directions on how get this data into the knowledge base, see [How to create and publish a SKOS Taxonomy in 5 minutes - Add classes and properties using dialogs](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes#dialog).
 
 The remaining attribute, *price*, cannot be directly modelled as an attribute of the product model. The problems are:
 

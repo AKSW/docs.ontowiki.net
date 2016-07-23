@@ -21,7 +21,7 @@ First, you need to create a new knowledge base. Go to **Knowledge Bases**->**Edi
 
 For simplicity we show the modelling for just one exemplary product:
 
-![Example Product Neclace](https://github.com/AKSW/OntoWiki/wiki/images/necklace_without_navigation.png)
+![Example Product Neclace]({{ "/images/necklace_without_navigation.png" | prepend: site.baseurl }})
 
 This product has the following attributes we want to model:
 - Name
@@ -31,7 +31,7 @@ This product has the following attributes we want to model:
 
 #### Find matching Classes and Properties
 
-We now need to find the classes and properties in the Good Relations vocabulary that are equivalent to these attributes. Consulting the [Product or Service section](http://wiki.goodrelations-vocabulary.org/Documentation/Product_or_Service) in the [Good Relations documentation](<http://wiki.goodrelations-vocabulary.org/Documentation>) yields the class [`gr:ProductOrServiceModel`](http://www.heppnetz.de/ontologies/goodrelations/v1.html##ProductOrServiceModel), which is "*A product model, i.e. a datasheet, like "Nikon T90", "iPod Nano 16 GB", or similar. This is basically the abstract definition of product features for mass-produced commodities.*".
+We now need to find the classes and properties in the Good Relations vocabulary that are equivalent to these attributes. Consulting the [Product or Service section](http://wiki.goodrelations-vocabulary.org/Documentation/Product_or_Service) in the [Good Relations documentation](http://wiki.goodrelations-vocabulary.org/Documentation) yields the class [`gr:ProductOrServiceModel`](http://www.heppnetz.de/ontologies/goodrelations/v1.html##ProductOrServiceModel), which is "*A product model, i.e. a datasheet, like "Nikon T90", "iPod Nano 16 GB", or similar. This is basically the abstract definition of product features for mass-produced commodities.*".
 
 Our product model now needs two classes, gr:ProductOrServiceModel being one, and one for *Neclace* being the other. First we look for a fitting class in Good Relations but fail to find any. The next place to go should be [eClassOWL - The Web Ontology for Products and Services](http://www.heppnetz.de/projects/eclassowl/) but even there we don't find a fitting class. Fortunately, Wikipedia, and thus its Semantic Web counterpart DBpedia, has up-to-date entries for nearly everything and we can use `http://dbpedia.org/resource/Necklace`.
 
@@ -50,7 +50,7 @@ Our product model now needs two classes, gr:ProductOrServiceModel being one, and
      gr:name "Golden Necklace";
      gr:description "a golden necklace".
 
-For directions on how get this data into the knowledge base, see [How to create and publish a SKOS Taxonomy in 5 minutes - Add classes and properties using dialogs](How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes##dialog).
+For directions on how get this data into the knowledge base, see [How to create and publish a SKOS Taxonomy in 5 minutes - Add classes and properties using dialogs](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes##dialog).
 
 The remaining attribute, *price*, cannot be directly modelled as an attribute of the product model. The problems are:
 

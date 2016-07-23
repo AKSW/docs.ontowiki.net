@@ -10,7 +10,7 @@ In the branch named "QuickAdd" you can find a new component which visualizes a g
 
 # Before we start
 
-There must be an executable Ontowiki installation. If you havent it you can use [InstallFromGit](InstallFromGit) for getting it. The database backend is indifferent, MySQL or Virtuoso are usable. At this point the Ontowiki installation is accessible via [http://localhost/myow](http://localhost/myow) and the files are in \*/opt/lampp/htdocs/myow\*. If your paths differ please modify the posted ones.
+There must be an executable Ontowiki installation. If you havent it you can check [this](http://docs.ontowiki.net/ontowiki_Install-Ontowiki). The database backend is indifferent, MySQL or Virtuoso are usable. At this point the Ontowiki installation is accessible via [http://localhost/myow](http://localhost/myow) and the files are in \*/opt/lampp/htdocs/myow\*. If your paths differ please modify the posted ones.
 
 # Get the current development snapshot
 

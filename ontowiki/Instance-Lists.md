@@ -10,23 +10,23 @@ A very common use case of OntoWiki is browsing instance data. That means display
 
 This sections describes which parts of OntoWiki are involved in instance list creation. Its a overview; the actual API description follows in the next section.
 
-The core component is the class [https:_github.com/AKSW/OntoWiki/blob/develop/application/classes/OntoWiki/Model/Instances.php_](OntoWiki_Model_Instances), whose instances represent instance lists. Instantiating it with a Store and a Graph-name results in a SPARQL-Query (to be specific: a Erfurt\_Sparql\_Query2 object) being created inside, that (after instantiation) selects all instances within that graph (so a "SELECT ?s WHERE {?s ?p ?o}"). Having such a object instantiated gives you the following functionality via its methods:
+The core component is the class [OntoWiki_Model_Instances](https://www.github.com/AKSW/OntoWiki/blob/develop/application/classes/OntoWiki/Model/Instances.php), whose instances represent instance lists. Instantiating it with a Store and a Graph-name results in a SPARQL-Query (to be specific: a Erfurt\_Sparql\_Query2 object) being created inside, that (after instantiation) selects all instances within that graph (so a "SELECT ?s WHERE {?s ?p ?o}"). Having such a object instantiated gives you the following functionality via its methods:
 
 - getting the currently selected entities and their properties (execute the query and transform the result)
 - configure which properties should be shown (e.g. for each entity its dc:title)
 - configure filters (which entities should be shown)
 - configure paging (limit and offset) 
 
-Displaying such a instance list in a [http:_framework.zend.com/manual/en/zend.view.introduction.html_](Zend-View) is done via a [http:framework.zend.com/manual/en/zend.controller.actionhelpers.html](ActionHelper) called [https:_github.com/AKSW/OntoWiki/blob/develop/application/classes/OntoWiki/Controller/ActionHelper/List.php_](OntoWiki_Controller_ActionHelper_List). When you write a controller that wants to display a list, you instantiate a instances-object, get the action helper from the framework, and pass it the object. The ActionHelper then handles:
+Displaying such a instance list in a [Zend-View](https://docs.zendframework.com/zend-view/) is done via a [ActionHelper](https://framework.zend.com/manual/1.12/en/zend.controller.actionhelpers.html) called [OntoWiki_Controller_ActionHelper_List](https://www.github.com/AKSW/OntoWiki/blob/develop/application/classes/OntoWiki/Controller/ActionHelper/List.php). When you write a controller that wants to display a list, you instantiate a instances-object, get the action helper from the framework, and pass it the object. The ActionHelper then handles:
 
 - appending a customizable template that renders the instance list to a zend view
 - management of multiple lists in a user session
 
-The User-Interface to these configurable lists is composed of two parts: first there are some Modules (the "show properties"-module, the "filter"-module, and the "tagging"-module). They can be added to the view and they host configuration forms. Second there is a [http:_framework.zend.com/manual/de/zend.controller.plugins.html_](Zend-Controller-Plugin) called [https:github.com/AKSW/OntoWiki/blob/develop/application/classes/OntoWiki/Controller/Plugin/ListSetupHelper.php](ListSetupHelper). It handles the configuration-requests by the modules and calls the corresponding methods on the instances-object. This means the configuration is done via HTTP-Request-Parameters containing JSON encoded configuration requests - send by the modules; received and processed by the ListSetupHelper. The nature of a Controller-Plugin is to be notified on each request, thus configurations on any list can implicitly be done within all controller action calls that want to use the list feature.
+The User-Interface to these configurable lists is composed of two parts: first there are some Modules (the "show properties"-module, the "filter"-module, and the "tagging"-module). They can be added to the view and they host configuration forms. Second there is a [Zend-Controller-Plugin](https://framework.zend.com/manual/1.12/en/zend.controller.plugins.html) called [ListSetupHelper](https:github.com/AKSW/OntoWiki/blob/develop/application/classes/OntoWiki/Controller/Plugin/ListSetupHelper.php). It handles the configuration-requests by the modules and calls the corresponding methods on the instances-object. This means the configuration is done via HTTP-Request-Parameters containing JSON encoded configuration requests - send by the modules; received and processed by the ListSetupHelper. The nature of a Controller-Plugin is to be notified on each request, thus configurations on any list can implicitly be done within all controller action calls that want to use the list feature.
 
 # APIs
 
-The complete documentation for the classes is available [http:_docs.ontowiki.net/fw/_](online). Here I want to explain a minimal working examples of code, that can be used as a starting point for you.
+Here I want to explain a minimal working examples of code, that can be used as a starting point for you.
 
 ```
 $listHelper = Zend_Controller_Action_HelperBroker::getStaticHelper('List');
@@ -115,7 +115,7 @@ Before this reengineering, the query only was capable of selecting the instances
 | GET/POST | offset | positive int | set offset for paging |
 | GET/POST | init | \* | initializes a new list - if there are other config options passed these are applied on the new list. if this parameter is omitted, the passed options are applied to the existing list as additional filters etc. |
 
-the \*instancesconfig\* parameter is explained in in my thesis (Jonas Brekle: "Spezifikation und Implementierung einer SPARQL Query API für PHP sowie Integration in OntoWiki", 2010) and i will refer to an extract ( [http:_filebin.ca/ygocsp/doc.pdf_](here))
+the \*instancesconfig\* parameter is explained in in my thesis (Jonas Brekle: "Spezifikation und Implementierung einer SPARQL Query API für PHP sowie Integration in OntoWiki", 2010) and i will refer to an extract ( [http:_filebin.ca/ygocsp/doc.pdf_](here) **dead - needs new link**)
 
 The instancesconfig-Parameter contains a JSON-encoded datastructure, that can contain multiple commands, regarding filters and shown Properties.
 

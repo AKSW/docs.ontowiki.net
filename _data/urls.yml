@@ -95,11 +95,6 @@ Handbooks:
   url: "/docs.ontowiki.net/ontowiki_Handbooks/"
   link: "<a href='/docs.ontowiki.net/ontowiki_Handbooks/'>Handbooks</a>"
 
-How-to-consume-and-link-product-information-from-the-Linked-Data-web:
-  title: "How-to-consume-and-link-product-information-from-the-Linked-Data-web"
-  url: "/docs.ontowiki.net/ontowiki_How-to-consume-and-link-product-information-from-the-Linked-Data-web/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_How-to-consume-and-link-product-information-from-the-Linked-Data-web/'>How-to-consume-and-link-product-information-from-the-Linked-Data-web</a>"
-
 How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes:
   title: "How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes"
   url: "/docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes/"
@@ -110,20 +105,10 @@ How-to-publish-my-product-information-as-Linked-Data:
   url: "/docs.ontowiki.net/ontowiki_How-to-publish-my-product-information-as-Linked-Data/"
   link: "<a href='/docs.ontowiki.net/ontowiki_How-to-publish-my-product-information-as-Linked-Data/'>How-to-publish-my-product-information-as-Linked-Data</a>"
 
-How-to-setup-a-Linked-Data-notification-and-synchronisation-hub:
-  title: "How-to-setup-a-Linked-Data-notification-and-synchronisation-hub"
-  url: "/docs.ontowiki.net/ontowiki_How-to-setup-a-Linked-Data-notification-and-synchronisation-hub/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_How-to-setup-a-Linked-Data-notification-and-synchronisation-hub/'>How-to-setup-a-Linked-Data-notification-and-synchronisation-hub</a>"
-
 How-to-test:
   title: "How-to-test"
   url: "/docs.ontowiki.net/ontowiki_How-to-test/"
   link: "<a href='/docs.ontowiki.net/ontowiki_How-to-test/'>How-to-test</a>"
-
-How-to-use-and-consume-other-Linked-Data-resources:
-  title: "How-to-use-and-consume-other-Linked-Data-resources"
-  url: "/docs.ontowiki.net/ontowiki_How-to-use-and-consume-other-Linked-Data-resources/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_How-to-use-and-consume-other-Linked-Data-resources/'>How-to-use-and-consume-other-Linked-Data-resources</a>"
 
 How-to-view-and-edit-the-concepts-of-my-taxonomy:
   title: "How-to-view-and-edit-the-concepts-of-my-taxonomy"
@@ -164,11 +149,6 @@ Navigation-Extension:
   title: "Navigation-Extension"
   url: "/docs.ontowiki.net/ontowiki_Navigation-Extension/"
   link: "<a href='/docs.ontowiki.net/ontowiki_Navigation-Extension/'>Navigation-Extension</a>"
-
-OntoWiki-Testing-Guide:
-  title: "OntoWiki-Testing-Guide"
-  url: "/docs.ontowiki.net/ontowiki_OntoWiki-Testing-Guide/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_OntoWiki-Testing-Guide/'>OntoWiki-Testing-Guide</a>"
 
 OntoWiki-behind-a-reverseProxy-(with-SSL):
   title: "OntoWiki-behind-a-reverseProxy-(with-SSL)"
@@ -225,11 +205,6 @@ Roadmap:
   url: "/docs.ontowiki.net/ontowiki_Roadmap/"
   link: "<a href='/docs.ontowiki.net/ontowiki_Roadmap/'>Roadmap</a>"
 
-Security-Audit:
-  title: "Security-Audit"
-  url: "/docs.ontowiki.net/ontowiki_Security-Audit/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Security-Audit/'>Security-Audit</a>"
-
 SecurityIssues:
   title: "SecurityIssues"
   url: "/docs.ontowiki.net/ontowiki_SecurityIssues/"
@@ -275,11 +250,6 @@ VirtuosoBackend:
   url: "/docs.ontowiki.net/ontowiki_VirtuosoBackend/"
   link: "<a href='/docs.ontowiki.net/ontowiki_VirtuosoBackend/'>VirtuosoBackend</a>"
 
-VirtuosoConductor:
-  title: "VirtuosoConductor"
-  url: "/docs.ontowiki.net/ontowiki_VirtuosoConductor/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_VirtuosoConductor/'>VirtuosoConductor</a>"
-
 Webservices:
   title: "Webservices"
   url: "/docs.ontowiki.net/ontowiki_Webservices/"
@@ -294,11 +264,6 @@ Wrapper-Example:
   title: "Wrapper-Example"
   url: "/docs.ontowiki.net/ontowiki_Wrapper-Example/"
   link: "<a href='/docs.ontowiki.net/ontowiki_Wrapper-Example/'>Wrapper-Example</a>"
-
-basics:
-  title: "basics"
-  url: "/docs.ontowiki.net/ontowiki_basics/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_basics/'>basics</a>"
 
 browsercompatibility:
   title: "browsercompatibility"
