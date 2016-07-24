@@ -4,8 +4,6 @@ tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Installation-Guide-Mac-OSX/
 ---
-# Preface
-
 This page explains the necessary steps to use OntoWiki with [OpenLink Virtuoso](http://virtuoso.openlinksw.com/wiki/main/Main/).
 Especially, it covers the following topics:
 

@@ -56,6 +56,7 @@ Now download the archive from <a href="http://pecl.php.net/package/gearman">PECL
 **HINT: If you are having trouble with the version if libgearman, try an older archive (<a href="http://serverfault.com/questions/487331/not-able-to-install-gearman-on-ubuntu-12-04">read more</a>).**
 
 ### Test
+
 #### Console
 
 Open a terminal and create a new worker, which will register a function "wc" which will count list items of given data.

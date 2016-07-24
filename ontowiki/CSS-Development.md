@@ -40,6 +40,6 @@ li.minibutton a
 }
 ```
 
-# CSS Classes
+## CSS Classes
 
-see [http://ontowiki.net/Projects/OntoWiki/DefaultStylesheet](http://ontowiki.net/Projects/OntoWiki/DefaultStylesheet)
+see [http://ontowiki.net/Projects/OntoWiki/DefaultStylesheet](http://ontowiki.net/Projects/OntoWiki/DefaultStylesheet) **needs new link**

@@ -4,7 +4,7 @@ tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Extension-Architecture/
 ---
-# Extension Architecture
+## Extension Architecture
 
 OntoWiki extensions are stored in the extensions folder. A extension can be composed four different types of extensions:
 
@@ -18,7 +18,7 @@ Additionally, we have 2 kinds of non-developer (internal) extensions, namely
   * translations and
   * themes.  
 
-# Extensions
+## Extensions
 
 An extension is a meta container that can contain any/multiple of the below explained extension types. An (made up) example could look like this:
 
@@ -50,7 +50,7 @@ They can reside in the main extension folder or - if specified in the ini - in a
 Action templates need to be wrapped in a folder named like their controller e.g., the listfiles template corresponds to a listfiles-action in the Files-Controller (this is a Zend convention).
 An example for Module templates could be the relatedfiles template. 
 
-## Components
+### Components
 Components are pluggable MVC controllers to which requests are dispatched.
 Usually, but not necessarily, components provide the main window's content and, in that case, can register with the navigation to be accessible by the user.
 In other cases components can function as controllers that serve asynchronous requests.
@@ -73,7 +73,7 @@ Components, where you can sneak good code:
 
 * https://github.com/AKSW/OntoWiki/tree/develop/extensions/datagathering
 
-## Modules
+### Modules
 
 Modules display little windows that provide additional user interface elements with which the user can affect the main window's content.
 Since some modules are highly dynamic extensions, they can be configured both statically and dynamically.
@@ -93,7 +93,7 @@ Modules, where you can sneak good code:
 
   * https://github.com/AKSW/files.ontowiki
 
-# Plugins
+## Plugins
 
 Plug-ins are the most basic, yet most flexible types of extensions.
 They consist of arbitrary code that is executed on certain events.
@@ -111,11 +111,11 @@ Plugins, where you can sneak good code:
   * https://github.com/AKSW/OntoWiki/tree/develop/extensions/linkeddataserver
 
 
-# Events
+## Events
 
 Here is a list of events you can attach to:
 
-## Events related to boot (occurs in this order)
+### Events related to boot (occurs in this order)
 
   * onPostBootstrap (when ow is bootstrapped)
   * onRouteStartup
@@ -125,7 +125,7 @@ Here is a list of events you can attach to:
 
   * onIsDispatchable
 
-## Events related to things done mostly in controllers
+### Events related to things done mostly in controllers
 
 related to changes to the ontology
 
@@ -150,7 +150,7 @@ related to the view
 
 old page: http://ontowiki.net/Projects/OntoWiki/EventPluginArchitecture
 
-# FAQ
+## FAQ
 
 **Q**: How do I create a new tab? 
 

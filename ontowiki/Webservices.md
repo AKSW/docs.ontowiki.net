@@ -6,11 +6,11 @@ permalink: /ontowiki_Webservices/
 ---
 If you will take a deeper view into the code please look at <tt>ONTOWIKI_DIR/application/controllers/ServiceController.php</tt>
 
-# Authentication (/service/auth)
+## Authentication (/service/auth)
 
 (currently unstable status)
 
-## Authentication Request
+### Authentication Request
 
 You can authenticate using via web service with an OntoWiki installation under the URI <tt>&lt;ontowiki_uri&gt;/service/auth</tt>
 
@@ -22,7 +22,7 @@ The authentication supports the following parameters:
 - p -- the password to authenticate with (can be omitted; defaults to "")
 - logout -- supply this parameter with the value "true" to remove the current authentication (required for logout).
 
-## Authentication Response
+### Authentication Response
 
 The REST Server responds with one of the following HTTP responses:
 
@@ -31,11 +31,11 @@ The REST Server responds with one of the following HTTP responses:
 - 405 Method Not Allowed -- You tried to authenticate via GET, although this is disabled in OntoWiki config.
 - 400 Bad Request -- You didn't supply the parameters needed to fullfill the request.
 
-# SPARQL Query (/sparql)
+## SPARQL Query (/sparql)
 
 OntoWiki's web service accepts SPARQL queries according to the [http:_www.w3.org/TR/rdf-sparql-protocol/_](SPARQL+protocol). The service is reachable under the URI <tt>&lt;ontowiki-uri&gt;/sparql</tt>.
 
-## Usage
+### Usage
 
 values submitted by HTTP GET/POST Variables:
 
@@ -57,11 +57,11 @@ For JSON:
 
 Error Message is given if any problem occured. (See Authentication Response for Error-Codes; they are applying on SPARQL Endpoint too).
 
-## Plain example
+### Plain example
 
 <tt>/sparql?query=SELECT * WHERE {?s ?p ?o}&amp;default-graph-uri=http://mymodel.org/</tt> will give you all triples from <tt>http://mymodel.org</tt>. The result of the query is delivered as XML like specified from: [http://www.w3.org/TR/rdf-sparql-XMLres/](http://www.w3.org/TR/rdf-sparql-XMLres/).
 
-## jQuery/AJAX example
+### jQuery/AJAX example
 
 Here is a short example how to use the SPARQL-endpoint with jQuery's AJAX. You define an event e.g. a double click
 
@@ -98,7 +98,7 @@ The \*dataType\* attributes defines the type of result data. XML or JSON are pos
 
 Thats all. In the success function you can put all your stuff which shall be execute after an answer was received.
 
-# Model Update (/model/update)
+## Model Update (/model/update)
 
 OntoWiki supports updating models via its web service. As of version 0.9 we support a [http:_n2.talis.com/wiki/RDF\_JSON\_Specification_](JSON+format) but more formats are planned. To update a model, three parameters must be supplied:
 
@@ -106,11 +106,11 @@ OntoWiki supports updating models via its web service. As of version 0.9 we supp
 - original-graph -- the old model as it was before the update process 
 - modified-graph -- the updated model. The difference between old and new determines the statements that will be added to the model.
 
-# SPARQL 1.1 Update (/update)
+## SPARQL 1.1 Update (/update)
 
 In addition to Model Update, OntoWiki supports a subset of SPARQL 1.1 Update ( [http:_www.w3.org/TR/2010/WD-sparql11-update-20100126/#t411_](INSERT+DATA) and [http:www.w3.org/TR/2010/WD-sparql11-update-20100126/#t412](DELETE+DATA) syntax) via <tt>&lt;ontowiki-uri&gt;/update</tt>.
 
-# Cross-Origin Resource Sharing (CORS)
+## Cross-Origin Resource Sharing (CORS)
 
 OntoWiki is able to share your resource across domains with [http:_enable-cors.org/_](CORS). You just need to enable the [http:code.google.com/p/ontowiki/source/browse/extensions/plugins/cors/](cors+plugin) and OntoWiki sends a
 

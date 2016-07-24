@@ -4,8 +4,7 @@ tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_OntoWiki-behind-a-reverseProxy-(with-SSL)/
 ---
-# OntoWiki behind a reverseProxy
-##Preface
+## Preface
 This page explains the necessary steps to use OntoWiki behind a reverseProxy (with ssl) - e.g. if OntoWiki is deployed as a docker-container
 
 * install OntoWiki as described [here](http://docs.ontowiki.net/ontowiki_Install-Ontowiki/)
@@ -14,7 +13,7 @@ This page explains the necessary steps to use OntoWiki behind a reverseProxy (wi
 
 ## Configuration
 
-###nginx
+### nginx
 ```
  server {
     listen 80;

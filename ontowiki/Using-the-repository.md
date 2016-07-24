@@ -5,7 +5,7 @@ sidebar: ontowiki_sidebar
 permalink: /ontowiki_Using-the-repository/
 ---
 
-# Branches
+## Branches
 
 The `develop` branch is the core branch from where all features should be created. To ensure a clean and working develop branch all features need to be created in other branches/forks. **Never push onto develop**
 
@@ -13,9 +13,9 @@ So if you want to create your own extension or correct an error you need to pull
 
 Afterwards you should (squash) and rebase your branch/fork back to the **actual** develop branch. Then you can make a pull request and the AKSW Team will look over your pull request. **Test your extension with phpunit and codesniffer before you rebase and create the pull request**
 
-# Example 
+## Example 
 
-## Pull develop and create new branch
+### Pull develop and create new branch
 ```
 # Clone/Pull OntoWiki
 $ git clone https://www.github.com/AKSW/OntoWiki or $ git pull
@@ -30,7 +30,7 @@ $ git push origin feature/CoolFeature
 
 ```
 
-## Rebasing
+### Rebasing
 ```
 # while you are in your branch and are done with everything
 $ git rebase [-i] develop

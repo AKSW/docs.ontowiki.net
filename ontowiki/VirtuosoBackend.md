@@ -4,8 +4,6 @@ tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_VirtuosoBackend/
 ---
-# Virtusoso Backend
-
 This page explains the necessary steps to use OntoWiki with [OpenLink Virtuoso](http://virtuoso.openlinksw.com/wiki/main/Main/).
 Especially, it covers the following topics:
 
@@ -164,6 +162,7 @@ Perform the following steps to set up OntoWiki:
 **Solution:** go to ibraries/Erfurt/config/config.ini and set cache.enable = 0
 
 ### Platform-specific Notes
+
 #### GNU/Linux
 To start Virtuoso, switch to `<prefix>/bin` and run:
     ./virtuoso-t -f -c /opt/virtuoso/var/lib/virtuoso/ontowiki/virtuoso.ini
@@ -219,5 +218,6 @@ To auto-start Virtuoso on Mac OS X 10.5 use a config file for the `launchd` serv
 Follow [these instructions](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSUsageWindows) in order to set up Virtuoso as an ODBC data source on Windows. Although a [binary distribution](http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSDownload#Pre-built binaries for Windows) of Virtuoso might seem the right choice, these are lagging a bit behind of the current source distribution. At the time of writing this line, Virtuoso is available in version 6.1.5, but the binary download for Windows is in version 6.1.3. OntoWiki works best with version 6.1.4 or greater.
 
 ### Known Problems
+
 #### Debian/Ubuntu
 If you want to install virtuoso from the .deb and have installed virtuoso before (for instance on an update) it hast to run and has to be configured correctly during the installation, because the pre/pos-removal script tries to start/stop virtuoso.

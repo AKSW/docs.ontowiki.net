@@ -6,7 +6,7 @@ permalink: /ontowiki_PHPUnit/
 ---
 OntoWiki using PHPUnit.
 
-# Ready ...
+## Ready ...
 
 **Do not** use a XAMPP environment for testing. There a few things which makes problems. So use **native** OS packages for Apache2, MySQL, PHP5 etc. Execute the following commands over your terminal.
 
@@ -46,7 +46,7 @@ sudo apt-get install phpmyadmin
 sudo apt-get install php5 php5-cli php-pear php5-curl php5-mysql php5-odbc phpunit
 ```
 
-# .. steady, ...
+## .. steady, ...
 
 Now start neccassary services
 
@@ -70,7 +70,7 @@ cd /var/www/myow
 
 You will autmatically install PHPUnit per `make install`
 
-# ... \*\*Go!\*\*
+## ... \*\*Go!\*\*
 
 ### Tests folder content
 
@@ -101,7 +101,7 @@ if you want to only execute certain tests you can find the binary in `*/OntoWiki
 Driven OntoWiki developers write every time tests for their new fancy stuff so this output can be changed in the future! But there should be \_no\_ errors by PHPUnit.
 
 
-# Curiosities
+## Curiosities
 
 ### Percent symbol
 

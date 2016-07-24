@@ -11,13 +11,13 @@ overview about JavaScript events
 - Register for a global event: `$('body').bind(<event\_name>, function(e, data) {/\* handler \*/});`
 - Trigger an event: `$(<selector>).trigger(<event\_name>, data)`.
 
-# Event List
+## Event List
 
-## Global Events
+### Global Events
 
 - Instance list has been reloaded: `ontowiki.resource-list.reloaded`
 - A resource has been selected in the list: `ontowiki.resource.selected`
 - A resource has been deselected: `ontowiki.resource.unselected`
 - The resource selection list has changed: `ontowiki.selection.changed`
 
-## Element-specific Events
+### Element-specific Events

@@ -4,7 +4,7 @@ tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_concepts/
 ---
-# Understanding OntoWiki Installation Concepts
+## Understanding OntoWiki Installation Concepts
 
 ### Terminology
 ### Overview of Basic Concepts

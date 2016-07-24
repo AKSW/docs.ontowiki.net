@@ -4,7 +4,7 @@ tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Ontowiki-model/
 ---
-### addMultipleStatements($statements)
+## addMultipleStatements($statements)
 ```
 $subject = "http://localhost/subjectUri";
 $predicate = "http://localhost/predicateUri";

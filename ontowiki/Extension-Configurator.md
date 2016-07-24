@@ -4,8 +4,6 @@ tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Extension-Configurator/
 ---
-# Extension Configuration
-
 ## Activate, Deactivate and Configure Extensions
 In OntoWiki 0.9.6 we introduced a graphical backend to configure extensions. The site admin can enable and disable extensions, set configuration values and browse a central repository of additional extensions and install them into his OntoWiki instance.
 
@@ -21,51 +19,99 @@ you can changes values here. If you do so, a special file will be created in the
 
 If you click the "Explore Repo" tab, you will see a list of extensions present in our repository at http://extensions.ontowiki.net. Read more about [here](Extension-Repository).
 ![the configurator](https://github.com/AKSW/OntoWiki/wiki/images/exconf-explore.png)
+
 ## Extension Configuration Files doap.n3 Syntax
+
 ## Extensions (verify list)
+
 ### List of Extensions
+
 #### account
+
 #### application
+
 #### auth
+
 #### autologin
+
 #### bookmarklet
+
 #### ckan
+
 #### community
+
 #### cors
+
 #### csvimport
+
 #### cubeviz -> bezieht sich <Graph-Visualization> darauf?
+
 #### datagathering
+
 #### defaultmodel
+
 #### exconf
+
 #### fancystyle
+
 #### files
+
 #### filter
+
 #### googletracking
+
 #### hideproperties
+
 #### history
+
 #### imagelink
+
 #### imprint
+
 #### jsonrpc
+
 #### linkeddataserver
+
 #### listmodules
+
 #### literaltypes
+
 #### mailtolink
+
 #### manchester
+
 #### markdown
+
 #### modellist
-#### [navigation](Navigation-Extension)
+
+#### [navigation](http://docs.ontowiki.net/ontowiki_Navigation-Extension)
+
 #### page
-#### [pingback](SemanticPingback)
+
+#### [pingback](http://docs.ontowiki.net/ontowiki_SemanticPingback)
+
 #### queries
+
 #### resourcecreationuri
+
 #### resourcemodules
+
 #### savedqueries
+
 #### selectlanguage
+
 #### semanticsitemap
+
 #### sendmail
+
 #### sindice
+
 #### sortproperties
+
 #### source
+
 #### themes
+
 #### translations
+
 #### weblink

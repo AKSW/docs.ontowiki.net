@@ -4,8 +4,6 @@ tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_FAQ/
 ---
-# FAQ
-
 ## How can I change the start screen and get rid of the news feed?
 
 OntoWiki is organized in terms of controllers which provide actions.

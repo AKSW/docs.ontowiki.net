@@ -6,7 +6,7 @@ permalink: /ontowiki_Wrapper-Example/
 ---
 The Erfurt Data Wrapper extension type was introduced in order to allow for lightweight extension on the data level. In most cases a wrapper will hanlde a certain URI and return additional data for that URI if available. A good example for this is the Linked Data Wrapper, that retrieves LinkedData URIs. Nevertheless a wrapper could also do more sophisticated things like e.g. adding and removing statements internally. This tutorial will enable you as a extension devoloper to develop such data wrapper and test them within OntoWiki.
 
-# The Erfurt Wrapper Architecture
+## The Erfurt Wrapper Architecture
 
 There are two classes that are important for you as a developer:
 
@@ -37,7 +37,7 @@ The remaining three methods are best explained by going through the process of w
 
 The following sections will explain the three steps in more detail.
 
-## `isHandled($uri, $graphUri)`
+### `isHandled($uri, $graphUri)`
 
 This method will be called first by an application that uses wrapper. In most cases this will be called without user interaction and for a bunch of URIs. Therefore this method should answer the question as quick as possible.
 
@@ -88,7 +88,7 @@ public function isHandled($uri, $graphUri)
 }
 ```
 
-## `isAvailable($uri, $graphUri)`
+### `isAvailable($uri, $graphUri)`
 
 This method checks, whether there is data available for the URI. In many cases this will imply to do the request, that will contain the data. Therefore it is important, that your wrapper caches the data over multiple requests (see section about caching).
 
@@ -141,7 +141,7 @@ public function isAvailable($uri, $graphUri)
 }
 ```
 
-## `run($uri, $graphUri)`
+### `run($uri, $graphUri)`
 
 This method will do whatever the wrapper is intended to do. In most cases this will return an array containing statements that the application could add to the garph or statements that should be deleted. It is also possible that the wrapper itself does such operations. Therefore the result of this method is an array containing a list of status codes (defined in `Erfurt\_Wrapper`), a description, an optional array containing statements to be added, an optional array containing a pattern to match statements that should be deleted. If the wrapper adds/removes statements itself, the result may contain the number of statements added/removed.
 
@@ -157,7 +157,7 @@ array(
 );
 ```
 
-## Caching
+### Caching
 
 Every wrapper has its own caching object. To access it in your code use `$this->\_cache`
 
@@ -183,7 +183,7 @@ if ($result !== false) {
 
 Please have a look at the [Zend documentation](http://framework.zend.com/manual/en/zend.cache.html) for further informations regarding `Zend\_Cache`.
 
-## Make your wrapper configurable
+### Make your wrapper configurable
 
 You can access your private configuration (private section in the ini file) by doing the following:
 
@@ -193,7 +193,7 @@ $test = $this->_config->key->subkey;
 
 Please have a look at the [Zend documentation](http://framework.zend.com/manual/en/zend.config.html) for further informations regarding `Zend\_Config`.
 
-## Use PHP librariers inside your Wrapper
+### Use PHP librariers inside your Wrapper
 
 You can use custom PHP libraries in your code, by putting them into a subdirectory, e.g. `libraries`. You can access them in your code by doing the following:
 
@@ -207,9 +207,9 @@ if ($libObj->testLibMethod()) {
 }
 ```
 
-# Develop a Wrapper from the scratch
+## Develop a Wrapper from the scratch
 
-## Create the requires files and directories
+### Create the requires files and directories
 
 Let us assume your wrapper will be called `superwrapper`.
 
@@ -235,7 +235,7 @@ class SuperwrapperWrapper extends Erfurt_Wrapper
 }
 ```
 
-## Implement the requires methods
+### Implement the requires methods
 
 For example:
 
@@ -281,7 +281,7 @@ class SuperwrapperWrapper extends Erfurt_Wrapper
 }
 ```
 
-# Activate your Wrapper with OntoWiki
+## Activate your Wrapper with OntoWiki
 
 The extension is located in the
 
@@ -295,7 +295,7 @@ The last step to take is to add your wrapper in the config of the datagathering 
 
 Now we will explain how the extension is composed to handle your wrapper.
 
-## `DatagatheringPlugin`
+### `DatagatheringPlugin`
 
 The Datagathering plugin is a helper, that connects your wrapper to ontowiki, by listening to events fired by ontowiki. These events contain URIs and the plugin passes them to the wrapper and puts the result back in the event and sets it to the _handled_ state. It handles two events fired by OntoWiki.:
 
@@ -307,12 +307,12 @@ The Datagathering plugin is a helper, that connects your wrapper to ontowiki, by
 
 The first one is triggered, whenever a object property value (URI) is displayed. The second on is fired, when the properties view for a resource is going to be displayed.
 
-## `DatagatheringModule`
+### `DatagatheringModule`
 
 The Datagathering module displays a small inner window inside the properties main view. It contains all active wrapper and for each wrapper the URIs in context, which are handled by a wrapper. In order to test, whether there is data available for a certain URI you need to expand the list of URIs by clicking on the small arrow. The next step is to click on a URI (maybe displayed with a label for it).
 
 You then have to wait some time (depending on the wrapper). If you see the a green checkmark, then there is data available. Another click will the run the wrapper, which can mean whatever the wrapper does internally. In the most cases however, the wrapper will return a list of statements found and the component will add them to the graph.
 
-## `DatagatheringComponent`
+### `DatagatheringComponent`
 
 The Datagathering component does the heavy lifting. It adds two actions, a test and a import action. Both of them are called via an AJAX request. The import action takes all the statements returned by the wrapper and adds them to the graph.

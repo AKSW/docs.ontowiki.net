@@ -4,7 +4,7 @@ tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Handbooks/
 ---
-# Handbooks
+## Handbooks
 
 a list of rendered target handbooks for OntoWiki
 

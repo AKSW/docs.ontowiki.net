@@ -4,8 +4,6 @@ tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Extensions-Developer/
 ---
-# Extension Development
-
 This is a starting point for all developers who want to create their own OntoWiki extensions. This includes basic PHP and Zend Skills as well as configuration and setup information for a developers PHP engine.
 
 ## Tutorials for PHP Beginners
@@ -215,15 +213,15 @@ With data:
 
 ## Extension Repository
 
-We got a centralized Repository for extensions. Every OntoWiki can browse the available extensions and provides a install mechanism: in the [Extension-Configurator] or directly at http://your-ontowiki/exconf/explorerepo
+We got a centralized Repository for extensions. Every OntoWiki can browse the available extensions and provides a install mechanism: in the [Extension-Configurator](http://docs.ontowiki.net/ontowiki_Extensino-Configurator) or directly at http://your-ontowiki/exconf/explorerepo
 
 The Repository is quite unique. It is basically a SPARQL-endpoint, which contains a repo model which imports multiple extension-models. A extension model contains DOAP data. The client within the Extension Configurator queries this model for all doap:Projects (which are extensions in our case).
 
 This is what the list of available extenions looks like:
-![repoclient](https://github.com/AKSW/OntoWiki/wiki/images/exconf-explore.png)
+![repoclient]({{ "/images/exconf-explore.png" | prepend: site.baseurl }})
 
 You can register new extensions [here](http://extensions.ontowiki.net).
-![reposerver](https://github.com/AKSW/OntoWiki/wiki/images/reposerver.png)
+![reposerver]({{ "/images/reposerver.png" | prepend: site.baseurl }})
 
 Registering a new or updated extension with our repo is basically just a import of its DOAP description into the repo model.
 As the [short documentation](http://extensions.ontowiki.net/Help.html) says there are four steps to register a new extension, which we will explain a bit deeper here.
@@ -245,7 +243,7 @@ optional: if you already have a default.ini file you can convert it with the fil
 ### Publish that description document as Linked Data on the web
 If you use GitHub, and you use the URL of the DOAP file as the URI of your extension (use that URI within the DOAP file), you will get pseudo-linked-data for free. for example the URI of the "site" extensions is https://github.com/AKSW/site.ontowiki/raw/master/doap.n3#site (notice the "raw", which delivers the file and not a html view on it)
 
-#### Ping this registry to integrate your extension meta data here
+### Ping this registry to integrate your extension meta data here
 Either you enter this URI in the form on http://extensions.ontowiki.net and hit submit
 
 or (much more awesome) you "ping" the repository with a [semantic pingback](http://aksw.org/Projects/SemanticPingBack). The pingback should go to the pingback service at http://extensions.ontowiki.net/pingback/ping/ and should contain following data:

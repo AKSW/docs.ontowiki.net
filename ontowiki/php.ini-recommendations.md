@@ -1,10 +1,9 @@
 ---
-title: php
+title: Setting in php.ini
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_php/
 ---
-# Settings in php.ini
 
 You should set up your PHP environment with the following settings in php.ini:
 

@@ -12,6 +12,8 @@ Installing everything you need:
     cd /var/www/html
     sudo git clone https://github.com/AKSW/OntoWiki.git
 
+Install the newest stable Virtuoso-Opensource Version and use the guide from [here](http.//virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSUbuntuNotes) and look at **Building Virtuoso from Source**
+
 Setting up ODBC:
 
 You need to add things in 2 files: `odbc.ini` and `odbcinst.ini`.
@@ -47,7 +49,7 @@ if you have changed username/password you need to change them in this file. All 
     store.virtuoso.username = dba
     store.virtuoso.password = dba
 
-The last thing is to start virtuoso and restart apache
+The last thing is to start virtuoso and restart apache (the virtuoso service name is an example, most likely if you installed virtuoso through the guide on the virtuoso-opensource site you will start it manually in a terminal)
 
     sudo service virtuoso-opensource-6.1 start
     sudo service apache2 start/restart

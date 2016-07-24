@@ -6,7 +6,7 @@ permalink: /ontowiki_Tools/
 ---
 We made some developer tools like cwm and owcli that help you during work with semantic data.
 
-# Install & Config
+## Install & Config
 
 First, all statements and commands are tested on a Ubuntu, so please use the equivalent for your system.
 
@@ -40,7 +40,7 @@ The OntoWiki CommandLineInterface is featured on its own wiki page ...
 
 After installation, you should be able to use the "owcli" command over the console.
 
-# Use it, luke!
+## Use it, luke!
 
 Now you should be able to use the "cwm" and "owcli" in the console. \*Did you know other tools and scenarios for using it, please add it or write a comment!\*
 
@@ -76,7 +76,7 @@ make install
 
 Now go into your OntoWiki. Left you should see the new model \*FooBar\*. As you can see in the makefile, you need cwm and owcli. CWM transform a file into another, e.g. n3 to rdf. Over OWCLI you execute commands.
 
-# Known problems
+## Known problems
 
 - Dont use blank spaces or special characters as a folder name like ö, ä or ü in german. For example Python doesn't likes it.
 

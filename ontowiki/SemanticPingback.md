@@ -8,7 +8,7 @@ The Semantic Pingback mechanism is an extension of the well-known Pingback metho
 
 More Information on Semantic Pingback is available at [http://aksw.org/Projects/SemanticPingback](http://aksw.org/Projects/SemanticPingback)
 
-# OntoWiki Extension
+## OntoWiki Extension
 
 In order to enable Semantic Pingback for OntoWiki you need to make sure that
 

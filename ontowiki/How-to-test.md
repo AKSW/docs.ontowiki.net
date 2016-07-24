@@ -6,14 +6,14 @@ permalink: /ontowiki_How-to-test/
 ---
 
 
-# 1. Setup Environment
+## 1. Setup Environment
 
 Make sure that you have a runnable test environment. Please check [Setup an OntoWiki Test Environment](http://docs.ontowiki.net/ontowiki_PHPUnit/)!
 Furthermore you should test your new files, extension, correction with [PHP codesniffer](http://docs.ontowiki.net/ontowiki_PHPCodeSniffer/) prior to making a pull request etc.
 
 * [PHPUnit manual](http://www.phpunit.de/manual/current/en/)
 
-## 1.1. Optionals
+### 1.1. Optionals
 
 * OPTIONAL For code coverage support Xdebug needs to be installed
     * [Xdebug](http://xdebug.org/docs/install)
@@ -22,7 +22,7 @@ Furthermore you should test your new files, extension, correction with [PHP code
     * Download [Vagrant](http://downloads.vagrantup.com/) and install the package
     * Install vbguest plugin: `vagrant gem install vagrant-vbguest`
 
-## 1.2. General
+### 1.2. General
 
 1. Clone OntoWiki from Github: `git clone git@github.com:AKSW/OntoWiki.git`
 2. Run `make install`
@@ -88,7 +88,7 @@ The output should look something like this:
 
     OK (11 tests, 59 assertions)
 
-## 1.3. Vagrant
+### 1.3. Vagrant
 
 0. Make sure you have Vagrant installed (see prerequisites)
 1. Go to the root folder of your OntoWiki checkout
@@ -116,9 +116,9 @@ This is where the OntoWiki root folder is mounted to.
 
 6. Run `make test`
 
-# 2. Unit tests
+## 2. Unit tests
 
-## 2.1. Execute unit tests
+### 2.1. Execute unit tests
 
 1. Use make
     * `make test-unit`
@@ -135,7 +135,7 @@ This way you can also test individual test classes, e.g. by issuing
 
 Your code coverage report (if enabled) will be found in the `build/coverage` folder.
 
-## 2.2. Write unit tests for classes
+### 2.2. Write unit tests for classes
 
 Naming should be oriented on OntoWiki's class names. For example
 
@@ -147,22 +147,22 @@ results in
 
 * e.g. unit/OntoWiki/NavigationTest.php
 
-## 2.3. Folder structure
+### 2.3. Folder structure
 
-## 2.4. Extension test cases
+### 2.4. Extension test cases
 
 All extensions can be tested automatically when you execute `make test-extensions`.
 
-### 2.4.1. Bootstrap
+#### 2.4.1. Bootstrap
 
 Create a file named **TestHelper.php** in the **tests** folder of your extension. 
 
 ## 3. Integration Tests
 
-## 3.1. Run
+### 3.1. Run
 
-## 3.2. Write integration tests for classes
+### 3.2. Write integration tests for classes
 
 * e.g. 
 
-## 3.2. Write integration tests for controllers
+### 3.3. Write integration tests for controllers

@@ -8,11 +8,11 @@ In the branch named "QuickAdd" you can find a new component which visualizes a g
 
 \_Warning: This component is under heady development so functions, files or whatever can be changed from today to tomorrow.\_
 
-# Before we start
+## Before we start
 
 There must be an executable Ontowiki installation. If you havent it you can check [this](http://docs.ontowiki.net/ontowiki_Install-Ontowiki). The database backend is indifferent, MySQL or Virtuoso are usable. At this point the Ontowiki installation is accessible via [http://localhost/myow](http://localhost/myow) and the files are in \*/opt/lampp/htdocs/myow\*. If your paths differ please modify the posted ones.
 
-# Get the current development snapshot
+## Get the current development snapshot
 
 Check out the current snapshot over git. If you are new to Git please read [http:_git-scm.com/documentation_](the+git+documentation).
 
@@ -42,7 +42,7 @@ ls /opt/lampp/htdocs/myow/extensions/components/iowaviz
 
 If you see a list you have successfully get the snapshot. Next the parts of iowaViz will be described.
 
-# Parts of iowaViz
+## Parts of iowaViz
 
 The component is named iowaViz. They contains Javascript libraries, PHP classes and Ontowiki related stuff (Controller and Helper).
 
@@ -66,7 +66,7 @@ The PHP classes are
 
 In general you only need WeightedGraph class. It provides all related stuff for creating and maintain a graph structure. It allows you to import an Erfurt-SPARQL-Result into the WeightedGraph structure, implements Iterator interface so you can interate over it in a standardized way and additional it provides functions for weighted statements and publish them as drawable SVG elements.
 
-# To introduce iowaViz
+## To introduce iowaViz
 
 Its build on top of dracula. There are to Javascript files which are provides different functionality:
 
@@ -111,7 +111,7 @@ Creating an edge between two nodes. If the two nodes arent exists they will be c
 - lineWidth : A number for line width.
 - connectionTitle : Title of the connection.
 
-# How to set up your own visualization
+## How to set up your own visualization
 
 This section describes how to set up own implementations. The \*guiAction\* function in IowavizController.php is used as an example.
 

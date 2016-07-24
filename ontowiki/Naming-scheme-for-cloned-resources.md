@@ -6,11 +6,11 @@ permalink: /ontowiki_Naming-scheme-for-cloned-resources/
 ---
 This is a writeup of the information contained in [this user group discussion](https://groups.google.com/forum/?hl=no&fromgroups=#!topic/ontowiki-user/BCssISSQoNk). Please help extend it.
 
-# Configure extension resourcecreationuri
+## Configure extension resourcecreationuri
 
 The extension called resourcecreationuri is responsible for selecting the naming scheme of cloned resources. It uses the literal of one or more configured propertiers from the used class to create the name.
 
-## Tweaking the default setup 
+### Tweaking the default setup 
 
 The standard setup is to use a literal from the first type of the resource, and combine this with a literal from the resource itself. When trying to make a resource of type http://purl.org/NET/c4dm/event.owl#Event, OntoWiki will look in the namespace of your Knowledge Base for triples describing, and select a suitable literal thereof. Then OntoWiki will search the literals of the resource you are creating, and select one of them. These literals will be escaped, and combined to form a string such as "Event/The_Gathering", and this string will be appended to the base URI of your Knowledge Base. The new resource will thus be named "<name of knowledgebase>/Event/The_Gathering".
 

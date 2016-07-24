@@ -1,10 +1,9 @@
 ---
-title: userindex
+title: Userguide
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_userindex/
 ---
-# Users Guide
 
 ## Introduction
 This guide is intended to provide support for first time OntoWiki users.

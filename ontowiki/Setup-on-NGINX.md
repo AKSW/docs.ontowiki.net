@@ -4,7 +4,6 @@ tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Setup-on-NGINX/
 ---
-# Setup OntoWiki on a NGINX Server
 Sometimes you don't want to run a heavy web server like Apache but want to use a light program like nginx. Thins page will eventually give you a step by step guide to setup OntoWiki on nginx.
 
 ## Configuration File
@@ -65,6 +64,7 @@ You can also find this file in its [github:gist](https://gist.github.com/3739707
 OntoWiki will be available through your browser at `http://localhost:8080`.
 
 ## Trouble shooting
+
 ### File uploads exceeding "client_max_body_size"
 Nginx has a separate system for limiting interaction with the server. One of these, "client_max_body_size", limits the payload of a client request, thus limiting the allowed size of POST requests.  
 
