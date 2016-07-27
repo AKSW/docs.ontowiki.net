@@ -280,11 +280,6 @@ cachemanagement:
   url: "/docs.ontowiki.net/ontowiki_cachemanagement/"
   link: "<a href='/docs.ontowiki.net/ontowiki_cachemanagement/'>cachemanagement</a>"
 
-concepts:
-  title: "concepts"
-  url: "/docs.ontowiki.net/ontowiki_concepts/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_concepts/'>concepts</a>"
-
 Extensions-Developer:
   title: "Extensions-Developer"
   url: "/docs.ontowiki.net/ontowiki_Extensions-Developer/"
