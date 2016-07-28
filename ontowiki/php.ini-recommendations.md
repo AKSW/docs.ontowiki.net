@@ -3,6 +3,7 @@ title: Setting in php.ini
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_php/
+editme_path: ontowiki/php.ini-recommendations.md
 ---
 
 You should set up your PHP environment with the following settings in php.ini:

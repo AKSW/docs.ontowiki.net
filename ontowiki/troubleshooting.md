@@ -3,6 +3,7 @@ title: Troubleshooting
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_troubleshooting/
+editme_path: ontowiki/troubleshooting.md
 ---
 
 ## In case OntoWiki isn't loaded correctly after you followed this tutorial

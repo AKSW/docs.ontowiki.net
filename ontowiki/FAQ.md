@@ -3,6 +3,7 @@ title: FAQ
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_FAQ/
+editme_path: ontowiki/FAQ.md
 ---
 ## How can I change the start screen and get rid of the news feed?
 

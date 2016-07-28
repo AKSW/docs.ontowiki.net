@@ -3,6 +3,7 @@ title: Coding-Standards
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Coding-Standards/
+editme_path: ontowiki/Coding-Standards.md
 ---
 This document provides guidelines for code formatting and documentation to individuals and teams contributing to OntoWiki.
 

@@ -3,6 +3,7 @@ title: Graph-Visualization
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Graph-Visualization/
+editme_path: ontowiki/Graph-Visualization.md
 ---
 In the branch named "QuickAdd" you can find a new component which visualizes a graph based structure. It based on few libraries: Raphael, Graph Dracula, jQuery and jQuery SVG Plugin. In the course of this page the component and their parts will be described. Additional you get an overview how to wrote own stuff on top of that or extend the existing code. Enjoy!
 

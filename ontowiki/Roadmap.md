@@ -3,6 +3,7 @@ title: Roadmap
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Roadmap/
+editme_path: ontowiki/Roadmap.md
 ---
 **not up to date for better info regarding this ask [N.Arndt](http://aksw.org/NatanaelArndt) or [P.Frischmuth](http://aksw.org/PhilippFrischmuth)**
 

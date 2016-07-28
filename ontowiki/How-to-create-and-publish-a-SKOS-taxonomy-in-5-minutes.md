@@ -3,6 +3,7 @@ title: SKOS Taxonomy
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes/
+editme_path: ontowiki/How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes.md
 ---
 
 

@@ -3,6 +3,7 @@ title: Ubuntu-Quick-Install-Guide
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Ubuntu-Quick-Install-Guide/
+editme_path: ontowiki/Ubuntu-Quick-Install-Guide.md
 ---
 ## Ubuntu Quick Install Guide
 

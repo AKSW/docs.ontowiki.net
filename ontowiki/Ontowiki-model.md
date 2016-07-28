@@ -3,6 +3,7 @@ title: Ontowiki-model
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Ontowiki-model/
+editme_path: ontowiki/Ontowiki-model.md
 ---
 ## addMultipleStatements($statements)
 ```

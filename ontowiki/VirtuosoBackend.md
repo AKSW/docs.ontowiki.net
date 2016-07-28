@@ -3,6 +3,7 @@ title: VirtuosoBackend
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_VirtuosoBackend/
+editme_path: ontowiki/VirtuosoBackend.md
 ---
 This page explains the necessary steps to use OntoWiki with [OpenLink Virtuoso](http://virtuoso.openlinksw.com/wiki/main/Main/).
 Especially, it covers the following topics:

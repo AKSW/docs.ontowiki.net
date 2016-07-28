@@ -3,6 +3,7 @@ title: Getting-Started-Users
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Getting-Started-Users/
+editme_path: ontowiki/Getting-Started-Users.md
 ---
 This guide is intended to provide support for first time OntoWiki users.
 

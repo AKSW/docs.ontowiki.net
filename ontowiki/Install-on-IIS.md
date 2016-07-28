@@ -3,6 +3,7 @@ title: Install-on-IIS
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Install-on-IIS/
+editme_path: ontowiki/Install-on-IIS.md
 ---
 ## OntoWiki on Microsoft IIS 7
 

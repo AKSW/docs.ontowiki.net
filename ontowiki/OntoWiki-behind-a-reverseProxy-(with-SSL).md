@@ -3,6 +3,7 @@ title: OntoWiki-behind-a-reverseProxy-(with-SSL)
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_OntoWiki-behind-a-reverseProxy-(with-SSL)/
+editme_path: ontowiki/OntoWiki-behind-a-reverseProxy-(with-SSL).md
 ---
 ## Preface
 This page explains the necessary steps to use OntoWiki behind a reverseProxy (with ssl) - e.g. if OntoWiki is deployed as a docker-container

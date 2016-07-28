@@ -3,6 +3,7 @@ title: Handbooks
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Handbooks/
+editme_path: ontowiki/Handbooks.md
 ---
 ## Handbooks
 

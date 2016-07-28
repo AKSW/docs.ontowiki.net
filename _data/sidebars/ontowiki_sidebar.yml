@@ -45,10 +45,6 @@ entries:
           url: /ontowiki_Getting-Started-Users/
           output: web, pdf
 
-        - title: Basics for Users
-          url: /ontowiki_userindex/
-          output: web, pdf
-
         - title: Setup-on-NGINX
           url: /ontowiki_Setup-on-NGINX/
           output: web, pdf
@@ -265,3 +261,8 @@ entries:
         - title: Performance-Tuning
           url: /ontowiki_Performance-Tuning/
           output: web, pdf
+
+        - title: Editing Creating merging Documentation Pages
+          url: /ontowiki_Editing_Creating_Merging_Documentation_Pages/
+          output: web, pdf
+          

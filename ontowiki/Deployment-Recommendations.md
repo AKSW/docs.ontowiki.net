@@ -3,6 +3,7 @@ title: Deployment-Recommendations
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Deployment-Recommendations/
+editme_path: ontowiki/Deployment-Recommendations.md
 ---
 ## Operating System
 

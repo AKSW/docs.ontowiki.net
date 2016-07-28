@@ -3,6 +3,7 @@ title: Extension-Repository
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Extension-Repository/
+editme_path: ontowiki/Extension-Repository.md
 ---
 We got a centralized Repository for extensions. Every OntoWiki can browse the available extensions and provides a install mechanism: in the [Extension-Configurator] or directly at http://your-ontowiki/exconf/explorerepo
 

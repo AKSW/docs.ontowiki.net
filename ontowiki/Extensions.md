@@ -3,6 +3,7 @@ title: Extensions
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Extensions/
+editme_path: ontowiki/Extensions.md
 ---
 ## Available Extensions
 

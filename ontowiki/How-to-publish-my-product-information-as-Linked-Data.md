@@ -3,6 +3,7 @@ title: How-to-publish-my-product-information-as-Linked-Data
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_How-to-publish-my-product-information-as-Linked-Data/
+editme_path: ontowiki/How-to-publish-my-product-information-as-Linked-Data.md
 ---
 ## Good Relations Vocabulary
 The best way to publish your product information is to model it with the [Good Relations Vocabulary](http://www.heppnetz.de/projects/goodrelations/) which is a popular E-Commerce vocabulary that is respected by Google and Yahoo, among others. Enriching your product web pages with the resulting RDF-a data is an effective means of Semantic Search Engine Optimization.

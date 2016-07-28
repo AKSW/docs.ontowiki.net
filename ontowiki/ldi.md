@@ -3,6 +3,7 @@ title: Linked Data Infrastructure
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_ldi/
+editme_path: ontowiki/ldi.md
 ---
 ## How to publish my product information as Linked Data?
 

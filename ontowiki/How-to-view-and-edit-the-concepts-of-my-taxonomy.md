@@ -3,6 +3,7 @@ title: How-to-view-and-edit-the-concepts-of-my-taxonomy
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_How-to-view-and-edit-the-concepts-of-my-taxonomy/
+editme_path: ontowiki/How-to-view-and-edit-the-concepts-of-my-taxonomy.md
 ---
 For this tutorial we will edit the taxonomy created in [How to create and publish a SKOS Taxonomy in 5 minutes](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes).
 

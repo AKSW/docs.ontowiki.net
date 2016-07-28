@@ -3,6 +3,7 @@ title: How-to-test
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_How-to-test/
+editme_path: ontowiki/How-to-test.md
 ---
 
 

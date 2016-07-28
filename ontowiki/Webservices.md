@@ -3,6 +3,7 @@ title: Webservices
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Webservices/
+editme_path: ontowiki/Webservices.md
 ---
 If you will take a deeper view into the code please look at <tt>ONTOWIKI_DIR/application/controllers/ServiceController.php</tt>
 

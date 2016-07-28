@@ -3,6 +3,7 @@ title: Using-the-repository
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Using-the-repository/
+editme_path: ontowiki/Using-the-repository.md
 ---
 
 ## Branches

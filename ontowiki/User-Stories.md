@@ -3,6 +3,7 @@ title: User-Stories
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_User-Stories/
+editme_path: ontowiki/User-Stories.md
 ---
 OntoWiki 5 min to success user stories :-)
 

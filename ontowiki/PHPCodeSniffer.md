@@ -3,6 +3,7 @@ title: PHPCodeSniffer
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_PHPCodeSniffer/
+editme_path: ontowiki/PHPCodeSniffer.md
 ---
 This section describes the use of the PHPCodeSniffer to check if your coding style complies to the Ontowiki/Erfurt Coding standard.
 

@@ -3,6 +3,7 @@ title: Extensions-Developer
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Extensions-Developer/
+editme_path: ontowiki/Extensions-Developer.md
 ---
 This is a starting point for all developers who want to create their own OntoWiki extensions. This includes basic PHP and Zend Skills as well as configuration and setup information for a developers PHP engine.
 

@@ -3,6 +3,7 @@ title: Setup-on-NGINX
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Setup-on-NGINX/
+editme_path: ontowiki/Setup-on-NGINX.md
 ---
 Sometimes you don't want to run a heavy web server like Apache but want to use a light program like nginx. Thins page will eventually give you a step by step guide to setup OntoWiki on nginx.
 

@@ -3,6 +3,7 @@ title: Extension-Architecture
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Extension-Architecture/
+editme_path: ontowiki/Extension-Architecture.md
 ---
 ## Extension Architecture
 

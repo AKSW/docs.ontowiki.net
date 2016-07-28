@@ -3,6 +3,7 @@ title: Install-Ontowiki
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
 permalink: /ontowiki_Install-Ontowiki/
+editme_path: ontowiki/Install-Ontowiki.md
 ---
 
 ## <a name="Getting OntoWiki"></a> Getting OntoWiki 
