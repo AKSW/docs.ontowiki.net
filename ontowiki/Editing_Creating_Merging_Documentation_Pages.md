@@ -6,8 +6,7 @@ permalink: /ontowiki_Editing_Creating_Merging_Documentation_Pages/
 editme_path: ontowiki/Editing_Creating_Merging_Documentation_Pages.md
 ---
 
-As OntoWiki is an Open-Source Program and we gladly accept help in forms of pull requests, our Documentation does allow
-others to edit pages.
+As OntoWiki is an Open-Source Program and we gladly accept help in form of pull requests, our Documentation does allow others to edit pages.
 
 **You need an existing Github Account for this**
 
@@ -40,7 +39,9 @@ This header contains all necessary entries. Furthermore optional entries are:
 
 The rest of the file should be conform to the Markdown rules.
 
-After you finished writing your file, you will need to add the permalink as it's done for other files in the `_data/ontowiki_urls.yml` and the `_data/urls.yml`. files **spaces are important in yaml, use exactly the same amount of spaces as the other entries for this part use**
+After you finished writing your file, you will need to add the permalink as it's done for other files in the `_data/ontowiki_urls.yml` and the `_data/urls.yml` files. 
+
+**spaces are important in yaml, use exactly the same amount of spaces as the other entries for this part use**
 
 Afterwards you will add your file into the `_data/sidebars/ontowiki_sidebar.yml` were you think it belongs to (Install, Developer, etc.).
 
