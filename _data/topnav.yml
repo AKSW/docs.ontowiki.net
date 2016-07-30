@@ -3,5 +3,9 @@
 topnav:
 - title: Topnav
   items:
-    - title: News
-      url: /news/
+    - title: OntoWiki Github
+      url: https://www.github.com/AKSW/OntoWiki
+    - title: OntoWiki Documentation Github
+      url: https://www.github.com/AKSW/docs.ontowiki.net
+    - title: Feedback
+      url: https://groups.google.com/d/forum/ontowiki-user

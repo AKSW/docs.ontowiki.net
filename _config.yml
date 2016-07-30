@@ -28,9 +28,6 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_email: dummy@test.com
-# used as a contact email for the Feedback link in the top navigation bar
-
 #feedback_disable: true
 #feedback_text: "Need help?"
 #feedback_link: "http://helpy.io/"
