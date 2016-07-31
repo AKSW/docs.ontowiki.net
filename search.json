@@ -5,28 +5,19 @@ search: exclude
 ---
 
 [
+{% assign isFirst = true %}
 {% for page in site.pages %}
 {% unless page.search == "exclude" %}
+{% unless isFirst %},{% endunless %}
+{% assign isFirst = false %}
 {
 "title": "{{ page.title | escape }}",
 "tags": "{{ page.tags }}",
 "keywords": "{{page.keywords}}",
 "url": "{{ page.url | prepend: site.baseurl }}",
 "summary": "{{page.summary | strip }}"
-},
-{% endunless %}
-{% endfor %}
-
-{% for post in site.posts %}
-
-{
-"title": "{{ post.title | escape }}",
-"tags": "{{ post.tags }}",
-"keywords": "{{post.keywords}}",
-"url": "{{ post.url | prepend: site.baseurl }}",
-"summary": "{{post.summary | strip }}"
 }
-{% unless forloop.last %},{% endunless %}
+{% endunless %}
 {% endfor %}
 
 ]
