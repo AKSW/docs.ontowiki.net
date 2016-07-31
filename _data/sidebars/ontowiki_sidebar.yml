@@ -4,265 +4,262 @@ entries:
   product: OntoWiki
   version: 1.0
   folders:
-  - title: Almost Everything
+
+  - title: Installation
     output: web, pdf
     folderitems:
-
+  
     - title: Home
       url: /
       type: homepage
       output: web, pdf
+    
+    - title: Install-Ontowiki
+      url: /ontowiki_Install-Ontowiki/
+      output: web, pdf
 
-      subfolders:
-      - title: Installation
-        output: web, pdf
-        subfolderitems:
-        - title: Install-Ontowiki
-          url: /ontowiki_Install-Ontowiki/
-          output: web, pdf
+    - title: Installation-Guide-Mac-OSX
+      url: /ontowiki_Installation-Guide-Mac-OSX/
+      output: web, pdf
 
-        - title: Installation-Guide-Mac-OSX
-          url: /ontowiki_Installation-Guide-Mac-OSX/
-          output: web, pdf
+    - title: Install-on-IIS
+      url: /ontowiki_Install-on-IIS/
+      output: web, pdf
 
-        - title: Install-on-IIS
-          url: /ontowiki_Install-on-IIS/
-          output: web, pdf
+    - title: Ubuntu-Quick-Install-Guide
+      url: /ontowiki_Ubuntu-Quick-Install-Guide/
+      output: web, pdf
 
-        - title: Ubuntu-Quick-Install-Guide
-          url: /ontowiki_Ubuntu-Quick-Install-Guide/
-          output: web, pdf
+    - title: Deployment-Recommendations
+      url: /ontowiki_Deployment-Recommendations/
+      output: web, pdf
 
-        - title: Deployment-Recommendations
-          url: /ontowiki_Deployment-Recommendations/
-          output: web, pdf
+    - title: Custom-startup-script-for-Debian
+      url: /ontowiki_Custom-startup-script-for-Debian/
+      output: web, pdf
 
-        - title: Custom-startup-script-for-Debian
-          url: /ontowiki_Custom-startup-script-for-Debian/
-          output: web, pdf
+    - title: Getting-Started-Users
+      url: /ontowiki_Getting-Started-Users/
+      output: web, pdf
 
-        - title: Getting-Started-Users
-          url: /ontowiki_Getting-Started-Users/
-          output: web, pdf
+    - title: Setup-on-NGINX
+      url: /ontowiki_Setup-on-NGINX/
+      output: web, pdf
 
-        - title: Setup-on-NGINX
-          url: /ontowiki_Setup-on-NGINX/
-          output: web, pdf
+    - title: OntoWiki-behind-a-reverseProxy-(with-SSL)
+      url: /ontowiki_OntoWiki-behind-a-reverseProxy-(with-SSL)/
+      output: web, pdf
 
-        - title: OntoWiki-behind-a-reverseProxy-(with-SSL)
-          url: /ontowiki_OntoWiki-behind-a-reverseProxy-(with-SSL)/
-          output: web, pdf
+    - title: VirtuosoBackend
+      url: /ontowiki_VirtuosoBackend/
+      output: web, pdf
 
-        - title: VirtuosoBackend
-          url: /ontowiki_VirtuosoBackend/
-          output: web, pdf
+    - title: PHP.ini
+      url: /ontowiki_php/
+      output: web, pdf
 
-        - title: PHP.ini
-          url: /ontowiki_php/
-          output: web, pdf
+    - title: Tools
+      url: /ontowiki_Tools/
+      output: web, pdf
 
-        - title: Tools
-          url: /ontowiki_Tools/
-          output: web, pdf
+  - title: Developers
+    output: web, pdf
+    folderitems:
 
-      - title: Developers
-        output: web, pdf
-        subfolderitems:
+    - title: Coding-Standards
+      url: /ontowiki_Coding-Standards/
+      output: web, pdf
 
-        - title: Coding-Standards
-          url: /ontowiki_Coding-Standards/
-          output: web, pdf
+    - title: CSS-Development
+      url: /ontowiki_CSS-Development/
+      output: web, pdf
 
-        - title: CSS-Development
-          url: /ontowiki_CSS-Development/
-          output: web, pdf
+    - title: Events
+      url: /ontowiki_Events/
+      output: web, pdf
 
-        - title: Events
-          url: /ontowiki_Events/
-          output: web, pdf
+    - title: JavaScriptEvents
+      url: /ontowiki_JavaScriptEvents/
+      output: web, pdf
 
-        - title: JavaScriptEvents
-          url: /ontowiki_JavaScriptEvents/
-          output: web, pdf
+    - title: How-to-test
+      url: /ontowiki_How-to-test/
+      output: web, pdf
 
-        - title: How-to-test
-          url: /ontowiki_How-to-test/
-          output: web, pdf
+    - title: PHPCodeSniffer
+      url: /ontowiki_PHPCodeSniffer/
+      output: web, pdf
 
-        - title: PHPCodeSniffer
-          url: /ontowiki_PHPCodeSniffer/
-          output: web, pdf
+    - title: PHPUnit
+      url: /ontowiki_PHPUnit/
+      output: web, pdf
 
-        - title: PHPUnit
-          url: /ontowiki_PHPUnit/
-          output: web, pdf
+    - title: Using-the-repository
+      url: /ontowiki_Using-the-repository/
+      output: web, pdf
 
-        - title: Using-the-repository
-          url: /ontowiki_Using-the-repository/
-          output: web, pdf
+    - title: HTTP-Parameters
+      url: /ontowiki_HTTP-Parameters/
+      output: web, pdf
 
-        - title: HTTP-Parameters
-          url: /ontowiki_HTTP-Parameters/
-          output: web, pdf
+    - title: Classes
+      url: /ontowiki_Classes/
+      output: web, pdf
 
-        - title: Classes
-          url: /ontowiki_Classes/
-          output: web, pdf
+    - title: Ontowiki-model
+      url: /ontowiki_Ontowiki-model/
+      output: web, pdf
 
-        - title: Ontowiki-model
-          url: /ontowiki_Ontowiki-model/
-          output: web, pdf
+    - title: Ontowiki_Model_Resource
+      url: /ontowiki_Ontowiki_Model_Resource/
+      output: web, pdf
 
-        - title: Ontowiki_Model_Resource
-          url: /ontowiki_Ontowiki_Model_Resource/
-          output: web, pdf
+    - title: OntoWiki_Model_TitleHelper
+      url: /ontowiki_OntoWiki_Model_TitleHelper/
+      output: web, pdf
 
-        - title: OntoWiki_Model_TitleHelper
-          url: /ontowiki_OntoWiki_Model_TitleHelper/
-          output: web, pdf
+    - title: OntoWiki_Utils
+      url: /ontowiki_OntoWiki_Utils/
+      output: web, pdf
 
-        - title: OntoWiki_Utils
-          url: /ontowiki_OntoWiki_Utils/
-          output: web, pdf
+    - title: ServiceController
+      url: /ontowiki_ServiceController/
+      output: web, pdf
 
-        - title: ServiceController
-          url: /ontowiki_ServiceController/
-          output: web, pdf
+    - title: Instance-Lists
+      url: /ontowiki_Instance-Lists/
+      output: web, pdf
 
-        - title: Instance-Lists
-          url: /ontowiki_Instance-Lists/
-          output: web, pdf
-
-        - title: Naming-scheme-for-cloned-resources
-          url: /ontowiki_Naming-scheme-for-cloned-resources/
-          output: web, pdf
+    - title: Naming-scheme-for-cloned-resources
+      url: /ontowiki_Naming-scheme-for-cloned-resources/
+      output: web, pdf
 
 
-        - title: Webservices
-          url: /ontowiki_Webservices/
-          output: web, pdf
+    - title: Webservices
+      url: /ontowiki_Webservices/
+      output: web, pdf
 
-        - title: Wrapper-Example
-          url: /ontowiki_Wrapper-Example/
-          output: web, pdf
+    - title: Wrapper-Example
+      url: /ontowiki_Wrapper-Example/
+      output: web, pdf
 
-        - title: Worker:-Background-jobs-using-Gearman
-          url: /ontowiki_Worker:-Background-jobs-using-Gearman/
-          output: web, pdf
+    - title: Worker:-Background-jobs-using-Gearman
+      url: /ontowiki_Worker:-Background-jobs-using-Gearman/
+      output: web, pdf
 
-      - title: Extensions
-        output: web
-        subfolderitems:
+  - title: Extensions
+    output: web
+    folderitems:
 
-        - title: Extensions
-          url: /ontowiki_Extensions/
-          output: web, pdf
+    - title: Extensions
+      url: /ontowiki_Extensions/
+      output: web, pdf
 
-        - title: Extension-Architecture
-          url: /ontowiki_Extension-Architecture/
-          output: web, pdf
+    - title: Extension-Architecture
+      url: /ontowiki_Extension-Architecture/
+      output: web, pdf
 
-        - title: Extension-Configurator
-          url: /ontowiki_Extension-Configurator/
-          output: web, pdf
+    - title: Extension-Configurator
+      url: /ontowiki_Extension-Configurator/
+      output: web, pdf
 
-        - title: Extensions-Developer
-          url: /ontowiki_Extensions-Developer/
-          output: web, pdf
+    - title: Extensions-Developer
+      url: /ontowiki_Extensions-Developer/
+      output: web, pdf
 
-        - title: Extension-Repository
-          url: /ontowiki_Extension-Repository/
-          output: web, pdf
+    - title: Extension-Repository
+      url: /ontowiki_Extension-Repository/
+      output: web, pdf
 
-        - title: Navigation-Extension
-          url: /ontowiki_Navigation-Extension/
-          output: web, pdf
+    - title: Navigation-Extension
+      url: /ontowiki_Navigation-Extension/
+      output: web, pdf
 
-        - title: Page-extension
-          url: /ontowiki_Page-extension/
-          output: web, pdf
+    - title: Page-extension
+      url: /ontowiki_Page-extension/
+      output: web, pdf
 
-        - title: Resource-Creation-Extension
-          url: /ontowiki_Resource-Creation-Extension/
-          output: web, pdf
-          
-        - title: SemanticPingback
-          url: /ontowiki_SemanticPingback/
-          output: web, pdf
-
-      - title: User-Stories
-        output: web, pdf
-        subfolderitems:    
-
-        - title: User-Stories
-          url: /ontowiki_User-Stories/
-          output: web, pdf
-
-        - title: Publish Skos in 5 Minutes
-          url: /ontowiki_How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes/
-          output: web, pdf
-
-        - title: Publish Product Information as Linked Data
-          url: /ontowiki_How-to-publish-my-product-information-as-Linked-Data/
-          output: web, pdf
-
-        - title: View and edit the concepts of my taxonomy
-          url: /ontowiki_How-to-view-and-edit-the-concepts-of-my-taxonomy/
-          output: web, pdf    
-        
-        - title: Linked Data Infrastructure
-          url: /ontowiki_ldi/
-          output: web, pdf    
+    - title: Resource-Creation-Extension
+      url: /ontowiki_Resource-Creation-Extension/
+      output: web, pdf
       
-      - title: Security
-        output: web
-        subfolderitems:
+    - title: SemanticPingback
+      url: /ontowiki_SemanticPingback/
+      output: web, pdf
 
-        - title: SecurityIssues
-          url: /ontowiki_SecurityIssues/
-          output: web, pdf
+  - title: User-Stories
+    output: web, pdf
+    folderitems:    
 
-      - title: Troubleshooting
-        output: web
-        subfolderitems:
+    - title: User-Stories
+      url: /ontowiki_User-Stories/
+      output: web, pdf
 
-        - title: Troubleshooting
-          url: /ontowiki_troubleshooting/
-          output: web, pdf
+    - title: Publish Skos in 5 Minutes
+      url: /ontowiki_How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes/
+      output: web, pdf
 
-        - title: FAQ
-          url: /ontowiki_FAQ/
-          output: web, pdf
+    - title: Publish Product Information as Linked Data
+      url: /ontowiki_How-to-publish-my-product-information-as-Linked-Data/
+      output: web, pdf
 
-      - title: Miscellaneous
-        output: web
-        subfolderitems:
+    - title: View and edit the concepts of my taxonomy
+      url: /ontowiki_How-to-view-and-edit-the-concepts-of-my-taxonomy/
+      output: web, pdf    
+    
+    - title: Linked Data Infrastructure
+      url: /ontowiki_ldi/
+      output: web, pdf    
+  
+  - title: Security
+    output: web
+    folderitems:
 
-        - title: Backup-your-data
-          url: /ontowiki_Backup-your-data/
-          output: web, pdf
+    - title: SecurityIssues
+      url: /ontowiki_SecurityIssues/
+      output: web, pdf
 
-        - title: Browser-Compatibility
-          url: /ontowiki_Browser-Compatibility/
-          output: web, pdf
+  - title: Troubleshooting
+    output: web
+    folderitems:
 
-        - title: Graph-Visualization
-          url: /ontowiki_Graph-Visualization/
-          output: web, pdf
+    - title: Troubleshooting
+      url: /ontowiki_troubleshooting/
+      output: web, pdf
 
-        - title: Handbooks
-          url: /ontowiki_Handbooks/
-          output: web, pdf
+    - title: FAQ
+      url: /ontowiki_FAQ/
+      output: web, pdf
 
-        - title: Roadmap
-          url: /ontowiki_Roadmap/
-          output: web, pdf
+  - title: Miscellaneous
+    output: web
+    folderitems:
 
-        - title: Performance-Tuning
-          url: /ontowiki_Performance-Tuning/
-          output: web, pdf
+    - title: Backup-your-data
+      url: /ontowiki_Backup-your-data/
+      output: web, pdf
 
-        - title: Editing Creating Merging Documentation Pages
-          url: /ontowiki_Editing_Creating_Merging_Documentation_Pages/
-          output: web, pdf
-          
+    - title: Browser-Compatibility
+      url: /ontowiki_Browser-Compatibility/
+      output: web, pdf
+
+    - title: Graph-Visualization
+      url: /ontowiki_Graph-Visualization/
+      output: web, pdf
+
+    - title: Handbooks
+      url: /ontowiki_Handbooks/
+      output: web, pdf
+
+    - title: Roadmap
+      url: /ontowiki_Roadmap/
+      output: web, pdf
+
+    - title: Performance-Tuning
+      url: /ontowiki_Performance-Tuning/
+      output: web, pdf
+
+    - title: Editing Creating Merging Documentation Pages
+      url: /ontowiki_Editing_Creating_Merging_Documentation_Pages/
+      output: web, pdf
+      
