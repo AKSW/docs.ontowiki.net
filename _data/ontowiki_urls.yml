@@ -60,11 +60,6 @@ Extension-Architecture:
   url: "/docs.ontowiki.net/ontowiki_Extension-Architecture/"
   link: "<a href='/docs.ontowiki.net/ontowiki_Extension-Architecture/'>Extension-Architecture</a>"
 
-Extension-Configurator:
-  title: "Extension-Configurator"
-  url: "/docs.ontowiki.net/ontowiki_Extension-Configurator/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Extension-Configurator/'>Extension-Configurator</a>"
-
 Extension-Repository:
   title: "Extension-Repository"
   url: "/docs.ontowiki.net/ontowiki_Extension-Repository/"
@@ -239,11 +234,6 @@ Ubuntu-Quick-Install-Guide:
   title: "Ubuntu-Quick-Install-Guide"
   url: "/docs.ontowiki.net/ontowiki_Ubuntu-Quick-Install-Guide/"
   link: "<a href='/docs.ontowiki.net/ontowiki_Ubuntu-Quick-Install-Guide/'>Ubuntu-Quick-Install-Guide</a>"
-
-User-Stories:
-  title: "User-Stories"
-  url: "/docs.ontowiki.net/ontowiki_User-Stories/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_User-Stories/'>User-Stories</a>"
 
 Using-the-repository:
   title: "Using-the-repository"

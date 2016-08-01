@@ -36,7 +36,9 @@ In a real world case you would have deployed OntoWiki on a server reachable by s
 - Set the **Knowledge Base URI** to `http://www.products.com/`.
 
 Now you have several options:
+
 #### <a id="dialog"></a>Add classes and properties using dialogs
+
 - Select **Create Empty Knowledge Base** and click on **Create Knowledge Base**.
 - Go to **Navigation: Classes**->**Edit**->**Add resource here**.
 - Click on **Add Property** and choose **rdf:Type**. Type `skos:Concept` in the text box.
@@ -62,17 +64,14 @@ Go to the **Knowledge Bases** widget and select **products.com**. Under **Model 
 ![OntoWiki Screenshot with the Jewellery taxonomy resource list]({{ "/images/ontowiki-screenshot-taxonomy-jewellery-resource-list.png" | prepend: site.baseurl }})
 
 ## How to view and edit the concepts of my taxonomy?
-For this tutorial we will edit the taxonomy created in [How to create and publish a SKOS Taxonomy in 5 minutes](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes).
+For this tutorial we will edit the taxonomy created in [How to create and publish a SKOS Taxonomy in 5 minutes](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes).
 
 Log in and select the knowledge base you want to view and edit. Click on **Actions**->**View all Resources**.
-
-### Add Classes and Properties
-See [How to create and publish a SKOS Taxonomy in 5 minutes - Add classes and properties using dialogs](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes)
 
 ### Edit Properties
 ![Screenshot Edit Properties]({{ "/images/ontowiki-screenshot-edit-properties.png" | prepend: site.baseurl }})
 
-Click on **Actions**->**View all Resources** and select the resource you want to edit. Alternatively you can click on **Actions**->**Jump to Resource** and type the name of the resource in the text field (prefix not required, e.g. "Jewellery" would be sufficient in our [example taxonomy](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes##taxonomy)). Click on **Edit Properties** and edit the values. Click on **Save Changes**.
+Click on **Actions**->**View all Resources** and select the resource you want to edit. Alternatively you can click on **Actions**->**Jump to Resource** and type the name of the resource in the text field (prefix not required, e.g. "Jewellery" would be sufficient in our [example taxonomy](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes/#a-idtaxonomyathe-example-taxonomy)). Click on **Edit Properties** and edit the values. Click on **Save Changes**.
 
 ### Rename the URI of a Resource
 *There is no official rename functionality so this is just a workaround.*
@@ -83,7 +82,7 @@ Go to the **Source** tab. In the text box search for the line containing the nam
 ## How to use and consume other Linked Data resources?
 
 ### Import from a file
-See [How to create and publish a SKOS Taxonomy in 5 minutes - Upload a file](#upload-file)
+See [How to create and publish a SKOS Taxonomy in 5 minutes - Upload a file](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes/#a-idupload-fileaupload-a-file)
 
 ### Import from the Web
 ![Screenshot Import from the Web]({{ "/images/ontowiki-screenshot-import-from-the-web.png" | prepend: site.baseurl }})

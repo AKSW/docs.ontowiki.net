@@ -8,7 +8,7 @@ editme_path: ontowiki/Navigation-Extension.md
 The Navigation Extension is one of the OntoWiki core extensions which are included in a vanilla OntoWiki.
 
 ## Configuration
-You can configure the Navigation Extension through the [Extension Configurator](Extension Configurator) or by manually editing its DOAP-File.
+You can configure the Navigation Extension through the [Extension Configurator](http://docs.ontowiki.net/ontowiki_Extensions/#extension-api-and-development) or by manually editing its DOAP-File.
 
 _Note:_ currently this wiki page describes the configuration option using the INI-Syntax. This syntax is 1:1 mapped to the DOAP-Syntax so you might be ablte to figure out, how you have to write it in the DOAP-File.
 

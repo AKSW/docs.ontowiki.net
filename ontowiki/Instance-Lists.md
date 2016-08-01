@@ -62,7 +62,7 @@ if you want to use a custom template, you can pass a additional parameter to the
 - listName (the name of the list)
 - start (the offset)
 
-within that custom template you may want to iterate over the instanceInfo array and get the property values from instanceData. the display of a instance could be outsourced to a additional template. the default templates have this separation and are called [https:_github.com/AKSW/OntoWiki/blob/develop/application/views/templates/partials/list\_std\_main.phtml?r=Feature-ExtensionUnification_](list_std_main) and [https:github.com/AKSW/OntoWiki/blob/develop/application/views/templates/partials/list\_std\_element.phtml?r=Feature-ExtensionUnification](list_std_element). you can have a look there to get more insight.
+within that custom template you may want to iterate over the instanceInfo array and get the property values from instanceData. the display of a instance could be outsourced to a additional template. the default templates have this separation and are called [list_std_main](https:github.com/AKSW/OntoWiki/blob/develop/application/views/templates/partials/list\_std\_main.phtml?r=Feature-ExtensionUnification) and [list_std_element](https:github.com/AKSW/OntoWiki/blob/develop/application/views/templates/partials/list\_std\_element.phtml?r=Feature-ExtensionUnification). you can have a look there to get more insight.
 
 to add the default modules ("show properties" and "filter") you can add the list-context:
 
@@ -116,7 +116,7 @@ Before this reengineering, the query only was capable of selecting the instances
 | GET/POST | offset | positive int | set offset for paging |
 | GET/POST | init | \* | initializes a new list - if there are other config options passed these are applied on the new list. if this parameter is omitted, the passed options are applied to the existing list as additional filters etc. |
 
-the \*instancesconfig\* parameter is explained in in my thesis (Jonas Brekle: "Spezifikation und Implementierung einer SPARQL Query API für PHP sowie Integration in OntoWiki", 2010) and i will refer to an extract ( [http:_filebin.ca/ygocsp/doc.pdf_](here) **dead - needs new link**)
+the \*instancesconfig\* parameter is explained in in my thesis (Jonas Brekle: "Spezifikation und Implementierung einer SPARQL Query API für PHP sowie Integration in OntoWiki", 2010) and i will refer to an extract ( [here](http:filebin.ca/ygocsp/doc.pdf) **dead - needs new link**)
 
 The instancesconfig-Parameter contains a JSON-encoded datastructure, that can contain multiple commands, regarding filters and shown Properties.
 

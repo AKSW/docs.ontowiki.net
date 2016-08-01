@@ -34,7 +34,7 @@ The REST Server responds with one of the following HTTP responses:
 
 ## SPARQL Query (/sparql)
 
-OntoWiki's web service accepts SPARQL queries according to the [http:_www.w3.org/TR/rdf-sparql-protocol/_](SPARQL+protocol). The service is reachable under the URI <tt>&lt;ontowiki-uri&gt;/sparql</tt>.
+OntoWiki's web service accepts SPARQL queries according to the [SPARQL+protocol](http:_www.w3.org/TR/rdf-sparql-protocol/). The service is reachable under the URI <tt>&lt;ontowiki-uri&gt;/sparql</tt>.
 
 ### Usage
 
@@ -101,7 +101,7 @@ Thats all. In the success function you can put all your stuff which shall be exe
 
 ## Model Update (/model/update)
 
-OntoWiki supports updating models via its web service. As of version 0.9 we support a [http:_n2.talis.com/wiki/RDF\_JSON\_Specification_](JSON+format) but more formats are planned. To update a model, three parameters must be supplied:
+OntoWiki supports updating models via its web service. As of version 0.9 we support a [JSON+format](http:_n2.talis.com/wiki/RDF\_JSON\_Specification) but more formats are planned. To update a model, three parameters must be supplied:
 
 - named-graph-uri -- the graph URI to be updated
 - original-graph -- the old model as it was before the update process 
@@ -109,11 +109,11 @@ OntoWiki supports updating models via its web service. As of version 0.9 we supp
 
 ## SPARQL 1.1 Update (/update)
 
-In addition to Model Update, OntoWiki supports a subset of SPARQL 1.1 Update ( [http:_www.w3.org/TR/2010/WD-sparql11-update-20100126/#t411_](INSERT+DATA) and [http:www.w3.org/TR/2010/WD-sparql11-update-20100126/#t412](DELETE+DATA) syntax) via <tt>&lt;ontowiki-uri&gt;/update</tt>.
+In addition to Model Update, OntoWiki supports a subset of SPARQL 1.1 Update ( [INSERT+DATA](http:_www.w3.org/TR/2010/WD-sparql11-update-20100126/#t411) and [DELETE+DATA](http:www.w3.org/TR/2010/WD-sparql11-update-20100126/#t412) syntax) via <tt>&lt;ontowiki-uri&gt;/update</tt>.
 
 ## Cross-Origin Resource Sharing (CORS)
 
-OntoWiki is able to share your resource across domains with [http:_enable-cors.org/_](CORS). You just need to enable the [http:code.google.com/p/ontowiki/source/browse/extensions/plugins/cors/](cors+plugin) and OntoWiki sends a
+OntoWiki is able to share your resource across domains with [CORS](http:_enable-cors.org/). You just need to enable the [cors+plugin](http:code.google.com/p/ontowiki/source/browse/extensions/plugins/cors/) and OntoWiki sends a
 
 ```
 Access-Control-Allow-Origin: "*"

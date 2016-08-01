@@ -31,4 +31,4 @@ On linux you can simply use this shell command with your URL: `wget -q -O - --he
 
 If you want to try it with FOAF+SSL look there: http://www.assembla.com/wiki/show/foaf/HOWTO_Use_FOAF_SSL_from_a_command_line
 
-Another option is to use the public Linked Data validator service [[http://validator.linkeddata.org Vapour]]
+Another option is to use the public Linked Data validator service [Vapour](http://validator.linkeddata.org)

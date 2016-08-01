@@ -15,7 +15,7 @@ There must be an executable Ontowiki installation. If you havent it you can chec
 
 ## Get the current development snapshot
 
-Check out the current snapshot over git. If you are new to Git please read [http:_git-scm.com/documentation_](the+git+documentation).
+Check out the current snapshot over git. If you are new to Git please read [the+git+documentation](https://git-scm.com/documentation).
 
 ```
 cd /opt/lampp/htdocs/myow

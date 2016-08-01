@@ -13,8 +13,6 @@ editme_path: ontowiki/Install-Ontowiki.md
 * The smoothest way is to use the debian package.
 * The latest development version can be installed only from the repository.
 
-You will also find further details at: [[Carrying out the Installation]].
-
 ### via archive
 if you want the latest official and most stable release of OntoWiki
 
@@ -42,7 +40,7 @@ If you are a advanced user of OntoWiki and/or need the latest (sometimes unstabl
 ## <a name="Requirements"></a> Requirements
 In order to install OntoWiki you need:
 * PHP 5.4 or higher
-  * See our page for [[recommended PHP settings|php.ini-recommendations]] .
+  * See our page for [recommended PHP settings](http://docs.ontowiki.net/ontowiki_php) .
 * [mod_rewrite](http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html) allowed in target directory (`AllowOverride FileInfo Limit Options`, optional, used for nice URIs and LinkedData features)
   * `a2enmod rewrite`
 * [.htaccess](http://httpd.apache.org/docs/2.2/configuring.html#htaccess) allowed in target directory
@@ -83,7 +81,7 @@ This is the basic procedure. For details see below.
 For some OS, e.g. Windows, binaries exist, but might be a bit dated. If you have to compile it, it is recommended to give a `<prefix>`, which will be the path where Virtuoso will be installed. 
 
 **Debian/Ubuntu** recommendation: 
- - For a standard install, a prefix of '/usr/local' will do just fine. This installs Virtuoso in the standard program path, and reduces confusion as to which binary to run. Also, the stock Debian or Ubuntu startup scripts can be used with [[minor modifications|Custom-startup-script-for-Debian]].
+ - For a standard install, a prefix of '/usr/local' will do just fine. This installs Virtuoso in the standard program path, and reduces confusion as to which binary to run. Also, the stock Debian or Ubuntu startup scripts can be used with [minor modifications](http://docs.ontowiki.net/ontowiki_Custom-startup-script-for-Debian).
  - For a development environment it might be better to set things up with a named prefix folder in the '/opt' tree, i.e. `./configure --prefix=/opt/virtuoso`. This provides great flexibility for a development environment. To name but a few benefits:
   - You may uninstall the compiled software by simply removing the whole directory
   - You may test and use two different versions of Virtuoso at the same time and try out new features
@@ -241,7 +239,7 @@ to
     DBBASE=/var/lib/virtuoso/ontowiki
 while virtuoso is not running.
 
-Also, make sure your Virtuoso is at least [[version 6.1.4|Deployment-Recommendations]].
+Also, make sure your Virtuoso is at least [version 6.1.4](http://docs.ontowiki.net/ontowiki_Deployment-Recommendations). **Virtuoso 7 is recommended**
 
 **IMPORTANT HINT:** Make sure that you activated **display_errors** (=On) in your php.ini. Please have a look into phpinfo and check whats the values of display_errors. If its off, go to /etc/php5/apache2filter/php.ini respectively /etc/php5/apache2/php.ini and set the value on your own. Otherwise you will not see the error above!
 
