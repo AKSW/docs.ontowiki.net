@@ -2,7 +2,7 @@
 title: Naming-scheme-for-cloned-resources
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Naming-scheme-for-cloned-resources/
+permalink: /Naming-scheme-for-cloned-resources.html
 editme_path: ontowiki/Naming-scheme-for-cloned-resource.md
 ---
 This is a writeup of the information contained in [this user group discussion](https://groups.google.com/forum/?hl=no&fromgroups=#!topic/ontowiki-user/BCssISSQoNk). Please help extend it.

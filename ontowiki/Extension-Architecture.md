@@ -2,7 +2,7 @@
 title: Extension-Architecture
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Extension-Architecture/
+permalink: /Extension-Architecture.html
 editme_path: ontowiki/Extension-Architecture.md
 ---
 ## Extension Architecture

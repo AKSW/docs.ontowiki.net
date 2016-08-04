@@ -2,7 +2,7 @@
 title: OntoWiki_Utils
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_OntoWiki_Utils/
+permalink: /OntoWiki_Utils.html
 editme_path: ontowiki/OntoWiki_Utils.md
 ---
 This class provides a couple of utilities for different use cases.

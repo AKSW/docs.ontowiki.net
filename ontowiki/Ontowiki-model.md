@@ -2,7 +2,7 @@
 title: Ontowiki-model
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Ontowiki-model/
+permalink: /Ontowiki-model.html
 editme_path: ontowiki/Ontowiki-model.md
 ---
 ## addMultipleStatements($statements)

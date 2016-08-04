@@ -2,7 +2,7 @@
 title: PHPUnit
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_PHPUnit/
+permalink: /PHPUnit.html
 editme_path: ontowiki/PHPUnit.md
 ---
 OntoWiki using PHPUnit.

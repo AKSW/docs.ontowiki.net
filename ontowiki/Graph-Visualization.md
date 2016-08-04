@@ -2,7 +2,7 @@
 title: Graph-Visualization
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Graph-Visualization/
+permalink: /Graph-Visualization.html
 editme_path: ontowiki/Graph-Visualization.md
 ---
 In the branch named "QuickAdd" you can find a new component which visualizes a graph based structure. It based on few libraries: Raphael, Graph Dracula, jQuery and jQuery SVG Plugin. In the course of this page the component and their parts will be described. Additional you get an overview how to wrote own stuff on top of that or extend the existing code. Enjoy!
@@ -11,7 +11,7 @@ In the branch named "QuickAdd" you can find a new component which visualizes a g
 
 ## Before we start
 
-There must be an executable Ontowiki installation. If you havent it you can check [this](http://docs.ontowiki.net/ontowiki_Install-Ontowiki). The database backend is indifferent, MySQL or Virtuoso are usable. At this point the Ontowiki installation is accessible via [http://localhost/myow](http://localhost/myow) and the files are in \*/opt/lampp/htdocs/myow\*. If your paths differ please modify the posted ones.
+There must be an executable Ontowiki installation. If you havent it you can check [this]({{ "Install-Ontowiki.html" | prepend:site.baseurl }}). The database backend is indifferent, MySQL or Virtuoso are usable. At this point the Ontowiki installation is accessible via [http://localhost/myow](http://localhost/myow) and the files are in \*/opt/lampp/htdocs/myow\*. If your paths differ please modify the posted ones.
 
 ## Get the current development snapshot
 

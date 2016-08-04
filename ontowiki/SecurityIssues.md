@@ -2,7 +2,7 @@
 title: SecurityIssues
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_SecurityIssues/
+permalink: /SecurityIssues.html
 editme_path: ontowiki/SecurityIssues.md
 ---
 OntoWiki is not tested for security yet...

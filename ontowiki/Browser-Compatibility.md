@@ -2,7 +2,7 @@
 title: Browser-Compatibility
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Browser-Compatibility/
+permalink: /Browser-Compatibility.html
 editme_path: ontowiki/Browser-Compatibility.md
 ---
 This document describes our browser policy.

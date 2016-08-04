@@ -2,7 +2,7 @@
 title: HTTP-Parameters
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_HTTP-Parameters/
+permalink: /HTTP-Parameters.html
 editme_path: ontowiki/HTTP-Parameters.md
 ---
 There are some HTTP parameters that are reserved by the base OntoWiki system. Hence these parameters should not be used for new functionality. The following table contains a enumeration of these parameters together with a short description.

@@ -2,7 +2,7 @@
 title: Worker:-Background-jobs-using-Gearman
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Worker:-Background-jobs-using-Gearman/
+permalink: /Worker:-Background-jobs-using-Gearman.html
 editme_path: ontowiki/Worker:-Background-jobs-using-Gearman.md
 ---
 The embedded Erfurt library contains a background worker implementation using Gearman. This means: OntoWiki and its extensions can handle expensive tasks in the background by calling a job for execution which were registered on the server beforehand.

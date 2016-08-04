@@ -2,7 +2,7 @@
 title: Troubleshooting
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_troubleshooting/
+permalink: /troubleshooting.html
 editme_path: ontowiki/troubleshooting.md
 ---
 

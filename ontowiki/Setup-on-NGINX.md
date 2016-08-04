@@ -2,7 +2,7 @@
 title: Setup-on-NGINX
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Setup-on-NGINX/
+permalink: /Setup-on-NGINX.html
 editme_path: ontowiki/Setup-on-NGINX.md
 ---
 Sometimes you don't want to run a heavy web server like Apache but want to use a light program like nginx. Thins page will eventually give you a step by step guide to setup OntoWiki on nginx.
@@ -95,10 +95,10 @@ To get rid of strict warnings, set the default timezone for your server, e.g.
   * `date.timezone=Europe/Berlin`
 
 ### Backend
-Virtuoso Opensource Version 6.1.4 or higher, more details for installation [here](http://docs.ontowiki.net/ontowiki_VirtuosoBackend/). MySQL backend is also posible but slower.
+Virtuoso Opensource Version 6.1.4 or higher, more details for installation [here]({{ "VirtuosoBackend.html" | prepend:site.baseurl }}). MySQL backend is also posible but slower.
 
 ### Browser
-Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [here](http://docs.ontowiki.net/ontowiki_Browser-Compatibility/)
+Current Google Chrome, Safari and Firefox Browser tested, current MSIE not always tested but should work. Older browser are not fully compatible. More details [here]({{ "Browser-Compatibility.html" | prepend:site.baseurl }})
 
 ### OntoWiki Version
 We recommend the installation of a current snapshot release or directly from the repository.

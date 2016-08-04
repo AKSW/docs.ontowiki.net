@@ -2,7 +2,7 @@
 title: Performance-Tuning
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Performance-Tuning/
+permalink: /Performance-Tuning.html
 editme_path: ontowiki/Performance-Tuning.md
 ---
 There is a host of settings that can be used for the purpose of tuning the performance of a Virtuoso database server and OntoWiki in general. Below is a short discussion of some of them.

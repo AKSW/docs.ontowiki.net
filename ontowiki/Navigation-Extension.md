@@ -2,13 +2,13 @@
 title: Navigation-Extension
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Navigation-Extension/
+permalink: /Navigation-Extension.html
 editme_path: ontowiki/Navigation-Extension.md
 ---
 The Navigation Extension is one of the OntoWiki core extensions which are included in a vanilla OntoWiki.
 
 ## Configuration
-You can configure the Navigation Extension through the [Extension Configurator](http://docs.ontowiki.net/ontowiki_Extensions/#extension-api-and-development) or by manually editing its DOAP-File.
+You can configure the Navigation Extension through the [Extension Configurator]({{ "Extensions.html#extension-api-and-development" | prepend:site.baseurl }}) or by manually editing its DOAP-File.
 
 _Note:_ currently this wiki page describes the configuration option using the INI-Syntax. This syntax is 1:1 mapped to the DOAP-Syntax so you might be ablte to figure out, how you have to write it in the DOAP-File.
 
@@ -158,6 +158,6 @@ from this element and is restricted to this.
 
 **List-Config** If set list will be generated using this JSON instanceConfig
 _Note:_ All `"` must be replaced by `|`
-_More info_ about [instance config](http://docs.ontowiki.net/ontowiki_Instance-Lists/).
+_More info_ about [instance config]({{ "Instance-Lists.html" | prepend:site.baseurl }}).
 
     config.<id>.list.config = "{|filter|:[{|rdfsclass|:|%resource%|,|mode|:|rdfsclass|}]}"

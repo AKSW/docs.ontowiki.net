@@ -2,7 +2,7 @@
 title: Wrapper-Example
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Wrapper-Example/
+permalink: /Wrapper-Example.html
 editme_path: ontowiki/Wrapper-Example.md
 ---
 The Erfurt Data Wrapper extension type was introduced in order to allow for lightweight extension on the data level. In most cases a wrapper will hanlde a certain URI and return additional data for that URI if available. A good example for this is the Linked Data Wrapper, that retrieves LinkedData URIs. Nevertheless a wrapper could also do more sophisticated things like e.g. adding and removing statements internally. This tutorial will enable you as a extension devoloper to develop such data wrapper and test them within OntoWiki.
@@ -146,7 +146,7 @@ public function isAvailable($uri, $graphUri)
 
 This method will do whatever the wrapper is intended to do. In most cases this will return an array containing statements that the application could add to the garph or statements that should be deleted. It is also possible that the wrapper itself does such operations. Therefore the result of this method is an array containing a list of status codes (defined in `Erfurt\_Wrapper`), a description, an optional array containing statements to be added, an optional array containing a pattern to match statements that should be deleted. If the wrapper adds/removes statements itself, the result may contain the number of statements added/removed.
 
-Please have a look at [http://docs.ontowiki.net/api/erfurt/wrapper/Erfurt\_Wrapper.html](http://docs.ontowiki.net/api/erfurt/wrapper/Erfurt_Wrapper.html) for more detailed informations about the status codes.
+Please have a look at [http://docs.ontowiki.net/api/erfurt/wrapper/Erfurt\_Wrapper.html]({{ "api/Erfurt/Erfurt_Wrapper.html" | prepend:site.baseurl }}) **doesn't exist** for more detailed informations about the status codes.
 
 A result could for example look like this:
 

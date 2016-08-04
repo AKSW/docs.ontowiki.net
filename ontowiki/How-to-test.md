@@ -2,15 +2,15 @@
 title: How-to-test
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_How-to-test/
+permalink: /How-to-test.html
 editme_path: ontowiki/How-to-test.md
 ---
 
 
 ## 1. Setup Environment
 
-Make sure that you have a runnable test environment. Please check [Setup an OntoWiki Test Environment](http://docs.ontowiki.net/ontowiki_PHPUnit/)!
-Furthermore you should test your new files, extension, correction with [PHP codesniffer](http://docs.ontowiki.net/ontowiki_PHPCodeSniffer/) prior to making a pull request etc.
+Make sure that you have a runnable test environment. Please check [Setup an OntoWiki Test Environment]({{ "PHPUnit.html" | prepend:site.baseurl }})!
+Furthermore you should test your new files, extension, correction with [PHP codesniffer]({{ "PHPCodeSniffer.html" | prepend:site.baseurl }}) prior to making a pull request etc.
 
 * [PHPUnit manual](http://www.phpunit.de/manual/current/en/)
 

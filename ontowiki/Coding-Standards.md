@@ -2,14 +2,14 @@
 title: Coding-Standards
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Coding-Standards/
+permalink: /Coding-Standards.html
 editme_path: ontowiki/Coding-Standards.md
 ---
 This document provides guidelines for code formatting and documentation to individuals and teams contributing to OntoWiki.
 
 This page makes heavy use of the [Zend+Framework+coding+standards](http://framework.zend.com/manual/en/coding-standard.html).
 
-The coding standards are checked by the PHP CodeSniffer if you run `make codesniffer` from your OntoWiki root. The currently minimal required version of PHP CodeSniffer is specified in the composer.json/composer.lock . -- [PHP+CodeSniffer+Guide](http://docs.ontowiki.net/ontowiki_PHPCodeSniffer)
+The coding standards are checked by the PHP CodeSniffer if you run `make codesniffer` from your OntoWiki root. The currently minimal required version of PHP CodeSniffer is specified in the composer.json/composer.lock . -- [PHP+CodeSniffer+Guide]({{ "PHPCodeSniffer.html" | prepend:site.baseurl }})
 
 ## Goals
 
@@ -99,15 +99,15 @@ For example, EMBED\_SUPPRESS\_EMBED\_EXCEPTION is permitted but EMBED\_SUPPRESSE
 
 #### Components
 
-Components provide a controller that is named like the component (first letter uppercase) immediately followed by the word "Controller". For more information on developing components, see the [Extensions](http://docs.ontowiki.net/ontowiki_Extensions).
+Components provide a controller that is named like the component (first letter uppercase) immediately followed by the word "Controller". For more information on developing components, see the [Extensions]({{ "Extensions.html" | prepend:site.baseurl }}).
 
 #### Modules
 
-Modules provide a class that is named like the module with the first letter in upper case immediately followed by the word "Module". For more information on developing components, see the [Extensions](http://docs.ontowiki.net/ontowiki_Extensions).
+Modules provide a class that is named like the module with the first letter in upper case immediately followed by the word "Module". For more information on developing components, see the [Extensions]({{ "Extensions.html" | prepend:site.baseurl }}).
 
 #### Plug-ins
 
-A plug-in class is called like the plug-in (again the first letter must be upper case) immediately followed by the word "Plugin". For more information on developing components, see the [Extensions](http://docs.ontowiki.net/ontowiki_Extensions).
+A plug-in class is called like the plug-in (again the first letter must be upper case) immediately followed by the word "Plugin". For more information on developing components, see the [Extensions]({{ "Extensions.html" | prepend:site.baseurl }}).
 
 ## Coding Style
 

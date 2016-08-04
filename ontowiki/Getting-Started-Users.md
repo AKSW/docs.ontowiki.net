@@ -2,12 +2,12 @@
 title: Getting-Started-Users
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Getting-Started-Users/
+permalink: /Getting-Started-Users.html
 editme_path: ontowiki/Getting-Started-Users.md
 ---
 This guide is intended to provide support for first time OntoWiki users.
 
-It assumes that you have a [working installation](http://docs.ontowiki.net/ontowiki_Install-Ontowiki/).
+It assumes that you have a [working installation]({{ "Install-Ontowiki.html" | prepend:site.baseurl }}).
 
 For a longer and more visual introduction, [watch our webinar](http://www.youtube.com/watch?v=vP1UDKeZsQk).
 

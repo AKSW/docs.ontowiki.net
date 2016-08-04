@@ -2,7 +2,7 @@
 title: Deployment-Recommendations
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Deployment-Recommendations/
+permalink: /Deployment-Recommendations.html
 editme_path: ontowiki/Deployment-Recommendations.md
 ---
 ## Operating System
@@ -11,20 +11,20 @@ Ubuntu and Debian (latest release), any other Linux distributions should be fine
 
 ## Webserver
 
-Most developers are using Apache but there is also a [Setup-on-NGINX](http://docs.ontowiki.net/ontowiki_Setup-on-NGINX/). lighttpd should be possible too, but uses a different rewrite rule language and we don't have ported ours yet.
+Most developers are using Apache but there is also a [Setup-on-NGINX]({{ "Setup-on-NGINX.html" | prepend:site.baseurl }}). lighttpd should be possible too, but uses a different rewrite rule language and we don't have ported ours yet.
 
 ## PHP
 
-5.2 or higher, more details for PHP configuration [php.ini-recommendations](http://docs.ontowiki.net/ontowiki_php/)
+5.2 or higher, more details for PHP configuration [php.ini-recommendations]({{ "php.html" | prepend:site.baseurl }})
 
 ## Backend
 
-- Virtuoso Opensource Version 6.1.4 or higher, more details for installation [VirtuosoBackend](http://docs.ontowiki.net/ontowiki_VirtuosoBackend/)
+- Virtuoso Opensource Version 6.1.4 or higher, more details for installation [VirtuosoBackend]({{ "VirtuosoBackend.html" | prepend:site.baseurl }})
 - A MySQL backend is also available but slower and it should be seen as experimental
 
 ## Browser
 
-Current Google Chrome, Safari and Firefox Browsers are tested. Current MS-IE are not always tested but should work. Older browser are not fully compatible. More details [Browser-Compatibility](http://docs.ontowiki.net/ontowiki_Browser-Compatibility/)
+Current Google Chrome, Safari and Firefox Browsers are tested. Current MS-IE are not always tested but should work. Older browser are not fully compatible. More details [Browser-Compatibility]({{ "Browser-Compatibility.html" | prepend:site.baseurl }})
 
 ## OntoWiki Version
 

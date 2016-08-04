@@ -1,296 +1,300 @@
 
+homepage:
+  title: "Home"
+  url: "/docs.ontowiki.net"
+  link: "<a href='/docs.ontowiki.net'>Home</a>"
 
 Backup-your-data:
   title: "Backup-your-data"
-  url: "/docs.ontowiki.net/ontowiki_Backup-your-data/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Backup-your-data/'>Backup-your-data</a>"
+  url: "/docs.ontowiki.net/Backup-your-data.html"
+  link: "<a href='/docs.ontowiki.net/Backup-your-data.html'>Backup-your-data</a>"
 
 Browser-Compatibility:
   title: "Browser-Compatibility"
-  url: "/docs.ontowiki.net/ontowiki_Browser-Compatibility/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Browser-Compatibility/'>Browser-Compatibility</a>"
+  url: "/docs.ontowiki.net/Browser-Compatibility.html"
+  link: "<a href='/docs.ontowiki.net/Browser-Compatibility.html'>Browser-Compatibility</a>"
 
 CSS-Development:
   title: "CSS-Development"
-  url: "/docs.ontowiki.net/ontowiki_CSS-Development/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_CSS-Development/'>CSS-Development</a>"
+  url: "/docs.ontowiki.net/CSS-Development.html"
+  link: "<a href='/docs.ontowiki.net/CSS-Development.html'>CSS-Development</a>"
 
 Classes:
   title: "Classes"
-  url: "/docs.ontowiki.net/ontowiki_Classes/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Classes/'>Classes</a>"
+  url: "/docs.ontowiki.net/Classes.html"
+  link: "<a href='/docs.ontowiki.net/Classes.html'>Classes</a>"
 
 Coding-Standards:
   title: "Coding-Standards"
-  url: "/docs.ontowiki.net/ontowiki_Coding-Standards/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Coding-Standards/'>Coding-Standards</a>"
+  url: "/docs.ontowiki.net/Coding-Standards.html"
+  link: "<a href='/docs.ontowiki.net/Coding-Standards.html'>Coding-Standards</a>"
 
 Controllers:
   title: "Controllers"
-  url: "/docs.ontowiki.net/ontowiki_Controllers/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Controllers/'>Controllers</a>"
+  url: "/docs.ontowiki.net/Controllers.html"
+  link: "<a href='/docs.ontowiki.net/Controllers.html'>Controllers</a>"
 
 Custom-startup-script-for-Debian:
   title: "Custom-startup-script-for-Debian"
-  url: "/docs.ontowiki.net/ontowiki_Custom-startup-script-for-Debian/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Custom-startup-script-for-Debian/'>Custom-startup-script-for-Debian</a>"
+  url: "/docs.ontowiki.net/Custom-startup-script-for-Debian.html"
+  link: "<a href='/docs.ontowiki.net/Custom-startup-script-for-Debian.html'>Custom-startup-script-for-Debian</a>"
 
 DataWiki-3-Initiative:
   title: "DataWiki-3-Initiative"
-  url: "/docs.ontowiki.net/ontowiki_DataWiki-3-Initiative/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_DataWiki-3-Initiative/'>DataWiki-3-Initiative</a>"
+  url: "/docs.ontowiki.net/DataWiki-3-Initiative.html"
+  link: "<a href='/docs.ontowiki.net/DataWiki-3-Initiative.html'>DataWiki-3-Initiative</a>"
 
 Deployment-Recommendations:
   title: "Deployment-Recommendations"
-  url: "/docs.ontowiki.net/ontowiki_Deployment-Recommendations/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Deployment-Recommendations/'>Deployment-Recommendations</a>"
+  url: "/docs.ontowiki.net/Deployment-Recommendations.html"
+  link: "<a href='/docs.ontowiki.net/Deployment-Recommendations.html'>Deployment-Recommendations</a>"
 
 Events:
   title: "Events"
-  url: "/docs.ontowiki.net/ontowiki_Events/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Events/'>Events</a>"
+  url: "/docs.ontowiki.net/Events.html"
+  link: "<a href='/docs.ontowiki.net/Events.html'>Events</a>"
 
 Extension-Architecture:
   title: "Extension-Architecture"
-  url: "/docs.ontowiki.net/ontowiki_Extension-Architecture/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Extension-Architecture/'>Extension-Architecture</a>"
+  url: "/docs.ontowiki.net/Extension-Architecture.html"
+  link: "<a href='/docs.ontowiki.net/Extension-Architecture.html'>Extension-Architecture</a>"
 
 Extension-Repository:
   title: "Extension-Repository"
-  url: "/docs.ontowiki.net/ontowiki_Extension-Repository/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Extension-Repository/'>Extension-Repository</a>"
+  url: "/docs.ontowiki.net/Extension-Repository.html"
+  link: "<a href='/docs.ontowiki.net/Extension-Repository.html'>Extension-Repository</a>"
 
 Extensions:
   title: "Extensions"
-  url: "/docs.ontowiki.net/ontowiki_Extensions/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Extensions/'>Extensions</a>"
+  url: "/docs.ontowiki.net/Extensions.html"
+  link: "<a href='/docs.ontowiki.net/Extensions.html'>Extensions</a>"
 
 FAQ:
   title: "FAQ"
-  url: "/docs.ontowiki.net/ontowiki_FAQ/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_FAQ/'>FAQ</a>"
+  url: "/docs.ontowiki.net/FAQ.html"
+  link: "<a href='/docs.ontowiki.net/FAQ.html'>FAQ</a>"
 
 Getting-Started-Users:
   title: "Getting-Started-Users"
-  url: "/docs.ontowiki.net/ontowiki_Getting-Started-Users/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Getting-Started-Users/'>Getting-Started-Users</a>"
+  url: "/docs.ontowiki.net/Getting-Started-Users.html"
+  link: "<a href='/docs.ontowiki.net/Getting-Started-Users.html'>Getting-Started-Users</a>"
 
 Graph-Visualization:
   title: "Graph-Visualization"
-  url: "/docs.ontowiki.net/ontowiki_Graph-Visualization/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Graph-Visualization/'>Graph-Visualization</a>"
+  url: "/docs.ontowiki.net/Graph-Visualization.html"
+  link: "<a href='/docs.ontowiki.net/Graph-Visualization.html'>Graph-Visualization</a>"
 
 HTTP-Parameters:
   title: "HTTP-Parameters"
-  url: "/docs.ontowiki.net/ontowiki_HTTP-Parameters/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_HTTP-Parameters/'>HTTP-Parameters</a>"
+  url: "/docs.ontowiki.net/HTTP-Parameters.html"
+  link: "<a href='/docs.ontowiki.net/HTTP-Parameters.html'>HTTP-Parameters</a>"
 
 Handbooks:
   title: "Handbooks"
-  url: "/docs.ontowiki.net/ontowiki_Handbooks/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Handbooks/'>Handbooks</a>"
+  url: "/docs.ontowiki.net/Handbooks.html"
+  link: "<a href='/docs.ontowiki.net/Handbooks.html'>Handbooks</a>"
 
 How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes:
   title: "How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes"
-  url: "/docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes/'>How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes</a>"
+  url: "/docs.ontowiki.net/How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes.html"
+  link: "<a href='/docs.ontowiki.net/How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes.html'>How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes</a>"
 
 How-to-publish-my-product-information-as-Linked-Data:
   title: "How-to-publish-my-product-information-as-Linked-Data"
-  url: "/docs.ontowiki.net/ontowiki_How-to-publish-my-product-information-as-Linked-Data/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_How-to-publish-my-product-information-as-Linked-Data/'>How-to-publish-my-product-information-as-Linked-Data</a>"
+  url: "/docs.ontowiki.net/How-to-publish-my-product-information-as-Linked-Data.html"
+  link: "<a href='/docs.ontowiki.net/How-to-publish-my-product-information-as-Linked-Data.html'>How-to-publish-my-product-information-as-Linked-Data</a>"
 
 How-to-test:
   title: "How-to-test"
-  url: "/docs.ontowiki.net/ontowiki_How-to-test/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_How-to-test/'>How-to-test</a>"
+  url: "/docs.ontowiki.net/How-to-test.html"
+  link: "<a href='/docs.ontowiki.net/How-to-test.html'>How-to-test</a>"
 
 How-to-view-and-edit-the-concepts-of-my-taxonomy:
   title: "How-to-view-and-edit-the-concepts-of-my-taxonomy"
-  url: "/docs.ontowiki.net/ontowiki_How-to-view-and-edit-the-concepts-of-my-taxonomy/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_How-to-view-and-edit-the-concepts-of-my-taxonomy/'>How-to-view-and-edit-the-concepts-of-my-taxonomy</a>"
+  url: "/docs.ontowiki.net/How-to-view-and-edit-the-concepts-of-my-taxonomy.html"
+  link: "<a href='/docs.ontowiki.net/How-to-view-and-edit-the-concepts-of-my-taxonomy.html'>How-to-view-and-edit-the-concepts-of-my-taxonomy</a>"
 
 Install-Ontowiki:
   title: "Install-Ontowiki"
-  url: "/docs.ontowiki.net/ontowiki_Install-Ontowiki/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Install-Ontowiki/'>Install-Ontowiki</a>"
+  url: "/docs.ontowiki.net/Install-Ontowiki.html"
+  link: "<a href='/docs.ontowiki.net/Install-Ontowiki.html'>Install-Ontowiki</a>"
 
 Install-on-IIS:
   title: "Install-on-IIS"
-  url: "/docs.ontowiki.net/ontowiki_Install-on-IIS/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Install-on-IIS/'>Install-on-IIS</a>"
+  url: "/docs.ontowiki.net/Install-on-IIS.html"
+  link: "<a href='/docs.ontowiki.net/Install-on-IIS.html'>Install-on-IIS</a>"
 
 Installation-Guide-Mac-OSX:
   title: "Installation-Guide-Mac-OSX"
-  url: "/docs.ontowiki.net/ontowiki_Installation-Guide-Mac-OSX/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Installation-Guide-Mac-OSX/'>Installation-Guide-Mac-OSX</a>"
+  url: "/docs.ontowiki.net/Installation-Guide-Mac-OSX.html"
+  link: "<a href='/docs.ontowiki.net/Installation-Guide-Mac-OSX.html'>Installation-Guide-Mac-OSX</a>"
 
 Instance-Lists:
   title: "Instance-Lists"
-  url: "/docs.ontowiki.net/ontowiki_Instance-Lists/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Instance-Lists/'>Instance-Lists</a>"
+  url: "/docs.ontowiki.net/Instance-Lists.html"
+  link: "<a href='/docs.ontowiki.net/Instance-Lists.html'>Instance-Lists</a>"
 
 JavaScriptEvents:
   title: "JavaScriptEvents"
-  url: "/docs.ontowiki.net/ontowiki_JavaScriptEvents/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_JavaScriptEvents/'>JavaScriptEvents</a>"
+  url: "/docs.ontowiki.net/JavaScriptEvents.html"
+  link: "<a href='/docs.ontowiki.net/JavaScriptEvents.html'>JavaScriptEvents</a>"
 
 Naming-scheme-for-cloned-resources:
   title: "Naming-scheme-for-cloned-resources"
-  url: "/docs.ontowiki.net/ontowiki_Naming-scheme-for-cloned-resources/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Naming-scheme-for-cloned-resources/'>Naming-scheme-for-cloned-resources</a>"
+  url: "/docs.ontowiki.net/Naming-scheme-for-cloned-resources.html"
+  link: "<a href='/docs.ontowiki.net/Naming-scheme-for-cloned-resources.html'>Naming-scheme-for-cloned-resources</a>"
 
 Navigation-Extension:
   title: "Navigation-Extension"
-  url: "/docs.ontowiki.net/ontowiki_Navigation-Extension/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Navigation-Extension/'>Navigation-Extension</a>"
+  url: "/docs.ontowiki.net/Navigation-Extension.html"
+  link: "<a href='/docs.ontowiki.net/Navigation-Extension.html'>Navigation-Extension</a>"
 
 OntoWiki-behind-a-reverseProxy-(with-SSL):
   title: "OntoWiki-behind-a-reverseProxy-(with-SSL)"
-  url: "/docs.ontowiki.net/ontowiki_OntoWiki-behind-a-reverseProxy-(with-SSL)/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_OntoWiki-behind-a-reverseProxy-(with-SSL)/'>OntoWiki-behind-a-reverseProxy-(with-SSL)</a>"
+  url: "/docs.ontowiki.net/OntoWiki-behind-a-reverseProxy-(with-SSL).html"
+  link: "<a href='/docs.ontowiki.net/OntoWiki-behind-a-reverseProxy-(with-SSL).html'>OntoWiki-behind-a-reverseProxy-(with-SSL)</a>"
 
 OntoWiki_Model_TitleHelper:
   title: "OntoWiki_Model_TitleHelper"
-  url: "/docs.ontowiki.net/ontowiki_OntoWiki_Model_TitleHelper/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_OntoWiki_Model_TitleHelper/'>OntoWiki_Model_TitleHelper</a>"
+  url: "/docs.ontowiki.net/OntoWiki_Model_TitleHelper.html"
+  link: "<a href='/docs.ontowiki.net/OntoWiki_Model_TitleHelper.html'>OntoWiki_Model_TitleHelper</a>"
 
 OntoWiki_Utils:
   title: "OntoWiki_Utils"
-  url: "/docs.ontowiki.net/ontowiki_OntoWiki_Utils/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_OntoWiki_Utils/'>OntoWiki_Utils</a>"
+  url: "/docs.ontowiki.net/OntoWiki_Utils.html"
+  link: "<a href='/docs.ontowiki.net/OntoWiki_Utils.html'>OntoWiki_Utils</a>"
 
 Ontowiki-model:
   title: "Ontowiki-model"
-  url: "/docs.ontowiki.net/ontowiki_Ontowiki-model/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Ontowiki-model/'>Ontowiki-model</a>"
+  url: "/docs.ontowiki.net/Ontowiki-model.html"
+  link: "<a href='/docs.ontowiki.net/Ontowiki-model.html'>Ontowiki-model</a>"
 
 Ontowiki_Model_Resource:
   title: "Ontowiki_Model_Resource"
-  url: "/docs.ontowiki.net/ontowiki_Ontowiki_Model_Resource/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Ontowiki_Model_Resource/'>Ontowiki_Model_Resource</a>"
+  url: "/docs.ontowiki.net/Ontowiki_Model_Resource.html"
+  link: "<a href='/docs.ontowiki.net/Ontowiki_Model_Resource.html'>Ontowiki_Model_Resource</a>"
 
 PHPCodeSniffer:
   title: "PHPCodeSniffer"
-  url: "/docs.ontowiki.net/ontowiki_PHPCodeSniffer/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_PHPCodeSniffer/'>PHPCodeSniffer</a>"
+  url: "/docs.ontowiki.net/PHPCodeSniffer.html"
+  link: "<a href='/docs.ontowiki.net/PHPCodeSniffer.html'>PHPCodeSniffer</a>"
 
 PHPUnit:
   title: "PHPUnit"
-  url: "/docs.ontowiki.net/ontowiki_PHPUnit/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_PHPUnit/'>PHPUnit</a>"
+  url: "/docs.ontowiki.net/PHPUnit.html"
+  link: "<a href='/docs.ontowiki.net/PHPUnit.html'>PHPUnit</a>"
 
 Page-extension:
   title: "Page-extension"
-  url: "/docs.ontowiki.net/ontowiki_Page-extension/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Page-extension/'>Page-extension</a>"
+  url: "/docs.ontowiki.net/Page-extension.html"
+  link: "<a href='/docs.ontowiki.net/Page-extension.html'>Page-extension</a>"
 
 Performance-Tuning:
   title: "Performance-Tuning"
-  url: "/docs.ontowiki.net/ontowiki_Performance-Tuning/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Performance-Tuning/'>Performance-Tuning</a>"
+  url: "/docs.ontowiki.net/Performance-Tuning.html"
+  link: "<a href='/docs.ontowiki.net/Performance-Tuning.html'>Performance-Tuning</a>"
 
 Resource-Creation-Extension:
   title: "Resource-Creation-Extension"
-  url: "/docs.ontowiki.net/ontowiki_Resource-Creation-Extension/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Resource-Creation-Extension/'>Resource-Creation-Extension</a>"
+  url: "/docs.ontowiki.net/Resource-Creation-Extension.html"
+  link: "<a href='/docs.ontowiki.net/Resource-Creation-Extension.html'>Resource-Creation-Extension</a>"
 
 Roadmap:
   title: "Roadmap"
-  url: "/docs.ontowiki.net/ontowiki_Roadmap/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Roadmap/'>Roadmap</a>"
+  url: "/docs.ontowiki.net/Roadmap.html"
+  link: "<a href='/docs.ontowiki.net/Roadmap.html'>Roadmap</a>"
 
 SecurityIssues:
   title: "SecurityIssues"
-  url: "/docs.ontowiki.net/ontowiki_SecurityIssues/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_SecurityIssues/'>SecurityIssues</a>"
+  url: "/docs.ontowiki.net/SecurityIssues.html"
+  link: "<a href='/docs.ontowiki.net/SecurityIssues.html'>SecurityIssues</a>"
 
 SemanticPingback:
   title: "SemanticPingback"
-  url: "/docs.ontowiki.net/ontowiki_SemanticPingback/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_SemanticPingback/'>SemanticPingback</a>"
+  url: "/docs.ontowiki.net/SemanticPingback.html"
+  link: "<a href='/docs.ontowiki.net/SemanticPingback.html'>SemanticPingback</a>"
 
 ServiceController:
   title: "ServiceController"
-  url: "/docs.ontowiki.net/ontowiki_ServiceController/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_ServiceController/'>ServiceController</a>"
+  url: "/docs.ontowiki.net/ServiceController.html"
+  link: "<a href='/docs.ontowiki.net/ServiceController.html'>ServiceController</a>"
 
 Setup-on-NGINX:
   title: "Setup-on-NGINX"
-  url: "/docs.ontowiki.net/ontowiki_Setup-on-NGINX/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Setup-on-NGINX/'>Setup-on-NGINX</a>"
+  url: "/docs.ontowiki.net/Setup-on-NGINX.html"
+  link: "<a href='/docs.ontowiki.net/Setup-on-NGINX.html'>Setup-on-NGINX</a>"
 
 Tools:
   title: "Tools"
-  url: "/docs.ontowiki.net/ontowiki_Tools/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Tools/'>Tools</a>"
+  url: "/docs.ontowiki.net/Tools.html"
+  link: "<a href='/docs.ontowiki.net/Tools.html'>Tools</a>"
 
 Ubuntu-Quick-Install-Guide:
   title: "Ubuntu-Quick-Install-Guide"
-  url: "/docs.ontowiki.net/ontowiki_Ubuntu-Quick-Install-Guide/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Ubuntu-Quick-Install-Guide/'>Ubuntu-Quick-Install-Guide</a>"
+  url: "/docs.ontowiki.net/Ubuntu-Quick-Install-Guide.html"
+  link: "<a href='/docs.ontowiki.net/Ubuntu-Quick-Install-Guide.html'>Ubuntu-Quick-Install-Guide</a>"
 
 Using-the-repository:
   title: "Using-the-repository"
-  url: "/docs.ontowiki.net/ontowiki_Using-the-repository/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Using-the-repository/'>Using-the-repository</a>"
+  url: "/docs.ontowiki.net/Using-the-repository.html"
+  link: "<a href='/docs.ontowiki.net/Using-the-repository.html'>Using-the-repository</a>"
 
 VirtuosoBackend:
   title: "VirtuosoBackend"
-  url: "/docs.ontowiki.net/ontowiki_VirtuosoBackend/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_VirtuosoBackend/'>VirtuosoBackend</a>"
+  url: "/docs.ontowiki.net/VirtuosoBackend.html"
+  link: "<a href='/docs.ontowiki.net/VirtuosoBackend.html'>VirtuosoBackend</a>"
 
 Webservices:
   title: "Webservices"
-  url: "/docs.ontowiki.net/ontowiki_Webservices/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Webservices/'>Webservices</a>"
+  url: "/docs.ontowiki.net/Webservices.html"
+  link: "<a href='/docs.ontowiki.net/Webservices.html'>Webservices</a>"
 
 Worker:-Background-jobs-using-Gearman:
   title: "Worker:-Background-jobs-using-Gearman"
-  url: "/docs.ontowiki.net/ontowiki_Worker:-Background-jobs-using-Gearman/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Worker:-Background-jobs-using-Gearman/'>Worker:-Background-jobs-using-Gearman</a>"
+  url: "/docs.ontowiki.net/Worker:-Background-jobs-using-Gearman.html"
+  link: "<a href='/docs.ontowiki.net/Worker:-Background-jobs-using-Gearman.html'>Worker:-Background-jobs-using-Gearman</a>"
 
 Wrapper-Example:
   title: "Wrapper-Example"
-  url: "/docs.ontowiki.net/ontowiki_Wrapper-Example/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Wrapper-Example/'>Wrapper-Example</a>"
+  url: "/docs.ontowiki.net/Wrapper-Example.html"
+  link: "<a href='/docs.ontowiki.net/Wrapper-Example.html'>Wrapper-Example</a>"
 
 browsercompatibility:
   title: "browsercompatibility"
-  url: "/docs.ontowiki.net/ontowiki_browsercompatibility/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_browsercompatibility/'>browsercompatibility</a>"
+  url: "/docs.ontowiki.net/browsercompatibility.html"
+  link: "<a href='/docs.ontowiki.net/browsercompatibility.html'>browsercompatibility</a>"
 
 cachemanagement:
   title: "cachemanagement"
-  url: "/docs.ontowiki.net/ontowiki_cachemanagement/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_cachemanagement/'>cachemanagement</a>"
+  url: "/docs.ontowiki.net/cachemanagement.html"
+  link: "<a href='/docs.ontowiki.net/cachemanagement.html'>cachemanagement</a>"
 
 Extensions-Developer:
   title: "Extensions-Developer"
-  url: "/docs.ontowiki.net/ontowiki_Extensions-Developer/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_Extensions-Developer/'>Extensions-Developer</a>"
+  url: "/docs.ontowiki.net/Extensions-Developer.html"
+  link: "<a href='/docs.ontowiki.net/Extensions-Developer.html'>Extensions-Developer</a>"
 
 ldi:
   title: "ldi"
-  url: "/docs.ontowiki.net/ontowiki_ldi/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_ldi/'>ldi</a>"
+  url: "/docs.ontowiki.net/ldi.html"
+  link: "<a href='/docs.ontowiki.net/ldi.html'>ldi</a>"
 
 php:
   title: "php"
-  url: "/docs.ontowiki.net/ontowiki_php/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_php/'>php</a>"
+  url: "/docs.ontowiki.net/php.html"
+  link: "<a href='/docs.ontowiki.net/php.html'>php</a>"
 
 skos:
   title: "skos"
-  url: "/docs.ontowiki.net/ontowiki_skos/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_skos/'>skos</a>"
+  url: "/docs.ontowiki.net/skos.html"
+  link: "<a href='/docs.ontowiki.net/skos.html'>skos</a>"
 
 troubleshooting:
   title: "troubleshooting"
-  url: "/docs.ontowiki.net/ontowiki_troubleshooting/"
-  link: "<a href='/docs.ontowiki.net/ontowiki_troubleshooting/'>troubleshooting</a>"
+  url: "/docs.ontowiki.net/troubleshooting.html"
+  link: "<a href='/docs.ontowiki.net/troubleshooting.html'>troubleshooting</a>"
 
 Editing_Creating_Merging_Documentation_Pages:
   title: "Editing_Creating_Merging_Documentation_Pages"
-  url: "/docs.ontowiki.net/ontowiki_Editing_Creating_Merging_Documentation_Pages/"
-  link: "<a href= '/docs.ontowiki.net/ontowiki_Editing_Creating_Merging_Documentation_Pages/'>Editing_Creating_Merging_Documentation_Pages</a>"
+  url: "/docs.ontowiki.net/Editing_Creating_Merging_Documentation_Pages.html"
+  link: "<a href= '/docs.ontowiki.net/Editing_Creating_Merging_Documentation_Pages.html'>Editing_Creating_Merging_Documentation_Pages</a>"

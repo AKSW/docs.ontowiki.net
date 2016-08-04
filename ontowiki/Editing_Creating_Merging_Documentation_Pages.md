@@ -2,7 +2,7 @@
 title: Editing, Creating and Merging Documentation Pages
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Editing_Creating_Merging_Documentation_Pages/
+permalink: /Editing_Creating_Merging_Documentation_Pages.html
 editme_path: ontowiki/Editing_Creating_Merging_Documentation_Pages.md
 ---
 
@@ -25,7 +25,7 @@ Every file needs a header. As example we will use the header for this file (the 
     title: Editing, Creating and Merging Documentation Pages
     tags: [ontowiki]
     sidebar: ontowiki_sidebar
-    permalink: /ontowiki_Editing_Creating_Merging_Documentation_Pages/
+    permalink: /Editing_Creating_Merging_Documentation_Pages/
     editme_path: ontowiki/Editing_Creating_Merging_Documentation_Pages.md
     ---
 
@@ -53,5 +53,3 @@ Then you will need to most likely rebase your fork onto our master branch and af
 ## Miscellaneous
 
 Most other things you might want to do should be doable with knowing how to create and edit files propperly.
-
-The `ontowiki_` for the links is necessary, as our jekyll theme would allow us to put a Documentation for other sites as well into this one (for example rdfauthor or Erfurt).

@@ -2,7 +2,7 @@
 title: Installation-Guide-Mac-OSX
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Installation-Guide-Mac-OSX/
+permalink: /Installation-Guide-Mac-OSX.html
 editme_path: ontowiki/Installation-Guide-Mac-OSX.md
 ---
 This page explains the necessary steps to use OntoWiki with [OpenLink Virtuoso](http://virtuoso.openlinksw.com/wiki/main/Main/).
@@ -19,7 +19,7 @@ This is the basic procedure. For details see below.
 * run `brew update` to update the dependencies
 * there have to be installed PHP with ODBC support `brew install php56 --with-unixodbc`
 * execute `brew install virtuoso` to get installed Virtuoso
-* [Set up ODBC](http://docs.ontowiki.net/ontowiki_VirtuosoBackend/#setting-up-odbc)
+* [Set up ODBC]({{ "VirtuosoBacken.html#setting-up-odbc" | prepend:site.baseurl }})
 * Check out the OntoWiki source code 
 * Set up OntoWiki to be used with Virtuoso.
 

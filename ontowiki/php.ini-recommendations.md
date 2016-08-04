@@ -2,7 +2,7 @@
 title: Setting in php.ini
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_php/
+permalink: /php.html
 editme_path: ontowiki/php.ini-recommendations.md
 ---
 

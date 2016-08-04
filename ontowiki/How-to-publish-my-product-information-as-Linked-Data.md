@@ -2,7 +2,7 @@
 title: How-to-publish-my-product-information-as-Linked-Data
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_How-to-publish-my-product-information-as-Linked-Data/
+permalink: /How-to-publish-my-product-information-as-Linked-Data.html
 editme_path: ontowiki/How-to-publish-my-product-information-as-Linked-Data.md
 ---
 ## Good Relations Vocabulary
@@ -48,7 +48,7 @@ Our product model now needs two classes, gr:ProductOrServiceModel being one, and
      gr:name "Golden Necklace";
      gr:description "a golden necklace".
 
-For directions on how get this data into the knowledge base, see [How to create and publish a SKOS Taxonomy in 5 minutes - Add classes and properties using dialogs](http://docs.ontowiki.net/ontowiki_How-to-create-and-publish-a-SKOS-Taxonomy-in-5-minutes#dialog).
+For directions on how get this data into the knowledge base, see [How to create and publish a SKOS Taxonomy in 5 minutes - Add classes and properties using dialogs]({{ "How-to-cerate-and-publish-a-SKOS-taxonomy-in-5-minutes.html#dialog" | prepend:site.baseurl }}).
 
 The remaining attribute, *price*, cannot be directly modelled as an attribute of the product model. The problems are:
 

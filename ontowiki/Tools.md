@@ -2,7 +2,7 @@
 title: Tools
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Tools/
+permalink: /Tools.html
 editme_path: ontowiki/Tools.md
 ---
 We made some developer tools like cwm and owcli that help you during work with semantic data.

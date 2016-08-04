@@ -2,7 +2,7 @@
 title: Resource-Creation-Extension
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Resource-Creation-Extension/
+permalink: /Resource-Creation-Extension.html
 editme_path: ontowiki/Resource-Creation-Extension.md
 ---
 This plug-in provides the possibility to define a URI scheme which will be applied, when new resources are created. This means e.g., all new project resources will be created as `http://aksw.org/Projects/NewResource`.

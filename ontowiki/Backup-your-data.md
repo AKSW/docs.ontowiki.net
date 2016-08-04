@@ -2,7 +2,7 @@
 title: Backup-your-data
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Backup-your-data/
+permalink: /Backup-your-data.html
 editme_path: ontowiki/Backup-your-data.md
 ---
 ## Virtuoso backup

@@ -2,7 +2,7 @@
 title: VirtuosoBackend
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_VirtuosoBackend/
+permalink: /VirtuosoBackend.html
 editme_path: ontowiki/VirtuosoBackend.md
 ---
 This page explains the necessary steps to use OntoWiki with [OpenLink Virtuoso](http://virtuoso.openlinksw.com/wiki/main/Main/).
@@ -25,7 +25,7 @@ This is the basic procedure. For details see below.
 For some OS, e.g. Windows, binaries exist, but might be a bit dated. If you have to compile it, it is recommended to give a `<prefix>`, which will be the path where Virtuoso will be installed. 
 
 **Debian/Ubuntu** recommendation: 
- - For a standard install, a prefix of '/usr/local' will do just fine. This installs Virtuoso in the standard program path, and reduces confusion as to which binary to run. Also, the stock Debian or Ubuntu startup scripts can be used with [minor modifications](http://docs.ontowiki.net/ontowiki_Custom-startup-script-for-Debian).
+ - For a standard install, a prefix of '/usr/local' will do just fine. This installs Virtuoso in the standard program path, and reduces confusion as to which binary to run. Also, the stock Debian or Ubuntu startup scripts can be used with [minor modifications]({{ "Custom-startup-script-for-Debian.html" | prepend:site.baseurl }}).
  - For a development environment it might be better to set things up with a named prefix folder in the '/opt' tree, i.e. `./configure --prefix=/opt/virtuoso`. This provides great flexibility for a development environment. To name but a few benefits:
   - You may uninstall the compiled software by simply removing the whole directory
   - You may test and use two different versions of Virtuoso at the same time and try out new features

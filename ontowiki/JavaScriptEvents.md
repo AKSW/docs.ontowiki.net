@@ -2,7 +2,7 @@
 title: JavaScriptEvents
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_JavaScriptEvents/
+permalink: /JavaScriptEvents.html
 editme_path: ontowiki/JavaScriptEvents.md
 ---
 overview about JavaScript events

@@ -2,11 +2,11 @@
 title: Install-Ontowiki
 tags: [ontowiki, install]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_Install-Ontowiki/
+permalink: /Install-Ontowiki.html
 editme_path: ontowiki/Install-Ontowiki.md
 ---
 
-## <a name="Getting OntoWiki"></a> Getting OntoWiki 
+## Getting OntoWiki 
 
 ### Tips
 * For Windows user we suggest to install via the archive.
@@ -27,7 +27,7 @@ If you use a Debian or Ubuntu linux distribution, you can use the debian package
 * update your package database (`sudo apt-get update`)
 * install `ontowiki-mysql` or `ontowiki-virtuoso` (`sudo apt-get ontowiki-virtuoso virtuoso-vad-conductor`)
 
-Please note that OntoWiki works best with a recent version of Virtuoso. At the time of writing, OntoWiki requires version 6.1.4 or greater. Debian stable/squeeze comes with version 6.1.2, Debian testing/wheezy comes with 6.1.4, and Ubuntu 12.04 LTS comes with 6.1.4. Building virtuoso from source on a Debian based system, however, is [quite easy](http://docs.ontowiki.net/ontowiki_VirtuosoBackend/). Using a [custom startup script](http://docs.ontowiki.net/ontowiki_Custom-startup-script-for-Debian/) on Debian, you can even install the package for virtuoso and use your own locally compiled version.
+Please note that OntoWiki works best with a recent version of Virtuoso. At the time of writing, OntoWiki requires version 6.1.4 or greater. Debian stable/squeeze comes with version 6.1.2, Debian testing/wheezy comes with 6.1.4, and Ubuntu 12.04 LTS comes with 6.1.4. Building virtuoso from source on a Debian based system, however, is [quite easy]({{ "VirtuosoBackend.html" | prepend:site.baseurl }}). Using a [custom startup script]({{ "Custom-startup-script-for-Debian.html" | prepend:site.baseurl }}) on Debian, you can even install the package for virtuoso and use your own locally compiled version.
 
 ### via github repository
 If you are a advanced user of OntoWiki and/or need the latest (sometimes unstable) version, you can checkout our repo:
@@ -40,7 +40,7 @@ If you are a advanced user of OntoWiki and/or need the latest (sometimes unstabl
 ## <a name="Requirements"></a> Requirements
 In order to install OntoWiki you need:
 * PHP 5.4 or higher
-  * See our page for [recommended PHP settings](http://docs.ontowiki.net/ontowiki_php) .
+  * See our page for [recommended PHP settings]({{ "php.html" | prepend:site.baseurl }}) .
 * [mod_rewrite](http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html) allowed in target directory (`AllowOverride FileInfo Limit Options`, optional, used for nice URIs and LinkedData features)
   * `a2enmod rewrite`
 * [.htaccess](http://httpd.apache.org/docs/2.2/configuring.html#htaccess) allowed in target directory
@@ -81,7 +81,7 @@ This is the basic procedure. For details see below.
 For some OS, e.g. Windows, binaries exist, but might be a bit dated. If you have to compile it, it is recommended to give a `<prefix>`, which will be the path where Virtuoso will be installed. 
 
 **Debian/Ubuntu** recommendation: 
- - For a standard install, a prefix of '/usr/local' will do just fine. This installs Virtuoso in the standard program path, and reduces confusion as to which binary to run. Also, the stock Debian or Ubuntu startup scripts can be used with [minor modifications](http://docs.ontowiki.net/ontowiki_Custom-startup-script-for-Debian).
+ - For a standard install, a prefix of '/usr/local' will do just fine. This installs Virtuoso in the standard program path, and reduces confusion as to which binary to run. Also, the stock Debian or Ubuntu startup scripts can be used with [minor modifications]({{ "Custom-startup-script-for-Debian.html" | prepend:site.baseurl }}).
  - For a development environment it might be better to set things up with a named prefix folder in the '/opt' tree, i.e. `./configure --prefix=/opt/virtuoso`. This provides great flexibility for a development environment. To name but a few benefits:
   - You may uninstall the compiled software by simply removing the whole directory
   - You may test and use two different versions of Virtuoso at the same time and try out new features
@@ -239,7 +239,7 @@ to
     DBBASE=/var/lib/virtuoso/ontowiki
 while virtuoso is not running.
 
-Also, make sure your Virtuoso is at least [version 6.1.4](http://docs.ontowiki.net/ontowiki_Deployment-Recommendations). **Virtuoso 7 is recommended**
+Also, make sure your Virtuoso is at least [version 6.1.4]({{ "Deployment-Recommendations.html" | prepend:site.baseurl }})(http://docs.ontowiki.net/ontowiki_Deployment-Recommendations). **Virtuoso 7 is recommended**
 
 **IMPORTANT HINT:** Make sure that you activated **display_errors** (=On) in your php.ini. Please have a look into phpinfo and check whats the values of display_errors. If its off, go to /etc/php5/apache2filter/php.ini respectively /etc/php5/apache2/php.ini and set the value on your own. Otherwise you will not see the error above!
 
@@ -319,7 +319,7 @@ Go to `http://localhost/` and confirm that it shows "It works!".
                  AllowOverride All
                 </Directory>
         - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
-    - Set the [recommended php.ini settings](http://docs.ontowiki.net/ontowiki_php/) in `C:\Program Files\PHP\php.ini`
+    - Set the [recommended php.ini settings]({{ "php.html" | prepend:site.baseurl }}) in `C:\Program Files\PHP\php.ini`
     - Start the Apache service again
         - Type `services.msc` into the search field in your start menu and click on "services".
         - Rightclick on "Apache2._X_" and click on "Start".
@@ -381,7 +381,7 @@ If you see this list and no error messages along the way, go ahead configuring O
 
             $ sudo pacman -S php-odbc
 
-        Add the following lines to the file `/etc/odbcinst.ini`: (create it if it doesn't exist, see [VirtuosoBackend](http://docs.ontowiki.net/ontowiki_VirtuosoBackend/))
+        Add the following lines to the file `/etc/odbcinst.ini`: (create it if it doesn't exist, see [VirtuosoBackend]({{ "VirtuosoBackend.html" | prepend:site.baseurl }}))
 
             [virtuoso-odbc]
             Driver = /usr/lib/virtodbc.so
@@ -399,11 +399,11 @@ If you see this list and no error messages along the way, go ahead configuring O
 
             $ sudo /etc/rc.d/httpd restart
 2. Virtuoso
-    - Please note that Virtuoso-opensource should be at least in [version 6.4](http://docs.ontowiki.net/ontowiki_Deployment-Recommendations/)
+    - Please note that Virtuoso-opensource should be at least in [version 6.4]({{ "Deployment-Recommendations.html" | prepend:site.baseurl }})
     - Install Virtuoso with the package manager
 
             $ sudo pacman -S virtuoso
-    - Create the Virtuoso OntoWiki directory and add the virtuoso.ini to it (see [Virtuoso Backend](http://docs.ontowiki.net/ontowiki_VirtuosoBackend/))
+    - Create the Virtuoso OntoWiki directory and add the virtuoso.ini to it (see [Virtuoso Backend]({{ "VirtuosoBackend.html" | prepend:site.baseurl }}))
 
             $ sudo mkdir /var/lib/virtuoso/ontowiki
             $ sudo cp /var/lib/virtuoso/db/virtuoso.ini /var/lib/virtuoso/ontowiki
@@ -522,7 +522,7 @@ Go to `http://localhost/` and confirm that it shows "It works!".
          AllowOverride All
         </Directory>
 - also uncomment the line `LoadModule rewrite_module modules/mod_rewrite.so`
-- Set the [recommended php.ini settings](https://github.com/AKSW/OntoWiki/wiki/php.ini-recommendations) in `C:\Program Files\PHP\php.ini`
+- Set the [recommended php.ini settings]({{ "php.html" | prepend:site.baseurl }}) in `C:\Program Files\PHP\php.ini`
 - Start the Apache service again
 - Type `services.msc` into the search field in your start menu and click on "services".
 - Rightclick on "Apache2._X_" and click on "Start".
@@ -569,14 +569,14 @@ If you see this list and no error messages along the way, go ahead configuring O
 
 ## <a name= "Links for Special Installations"></a> Links for Special Installations
 
-[Install for Windows IIS](http://docs.ontowiki.net/ontowiki_Install-on-IIS/)
+[Install for Windows IIS]({{ "Install-on-IIS.html" | prepend:site.baseurl }})
 
 -> The instructions above assume you already have PHP installed with IIS. If not [install PHP here](http://php.iis.net/) or [read this](http://learn.iis.net/page.aspx/246/using-fastcgi-to-host-php-applications-on-iis/) to install manually.
 
-[Installation-Guide-Mac-OSX](http://docs.ontowiki.net/ontowiki_Installation-Guide-Mac-OSX/)
+[Installation-Guide-Mac-OSX]({{ "Installation-Guide-Mac-OSX.html" | prepend:site.baseurl }})
 
-[Setup-on-NGINX](http://docs.ontowiki.net/ontowiki_Setup-on-NGINX/)
+[Setup-on-NGINX]({{ "Setup-on-NGINX.html" | prepend:site.baseurl }})
 
-[Quick Install Guide for Ubuntu](http://docs.ontowiki.net/ontowiki_Ubuntu-Quick-Install-Guide/)
+[Quick Install Guide for Ubuntu]({{ "Ubuntu-Quick-Install-Guide.html" | prepend:site.baseurl }})
 
-[Custom startup script for Debian](http://docs.ontowiki.net/ontowiki_Custom-startup-script-for-Debian/)
+[Custom startup script for Debian]({{ "Custom-startup-script-for-Debian.html" | prepend:site.baseurl }})

@@ -2,7 +2,7 @@
 title: OntoWiki_Model_TitleHelper
 tags: [ontowiki]
 sidebar: ontowiki_sidebar
-permalink: /ontowiki_OntoWiki_Model_TitleHelper/
+permalink: /OntoWiki_Model_TitleHelper.html
 editme_path: ontowiki/OntoWiki_Model_TitleHelper.md
 ---
 Class OntoWiki_Model_TitleHelper fetches title properties for a set of resources. You can collect all resources from which you want to get the title later. If you get the title from one of them the TitleHelper gets the title properties for all resources at once.
