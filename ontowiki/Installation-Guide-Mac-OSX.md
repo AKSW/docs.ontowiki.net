@@ -19,7 +19,7 @@ This is the basic procedure. For details see below.
 * run `brew update` to update the dependencies
 * there have to be installed PHP with ODBC support `brew install php56 --with-unixodbc`
 * execute `brew install virtuoso` to get installed Virtuoso
-* [Set up ODBC]({{ "VirtuosoBacken.html#setting-up-odbc" | prepend:site.baseurl }})
+* [Set up ODBC]({{ "VirtuosoBackend.html#setting-up-odbc" | prepend:site.baseurl }})
 * Check out the OntoWiki source code 
 * Set up OntoWiki to be used with Virtuoso.
 

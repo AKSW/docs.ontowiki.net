@@ -37,7 +37,7 @@ If you are a advanced user of OntoWiki and/or need the latest (sometimes unstabl
 * run `make deploy` to download Erfurt, RDFAuthor and Zend
   * If Zend Libraries are already present on your system and you get errors about not being able to instantiate Zend classess, move the 'libraries/Zend' folder out of the way.
 
-## <a name="Requirements"></a> Requirements
+## Requirements
 In order to install OntoWiki you need:
 * PHP 5.4 or higher
   * See our page for [recommended PHP settings]({{ "php.html" | prepend:site.baseurl }}) .
@@ -50,7 +50,7 @@ In order to install OntoWiki you need:
   * An installed [Virtuoso Server](http://www.openlinksw.com/virtuoso/]]) 
 * And of course the OntoWiki files.
 
-## <a name="Setup for MySQL"></a> Setup for MySQL
+## Setup for MySQL
 
 If you want to use OntoWiki with MySQL, here we go ... we assume, you have a copy of OntoWiki at your webdirectory.
 
@@ -60,7 +60,7 @@ If you want to use OntoWiki with MySQL, here we go ... we assume, you have a cop
  4.    go to the ontowiki root dir, run 'make deploy' - sets up Zend etc.
  5.    open your OntoWiki Installation in your browser. On first run, all tables are created automatically and hopefully, you will see a starting screen containing a news area and a login window.
 
-## <a name="Setup for Virtuoso"></a> Setup for Virtuoso
+## Setup for Virtuoso
 This part explains the necessary steps to use OntoWiki with [OpenLink Virtuoso](http://virtuoso.openlinksw.com/wiki/main/Main/).
 Especially, it covers the following topics:
 
@@ -450,7 +450,7 @@ Make sure that the Virtuoso service is started. If it does not start, look for f
 If you are using Windows, it is important to use the same architecture (32bit or 64bit) across all packages. Especially PHP-ODBC can only connect to Virtuoso if it is using the same architecture.
 
 
-## <a name="Install for Developers"></a> Install for Developers
+## Install for Developers
 
 There are 2 Ways: Using Vagrant or Installing it directly on your System.
 
@@ -467,7 +467,7 @@ There are 2 Ways: Using Vagrant or Installing it directly on your System.
       * `cache.query.enable = false`
       * `cache.enable = false`
 
-## <a name="Starting OntoWiki"></a> Starting OntoWiki
+## Starting OntoWiki
 
 Starting Ontowiki is relatively easy. Reload/Start (just in case) your apache2/virtuoso/mysql services.
 Now you can easily find your OntoWiki (if you installed everything the standard way) under:
@@ -475,7 +475,7 @@ Now you can easily find your OntoWiki (if you installed everything the standard 
 
 If you are using Vagrant you will find the URL in the Vagrantfile.
 
-##  <a name= "Detailed Install for Windows"></a> Detailed Install for Windows
+##  Detailed Install for Windows
 
 ### Apache
 
@@ -567,7 +567,7 @@ If you see this list and no error messages along the way, go ahead configuring O
 - Go to <http://localhost/elds/index.php> (adjust the URL if necessary). OntoWiki should now start.
 
 
-## <a name= "Links for Special Installations"></a> Links for Special Installations
+## Links for Special Installations
 
 [Install for Windows IIS]({{ "Install-on-IIS.html" | prepend:site.baseurl }})
 

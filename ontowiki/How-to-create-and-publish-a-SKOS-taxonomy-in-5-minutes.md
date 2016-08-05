@@ -10,7 +10,7 @@ editme_path: ontowiki/How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes.md
 ## How to create and publish a SKOS taxonomy in 5 minutes?
 In a real world case you would have deployed OntoWiki on a server reachable by some specific URL. Lets assume that URL is `http://www.products.com`. After the following steps the resources created in this examples would then be resolvable by accessing them with a browser, for example by visiting `http://www.products.com/owl_Class/Jewellery`. This means that all resources created in OntoWiki are automatically published.
 
-### <a id="taxonomy"></a>The example taxonomy
+### The example taxonomy
 
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns##> .
     @prefix skos: <http://www.w3.org/2004/02/skos/core##> .
@@ -37,7 +37,7 @@ In a real world case you would have deployed OntoWiki on a server reachable by s
 
 Now you have several options:
 
-#### <a id="dialog"></a>Add classes and properties using dialogs
+#### Add classes and properties using dialogs
 
 - Select **Create Empty Knowledge Base** and click on **Create Knowledge Base**.
 - Go to **Navigation: Classes**->**Edit**->**Add resource here**.
@@ -50,7 +50,7 @@ Now you have several options:
 - Click on the plus symbol **+** of the alternative label, type `Jewelry` in the text box and choose `en` as a language.
 - Click on **Add Property** and type `skos:broader`. Select **Resource** and type `http://www.products.com/owl_Class/Product` in the text field. Click on **Create Resource**.
 
-#### <a id="upload-file"></a>Upload a file
+#### Upload a file
 - Copy the example taxonomy and save it as a file named `example.n3`.
 - Select **Upload a File**, File Type **Autodetect** and browse for the file `example.n3`.
 - Click on **Create Knowledge Base** and then **Save Model Configuration**.

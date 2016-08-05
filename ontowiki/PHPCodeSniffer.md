@@ -42,7 +42,6 @@ If you run `make codesniffer` or `vendor/bin/phpcs -s --report=summary [special 
 
 This is a summary of all files, that have been checked. You can see how many files were checked and how many errors or warnings every file have caused.
 
-<a id="detailview"></a>
 ### Detail View
 (Depending on the codesniffer configfile `phpcs.xml` either summary or Detail view is the standard view for `make codesniffer`, if you want to change the standard you need to configure the configfile and add or delete the line
 `<arg name="report" value="summary"/>`)
@@ -70,7 +69,6 @@ So you have the possibility to correct your code and check it again.
 
 **Note:** If there are less than six files to check, you get the detail view automatically and not the summary view.
 
-<a id="ideintegration"></a>
 ## IDE Integration
 If you want a easier way to correct your coding standard violations, you can integrate the Code Sniffer Check in your IDE. 
 
@@ -94,7 +92,6 @@ Push 'OK' and check the new created command.
 
 **Note:** You must have some Code in the root of the git-repository, otherwise the CodeSniffer have no files to check and you can't to see, if it runs or not.
 
-<a id="tips"></a>
 ## Tips
 For **git**:
 
