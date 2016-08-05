@@ -25,19 +25,19 @@ But thats not all, OntoWiki provides a rich set of extensions. In the following 
 
 # Informations
 
-For informations regarding [Browser Compatability](ontowiki_Browser-Compatibility)
+For informations regarding [Browser Compatability]({{ "Browser-Compatibility.html" | prepend:site.baseurl }})
 
-For informations regarding [Backup your Data](ontowiki_Backup-your-data)
+For informations regarding [Backup your Data]({{ "Backup-your-data.html" | prepend:site.baseurl }})
 
-If you want to visualize your Graph look [here](ontowiki_Graph-Visualization)
+If you want to visualize your Graph look [here]({{ "Graph-Visualization.html" | prepend:site.baseurl }})
 
-[Custom startup script for Debian](ontowiki_Custom-startup-script-for-Debian)
+[Custom startup script for Debian]({{ "Custom-startup-script-for-Debian.html" | prepend:site.baseurl }})
 
-[Using reverse Proxy with SSL for OntoWiki](ontowiki_OntoWiki-behind-a-reverseProxy-(with-SSL))
+[Using reverse Proxy with SSL for OntoWiki]({{ "OntoWiki-behind-a-reverseProxy-(with-SSL).html" | prepend:site.baseurl }}))
 
-[Performance Tuning](ontowiki_Performance-Tuning)
+[Performance Tuning]({{ "Performance-Tuning.html" | prepend:site.baseurl }})
 
-[Security Issues](ontowiki_SecurityIssues)
+[Security Issues]({{ "SecurityIssues.html" | prepend:site.baseurl }})
 
 
 
@@ -45,40 +45,40 @@ If you want to visualize your Graph look [here](ontowiki_Graph-Visualization)
 
 If this is your first time with OntoWiki you might want to read the following pages:
 
-* [Install Ontowiki](ontowiki_Install-Ontowiki)
-* [Get Started using OntoWiki](ontowiki_Getting-Started-Users)
+* [Install Ontowiki]({{ "Install-Ontowiki.html" | prepend:site.baseurl }})
+* [Get Started using OntoWiki]({{ "Getting-Started-Users.html" | prepend:site.baseurl }})
 
-If you are having some trouble, you should look at our [FAQ Page](ontowiki_FAQ) . There might be just the right answer for your problems.
+If you are having some trouble, you should look at our [FAQ Page]({{ "FAQ.html" | prepend:site.baseurl }}) . There might be just the right answer for your problems.
 
-If you want to publish Linked Data you should look [here](ontowiki_LinkedData)
+If you want to publish Linked Data you should look [here]({{ "LinkedData.html" | prepend:site.baseurl }})
 
-For more complex User-Stories look [here](ontowiki_User-Stories)
+For more complex User-Stories look [here]({{ "User-Stories.html" | prepend:site.baseurl }})
 
 # Developers
 
 If you have some experience with OntoWiki and PHP, JavaScript or RDF you might want to help us improving this software. Interesting pages for you are:
 
 ### Getting started
-* [Install Ontowiki](ontowiki_Install-Ontowiki)
-* [Setup a Test Environment](ontowiki_PHPUnit)
-* [Starting the Development of a new Extension](ontowiki_Extensions)
-* [CSS-Development](ontowiki_CSS-Development)
-* [Writing tests](ontowiki_OntoWiki-Testing-Guide)
-* [Instance Lists](ontowiki_Instance-Lists)
-* [Helpful Tools](ontowiki_Tools)
-* [Webservices](ontowiki_Webservices)
-* [Worker Background Jobs using Gearman](ontowiki_Worker:-Background-jobs-using-Gearman)
-* [Wrapper Example](ontowiki_Wrapper-Example)
-* Introductions to [coding standards](ontowiki_Coding-Standards) we are working with and while you are at it, you should take a look at our [HTTP-Parameters-Page](ontowiki_HTTP-Parameters)
+* [Install Ontowiki]({{ "Install-Ontowiki.html" | prepend:site.baseurl }})
+* [Setup a Test Environment]({{ "PHPUnit.html" | prepend:site.baseurl }})
+* [Starting the Development of a new Extension]({{ "Extensions.html" | prepend:site.baseurl }})
+* [CSS-Development]({{ "CSS-Development.html" | prepend:site.baseurl }})
+* [Writing tests]({{ "OntoWikiTesting-Guide.html" | prepend:site.baseurl }})
+* [Instance Lists]({{ "Instance-Lists.html" | prepend:site.baseurl }})
+* [Helpful Tools]({{ "Tools.html" | prepend:site.baseurl }})
+* [Webservices]({{ "Webservices.html" | prepend:site.baseurl }})
+* [Worker Background Jobs using Gearman]({{ "Worker:-Background-jobs-using-Gearman.html" | prepend:site.baseurl }})
+* [Wrapper Example]({{ "Wrapper-Example.html" | prepend:site.baseurl }})
+* Introductions to [coding standards]({{ "Coding-Standards.html" | prepend:site.baseurl }}) we are working with and while you are at it, you should take a look at our [HTTP-Parameters-Page]({{ "HTTP_Parameters.html" | prepend:site.baseurl }})
 
 ### OntoWiki application
-* [Information about classes](ontowiki_Classes)
-* [Information about controllers](ontowiki_Controllers)
-* [Information about events](ontowiki_Events)
+* [Information about classes]({{ "Classes.html" | prepend:site.baseurl }})
+* [Information about controllers]({{ "Controllers.html" | prepend:site.baseurl }})
+* [Information about events]({{ "Events.html" | prepend:site.baseurl }})
 
 There is also an API-Documentation available [http://api.ontowiki.net/].
 
-You might want to pick up one of the problems, posted on our [Roadmap](ontowiki_Roadmap) (needs to get actualized)
+You might want to pick up one of the problems, posted on our [Roadmap]({{ "Roadmap.html" | prepend:site.baseurl }}) (needs to get actualized)
 
 # Professional Support
 AKSW gives professional support for deployment and customization. Please ask [Philipp Frischmuth](http://aksw.org/PhilippFrischmuth) and [Natanael Arndt](http://aksw.org/NatanaelArndt) regarding this.
