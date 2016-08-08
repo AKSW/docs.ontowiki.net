@@ -14,7 +14,7 @@ For a longer and more visual introduction, [watch our webinar](http://www.youtub
 ## First Login
 If you start with a new ontowiki installation, you have only one pre-configured account, the `SuperAdmin`. This has the same username and password as the one you set up in config.ini for accessing the database backend.
 
-The `Admin` user exist, but has no `password`, and hence you cannot use this to log in. To enable the account, set a plain-text password for it when logged in with the `SuperAdmin` account. 
+The `Admin` user exist, but has no `password`, and hence you cannot use this to log in. To enable the account, set a plain-text password for it when logged in with the `SuperAdmin` account. **Actually you can just log into Admin with an empty PW for now and set it through the normal usermenu as well**
 
 * Select the `OntoWiki System Configuration` in the `Knowledge Bases` menu
 * Select `User` in the `Navigation: Classes` menu

@@ -50,9 +50,9 @@ If this is your first time with OntoWiki you might want to read the following pa
 
 If you are having some trouble, you should look at our [FAQ Page]({{ "FAQ.html" | prepend:site.baseurl }}) . There might be just the right answer for your problems.
 
-If you want to publish Linked Data you should look [here]({{ "LinkedData.html" | prepend:site.baseurl }})
+If you want to publish Linked Data you should look [here]({{ "ldi.html" | prepend:site.baseurl }})
 
-For more complex User-Stories look [here]({{ "User-Stories.html" | prepend:site.baseurl }})
+For more complex User-Stories look in the User-Stories Tab on the left.
 
 # Developers
 
@@ -73,10 +73,10 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 
 ### OntoWiki application
 * [Information about classes]({{ "Classes.html" | prepend:site.baseurl }})
-* [Information about controllers]({{ "Controllers.html" | prepend:site.baseurl }})
+* Information about controllers **only Information about the [Service Controller]({{ "ServiceController.html" | prepend:site.baseurl }}) exists so far**
 * [Information about events]({{ "Events.html" | prepend:site.baseurl }})
 
-There is also an API-Documentation available [http://api.ontowiki.net/].
+There is also an API-Documentation available [http://api.ontowiki.net/](http://api.ontowiki.net/). **for now not avaiable**
 
 You might want to pick up one of the problems, posted on our [Roadmap]({{ "Roadmap.html" | prepend:site.baseurl }}) (needs to get actualized)
 

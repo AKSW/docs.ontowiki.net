@@ -53,7 +53,7 @@ If this gives you an error like
 
     make: *** No rule to make target `odbctest'.  Stop.
 
-try the following to test the connection: Create a file called `odbctest.php` in you webroot with the following PHP code in it:
+try the following to test the connection: Create a file called `odbctest.php` in your webroot with the following PHP code in it:
 
     <?php
     $conn   = odbc_connect('VOS', 'dba', 'dba');
