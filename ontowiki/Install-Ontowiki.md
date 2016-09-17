@@ -223,6 +223,7 @@ Perform the following steps to set up OntoWiki:
 #### Platform-specific Notes
 
 ##### GNU/Linux
+
 To start Virtuoso, switch to `<prefix>/bin` and run:
     ./virtuoso-t -f -c /opt/virtuoso/var/lib/virtuoso/ontowiki/virtuoso.ini
 
@@ -230,9 +231,8 @@ To start Virtuoso, switch to `<prefix>/bin` and run:
 
 Cave: Run Virtuoso with enough rights. When importing knowledge bases from file, they are first copied to tmp. Virtuoso needs a sufficiently high user like root or www-data to read it (besides adding the tmp dir to DirsAllowed). 
 Otherwise you will get the error:
-```
+
     Error importing knowledge base: Graph '<http://inserttesst.org>' could not be imported: Error importing statements: SQL Error: [unixODBC][OpenLink][Virtuoso iODBC Driver][Virtuoso Server]FA012: Can't open file '/tmp/phpWH20k0', error (13) : Permission denied (37000) CALL DB.DBA.RDF_LOAD_RDFXML(FILE_TO_STRING_OUTPUT('/tmp/phpWH20k0'), '', 'http://inserttesst.org'
-```
 
 ##### Debian/Ubuntu
 If you install Virtuoso from the .deb-Package you have to change in '/etc/init.d/virtuoso-opensource' the line
