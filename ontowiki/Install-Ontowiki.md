@@ -27,6 +27,13 @@ If you are a advanced user of OntoWiki and/or need the latest (sometimes unstabl
 * Clone the repository into your web folder (e.g. `/var/www/ontowiki`)
   * `git clone https://github.com/AKSW/OntoWiki.git`
 * Run `make install` to download Erfurt, RDFAuthor, Zend and more
+
+#### Github installation for Windows
+
+Compiling the source code in windows can be rather tricky. You need to fullfill the requirements below, and the commands
+should be in your Path. If you can't get `make` to run (the commands are mostly not windows combatible right now anyway),
+you can get by with only php and git, downloading the composer.phar manually from [here](https://getcomposer.org/download/).
+afterwards you run `composer install` and composer should install everything you need to run OntoWiki on Virtuoso/MySQL.
   
 ### Installation via composer
 
