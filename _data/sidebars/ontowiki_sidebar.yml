@@ -8,12 +8,12 @@ entries:
   - title: Installation
     output: web, pdf
     folderitems:
-  
+
     - title: Home
       url: /
       type: homepage
       output: web, pdf
-    
+
     - title: Install-Ontowiki
       url: /Install-Ontowiki.html
       output: web, pdf
@@ -178,14 +178,18 @@ entries:
     - title: Resource-Creation-Extension
       url: /Resource-Creation-Extension.html
       output: web, pdf
-      
+
     - title: SemanticPingback
       url: /SemanticPingback.html
       output: web, pdf
 
   - title: User-Stories
     output: web, pdf
-    folderitems:    
+    folderitems:
+
+    - title: Query with SPARQL
+      url: /How-to-query-OntoWiki-with-SPARQL.html
+      output: web, pdf
 
     - title: Publish Skos in 5 Minutes
       url: /How-to-create-and-publish-a-SKOS-taxonomy-in-5-minutes.html
@@ -197,12 +201,12 @@ entries:
 
     - title: View and edit the concepts of my taxonomy
       url: /How-to-view-and-edit-the-concepts-of-my-taxonomy.html
-      output: web, pdf    
-    
+      output: web, pdf
+
     - title: Linked Data Infrastructure
       url: /ldi.html
-      output: web, pdf    
-  
+      output: web, pdf
+
   - title: Security
     output: web
     folderitems:
@@ -254,4 +258,3 @@ entries:
     - title: Editing Creating Merging Documentation Pages
       url: /Editing_Creating_Merging_Documentation_Pages.html
       output: web, pdf
-      
