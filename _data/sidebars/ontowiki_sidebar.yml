@@ -211,6 +211,10 @@ entries:
     output: web
     folderitems:
 
+    - title: "User Management"
+      url: /User-Management.html
+      output: web, pdf
+
     - title: SecurityIssues
       url: /SecurityIssues.html
       output: web, pdf
