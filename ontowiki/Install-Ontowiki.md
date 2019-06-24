@@ -47,7 +47,7 @@ afterwards you run `composer install` and composer should install everything you
 If you use a Debian or Ubuntu Linux distribution, you can use the debian package instead of the archive.
 
 * Install the LDStack repository by downloading and adding the [ldstackrepository
-  install Guide](http://stack.linkeddata.org/getting-started/installing-components/)
+  install Guide](https://web.archive.org/web/20161107030852/http://stack.linkeddata.org/getting-started/installing-components/)
 * Update your package database (`sudo apt-get update`)
 * Install `ontowiki-mysql` or `ontowiki-virtuoso` (`sudo apt-get ontowiki-virtuoso virtuoso-vad-conductor`)
 
