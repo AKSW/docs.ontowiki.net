@@ -9,7 +9,7 @@ Welcome to the OntoWiki users and developers wiki. It documents installation and
 
 # What is OntoWiki? What can it do for you?
 
-OntoWiki is a semantic application as well as a framework which acts as a hardened basement for your application in the Semantic Web context. One of its main purposes is to assist you managing your knowledge. Knowledge means here machine readable data organized as [RDF/XML](http://en.wikipedia.org/wiki/RDF/XML), [Notation3](http://en.wikipedia.org/wiki/Notation3), Turtle as well as [Talis(JSON)](http://docs.api.talis.com/platform-api/output-types/rdf-json). You organize your knowledge using an feature-rich user interface managing classes, properties and resources. *If you don't know what is this all about, please have a look [here](http://en.wikipedia.org/wiki/Semantic_Web) (and associated pages) before continue reading*. Furthermore what OntoWiki can do for you:
+OntoWiki is a semantic application as well as a framework which acts as a hardened basement for your application in the Semantic Web context. One of its main purposes is to assist you managing your knowledge. Knowledge means here machine readable data organized as [RDF/XML](http://en.wikipedia.org/wiki/RDF/XML), [Notation3](http://en.wikipedia.org/wiki/Notation3), Turtle as well as [Talis(JSON)](http://docs.api.talis.com/platform-api/output-types/rdf-json). You organize your knowledge using a feature-rich user interface managing classes, properties and resources. *If you don't know what is this all about, please have a look [here](http://en.wikipedia.org/wiki/Semantic_Web) (and associated pages) before continue reading*. Furthermore what OntoWiki can do for you:
 
 * Providing feature rich user interface to helping you organize and manage resources, relations between resources, classes, ... . We heavily use modern browser technologies to give you a smooth user experience.
 * It is a [Linked Data](http://www.w3.org/standards/semanticweb/data) server for you data as well as a [Linked Data](http://www.w3.org/standards/semanticweb/data) client to fetch additional data from the web
@@ -25,7 +25,7 @@ But thats not all, OntoWiki provides a rich set of extensions. In the following 
 
 # Informations
 
-For informations regarding [Browser Compatability]({{ "Browser-Compatibility.html" | prepend:site.baseurl }})
+For informations regarding [Browser Compatibility]({{ "Browser-Compatibility.html" | prepend:site.baseurl }})
 
 For informations regarding [Backup your Data]({{ "Backup-your-data.html" | prepend:site.baseurl }})
 
@@ -76,7 +76,7 @@ If you have some experience with OntoWiki and PHP, JavaScript or RDF you might w
 * Information about controllers **only Information about the [Service Controller]({{ "ServiceController.html" | prepend:site.baseurl }}) exists so far**
 * [Information about events]({{ "Events.html" | prepend:site.baseurl }})
 
-There is also an API-Documentation available [http://api.ontowiki.net/](http://api.ontowiki.net/). **for now not avaiable**
+There is also an API documentation available [http://api.ontowiki.net/](http://api.ontowiki.net/). **for now not available**
 
 You might want to pick up one of the problems, posted on our [Roadmap]({{ "Roadmap.html" | prepend:site.baseurl }}) (needs to get actualized)
 

@@ -27,6 +27,13 @@ If you are a advanced user of OntoWiki and/or need the latest (sometimes unstabl
 * Clone the repository into your web folder (e.g. `/var/www/ontowiki`)
   * `git clone https://github.com/AKSW/OntoWiki.git`
 * Run `make install` to download Erfurt, RDFAuthor, Zend and more
+
+#### Github installation for Windows
+
+Compiling the source code in windows can be rather tricky. You need to fullfill the requirements below, and the commands
+should be in your Path. If you can't get `make` to run (the commands are mostly not windows combatible right now anyway),
+you can get by with only php and git, downloading the composer.phar manually from [here](https://getcomposer.org/download/).
+afterwards you run `composer install` and composer should install everything you need to run OntoWiki on Virtuoso/MySQL.
   
 ### Installation via composer
 
@@ -40,7 +47,7 @@ If you are a advanced user of OntoWiki and/or need the latest (sometimes unstabl
 If you use a Debian or Ubuntu Linux distribution, you can use the debian package instead of the archive.
 
 * Install the LDStack repository by downloading and adding the [ldstackrepository
-  install Guide](http://stack.linkeddata.org/getting-started/installing-components/)
+  install Guide](https://web.archive.org/web/20161107030852/http://stack.linkeddata.org/getting-started/installing-components/)
 * Update your package database (`sudo apt-get update`)
 * Install `ontowiki-mysql` or `ontowiki-virtuoso` (`sudo apt-get ontowiki-virtuoso virtuoso-vad-conductor`)
 
