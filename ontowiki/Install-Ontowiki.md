@@ -74,7 +74,7 @@ If you want to use OntoWiki with MySQL, here we go ... we assume, you have a cop
 
  1.    Create a mysql user for ontowiki (e.g. called "ontowiki")
  2.    Create a mysql database which is writable for the ontowiki user
- 3.    Copy the config.ini-dist to config.ini and change the database config: in most cases, you have to change only these values store.zenddb.dbname, store.zenddb.username, store.zenddb.password
+ 3.    Copy the config.ini-dist to config.ini and change the database config: in most cases, you have to change only these values `store.zenddb.dbname`, `store.zenddb.username`, `store.zenddb.password`. Make sure `store.backend = zenddb` is set in config.ini.
  4.    Go to the ontowiki root dir, run 'make install' - sets up Zend etc.
  5.    Open your OntoWiki Installation in your browser. On first run, all tables are created automatically and hopefully, you will see a starting screen containing a news area and a login window.
 
